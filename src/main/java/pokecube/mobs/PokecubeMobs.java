@@ -1,5 +1,11 @@
 package pokecube.mobs;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
 
@@ -31,10 +37,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import pokecube.core.PokecubeItems;
 import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
+import pokecube.core.database.Database.EnumDatabase;
 import pokecube.core.database.PokedexEntry.EvolutionData;
 import pokecube.core.database.stats.StatsCollector;
+import pokecube.core.database.worldgen.XMLWorldgenHandler;
 import pokecube.core.events.EvolveEvent;
 import pokecube.core.events.handlers.EventsHandler;
+import pokecube.core.events.onload.InitDatabase;
 import pokecube.core.handlers.HeldItemHandler;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.Stats;
@@ -42,6 +51,7 @@ import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.items.berries.BerryManager;
 import pokecube.core.items.pokecubes.PokecubeManager;
 import pokecube.core.utils.Tools;
+import pokecube.core.world.gen.template.PokecubeTemplates;
 import pokecube.modelloader.CommonProxy;
 import pokecube.modelloader.IMobProvider;
 import pokecube.modelloader.ModPokecubeML;
@@ -379,6 +389,75 @@ public class PokecubeMobs implements IMobProvider
                     inv.addItemStackToInventory(shedinja);
                 }
             }
+        }
+    }
+
+    @SubscribeEvent
+    public void registerDatabases(InitDatabase.Pre evt)
+    {
+        checkConfigFiles();
+        Database.addDatabase("pokemobs.xml", EnumDatabase.POKEMON);
+    }
+
+    public static void checkConfigFiles()
+    {
+        File file = new File("./config/pokecube.cfg");
+        String seperator = System.getProperty("file.separator");
+        String folder = file.getAbsolutePath();
+        String name = file.getName();
+        Database.CONFIGLOC = folder.replace(name, "pokecube" + seperator + "database" + seperator + "");
+        PokecubeTemplates.TEMPLATES = folder.replace(name, "pokecube" + seperator + "structures" + seperator + "");
+        PokecubeTemplates.initFiles();
+        XMLWorldgenHandler.loadDefaults(new File(PokecubeTemplates.TEMPLATES, "worldgen.xml"));
+        writeDefaultConfig();
+        return;
+    }
+
+    private static void writeDefaultConfig()
+    {
+        try
+        {
+            File temp = new File(Database.CONFIGLOC);
+            if (!temp.exists())
+            {
+                temp.mkdirs();
+            }
+            copyDatabaseFile("moves.json");
+            copyDatabaseFile("animations.json");
+            copyDatabaseFile("pokemobs.xml");
+            Database.DBLOCATION = Database.CONFIGLOC;
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    static void copyDatabaseFile(String name)
+    {
+        File temp1 = new File(Database.CONFIGLOC + name);
+        if (temp1.exists() && !Database.FORCECOPY)
+        {
+            System.out.println(" Not Overwriting old database " + name);
+            return;
+        }
+        ArrayList<String> rows = Database.getFile(Database.DBLOCATION + name);
+        int n = 0;
+        try
+        {
+            File file = new File(Database.CONFIGLOC + name);
+            Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
+            for (int i = 0; i < rows.size(); i++)
+            {
+                out.write(rows.get(i) + "\n");
+                n++;
+            }
+            out.close();
+        }
+        catch (Exception e)
+        {
+            System.err.println(name + " " + n);
+            e.printStackTrace();
         }
     }
 }
