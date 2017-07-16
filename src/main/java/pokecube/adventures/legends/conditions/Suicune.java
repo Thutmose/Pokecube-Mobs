@@ -5,14 +5,12 @@ import pokecube.adventures.legends.Condition;
 import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.stats.CaptureStats;
-import pokecube.core.database.stats.ISpecialCaptureCondition;
-import pokecube.core.database.stats.ISpecialSpawnCondition;
 import pokecube.core.database.stats.KillStats;
 import pokecube.core.database.stats.SpecialCaseRegister;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.utils.PokeType;
 
-public class Suicune extends Condition implements ISpecialCaptureCondition, ISpecialSpawnCondition
+public class Suicune extends Condition
 {
     @Override
     public boolean canCapture(Entity trainer, IPokemob pokemon)

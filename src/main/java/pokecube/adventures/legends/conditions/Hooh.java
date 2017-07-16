@@ -5,11 +5,9 @@ import pokecube.adventures.legends.Condition;
 import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.stats.CaptureStats;
-import pokecube.core.database.stats.ISpecialCaptureCondition;
-import pokecube.core.database.stats.ISpecialSpawnCondition;
 import pokecube.core.interfaces.IPokemob;
 
-public class Hooh extends Condition implements ISpecialCaptureCondition, ISpecialSpawnCondition
+public class Hooh extends Condition
 {
     @Override
     public boolean canCapture(Entity trainer, IPokemob pokemon)
