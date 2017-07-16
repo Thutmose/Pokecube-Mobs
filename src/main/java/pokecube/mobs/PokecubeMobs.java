@@ -150,6 +150,7 @@ public class PokecubeMobs implements IMobProvider
         HeldItemHandler.megaVariants.add("tyranitarmega");
         HeldItemHandler.megaVariants.add("venusaurmega");
         HeldItemHandler.sortMegaVariants();
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     @EventHandler
@@ -159,7 +160,6 @@ public class PokecubeMobs implements IMobProvider
         {
             new UpdateNotifier();
         }
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
     @SideOnly(Side.CLIENT)
