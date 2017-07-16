@@ -37,7 +37,7 @@ repositories {
 
 dependencies {
     deobfCompile name: 'thutcore', version: "${version_thutcore}", ext: 'jar'
-    deobfCompile name: 'pokecube', version: "${version_pokecube}", ext: 'jar'
+    //deobfCompile name: 'pokecube', version: "${version_pokecube}", ext: 'jar'
 }
 
 group= "pokecube"
