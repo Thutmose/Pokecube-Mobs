@@ -1,6 +1,7 @@
 package pokecube.mobs;
 
 import java.util.Map;
+import java.util.Random;
 
 import com.google.common.collect.Maps;
 
@@ -8,12 +9,15 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.ForgeVersion;
 import net.minecraftforge.common.ForgeVersion.CheckResult;
 import net.minecraftforge.common.ForgeVersion.Status;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
@@ -30,9 +34,12 @@ import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.PokedexEntry.EvolutionData;
 import pokecube.core.database.stats.StatsCollector;
 import pokecube.core.events.EvolveEvent;
+import pokecube.core.events.handlers.EventsHandler;
 import pokecube.core.handlers.HeldItemHandler;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.IPokemob.Stats;
 import pokecube.core.interfaces.PokecubeMod;
+import pokecube.core.items.berries.BerryManager;
 import pokecube.core.items.pokecubes.PokecubeManager;
 import pokecube.core.utils.Tools;
 import pokecube.modelloader.CommonProxy;
@@ -272,6 +279,62 @@ public class PokecubeMobs implements IMobProvider
         if ((owner = evt.mob.getPokemonOwner()) instanceof EntityPlayer)
         {
             makeShedinja(evt.mob, (EntityPlayer) owner);
+        }
+    }
+
+    @SubscribeEvent
+    public void livingUpdate(LivingUpdateEvent evt)
+    {
+        if (evt.getEntityLiving() instanceof IPokemob && ((IPokemob) evt.getEntityLiving()).getPokedexNb() == 213)
+        {
+            IPokemob shuckle = (IPokemob) evt.getEntityLiving();
+
+            if (evt.getEntityLiving().getEntityWorld().isRemote) return;
+
+            ItemStack item = evt.getEntityLiving().getHeldItemMainhand();
+            if (!CompatWrapper.isValid(item)) return;
+            Item itemId = item.getItem();
+            boolean berry = item.isItemEqual(BerryManager.getBerryItem("oran"));
+            Random r = new Random();
+            if (berry && r.nextGaussian() > EventsHandler.juiceChance)
+            {
+                if (shuckle.getPokemonOwner() != null)
+                {
+                    String message = "A sweet smell is coming from "
+                            + shuckle.getPokemonDisplayName().getFormattedText();
+                    ((EntityPlayer) shuckle.getPokemonOwner()).addChatMessage(new TextComponentString(message));
+                }
+                shuckle.setHeldItem(new ItemStack(PokecubeItems.berryJuice));
+                return;
+            }
+            berry = itemId == PokecubeItems.berryJuice;
+            if (berry && (r.nextGaussian() > EventsHandler.candyChance))
+            {
+                ItemStack candy = PokecubeItems.makeCandyStack();
+                if (!CompatWrapper.isValid(candy)) return;
+
+                if (shuckle.getPokemonOwner() != null)
+                {
+                    String message = "The smell coming from " + shuckle.getPokemonDisplayName().getFormattedText()
+                            + " has changed";
+                    ((EntityPlayer) shuckle.getPokemonOwner()).addChatMessage(new TextComponentString(message));
+                }
+                shuckle.setHeldItem(candy);
+                return;
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void evolveTyrogue(EvolveEvent.Pre evt)
+    {
+        if (evt.mob.getPokedexEntry() == Database.getEntry("Tyrogue"))
+        {
+            int atk = evt.mob.getStat(Stats.ATTACK, false);
+            int def = evt.mob.getStat(Stats.DEFENSE, false);
+            if (atk > def) evt.forme = Database.getEntry("Hitmonlee");
+            else if (def > atk) evt.forme = Database.getEntry("Hitmonchan");
+            else evt.forme = Database.getEntry("Hitmontop");
         }
     }
 
