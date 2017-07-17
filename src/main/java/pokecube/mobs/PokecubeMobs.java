@@ -437,7 +437,7 @@ public class PokecubeMobs implements IMobProvider
     public void registerDatabases(InitDatabase.Pre evt)
     {
         checkConfigFiles();
-        Database.addDatabase("pokemobs.xml", EnumDatabase.POKEMON);
+        Database.addDatabase("pokemobs.json", EnumDatabase.POKEMON);
     }
 
     public static void checkConfigFiles()
@@ -465,7 +465,7 @@ public class PokecubeMobs implements IMobProvider
             }
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
-            copyDatabaseFile("pokemobs.xml");
+            copyDatabaseFile("pokemobs.json");
             Database.DBLOCATION = Database.CONFIGLOC;
         }
         catch (Exception e)
