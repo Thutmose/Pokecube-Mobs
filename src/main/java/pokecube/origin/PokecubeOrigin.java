@@ -3,7 +3,9 @@ package pokecube.origin;
 import java.io.File;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -32,6 +34,13 @@ public class PokecubeOrigin
     {
         config = new Config(PokecubeCore.core.getPokecubeConfig(e).getConfigFile());
         MinecraftForge.EVENT_BUS.register(this);
+        doMetastuff();
+    }
+
+    private void doMetastuff()
+    {
+        ModMetadata meta = FMLCommonHandler.instance().findContainerFor(this).getMetadata();
+        meta.parent = PokecubeMobs.MODID;
     }
 
     @SideOnly(Side.CLIENT)
