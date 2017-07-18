@@ -13,10 +13,7 @@ import pokecube.core.entity.pokemobs.EntityPokemob;
 import pokecube.core.interfaces.IPokemob;
 import thut.api.entity.IMobColourable;
 
-/**
- * @author Manchou
- *
- */
+/** @author Manchou */
 public class ModelPichu extends APokemobModel
 {
     public ModelPichu()
@@ -48,14 +45,14 @@ public class ModelPichu extends APokemobModel
         super.render(entity, f, f1, f2, f3, f4, f5);
         setRotationAngles(f, f1, f2, f3, f4, f5, entity);
         GL11.glPushMatrix();
-        if(entity instanceof IMobColourable)
+        if (entity instanceof IMobColourable)
         {
             IMobColourable mob = (IMobColourable) entity;
             int[] cols = mob.getRGBA();
-            GL11.glColor4f(cols[0]/255f, cols[1]/255f, cols[2]/255f, cols[3]/255f);
+            GL11.glColor4f(cols[0] / 255f, cols[1] / 255f, cols[2] / 255f, cols[3] / 255f);
         }
         IPokemob mob = (IPokemob) entity;
-        GL11.glTranslated(0, 0.9 + (1-mob.getSize()) * 0.5 , 0);
+        GL11.glTranslated(0, 0.9 + (1 - mob.getSize()) * 0.5, 0);
         GL11.glScaled(0.4 * mob.getSize(), 0.4 * mob.getSize(), 0.4 * mob.getSize());
         headMain.render(f5);
         body.render(f5);
@@ -66,13 +63,14 @@ public class ModelPichu extends APokemobModel
         rightEar.render(f5);
         leftEar.render(f5);
         tail.renderWithRotation(f5);
+        GL11.glColor4f(1, 1, 1, 1);
         GL11.glPopMatrix();
     }
 
     @Override
     public void setLivingAnimations(EntityLivingBase entityliving, float f, float f1, float f2)
     {
-        EntityPokemob entity = (EntityPokemob)entityliving;
+        EntityPokemob entity = (EntityPokemob) entityliving;
 
         if (entity.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || f1 < 0.001 || entity.isRiding())
         {
@@ -91,8 +89,8 @@ public class ModelPichu extends APokemobModel
             footLeft.setRotationPoint(1F + xOffset, 23F, -2F);
             handRight.setRotationPoint(-3F + xOffset, 18F, -2F);
             handLeft.setRotationPoint(1F + xOffset, 18F, -2F);
-            footRight.rotateAngleX = ((float)Math.PI * 3F / 2F);
-            footLeft.rotateAngleX = ((float)Math.PI * 3F / 2F);
+            footRight.rotateAngleX = ((float) Math.PI * 3F / 2F);
+            footLeft.rotateAngleX = ((float) Math.PI * 3F / 2F);
             footRight.rotateAngleY = 0.2F;
             handLeft.rotateAngleY = -1F;
             handRight.rotateAngleY = 1F;
@@ -114,7 +112,7 @@ public class ModelPichu extends APokemobModel
             handRight.setRotationPoint(-3F, 15F, -2F);
             handLeft.setRotationPoint(1F, 15F, -2F);
             footRight.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1 - 0.3F;
-            footLeft.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1 - 0.3F;
+            footLeft.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * 1.4F * f1 - 0.3F;
             handRight.rotateAngleX = 5.811947F;
             handLeft.rotateAngleX = 5.811947F;
             headMain.setRotationPoint(-1F, 11F, -2.5F);
@@ -134,8 +132,8 @@ public class ModelPichu extends APokemobModel
     public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
     {
         super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-        headMain.rotateAngleX = f4 / (180F / (float)Math.PI);
-        headMain.rotateAngleY = f3 / (180F / (float)Math.PI);
+        headMain.rotateAngleX = f4 / (180F / (float) Math.PI);
+        headMain.rotateAngleY = f3 / (180F / (float) Math.PI);
         rightEar.rotateAngleY = headMain.rotateAngleY;
         rightEar.rotateAngleX = headMain.rotateAngleX;
         leftEar.rotateAngleY = headMain.rotateAngleY;
@@ -151,7 +149,7 @@ public class ModelPichu extends APokemobModel
     public ModelRenderer footLeft;
     public ModelRenderer handRight;
     public ModelRenderer handLeft;
-    ModelRenderer rightEar;
-    ModelRenderer leftEar;
-    ModelRenderer tail;
+    ModelRenderer        rightEar;
+    ModelRenderer        leftEar;
+    ModelRenderer        tail;
 }

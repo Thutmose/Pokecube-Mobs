@@ -30,25 +30,37 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.Event.Result;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import pokecube.core.PokecubeCore;
 import pokecube.core.PokecubeItems;
 import pokecube.core.database.Database;
-import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.Database.EnumDatabase;
+import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.PokedexEntry.EvolutionData;
+import pokecube.core.database.stats.CaptureStats;
+import pokecube.core.database.stats.EggStats;
 import pokecube.core.database.stats.StatsCollector;
 import pokecube.core.database.worldgen.XMLWorldgenHandler;
+import pokecube.core.events.CaptureEvent.Post;
+import pokecube.core.events.CaptureEvent.Pre;
 import pokecube.core.events.EvolveEvent;
 import pokecube.core.events.handlers.EventsHandler;
 import pokecube.core.events.onload.InitDatabase;
+import pokecube.core.events.onload.RegisterPokecubes;
 import pokecube.core.handlers.HeldItemHandler;
+import pokecube.core.interfaces.IMoveConstants;
+import pokecube.core.interfaces.IPokecube.DefaultPokecubeBehavior;
+import pokecube.core.interfaces.IPokecube.NormalPokecubeBehavoir;
+import pokecube.core.interfaces.IPokecube.PokecubeBehavior;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.Stats;
 import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.items.berries.BerryManager;
+import pokecube.core.items.pokecubes.EntityPokecube;
 import pokecube.core.items.pokecubes.PokecubeManager;
 import pokecube.core.utils.Tools;
 import pokecube.core.world.gen.template.PokecubeTemplates;
@@ -57,6 +69,7 @@ import pokecube.modelloader.IMobProvider;
 import pokecube.modelloader.ModPokecubeML;
 import pokecube.modelloader.client.render.ModelWrapperEvent;
 import pokecube.origin.render.ModelWrapperSpinda;
+import thut.api.maths.Vector3;
 import thut.core.client.ClientProxy;
 import thut.lib.CompatWrapper;
 
@@ -321,6 +334,169 @@ public class PokecubeMobs implements IMobProvider
     public Object getMod()
     {
         return this;
+    }
+
+    @SubscribeEvent
+    public void registerPokecubes(RegisterPokecubes event)
+    {
+        String[] cubes = { "poke", "great", "ultra", "master", "snag", "dusk", "quick", "timer", "net", "nest", "dive",
+                "repeat", "premier", "cherish" };
+        int[] indecies = { 0, 1, 2, 3, 99, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
+        for (int i = 0; i < cubes.length; i++)
+        {
+            event.cubePrefixes.put(indecies[i], cubes[i]);
+        }
+
+        final PokecubeHelper helper = new PokecubeHelper();
+
+        event.behaviors.put(0, new NormalPokecubeBehavoir(1));
+        event.behaviors.put(1, new NormalPokecubeBehavoir(1.5));
+        event.behaviors.put(2, new NormalPokecubeBehavoir(2));
+        event.behaviors.put(3, new NormalPokecubeBehavoir(255));
+        event.behaviors.put(5, new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.dusk(mob);
+            }
+        });
+        event.behaviors.put(6, new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.quick(mob);
+            }
+        });
+        event.behaviors.put(7, new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.timer(mob);
+            }
+        });
+        event.behaviors.put(8, new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.net(mob);
+            }
+        });
+        event.behaviors.put(9, new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.nest(mob);
+            }
+        });
+        event.behaviors.put(10, new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.dive(mob);
+            }
+        });
+        event.behaviors.put(12, new NormalPokecubeBehavoir(1));
+        event.behaviors.put(13, new NormalPokecubeBehavoir(1));
+
+        PokecubeBehavior snag = new PokecubeBehavior()
+        {
+
+            @Override
+            public void onPostCapture(Post evt)
+            {
+                IPokemob mob = evt.caught;
+                evt.pokecube.entityDropItem(PokecubeManager.pokemobToItem(mob), 1.0F);
+                evt.setCanceled(true);
+            }
+
+            @Override
+            public void onPreCapture(Pre evt)
+            {
+                boolean tameSnag = !evt.caught.isPlayerOwned() && evt.caught.getPokemonAIState(IMoveConstants.TAMED);
+
+                if (evt.caught.isShadow())
+                {
+                    EntityPokecube cube = (EntityPokecube) evt.pokecube;
+
+                    IPokemob mob = (IPokemob) PokecubeCore.instance.createPokemob(evt.caught.getPokedexEntry(),
+                            cube.getEntityWorld());
+                    cube.tilt = Tools.computeCatchRate(mob, 1);
+                    cube.time = cube.tilt * 20;
+
+                    if (!tameSnag) evt.caught.setPokecube(evt.filledCube);
+
+                    cube.setEntityItemStack(PokecubeManager.pokemobToItem(evt.caught));
+                    PokecubeManager.setTilt(cube.getEntityItem(), cube.tilt);
+                    Vector3.getNewVector().set(evt.pokecube).moveEntity(cube);
+                    ((Entity) evt.caught).setDead();
+                    cube.motionX = cube.motionZ = 0;
+                    cube.motionY = 0.1;
+                    cube.getEntityWorld().spawnEntityInWorld(cube.copy());
+                    evt.pokecube.setDead();
+                }
+                evt.setCanceled(true);
+            }
+
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return 0;
+            }
+        };
+
+        PokecubeBehavior repeat = new PokecubeBehavior()
+        {
+            @Override
+            public void onPostCapture(Post evt)
+            {
+
+            }
+
+            @Override
+            public void onPreCapture(Pre evt)
+            {
+                if (evt.getResult() == Result.DENY) return;
+
+                EntityPokecube cube = (EntityPokecube) evt.pokecube;
+
+                IPokemob mob = (IPokemob) PokecubeCore.instance.createPokemob(evt.caught.getPokedexEntry(),
+                        cube.getEntityWorld());
+                Vector3 v = Vector3.getNewVector();
+                Entity thrower = cube.shootingEntity;
+                int has = CaptureStats.getTotalNumberOfPokemobCaughtBy(thrower.getUniqueID(), mob.getPokedexEntry());
+                has = has + EggStats.getTotalNumberOfPokemobHatchedBy(thrower.getUniqueID(), mob.getPokedexEntry());
+                double rate = has > 0 ? 3 : 1;
+                cube.tilt = Tools.computeCatchRate(mob, rate);
+                cube.time = cube.tilt * 20;
+                evt.caught.setPokecube(evt.filledCube);
+                cube.setEntityItemStack(PokecubeManager.pokemobToItem(evt.caught));
+                PokecubeManager.setTilt(cube.getEntityItem(), cube.tilt);
+                v.set(evt.pokecube).moveEntity(cube);
+                v.moveEntity((Entity) mob);
+                ((Entity) evt.caught).setDead();
+                cube.motionX = cube.motionZ = 0;
+                cube.motionY = 0.1;
+                cube.getEntityWorld().spawnEntityInWorld(cube.copy());
+                evt.setCanceled(true);
+                evt.pokecube.setDead();
+            }
+
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return 0;
+            }
+
+        };
+
+        event.behaviors.put(99, snag);
+        event.behaviors.put(11, repeat);
     }
 
     @SubscribeEvent

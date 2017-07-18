@@ -69,6 +69,7 @@ public class ModelPikachu extends APokemobModel
         leftEar.render(f5);
         snout.renderWithRotation(f5);
         tail.renderWithRotation(f5);
+        GL11.glColor4f(1, 1, 1, 1);
         GL11.glPopMatrix();
     }
 
