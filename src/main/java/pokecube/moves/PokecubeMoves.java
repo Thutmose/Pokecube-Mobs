@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import pokecube.core.PokecubeCore;
 import pokecube.core.blocks.healtable.ContainerHealTable;
 import pokecube.core.blocks.healtable.TileHealTable;
 import pokecube.core.items.pokecubes.EntityPokecubeBase;
@@ -42,11 +42,11 @@ public class PokecubeMoves
     public void postInit(FMLPostInitializationEvent event)
     {
         ResourceLocation sound = new ResourceLocation(MODID + ":pokecube_caught");
-        GameRegistry.register(EntityPokecubeBase.POKECUBESOUND = new SoundEvent(sound).setRegistryName(sound));
+        PokecubeCore.instance.helper.registerSound(EntityPokecubeBase.POKECUBESOUND = new SoundEvent(sound), sound);
         sound = new ResourceLocation(MODID + ":pokecenter");
-        GameRegistry.register(ContainerHealTable.HEAL_SOUND = new SoundEvent(sound).setRegistryName(sound));
+        PokecubeCore.instance.helper.registerSound(ContainerHealTable.HEAL_SOUND = new SoundEvent(sound), sound);
         sound = new ResourceLocation(MODID + ":pokecenterloop");
-        GameRegistry.register(TileHealTable.MUSICLOOP = new SoundEvent(sound).setRegistryName(sound));
+        PokecubeCore.instance.helper.registerSound(TileHealTable.MUSICLOOP = new SoundEvent(sound), sound);
     }
 
 }
