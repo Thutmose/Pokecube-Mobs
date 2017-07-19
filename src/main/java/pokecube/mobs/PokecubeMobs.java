@@ -167,6 +167,7 @@ public class PokecubeMobs implements IMobProvider
         MinecraftForge.EVENT_BUS.register(this);
         initBerries();
         DBLoader.trainerDatabases.add("trainers.xml");
+        DBLoader.tradeDatabases.add("trades.xml");
     }
 
     public static void initBerries()
@@ -644,10 +645,11 @@ public class PokecubeMobs implements IMobProvider
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
             copyDatabaseFile("pokemobs.json");
-            Database.DBLOCATION = Database.DBLOCATION.replace("database", "trainers");
+            Database.DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_adventures");
             Database.CONFIGLOC = Database.CONFIGLOC.replace("database", "trainers");
             copyDatabaseFile("trainers.xml");
-            Database.DBLOCATION = Database.DBLOCATION.replace("trainers", "database");
+            copyDatabaseFile("trades.xml");
+            Database.DBLOCATION = Database.DBLOCATION.replace("pokecube_adventures", "pokecube");
             Database.CONFIGLOC = Database.CONFIGLOC.replace("trainers", "database");
             Database.DBLOCATION = Database.CONFIGLOC;
         }
