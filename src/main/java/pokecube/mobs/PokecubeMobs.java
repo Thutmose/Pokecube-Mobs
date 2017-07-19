@@ -35,6 +35,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import pokecube.adventures.utils.DBLoader;
 import pokecube.core.PokecubeCore;
 import pokecube.core.PokecubeItems;
 import pokecube.core.database.Database;
@@ -165,6 +166,7 @@ public class PokecubeMobs implements IMobProvider
         HeldItemHandler.sortMegaVariants();
         MinecraftForge.EVENT_BUS.register(this);
         initBerries();
+        DBLoader.trainerDatabases.add("trainers.xml");
     }
 
     public static void initBerries()
@@ -642,6 +644,11 @@ public class PokecubeMobs implements IMobProvider
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
             copyDatabaseFile("pokemobs.json");
+            Database.DBLOCATION = Database.DBLOCATION.replace("database", "trainers");
+            Database.CONFIGLOC = Database.CONFIGLOC.replace("database", "trainers");
+            copyDatabaseFile("trainers.xml");
+            Database.DBLOCATION = Database.DBLOCATION.replace("trainers", "database");
+            Database.CONFIGLOC = Database.CONFIGLOC.replace("trainers", "database");
             Database.DBLOCATION = Database.CONFIGLOC;
         }
         catch (Exception e)
