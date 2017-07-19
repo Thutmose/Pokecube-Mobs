@@ -255,11 +255,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -568,11 +568,14 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___-Y:I___,N___-X:I___"
+        "megaRules": [
+          {
+            "preset": "Mega-X"
+          },
+          {
+            "preset": "Mega-Y"
           }
-        },
+        ],
         "movementType": "flying",
         "hatedMaterials": "water"
       },
@@ -924,11 +927,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -1490,11 +1493,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying",
         "activeTimes": "day"
       },
@@ -1847,11 +1850,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying",
         "activeTimes": "day"
       },
@@ -7915,11 +7918,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -9726,11 +9729,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -10004,7 +10007,7 @@
       }
     },
     {
-      "name": "Farfetch\u0027d",
+      "name": "Farfetch'd",
       "number": 83,
       "base": true,
       "stats": {
@@ -11316,11 +11319,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "hatedMaterials": "light:0.5:despawn"
       },
       "moves": {
@@ -13543,11 +13546,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -14754,11 +14757,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -15089,11 +15092,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "water"
       },
       "moves": {
@@ -16262,11 +16265,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -17038,11 +17041,14 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___-Y:I___,N___-X:I___"
+        "megaRules": [
+          {
+            "preset": "Mega-X"
+          },
+          {
+            "preset": "Mega-Y"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -20106,11 +20112,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "interactions": [
           {
             "male": true,
@@ -22970,11 +22976,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -23357,11 +23363,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -23629,11 +23635,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "activeTimes": "day"
       },
       "moves": {
@@ -25149,11 +25155,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -26903,11 +26909,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -27499,11 +27505,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -27855,11 +27861,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -28142,11 +28148,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "water"
       },
       "moves": {
@@ -30259,11 +30265,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "activeTimes": "day"
       },
       "moves": {
@@ -32159,11 +32165,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -32295,11 +32301,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -32626,11 +32632,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "hatedMaterials": "water"
       },
       "moves": {
@@ -32803,17 +32809,7 @@
             "name": "Medicham",
             "level": 37
           }
-        ],
-        "drops": [],
-        "held": [],
-        "spawnRules": [],
-        "mass": -1.0,
-        "captureRate": -1,
-        "baseExp": -1,
-        "baseFriendship": 70,
-        "genderRatio": -1,
-        "movementType": "normal",
-        "interactions": []
+        ]
       }
     },
     {
@@ -32866,11 +32862,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -33088,11 +33084,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -34015,11 +34011,11 @@
             "dive": "TRUE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "water"
       },
       "moves": {
@@ -34477,11 +34473,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "interactions": [
           {
             "male": true,
@@ -35655,11 +35651,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -37583,11 +37579,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "floating"
       },
       "moves": {
@@ -38134,11 +38130,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "interactions": [
           {
             "male": true,
@@ -38476,11 +38472,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "floating"
       },
       "moves": {
@@ -39535,11 +39531,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -39876,11 +39872,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "floating"
       },
       "moves": {
@@ -40262,11 +40258,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -40386,11 +40382,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -40509,11 +40505,17 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N\u0027Kyogre Primal\u0027:IAlphaOrb"
+        "megaRules": [
+          {
+            "name": "Kyogre Primal",
+            "item": {
+              "values": {
+                "tag": "{pokemon:\"alphaorb\"}",
+                "id": "pokecube:megastone"
+              }
+            }
           }
-        },
+        ],
         "movementType": "water"
       },
       "moves": {
@@ -40652,11 +40654,17 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N\u0027Groudon Primal\u0027:IOmegaOrb"
+        "megaRules": [
+          {
+            "name": "Groudon Primal",
+            "item": {
+              "values": {
+                "tag": "{pokemon:\"omegaorb\"}",
+                "id": "pokecube:megastone"
+              }
+            }
           }
-        },
+        ],
         "hatedMaterials": "water"
       },
       "moves": {
@@ -40784,11 +40792,12 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N\u0027Rayquaza Mega\u0027:Mdragonascent"
+        "megaRules": [
+          {
+            "name": "Rayquaza Mega",
+            "move": "dragonascent"
           }
-        },
+        ],
         "movementType": "flying"
       },
       "moves": {
@@ -45154,11 +45163,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "interactions": [
           {
             "male": true,
@@ -46758,11 +46767,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -47042,11 +47051,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -48189,11 +48198,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -49421,11 +49430,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -55118,11 +55127,11 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -66931,11 +66940,12 @@
             "shoulder": "FALSE"
           }
         },
-        "megaRules": {
-          "values": {
-            "forme": "N\u0027Greninja Ash\u0027:Abattlebond"
+        "megaRules": [
+          {
+            "name": "Greninja Ash",
+            "ability": "battlebond"
           }
-        },
+        ],
         "movementType": "water"
       },
       "moves": {
@@ -72905,11 +72915,11 @@
         "baseExp": 270,
         "expMode": "Slow",
         "genderRatio": 255,
-        "megaRules": {
-          "values": {
-            "forme": "N___:I___"
+        "megaRules": [
+          {
+            "preset": "Mega"
           }
-        },
+        ],
         "movementType": "floating"
       },
       "moves": {
@@ -73244,7 +73254,6 @@
         "genderRatio": 31,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -73338,7 +73347,6 @@
         "genderRatio": 31,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -73426,7 +73434,6 @@
         "genderRatio": 31,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -73529,8 +73536,7 @@
         "expMode": "Medium Slow",
         "genderRatio": 31,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -73621,8 +73627,7 @@
         "expMode": "Medium Slow",
         "genderRatio": 31,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -73708,8 +73713,7 @@
         "expMode": "Medium Slow",
         "genderRatio": 31,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -73813,7 +73817,6 @@
         "genderRatio": 31,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -73906,7 +73909,6 @@
         "genderRatio": 31,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -73994,7 +73996,6 @@
         "genderRatio": 31,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -74104,7 +74105,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -74197,7 +74197,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -74284,7 +74283,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -74385,8 +74383,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -74474,7 +74471,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -74603,8 +74599,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -74695,8 +74690,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -74780,7 +74774,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -74907,7 +74900,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -74987,7 +74979,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -75089,7 +75080,6 @@
         "genderRatio": 190,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -75200,7 +75190,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying",
         "activeTimes": "day"
       },
@@ -75279,7 +75268,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying",
         "activeTimes": "day"
       },
@@ -75391,8 +75379,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -75478,7 +75465,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -75587,7 +75573,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -75727,7 +75712,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -75819,7 +75803,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -75890,7 +75873,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -75972,8 +75954,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76043,7 +76024,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -76151,7 +76131,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -76222,7 +76201,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -76304,8 +76282,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76371,8 +76348,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76458,8 +76434,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76529,8 +76504,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76623,8 +76597,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 31,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76693,8 +76666,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 254,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76776,8 +76748,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -76846,7 +76817,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -76951,8 +76921,7 @@
         "expMode": "Medium Slow",
         "genderRatio": 254,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77021,8 +76990,7 @@
         "expMode": "Medium Slow",
         "genderRatio": 254,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77089,8 +77057,7 @@
         "expMode": "Medium Slow",
         "genderRatio": 254,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77166,8 +77133,7 @@
         "expMode": "Fast",
         "genderRatio": 190,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77249,7 +77215,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -77352,7 +77317,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "interactions": [
           {
             "male": true,
@@ -77460,7 +77424,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -77518,7 +77481,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -77608,8 +77570,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77678,8 +77639,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77756,7 +77716,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -77837,8 +77796,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77910,8 +77868,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -77993,7 +77950,6 @@
         "expMode": "Medium Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "floating"
       },
       "moves": {
@@ -78089,8 +78045,7 @@
         "expMode": "Slow",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78164,8 +78119,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78244,8 +78198,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78322,8 +78275,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78431,7 +78383,6 @@
         "genderRatio": 127,
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -78517,8 +78468,7 @@
         "expMode": "Medium Fast",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78596,7 +78546,6 @@
         "expMode": "Medium Fast",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "water"
       },
       "moves": {
@@ -78685,8 +78634,7 @@
         "expMode": "Slow",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78761,8 +78709,7 @@
         "expMode": "Slow",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78832,8 +78779,7 @@
         "expMode": "Slow",
         "genderRatio": 127,
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -78904,7 +78850,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -78973,7 +78918,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -79042,7 +78986,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -79111,7 +79054,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -79192,7 +79134,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "floating"
       },
       "moves": {
@@ -79261,7 +79202,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "floating"
       },
       "moves": {
@@ -79319,8 +79259,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -79390,7 +79329,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -79461,7 +79399,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "floating"
       },
       "moves": {
@@ -79543,8 +79480,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -79613,8 +79549,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -79682,8 +79617,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -79755,7 +79689,6 @@
         "expMode": "Slow",
         "logics": {},
         "formeItems": {},
-        "megaRules": {},
         "movementType": "flying"
       },
       "moves": {
@@ -79825,8 +79758,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -79895,8 +79827,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -79965,8 +79896,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -80034,8 +79964,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
@@ -80104,8 +80033,7 @@
         "baseFriendship": 0,
         "expMode": "Slow",
         "logics": {},
-        "formeItems": {},
-        "megaRules": {}
+        "formeItems": {}
       },
       "moves": {
         "lvlupMoves": {
