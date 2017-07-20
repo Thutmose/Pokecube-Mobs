@@ -74,7 +74,7 @@ import thut.api.maths.Vector3;
 import thut.core.client.ClientProxy;
 import thut.lib.CompatWrapper;
 
-@Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = PokecubeMobs.VERSION, dependencies = "required-after:pokecube", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMobs.MCVERSIONS)
+@Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = PokecubeMobs.VERSION, dependencies = "required-after:pokecube;required-after:pokecube_adventures", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMobs.MCVERSIONS)
 public class PokecubeMobs implements IMobProvider
 {
     public static class UpdateNotifier
@@ -625,13 +625,15 @@ public class PokecubeMobs implements IMobProvider
         String seperator = System.getProperty("file.separator");
         String folder = file.getAbsolutePath();
         String name = file.getName();
-        Database.CONFIGLOC = folder.replace(name, "pokecube" + seperator + "database" + seperator + "");
         PokecubeTemplates.TEMPLATES = folder.replace(name, "pokecube" + seperator + "structures" + seperator + "");
         PokecubeTemplates.initFiles();
         XMLWorldgenHandler.loadDefaults(new File(PokecubeTemplates.TEMPLATES, "worldgen.xml"));
         writeDefaultConfig();
         return;
     }
+
+    static String CONFIGLOC  = Database.CONFIGLOC;
+    static String DBLOCATION = Database.DBLOCATION;
 
     private static void writeDefaultConfig()
     {
@@ -645,13 +647,17 @@ public class PokecubeMobs implements IMobProvider
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
             copyDatabaseFile("pokemobs.json");
-            Database.DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_adventures");
-            Database.CONFIGLOC = Database.CONFIGLOC.replace("database", "trainers");
+            DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_adventures");
+            CONFIGLOC = Database.CONFIGLOC.replace("database", "trainers");
+            temp = new File(Database.CONFIGLOC);
+            if (!temp.exists())
+            {
+                temp.mkdirs();
+            }
             copyDatabaseFile("trainers.xml");
             copyDatabaseFile("trades.xml");
-            Database.DBLOCATION = Database.DBLOCATION.replace("pokecube_adventures", "pokecube");
-            Database.CONFIGLOC = Database.CONFIGLOC.replace("trainers", "database");
-            Database.DBLOCATION = Database.CONFIGLOC;
+            DBLOCATION = Database.DBLOCATION.replace("pokecube_adventures", "pokecube");
+            CONFIGLOC = Database.CONFIGLOC.replace("trainers", "database");
         }
         catch (Exception e)
         {
@@ -661,17 +667,17 @@ public class PokecubeMobs implements IMobProvider
 
     static void copyDatabaseFile(String name)
     {
-        File temp1 = new File(Database.CONFIGLOC + name);
+        File temp1 = new File(CONFIGLOC + name);
         if (temp1.exists() && !Database.FORCECOPY)
         {
             System.out.println(" Not Overwriting old database " + name);
             return;
         }
-        ArrayList<String> rows = Database.getFile(Database.DBLOCATION + name);
+        ArrayList<String> rows = Database.getFile(DBLOCATION + name);
         int n = 0;
         try
         {
-            File file = new File(Database.CONFIGLOC + name);
+            File file = new File(CONFIGLOC + name);
             Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
             for (int i = 0; i < rows.size(); i++)
             {
