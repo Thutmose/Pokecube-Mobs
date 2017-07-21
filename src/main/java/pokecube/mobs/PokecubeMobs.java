@@ -250,7 +250,7 @@ public class PokecubeMobs implements IMobProvider
         case 7:
             return "gen_7/entity/models/";
         }
-        return "models/";
+        return "entity/models/";
     }
 
     private int getGen(PokedexEntry entry)
@@ -330,7 +330,7 @@ public class PokecubeMobs implements IMobProvider
         case 7:
             return "gen_7/entity/textures/";
         }
-        return "textures/entities/";
+        return "entity/textures/";
     }
 
     @Override

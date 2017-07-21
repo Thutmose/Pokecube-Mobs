@@ -79757,8 +79757,7 @@
         "captureRate": 255,
         "baseFriendship": 0,
         "expMode": "Slow",
-        "logics": {},
-        "formeItems": {}
+        "movementType": "floating"
       },
       "moves": {
         "lvlupMoves": {
@@ -79825,9 +79824,7 @@
         "mass": 888.0,
         "captureRate": 15,
         "baseFriendship": 0,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {}
+        "expMode": "Slow"
       },
       "moves": {
         "lvlupMoves": {
@@ -79894,9 +79891,7 @@
         "mass": 230.0,
         "captureRate": 3,
         "baseFriendship": 0,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {}
+        "expMode": "Slow"
       },
       "moves": {
         "lvlupMoves": {
@@ -79962,9 +79957,7 @@
         "mass": 80.5,
         "captureRate": 3,
         "baseFriendship": 0,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {}
+        "expMode": "Slow"
       },
       "moves": {
         "lvlupMoves": {
@@ -80031,9 +80024,7 @@
         "mass": 22.2,
         "captureRate": 3,
         "baseFriendship": 0,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {}
+        "expMode": "Slow"
       },
       "moves": {
         "lvlupMoves": {
