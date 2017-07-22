@@ -2,6 +2,7 @@ package pokecube.core.moves.implementations.attacks.fixedorcustom;
 
 import net.minecraft.entity.Entity;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MoveLowkick extends Move_Basic
@@ -16,8 +17,9 @@ public class MoveLowkick extends Move_Basic
     public int getPWR(IPokemob user, Entity target)
     {
         int pwr = 120;
-        if (!(target instanceof IPokemob)) return pwr;
-        double mass = ((IPokemob) target).getWeight();
+        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        if (targetMob == null) return pwr;
+        double mass = targetMob.getWeight();
         if (mass < 10) return 20;
         if (mass < 25) return 40;
         if (mass < 50) return 60;

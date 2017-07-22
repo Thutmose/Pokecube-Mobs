@@ -13,6 +13,7 @@ import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IMoveNames;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.MovesUtils;
 import pokecube.core.moves.templates.Move_Basic;
 import thut.api.entity.IBreedingMob;
@@ -75,26 +76,24 @@ public class Move_Transform extends Move_Basic
     @Override
     public void attack(IPokemob attacker, Entity attacked)
     {
+        IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
         if (attacker.getTransformedTo() == null && attacked instanceof EntityLivingBase)
         {
             if (MovesUtils.contactAttack(attacker, attacked))
             {
-                if (attacked instanceof IPokemob)
+                if (attackedMob != null)
                 {
-                    if (attacked instanceof IPokemob)
-                    {
-                        if (!(attacked instanceof IBreedingMob) || attacked != ((IBreedingMob) attacker).getLover())
-                            ((EntityCreature) attacked).setAttackTarget((EntityLivingBase) attacker);
-                    }
+                    if (!(attacked instanceof IBreedingMob) || attacked != ((IBreedingMob) attacker).getLover())
+                        ((EntityCreature) attacked).setAttackTarget(attacker.getEntity());
                 }
                 attacker.setTransformedTo(attacked);
             }
         }
         else
         {
-            if (attacked instanceof IPokemob)
+            if (attackedMob != null)
             {
-                String move = ((IPokemob) attacked).getMove(0);
+                String move = attackedMob.getMove(0);
                 if (move != null && !IMoveNames.MOVE_TRANSFORM.equals(move))
                     MovesUtils.doAttack(move, attacker, attacked);
                 else if (MovesUtils.contactAttack(attacker, attacked))

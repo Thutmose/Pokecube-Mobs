@@ -3,6 +3,7 @@ package pokecube.core.moves.implementations.attacks.special;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.IPokemob.Stats;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.implementations.attacks.special.MovePowersplit.Modifier;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.network.pokemobs.PacketSyncModifier;
@@ -20,9 +21,9 @@ public class MoveGuardsplit extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        if (packet.attacked instanceof IPokemob)
+        IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
+        if (attacked != null)
         {
-            IPokemob attacked = (IPokemob) packet.attacked;
             int spdef = packet.attacker.getStat(Stats.SPDEFENSE, true);
             int def = packet.attacker.getStat(Stats.DEFENSE, true);
 

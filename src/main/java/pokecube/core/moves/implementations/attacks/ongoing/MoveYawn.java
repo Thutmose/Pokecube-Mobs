@@ -2,6 +2,7 @@ package pokecube.core.moves.implementations.attacks.ongoing;
 
 import net.minecraft.entity.EntityLiving;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.MovesUtils;
 import pokecube.core.moves.templates.Move_Ongoing;
 
@@ -16,11 +17,14 @@ public class MoveYawn extends Move_Ongoing
     public void doOngoingEffect(EntityLiving mob)
     {
         Move_Ongoing move = this;
-        int duration = ((IPokemob) mob).getOngoingEffects().get(move);
-
-        if (duration == 0)
+        IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob);
+        if (pokemob != null)
         {
-            MovesUtils.setStatus(mob, STATUS_SLP);
+            int duration = ((IPokemob) mob).getOngoingEffects().get(move);
+            if (duration == 0)
+            {
+                MovesUtils.setStatus(mob, STATUS_SLP);
+            }
         }
     }
 

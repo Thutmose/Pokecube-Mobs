@@ -1,6 +1,5 @@
 package pokecube.core.database.abilities.f;
 
-import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
@@ -8,12 +7,6 @@ import pokecube.core.utils.PokeType;
 
 public class Filter extends Ability
 {
-
-    @Override
-    public void onAgress(IPokemob mob, EntityLivingBase target)
-    {
-    }
-
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
@@ -25,10 +18,4 @@ public class Filter extends Ability
             }
         }
     }
-
-    @Override
-    public void onUpdate(IPokemob mob)
-    {
-    }
-
 }

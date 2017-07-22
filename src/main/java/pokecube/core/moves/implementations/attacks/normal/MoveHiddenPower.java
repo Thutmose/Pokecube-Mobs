@@ -1,7 +1,6 @@
 package pokecube.core.moves.implementations.attacks.normal;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.utils.PokeType;
@@ -22,7 +21,7 @@ public class MoveHiddenPower extends Move_Basic
     @Override
     public PokeType getType(IPokemob user)
     {
-        if (user == null || !(user instanceof EntityLivingBase)) return move.type;
+        if (user == null) return move.type;
         int index = 0;
         byte[] ivs = user.getIVs();
         int a = (ivs[0] & 1);

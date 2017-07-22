@@ -12,11 +12,11 @@ public class IronBarbs extends Ability
     @Override
     public int beforeDamage(IPokemob mob, MovePacket move, int damage)
     {
-        if((move.getMove().getAttackCategory() & IMoveConstants.CATEGORY_CONTACT) > 0)
+        if ((move.getMove().getAttackCategory() & IMoveConstants.CATEGORY_CONTACT) > 0)
         {
-            EntityLivingBase entity = (EntityLivingBase) move.attacker;
+            EntityLivingBase entity = move.attacker.getEntity();
             float maxHp = entity.getMaxHealth();
-            //TODO message about recoil
+            // TODO message about recoil
             entity.attackEntityFrom(DamageSource.magic, 0.125f * maxHp);
         }
         return damage;

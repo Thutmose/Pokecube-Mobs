@@ -2,8 +2,6 @@ package pokecube.core.database.abilities.m;
 
 import java.util.List;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
@@ -32,11 +30,6 @@ public class MagmaArmor extends Ability
     }
 
     @Override
-    public void onAgress(IPokemob mob, EntityLivingBase target)
-    {
-    }
-
-    @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
         IPokemob attacker = move.attacker;
@@ -48,8 +41,8 @@ public class MagmaArmor extends Ability
     public void onUpdate(IPokemob mob)
     {
         if (mob.getStatus() == IMoveConstants.STATUS_FRZ) mob.healStatus();
-        Vector3 v = Vector3.getNewVector().set(mob);
-        List<EntityPokemobEgg> eggs = ((Entity) mob).getEntityWorld().getEntitiesWithinAABB(EntityPokemobEgg.class,
+        Vector3 v = Vector3.getNewVector().set(mob.getEntity());
+        List<EntityPokemobEgg> eggs = mob.getEntity().getEntityWorld().getEntitiesWithinAABB(EntityPokemobEgg.class,
                 v.getAABB().expand(range, range, range));
         for (EntityPokemobEgg egg : eggs)
         {

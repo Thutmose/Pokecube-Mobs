@@ -1,9 +1,9 @@
 package pokecube.core.moves.implementations.attacks.special;
 
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.MovesUtils;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.utils.PokeType;
@@ -23,9 +23,9 @@ public class MoveCurse extends Move_Basic
         if (packet.canceled || packet.failed) return;
         if (packet.attacker.isType(PokeType.getType("ghost")))
         {
-            if (packet.attacked instanceof IPokemob)
+            IPokemob target = CapabilityPokemob.getPokemobFor(packet.attacked);
+            if (target != null)
             {
-                IPokemob target = (IPokemob) packet.attacked;
                 if ((target.getChanges() & CHANGE_CURSE) == 0)
                 {
                     MovePacket move = new MovePacket(packet.attacker, packet.attacked, getName(), ghost, 0, 0, (byte) 0,
@@ -34,8 +34,8 @@ public class MoveCurse extends Move_Basic
                     if (!move.canceled)
                     {
                         target.addChange(CHANGE_CURSE);
-                        ((EntityLivingBase) packet.attacker).attackEntityFrom(DamageSource.magic,
-                                ((EntityLivingBase) packet.attacker).getMaxHealth() / 2);
+                        packet.attacker.getEntity().attackEntityFrom(DamageSource.magic,
+                                packet.attacker.getEntity().getMaxHealth() / 2);
                     }
                 }
             }

@@ -2,6 +2,7 @@ package pokecube.core.moves.implementations.attacks.ongoing;
 
 import net.minecraft.entity.EntityLiving;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Ongoing;
 
 public class MovePerishsong extends Move_Ongoing
@@ -16,10 +17,10 @@ public class MovePerishsong extends Move_Ongoing
     public void doOngoingEffect(EntityLiving mob)
     {
         Move_Ongoing move = this;
-        boolean isPokemob = mob instanceof IPokemob;
-        if (isPokemob == true)
+        IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob);
+        if (pokemob != null)
         {
-            int duration = ((IPokemob) mob).getOngoingEffects().get(move);
+            int duration = pokemob.getOngoingEffects().get(move);
             if (duration == 0)
             {
                 mob.setHealth(0);

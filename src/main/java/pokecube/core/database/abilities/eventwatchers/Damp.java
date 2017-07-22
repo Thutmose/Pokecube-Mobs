@@ -1,6 +1,5 @@
 package pokecube.core.database.abilities.eventwatchers;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.world.ExplosionEvent;
@@ -22,7 +21,7 @@ public class Damp extends Ability
     public void denyBoom(ExplosionEvent.Start boom)
     {
         Vector3 boomLoc = Vector3.getNewVector().set(boom.getExplosion().getPosition());
-        if (boomLoc.distToEntity((Entity) mob) < range)
+        if (boomLoc.distToEntity(mob.getEntity()) < range)
         {
             boom.setCanceled(true);
         }

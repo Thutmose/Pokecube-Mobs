@@ -16,5 +16,4 @@ public class Pixilate extends Ability
             move.attackType = PokeType.getType("fairy");
         }
     }
-
 }

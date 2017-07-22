@@ -1,14 +1,13 @@
 package pokecube.core.moves.implementations.attacks.special;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityLiving;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import pokecube.core.events.handlers.EventsHandler;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Basic;
 import pokecube.core.network.PokecubePacketHandler;
 import pokecube.core.network.PokecubePacketHandler.PokecubeClientPacket;
@@ -25,26 +24,23 @@ public class Move_Teleport extends Move_Basic
     {
         IPokemob attacker = packet.attacker;
         Entity attacked = packet.attacked;
-        Entity target = ((EntityCreature) attacker).getAttackTarget();
+        IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
+        Entity target = ((EntityLiving) attacker.getEntity()).getAttackTarget();
         boolean angry = attacker.getPokemonAIState(IMoveConstants.ANGRY);
         if (attacked == attacker) attacked = target;
         if (attacked instanceof EntityLiving)
         {
             ((EntityLiving) attacked).setAttackTarget(null);
         }
-        if (attacked instanceof EntityCreature)
+        if (attackedMob != null)
         {
-            ((EntityCreature) attacker).setAttackTarget(null);
-        }
-        if (attacked instanceof IPokemob)
-        {
-            ((IPokemob) attacked).setPokemonAIState(IMoveConstants.ANGRY, false);
+            attackedMob.setPokemonAIState(IMoveConstants.ANGRY, false);
         }
         if (attacker.getPokemonAIState(IMoveConstants.TAMED) && !angry)
         {
             if ((target == null && packet.attacked == null) || (packet.attacked == packet.attacker))
             {
-                if (attacker.getPokemonOwner() instanceof EntityPlayer && ((EntityLivingBase) attacker).isServerWorld())
+                if (attacker.getPokemonOwner() instanceof EntityPlayer && attacker.getEntity().isServerWorld())
                 {
                     EventsHandler.recallAllPokemobsExcluding((EntityPlayer) attacker.getPokemonOwner(),
                             (IPokemob) null);
@@ -55,6 +51,6 @@ public class Move_Teleport extends Move_Basic
             }
         }
         super.postAttack(packet);
-        ((EntityCreature) attacker).setAttackTarget(null);
+        ((EntityLiving) attacker.getEntity()).setAttackTarget(null);
     }
 }

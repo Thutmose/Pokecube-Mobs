@@ -4,6 +4,7 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Ongoing;
 
 public class MoveLeechseed extends Move_Ongoing
@@ -19,11 +20,12 @@ public class MoveLeechseed extends Move_Ongoing
     {
         if (mob.getAttackTarget() != null)
         {
+            IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob);
             EntityLivingBase target = mob.getAttackTarget();
             float factor = 0.0625f;
-            if (mob instanceof IPokemob)
+            if (pokemob != null)
             {
-                factor *= (((IPokemob) mob).getMoveStats().TOXIC_COUNTER + 1);
+                factor *= (pokemob.getMoveStats().TOXIC_COUNTER + 1);
             }
             float thisMaxHP = mob.getMaxHealth();
             int damage = Math.max(1, (int) (factor * thisMaxHP));

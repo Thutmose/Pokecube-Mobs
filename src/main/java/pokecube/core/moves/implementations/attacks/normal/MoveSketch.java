@@ -4,7 +4,6 @@ import java.util.Set;
 
 import com.google.common.collect.Sets;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.util.text.TextComponentTranslation;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.Move_Base;
@@ -30,7 +29,7 @@ public class MoveSketch extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.attacker.getTransformedTo() != null) return;
-        String lastHitBy = ((Entity) packet.attacker).getEntityData().getString("lastMoveHitBy");
+        String lastHitBy = packet.attacker.getEntity().getEntityData().getString("lastMoveHitBy");
         Move_Base toSketch = MovesUtils.getMoveFromName(lastHitBy);
         if (unSketchables.contains(lastHitBy) || toSketch == null) return;
         for (int i = 0; i < packet.attacker.getMoves().length; i++)

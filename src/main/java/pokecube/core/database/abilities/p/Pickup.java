@@ -10,22 +10,10 @@ import net.minecraft.util.EnumHand;
 import pokecube.core.PokecubeItems;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.IPokemob.MovePacket;
 import thut.lib.CompatWrapper;
 
 public class Pickup extends Ability
 {
-
-    @Override
-    public void onAgress(IPokemob mob, EntityLivingBase target)
-    {
-    }
-
-    @Override
-    public void onMoveUse(IPokemob mob, MovePacket move)
-    {
-    }
-
     @Override
     public void onUpdate(IPokemob mob)
     {
@@ -37,9 +25,7 @@ public class Pickup extends Ability
                 List<?> items = new ArrayList<Object>(PokecubeItems.heldItems);
                 Collections.shuffle(items);
                 ItemStack item = (ItemStack) items.get(0);
-
-                if (item != null) poke.setHeldItem(EnumHand.MAIN_HAND, item.copy());
-                ;
+                if (CompatWrapper.isValid(item)) poke.setHeldItem(EnumHand.MAIN_HAND, item.copy());
             }
         }
     }

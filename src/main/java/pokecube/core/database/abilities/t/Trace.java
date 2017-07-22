@@ -6,6 +6,7 @@ import pokecube.core.database.abilities.Ability;
 import pokecube.core.database.abilities.AbilityManager;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 
 public class Trace extends Ability
 {
@@ -14,10 +15,11 @@ public class Trace extends Ability
     @Override
     public void onAgress(IPokemob mob, EntityLivingBase target)
     {
+        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
         if (traced != null) traced.onAgress(mob, target);
-        else if (target instanceof IPokemob)
+        else if (targetMob != null)
         {
-            Ability ability = ((IPokemob) target).getAbility();
+            Ability ability = targetMob.getAbility();
             if (ability != null)
             {
                 traced = AbilityManager.makeAbility(ability.getClass(), mob);
@@ -34,7 +36,7 @@ public class Trace extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        if (traced != null && ((EntityLiving)mob).getAttackTarget()==null)
+        if (traced != null && ((EntityLiving) mob.getEntity()).getAttackTarget() == null)
         {
             traced.destroy();
             traced = null;

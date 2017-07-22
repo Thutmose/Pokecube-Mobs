@@ -1,9 +1,8 @@
 package pokecube.core.moves.implementations.attacks.special;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.moves.PokemobDamageSource;
 import pokecube.core.moves.templates.Move_Basic;
 
@@ -20,7 +19,7 @@ public class MoveBide extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        Entity attacker = (Entity) packet.attacker;
+        EntityLivingBase attacker = packet.attacker.getEntity();
         if (!packet.attacker.getMoveStats().biding)
         {
             attacker.getEntityData().setLong("bideTime",
@@ -38,8 +37,8 @@ public class MoveBide extends Move_Basic
                         + packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER;
                 packet.attacker.getMoveStats().PHYSICALDAMAGETAKENCOUNTER = 0;
                 packet.attacker.getMoveStats().SPECIALDAMAGETAKENCOUNTER = 0;
-                packet.attacked.attackEntityFrom(
-                        new PokemobDamageSource("mob", (EntityLivingBase) packet.attacker, this), damage);
+                packet.attacked.attackEntityFrom(new PokemobDamageSource("mob", attacker, this),
+                        damage);
                 packet.attacker.getMoveStats().biding = false;
             }
         }

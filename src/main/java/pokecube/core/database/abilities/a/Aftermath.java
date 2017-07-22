@@ -1,6 +1,5 @@
 package pokecube.core.database.abilities.a;
 
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.Explosion;
@@ -14,37 +13,25 @@ import pokecube.core.interfaces.Move_Base;
 
 public class Aftermath extends Ability
 {
-
-    @Override
-    public void onAgress(IPokemob mob, EntityLivingBase target)
-    {
-    }
-
     @Override
     public void onMoveUse(IPokemob mob, MovePacket move)
     {
         if (mob != move.attacked || move.pre || move.attacker == move.attacked) return;
         Move_Base attack = move.getMove();
-        if(attack==null || (attack.getAttackCategory() & IMoveConstants.CATEGORY_CONTACT)== 0) return;
-        
-        if (((EntityLiving) mob).getHealth() <= 0)
+        if (attack == null || (attack.getAttackCategory() & IMoveConstants.CATEGORY_CONTACT) == 0) return;
+
+        if (mob.getEntity().getHealth() <= 0)
         {
             Explosion boom = new Explosion(move.attacked.getEntityWorld(), move.attacked, move.attacked.posX,
                     move.attacked.posY, move.attacked.posZ, 0, false, false);
             ExplosionEvent evt = new ExplosionEvent.Start(move.attacked.getEntityWorld(), boom);
             MinecraftForge.EVENT_BUS.post(evt);
-            if(!evt.isCanceled())
+            if (!evt.isCanceled())
             {
-                EntityLiving attacker = (EntityLiving) move.attacker;
+                EntityLivingBase attacker = move.attacker.getEntity();
                 float hp = attacker.getHealth();
-                attacker.attackEntityFrom(DamageSource.magic, hp/4);
+                attacker.attackEntityFrom(DamageSource.magic, hp / 4);
             }
         }
     }
-
-    @Override
-    public void onUpdate(IPokemob mob)
-    {
-    }
-
 }

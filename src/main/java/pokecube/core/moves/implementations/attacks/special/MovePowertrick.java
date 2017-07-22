@@ -70,16 +70,13 @@ public class MovePowertrick extends Move_Basic
     {
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
-        if (packet.attacked instanceof IPokemob)
-        {
-            Modifier mods = packet.attacker.getModifiers().getModifiers(name, Modifier.class);
-            int def = packet.attacker.getStat(Stats.DEFENSE, true);
-            int atk = packet.attacker.getStat(Stats.ATTACK, true);
-            float modDef = mods.getModifierRaw(Stats.DEFENSE);
-            float modAtk = mods.getModifierRaw(Stats.ATTACK);
-            mods.setModifier(Stats.DEFENSE, modDef - def + atk);
-            mods.setModifier(Stats.ATTACK, modAtk - atk + def);
-            PacketSyncModifier.sendUpdate("powertrick", packet.attacker);
-        }
+        Modifier mods = packet.attacker.getModifiers().getModifiers(name, Modifier.class);
+        int def = packet.attacker.getStat(Stats.DEFENSE, true);
+        int atk = packet.attacker.getStat(Stats.ATTACK, true);
+        float modDef = mods.getModifierRaw(Stats.DEFENSE);
+        float modAtk = mods.getModifierRaw(Stats.ATTACK);
+        mods.setModifier(Stats.DEFENSE, modDef - def + atk);
+        mods.setModifier(Stats.ATTACK, modAtk - atk + def);
+        PacketSyncModifier.sendUpdate("powertrick", packet.attacker);
     }
 }

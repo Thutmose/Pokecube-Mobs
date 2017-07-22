@@ -21,7 +21,7 @@ public class MoveJudgment extends Move_Basic
     public PokeType getType(IPokemob user)
     {
         if (user == null || !(user instanceof EntityLivingBase)) return move.type;
-        ItemStack held = ((EntityLivingBase) user).getHeldItemMainhand();
+        ItemStack held = user.getEntity().getHeldItemMainhand();
         if (held != null && held.getItem().getRegistryName().getResourceDomain().contains("pokecube")
                 && held.getItem().getRegistryName().getResourcePath().contains("badge"))
         {

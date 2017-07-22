@@ -12,7 +12,7 @@ public class ShedSkin extends Ability
     {
         if (mob.getStatus() != IMoveConstants.STATUS_NON)
         {
-            EntityLivingBase poke = (EntityLivingBase) mob;
+            EntityLivingBase poke = mob.getEntity();
             if (poke.ticksExisted % 20 == 0 && Math.random() < 0.3)
             {
                 mob.healStatus();

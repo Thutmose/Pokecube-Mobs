@@ -655,7 +655,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "aromatherapy",
@@ -1069,7 +1070,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "barrier",
@@ -1639,7 +1641,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "doublehit"
     },
     {
       "name": "bonerush",
@@ -1664,7 +1667,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "boomburst",
@@ -2077,7 +2081,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "multihit"
     },
     {
       "name": "burnup",
@@ -2541,7 +2546,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "confide",
@@ -3717,7 +3723,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "doublehit"
     },
     {
       "name": "doublekick",
@@ -3742,7 +3749,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "doublehit"
     },
     {
       "name": "doubleslap",
@@ -3767,7 +3775,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "doubleteam",
@@ -4217,7 +4226,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "doublehit"
     },
     {
       "name": "dynamicpunch",
@@ -4300,7 +4310,8 @@
       "magiccoat": "No",
       "protect": "Yes",
       "mirrormove": "Yes",
-      "soundEffectSource": "entity.lightning.thunder"
+      "soundEffectSource": "entity.lightning.thunder",
+      "preset": "aoe"
     },
     {
       "name": "echoedvoice",
@@ -6131,7 +6142,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "furycutter",
@@ -6181,7 +6193,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "fusionbolt",
@@ -6318,7 +6331,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "doublehit"
     },
     {
       "name": "gearup",
@@ -8289,7 +8303,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "icywind",
@@ -11414,7 +11429,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "multihit"
     },
     {
       "name": "playnice",
@@ -13192,7 +13208,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "multihit"
     },
     {
       "name": "rockclimb",
@@ -14388,7 +14405,8 @@
       "magiccoat": "No",
       "protect": "Yes",
       "mirrormove": "Yes",
-      "soundEffectSource": "entity.lightning.thunder"
+      "soundEffectSource": "entity.lightning.thunder",
+      "preset": "aoe"
     },
     {
       "name": "shoreup",
@@ -15536,7 +15554,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "multihit"
     },
     {
       "name": "spikes",
@@ -16858,7 +16877,8 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "Yes",
-      "mirrormove": "Yes"
+      "mirrormove": "Yes",
+      "preset": "multihit"
     },
     {
       "name": "tailwhip",
@@ -17852,7 +17872,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "doublehit"
     },
     {
       "name": "twinkletackle",
@@ -18361,7 +18382,8 @@
           "duration": "5",
           "starttick": "0"
         }
-      ]
+      ],
+      "preset": "multihit"
     },
     {
       "name": "watersport",

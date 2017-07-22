@@ -1,6 +1,5 @@
 package pokecube.core.database.abilities.r;
 
-import net.minecraft.entity.Entity;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
@@ -20,7 +19,7 @@ public class Rattled extends Ability
     {
         if (mob == move.attacked && !move.pre && isCorrectType(move.attackType))
         {
-            MovesUtils.handleStats2(mob, (Entity) mob, IMoveConstants.VIT, IMoveConstants.RAISE);
+            MovesUtils.handleStats2(mob, mob.getEntity(), IMoveConstants.VIT, IMoveConstants.RAISE);
         }
     }
 }

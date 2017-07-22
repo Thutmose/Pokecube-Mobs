@@ -77978,7 +77978,7 @@
       }
     },
     {
-      "name": "Minior Core",
+      "name": "Blue Core Minior",
       "number": 774,
       "stats": {
         "stats": {
@@ -77991,7 +77991,158 @@
             "atk": "100"
           }
         },
-        "captureRate": 255
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
+      }
+    },
+    {
+      "name": "Green Core Minior",
+      "number": 774,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "100",
+            "def": "60",
+            "spd": "120",
+            "hp": "60",
+            "atk": "100"
+          }
+        },
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
+      }
+    },
+    {
+      "name": "Indigo Core Minior",
+      "number": 774,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "100",
+            "def": "60",
+            "spd": "120",
+            "hp": "60",
+            "atk": "100"
+          }
+        },
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
+      }
+    },
+    {
+      "name": "Orange Core Minior",
+      "number": 774,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "100",
+            "def": "60",
+            "spd": "120",
+            "hp": "60",
+            "atk": "100"
+          }
+        },
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
+      }
+    },
+    {
+      "name": "Red Core Minior",
+      "number": 774,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "100",
+            "def": "60",
+            "spd": "120",
+            "hp": "60",
+            "atk": "100"
+          }
+        },
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
+      }
+    },
+    {
+      "name": "Violet Core Minior",
+      "number": 774,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "100",
+            "def": "60",
+            "spd": "120",
+            "hp": "60",
+            "atk": "100"
+          }
+        },
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
+      }
+    },
+    {
+      "name": "Yellow Core Minior",
+      "number": 774,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "60",
+            "spatk": "100",
+            "def": "60",
+            "spd": "120",
+            "hp": "60",
+            "atk": "100"
+          }
+        },
+        "captureRate": 255,
+        "evs": {
+          "values": {
+            "spdef": "1",
+            "def": "1"
+          }
+        },
+        "movementType": "floating"
       }
     },
     {

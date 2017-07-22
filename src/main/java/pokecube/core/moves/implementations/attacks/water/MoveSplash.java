@@ -4,6 +4,7 @@ import net.minecraft.util.text.ITextComponent;
 import pokecube.core.commands.CommandTools;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MoveSplash extends Move_Basic
@@ -19,14 +20,15 @@ public class MoveSplash extends Move_Basic
     {
         super.preAttack(packet);
         packet.denied = true;
-        if (packet.attacked instanceof IPokemob)
+        IPokemob attacked = CapabilityPokemob.getPokemobFor(packet.attacked);
+        if (attacked != null)
         {
             ITextComponent text = CommandTools.makeTranslatedMessage("pokemob.move.doesnt.affect", "red",
-                    ((IPokemob) packet.attacked).getPokemonDisplayName().getFormattedText());
+                    attacked.getPokemonDisplayName().getFormattedText());
             packet.attacker.displayMessageToOwner(text);
             text = CommandTools.makeTranslatedMessage("pokemob.move.doesnt.affect", "green",
-                    ((IPokemob) packet.attacked).getPokemonDisplayName().getFormattedText());
-            ((IPokemob) packet.attacked).displayMessageToOwner(text);
+                    attacked.getPokemonDisplayName().getFormattedText());
+            attacked.displayMessageToOwner(text);
         }
     }
 
