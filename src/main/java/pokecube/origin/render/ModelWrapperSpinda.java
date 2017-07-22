@@ -1,6 +1,7 @@
 package pokecube.origin.render;
 
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.modelloader.client.render.AnimationLoader.Model;
 
 import java.util.Random;
@@ -19,14 +20,22 @@ import thut.core.client.render.model.IRetexturableModel;
 
 public class ModelWrapperSpinda extends ModelWrapper
 {
-    private static final ResourceLocation normalh = new ResourceLocation("pokecube_mobs",
+    private static final ResourceLocation normalh  = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaspotsh.png");
-    private static final ResourceLocation shinyh  = new ResourceLocation("pokecube_mobs",
+    private static final ResourceLocation normalhb = new ResourceLocation("pokecube_mobs",
+            "gen_3/entity/textures/spindaheadbase.png");
+    private static final ResourceLocation shinyh   = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaspotshs.png");
-    private static final ResourceLocation normale = new ResourceLocation("pokecube_mobs",
+    private static final ResourceLocation shinyhb  = new ResourceLocation("pokecube_mobs",
+            "gen_3/entity/textures/spindaheadbases.png");
+    private static final ResourceLocation normale  = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaspotse.png");
-    private static final ResourceLocation shinye  = new ResourceLocation("pokecube_mobs",
+    private static final ResourceLocation normaleb = new ResourceLocation("pokecube_mobs",
+            "gen_3/entity/textures/spindaearsbase.png");
+    private static final ResourceLocation shinye   = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaspotses.png");
+    private static final ResourceLocation shinyeb  = new ResourceLocation("pokecube_mobs",
+            "gen_3/entity/textures/spindaearsbases.png");
 
     public ModelWrapperSpinda(Model model, DefaultIModelRenderer<?> renderer)
     {
@@ -46,6 +55,7 @@ public class ModelWrapperSpinda extends ModelWrapper
         transformGlobal(renderer.currentPhase, entityIn, Minecraft.getMinecraft().getRenderPartialTicks(), netHeadYaw,
                 headPitch);
         updateAnimation(entityIn, renderer.currentPhase, partialTick, netHeadYaw, headPitch, limbSwing);
+        IPokemob spinda = CapabilityPokemob.getPokemobFor(entityIn);
         for (String partName : renderer.parts.keySet())
         {
             IExtendedModelPart part = imodel.getParts().get(partName);
@@ -60,8 +70,24 @@ public class ModelWrapperSpinda extends ModelWrapper
                 }
                 if (part.getParent() == null)
                 {
-                    Random rand = new Random(((IPokemob) entityIn).getRNGValue());
+                    Random rand = new Random(spinda.getRNGValue());
                     ((IRetexturableModel) part).setTexturer(null);
+
+                    // Render the base layer of the head and ears
+                    GlStateManager.pushMatrix();
+                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyhb : normalhb);
+                    part.renderOnly("Head");
+                    GlStateManager.popMatrix();
+                    GlStateManager.pushMatrix();
+                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
+                    part.renderOnly("Left_ear");
+                    GlStateManager.popMatrix();
+                    GlStateManager.pushMatrix();
+                    Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyeb : normaleb);
+                    part.renderOnly("Right_ear");
+                    GlStateManager.popMatrix();
+
+                    // Render the 4 spots
                     for (int i = 0; i < 4; i++)
                     {
                         float dx = rand.nextFloat();
@@ -71,8 +97,7 @@ public class ModelWrapperSpinda extends ModelWrapper
                         GL11.glLoadIdentity();
                         GL11.glTranslatef(dx, dy, 0.0F);
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-                        Minecraft.getMinecraft().getTextureManager()
-                                .bindTexture(((IPokemob) entityIn).isShiny() ? shinyh : normalh);
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinyh : normalh);
                         part.renderOnly("Head");
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
                         GL11.glLoadIdentity();
@@ -85,8 +110,7 @@ public class ModelWrapperSpinda extends ModelWrapper
                         dy = rand.nextFloat() / 2 + 0.5f;
                         GL11.glTranslatef(dx, dy, 0.0F);
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
-                        Minecraft.getMinecraft().getTextureManager()
-                                .bindTexture(((IPokemob) entityIn).isShiny() ? shinye : normale);
+                        Minecraft.getMinecraft().getTextureManager().bindTexture(spinda.isShiny() ? shinye : normale);
                         part.renderOnly("Left_ear");
                         GL11.glMatrixMode(GL11.GL_TEXTURE);
                         GL11.glLoadIdentity();
@@ -105,6 +129,8 @@ public class ModelWrapperSpinda extends ModelWrapper
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
                         GlStateManager.popMatrix();
                     }
+
+                    // Render the model normally.
                     if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.texturer);
                     GlStateManager.pushMatrix();
                     part.renderAll();

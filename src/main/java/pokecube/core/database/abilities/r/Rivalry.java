@@ -3,6 +3,7 @@ package pokecube.core.database.abilities.r;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 
 public class Rivalry extends Ability
 {
@@ -11,10 +12,9 @@ public class Rivalry extends Ability
     {
 
         if (!move.pre) return;
-
-        if (mob == move.attacker && move.attacked instanceof IPokemob)
+        IPokemob target = CapabilityPokemob.getPokemobFor(move.attacked);
+        if (mob == move.attacker && target!=null)
         {
-            IPokemob target = (IPokemob) move.attacked;
             byte mobGender = mob.getSexe();
             byte targetGender = target.getSexe();
             if (mobGender == IPokemob.SEXLEGENDARY || targetGender == IPokemob.SEXLEGENDARY

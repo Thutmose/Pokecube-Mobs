@@ -11,6 +11,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.math.MathHelper;
 import pokecube.core.entity.pokemobs.EntityPokemob;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import thut.api.entity.IMobColourable;
 
 /**
@@ -56,7 +57,7 @@ public class ModelPikachu extends APokemobModel
             int[] cols = mob.getRGBA();
             GL11.glColor4f(cols[0]/255f, cols[1]/255f, cols[2]/255f, cols[3]/255f);
         }
-        IPokemob mob = (IPokemob) entity;
+        IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
         GL11.glTranslated(0, 0.9 + (1-mob.getSize()) * 0.5 , 0);
         GL11.glScaled(0.4 * mob.getSize(), 0.4 * mob.getSize(), 0.4 * mob.getSize());
         headMain.render(f5);

@@ -20,7 +20,7 @@ public class MoveYawn extends Move_Ongoing
         IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob);
         if (pokemob != null)
         {
-            int duration = ((IPokemob) mob).getOngoingEffects().get(move);
+            int duration = pokemob.getOngoingEffects().get(move);
             if (duration == 0)
             {
                 MovesUtils.setStatus(mob, STATUS_SLP);
