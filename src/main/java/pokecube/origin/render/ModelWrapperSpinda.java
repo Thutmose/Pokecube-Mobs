@@ -1,9 +1,5 @@
 package pokecube.origin.render;
 
-import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.capabilities.CapabilityPokemob;
-import pokecube.modelloader.client.render.AnimationLoader.Model;
-
 import java.util.Random;
 
 import org.lwjgl.opengl.GL11;
@@ -11,8 +7,10 @@ import org.lwjgl.opengl.GL11;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.ResourceLocation;
+import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.modelloader.client.render.AnimationLoader.Model;
 import pokecube.modelloader.client.render.DefaultIModelRenderer;
 import pokecube.modelloader.client.render.wrappers.ModelWrapper;
 import thut.core.client.render.model.IExtendedModelPart;
@@ -47,14 +45,8 @@ public class ModelWrapperSpinda extends ModelWrapper
     public void render(Entity entityIn, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
             float headPitch, float scale)
     {
-        float partialTick = Minecraft.getMinecraft().getRenderPartialTicks();
         GlStateManager.pushMatrix();
-        if (renderer.animator != null) renderer.currentPhase = renderer.animator
-                .modifyAnimation((EntityLiving) entityIn, partialTick, renderer.currentPhase);
         GlStateManager.disableCull();
-        transformGlobal(renderer.currentPhase, entityIn, Minecraft.getMinecraft().getRenderPartialTicks(), netHeadYaw,
-                headPitch);
-        updateAnimation(entityIn, renderer.currentPhase, partialTick, netHeadYaw, headPitch, limbSwing);
         IPokemob spinda = CapabilityPokemob.getPokemobFor(entityIn);
         for (String partName : renderer.parts.keySet())
         {
