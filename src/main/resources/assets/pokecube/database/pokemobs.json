@@ -2198,8 +2198,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -2306,8 +2304,6 @@
         "mass": 25.5,
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -2763,21 +2759,11 @@
                 "types": "beach"
               }
             },
-            "item": {
-              "values": {
-                "tag": "{type:\"thunderstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "thunderstone"
           },
           {
             "name": "Raichu",
-            "item": {
-              "values": {
-                "tag": "{type:\"thunderstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "thunderstone"
           }
         ],
         "species": "Rodent Leporidae",
@@ -2960,8 +2946,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -3054,8 +3038,6 @@
         "movementType": "floating",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -3365,8 +3347,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -3468,8 +3448,6 @@
         "mass": 55.0,
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -3631,12 +3609,7 @@
         "evolutions": [
           {
             "name": "Nidoqueen",
-            "item": {
-              "values": {
-                "tag": "{type:\"moonstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "moonstone"
           }
         ],
         "species": "Rodent",
@@ -3808,8 +3781,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -3974,12 +3945,7 @@
         "evolutions": [
           {
             "name": "Nidoking",
-            "item": {
-              "values": {
-                "tag": "{type:\"moonstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "moonstone"
           }
         ],
         "species": "Rodent",
@@ -4179,12 +4145,7 @@
           {
             "name": "Clefable",
             "animation": "121",
-            "item": {
-              "values": {
-                "tag": "{type:\"moonstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "moonstone"
           }
         ],
         "species": "Fairy",
@@ -4375,12 +4336,7 @@
         "evolutions": [
           {
             "name": "Ninetales",
-            "item": {
-              "values": {
-                "tag": "{type:\"firestone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "firestone"
           }
         ],
         "species": "Fox",
@@ -4662,8 +4618,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -4748,8 +4702,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -4790,12 +4742,7 @@
         "evolutions": [
           {
             "name": "Wigglytuff",
-            "item": {
-              "values": {
-                "tag": "{type:\"moonstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "moonstone"
           }
         ],
         "species": "Balloon",
@@ -5283,21 +5230,11 @@
         "evolutions": [
           {
             "name": "Vileplume",
-            "item": {
-              "values": {
-                "tag": "{type:\"leafstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "leafstone"
           },
           {
             "name": "Bellossom",
-            "item": {
-              "values": {
-                "tag": "{type:\"sunstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "sunstone"
           }
         ],
         "species": "Weed",
@@ -5554,8 +5491,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "d": "32767",
@@ -5675,8 +5610,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bowl"
@@ -6587,8 +6520,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -6711,8 +6642,6 @@
         "mass": 33.0,
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -7129,8 +7058,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -7183,12 +7110,7 @@
         "evolutions": [
           {
             "name": "Arcanine",
-            "item": {
-              "values": {
-                "tag": "{type:\"firestone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "firestone"
           }
         ],
         "species": "Dog",
@@ -7362,8 +7284,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -7510,21 +7430,11 @@
         "evolutions": [
           {
             "name": "Poliwrath",
-            "item": {
-              "values": {
-                "tag": "{type:\"waterstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "waterstone"
           },
           {
             "name": "Politoed",
-            "item": {
-              "values": {
-                "tag": "{type:\"kingsrock\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "kingsrock",
             "trade": true
           }
         ],
@@ -8346,12 +8256,7 @@
         "evolutions": [
           {
             "name": "Victreebel",
-            "item": {
-              "values": {
-                "tag": "{type:\"leafstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "leafstone"
           }
         ],
         "species": "Plant",
@@ -8588,8 +8493,6 @@
         "movementType": "water",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:wheat"
@@ -8703,8 +8606,6 @@
         "movementType": "water",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:wheat"
@@ -9456,8 +9357,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -9515,12 +9414,7 @@
           },
           {
             "name": "Slowking",
-            "item": {
-              "values": {
-                "tag": "{type:\"kingsrock\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "kingsrock",
             "trade": true
           }
         ],
@@ -10867,12 +10761,7 @@
         "evolutions": [
           {
             "name": "Cloyster",
-            "item": {
-              "values": {
-                "tag": "{type:\"waterstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "waterstone"
           }
         ],
         "species": "Bivalve",
@@ -11394,12 +11283,7 @@
         "evolutions": [
           {
             "name": "Steelix",
-            "item": {
-              "values": {
-                "tag": "{type:\"metalcoat\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "metalcoat",
             "trade": true
           }
         ],
@@ -12150,21 +12034,11 @@
                 "types": "beach"
               }
             },
-            "item": {
-              "values": {
-                "tag": "{type:\"leafstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "leafstone"
           },
           {
             "name": "Exeggutor",
-            "item": {
-              "values": {
-                "tag": "{type:\"leafstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "leafstone"
           }
         ],
         "species": "Plant",
@@ -13183,12 +13057,7 @@
         "evolutions": [
           {
             "name": "Rhyperior",
-            "item": {
-              "values": {
-                "tag": "{type:\"protector\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "protector",
             "trade": true
           }
         ],
@@ -13390,8 +13259,12 @@
       "number": 114,
       "base": true,
       "stats": {
-        "evoModes": "Mancientpower",
-        "evoTo": "465",
+        "evolutions": [
+          {
+            "name": "Tangrowth",
+            "move": "ancientpower"
+          }
+        ],
         "species": "Plant",
         "foodMat": "light",
         "drops": [
@@ -14034,12 +13907,7 @@
         "evolutions": [
           {
             "name": "Starmie",
-            "item": {
-              "values": {
-                "tag": "{type:\"waterstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "waterstone"
           }
         ],
         "species": "StarShape",
@@ -14309,12 +14177,7 @@
         "evolutions": [
           {
             "name": "Scizor",
-            "item": {
-              "values": {
-                "tag": "{type:\"metalcoat\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "metalcoat",
             "trade": true
           }
         ],
@@ -14498,12 +14361,7 @@
         "evolutions": [
           {
             "name": "Electivire",
-            "item": {
-              "values": {
-                "tag": "{type:\"electirizer\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "electirizer",
             "trade": true
           }
         ],
@@ -14597,8 +14455,13 @@
       "number": 126,
       "base": true,
       "stats": {
-        "evoModes": "X:Imagmarizer",
-        "evoTo": "467",
+        "evolutions": [
+          {
+            "name": "Magmortar",
+            "item_preset": "magmarizer",
+            "trade": true
+          }
+        ],
         "species": "Spitfire",
         "drops": [
           {
@@ -15341,32 +15204,17 @@
           {
             "name": "Vaporeon",
             "animation": "splash",
-            "item": {
-              "values": {
-                "tag": "{type:\"waterstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "waterstone"
           },
           {
             "name": "Jolteon",
             "animation": "spark",
-            "item": {
-              "values": {
-                "tag": "{type:\"thunderstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "thunderstone"
           },
           {
             "name": "Flareon",
             "animation": "flame",
-            "item": {
-              "values": {
-                "tag": "{type:\"firestone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "firestone"
           },
           {
             "name": "Espeon",
@@ -15755,12 +15603,7 @@
         "evolutions": [
           {
             "name": "Porygon2",
-            "item": {
-              "values": {
-                "tag": "{type:\"upgrade\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "upgrade",
             "trade": true
           }
         ],
@@ -18268,8 +18111,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -19501,12 +19342,7 @@
         "evolutions": [
           {
             "name": "Togekiss",
-            "item": {
-              "values": {
-                "tag": "{type:\"shinystone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "shinystone"
           }
         ],
         "species": "H",
@@ -19860,8 +19696,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "d": "32767",
@@ -19883,8 +19717,6 @@
             }
           },
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -20006,8 +19838,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -20119,8 +19949,6 @@
         ],
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -20966,12 +20794,7 @@
         "evolutions": [
           {
             "name": "Sunflora",
-            "item": {
-              "values": {
-                "tag": "{type:\"sunstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "sunstone"
           }
         ],
         "species": "Plant",
@@ -21618,12 +21441,7 @@
         "evolutions": [
           {
             "name": "Honchkrow",
-            "item": {
-              "values": {
-                "tag": "{type:\"duskstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "duskstone"
           }
         ],
         "species": "Darkness",
@@ -21809,12 +21627,7 @@
         "evolutions": [
           {
             "name": "Mismagius",
-            "item": {
-              "values": {
-                "tag": "{type:\"duskstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "duskstone"
           }
         ],
         "species": "Screech",
@@ -23174,8 +22987,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -23941,8 +23752,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -24354,8 +24163,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -25438,8 +25245,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -25490,12 +25295,7 @@
         "evolutions": [
           {
             "name": "Porygon-Z",
-            "item": {
-              "values": {
-                "tag": "{type:\"dubiousdisc\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "dubiousdisc",
             "trade": true
           }
         ],
@@ -25643,8 +25443,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -26242,8 +26040,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -28562,8 +28358,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -29155,12 +28949,7 @@
         "evolutions": [
           {
             "name": "Ludicolo",
-            "item": {
-              "values": {
-                "tag": "{type:\"waterstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "waterstone"
           }
         ],
         "species": "Plant",
@@ -29419,12 +29208,7 @@
         "evolutions": [
           {
             "name": "Shiftry",
-            "item": {
-              "values": {
-                "tag": "{type:\"leafstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "leafstone"
           }
         ],
         "species": "Plant",
@@ -30113,12 +29897,7 @@
           },
           {
             "name": "Gallade",
-            "item": {
-              "values": {
-                "tag": "{type:\"dawnstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "dawnstone"
           }
         ],
         "species": "Hominid",
@@ -30880,8 +30659,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -30983,8 +30760,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -31899,12 +31674,7 @@
         "evolutions": [
           {
             "name": "Delcatty",
-            "item": {
-              "values": {
-                "tag": "{type:\"moonstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "moonstone"
           }
         ],
         "species": "Cat",
@@ -32056,8 +31826,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -33555,12 +33323,7 @@
         "evolutions": [
           {
             "name": "Roserade",
-            "item": {
-              "values": {
-                "tag": "{type:\"shinystone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "shinystone"
           }
         ],
         "species": "Plant",
@@ -34373,8 +34136,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -34480,8 +34241,6 @@
         ],
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -34891,8 +34650,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -35792,8 +35549,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -37057,12 +36812,7 @@
         "evolutions": [
           {
             "name": "Milotic",
-            "item": {
-              "values": {
-                "tag": "{type:\"prismscale\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "prismscale",
             "trade": true
           }
         ],
@@ -37754,12 +37504,7 @@
         "evolutions": [
           {
             "name": "Dusknoir",
-            "item": {
-              "values": {
-                "tag": "{type:\"reapercloth\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "reapercloth",
             "trade": true
           }
         ],
@@ -37923,8 +37668,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "d": "32767",
@@ -38137,8 +37880,6 @@
         ],
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -38300,12 +38041,7 @@
           },
           {
             "name": "Froslass",
-            "item": {
-              "values": {
-                "tag": "{type:\"dawnstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "dawnstone"
           }
         ],
         "species": "Ice",
@@ -38810,8 +38546,6 @@
         "movementType": "water",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -41029,8 +40763,6 @@
         "movementType": "flying",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:diamond_hoe"
@@ -41040,8 +40772,7 @@
               "values": {
                 "forme": "deoxysattack",
                 "type": "forme"
-              },
-              "drops": []
+              }
             }
           }
         ]
@@ -41115,8 +40846,6 @@
         "movementType": "flying",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:diamond_hoe"
@@ -41126,8 +40855,7 @@
               "values": {
                 "forme": "deoxysdefense",
                 "type": "forme"
-              },
-              "drops": []
+              }
             }
           }
         ]
@@ -41179,8 +40907,6 @@
         "movementType": "flying",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:diamond_hoe"
@@ -41190,8 +40916,7 @@
               "values": {
                 "forme": "deoxysspeed",
                 "type": "forme"
-              },
-              "drops": []
+              }
             }
           }
         ]
@@ -41242,8 +40967,6 @@
         "movementType": "flying",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:diamond_hoe"
@@ -41253,8 +40976,7 @@
               "values": {
                 "forme": "deoxys",
                 "type": "forme"
-              },
-              "drops": []
+              }
             }
           }
         ]
@@ -42571,8 +42293,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -43047,8 +42767,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -44324,8 +44042,6 @@
         "movementType": "water",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -44789,8 +44505,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -45170,8 +44884,6 @@
         ],
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -45253,8 +44965,6 @@
         "captureRate": 60,
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -45600,8 +45310,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -45870,8 +45578,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -46293,12 +45999,7 @@
         "evolutions": [
           {
             "name": "Chansey",
-            "item": {
-              "values": {
-                "tag": "{type:\"ovalstone\"}",
-                "id": "pokecube:held"
-              }
-            },
+            "item_preset": "ovalstone",
             "time": "day"
           }
         ],
@@ -47278,8 +46979,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -49257,8 +48956,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -50442,8 +50139,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -52122,8 +51817,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -52246,8 +51939,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -52447,8 +52138,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -52547,8 +52236,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -52748,8 +52435,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -52948,8 +52633,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -53045,8 +52728,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -53234,8 +52915,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -53767,12 +53446,7 @@
         "evolutions": [
           {
             "name": "Musharna",
-            "item": {
-              "values": {
-                "tag": "{type:\"moonstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "moonstone"
           }
         ],
         "species": "DreamEater",
@@ -54392,8 +54066,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -56403,12 +56075,7 @@
         "evolutions": [
           {
             "name": "Whimsicott",
-            "item": {
-              "values": {
-                "tag": "{type:\"sunstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "sunstone"
           }
         ],
         "species": "Cotton",
@@ -56586,12 +56253,7 @@
         "evolutions": [
           {
             "name": "Lilligant",
-            "item": {
-              "values": {
-                "tag": "{type:\"sunstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "sunstone"
           }
         ],
         "species": "Plant",
@@ -58788,8 +58450,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -58999,8 +58659,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -60163,8 +59821,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -61732,12 +61388,7 @@
         "evolutions": [
           {
             "name": "Eelektross",
-            "item": {
-              "values": {
-                "tag": "{type:\"thunderstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "thunderstone"
           }
         ],
         "species": "EleFish",
@@ -62166,12 +61817,7 @@
         "evolutions": [
           {
             "name": "Chandelure",
-            "item": {
-              "values": {
-                "tag": "{type:\"duskstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "duskstone"
           }
         ],
         "species": "Lamp",
@@ -62742,8 +62388,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -63290,8 +62934,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -63816,8 +63458,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -66666,8 +66306,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -67168,8 +66806,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -68063,8 +67699,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -68499,8 +68133,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -68557,12 +68189,7 @@
         "evolutions": [
           {
             "name": "Pangoro",
-            "item": {
-              "values": {
-                "tag": "{type:\"duskstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "duskstone"
           }
         ],
         "species": "Playful",
@@ -68695,8 +68322,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -68804,8 +68429,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -69002,8 +68625,6 @@
         },
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -69156,12 +68777,7 @@
         "evolutions": [
           {
             "name": "Aegislash Blade",
-            "item": {
-              "values": {
-                "tag": "{type:\"duskstone\"}",
-                "id": "pokecube:held"
-              }
-            }
+            "item_preset": "duskstone"
           }
         ],
         "species": "Sword",
@@ -72516,8 +72132,6 @@
         "movementType": "flying",
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -74473,8 +74087,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -75467,8 +75079,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -75575,8 +75185,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -76026,8 +75634,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -76819,8 +76425,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -77217,8 +76821,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"
@@ -77319,8 +76921,6 @@
         "formeItems": {},
         "interactions": [
           {
-            "male": true,
-            "female": true,
             "key": {
               "values": {
                 "id": "minecraft:bucket"

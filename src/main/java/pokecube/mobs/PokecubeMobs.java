@@ -60,6 +60,7 @@ import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.Stats;
 import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.items.ItemHeldItems;
 import pokecube.core.items.berries.BerryManager;
 import pokecube.core.items.pokecubes.EntityPokecube;
 import pokecube.core.items.pokecubes.PokecubeManager;
@@ -120,6 +121,10 @@ public class PokecubeMobs implements IMobProvider
         ModPokecubeML.scanPaths.add("assets/pokecube_mobs/gen_7/entity/models/");
         CommonProxy.registerModelProvider(MODID, this);
 
+        HeldItemHandler.megaVariants.add("megastone");
+        HeldItemHandler.megaVariants.add("shiny_charm");
+        HeldItemHandler.megaVariants.add("omegaorb");
+        HeldItemHandler.megaVariants.add("alphaorb");
         HeldItemHandler.megaVariants.add("absolmega");
         HeldItemHandler.megaVariants.add("aerodactylmega");
         HeldItemHandler.megaVariants.add("aggronmega");
@@ -164,6 +169,38 @@ public class PokecubeMobs implements IMobProvider
         HeldItemHandler.megaVariants.add("tyranitarmega");
         HeldItemHandler.megaVariants.add("venusaurmega");
         HeldItemHandler.sortMegaVariants();
+
+        HeldItemHandler.fossilVariants.add("omanyte");
+        HeldItemHandler.fossilVariants.add("kabuto");
+        HeldItemHandler.fossilVariants.add("aerodactyl");
+        HeldItemHandler.fossilVariants.add("lileep");
+        HeldItemHandler.fossilVariants.add("anorith");
+        HeldItemHandler.fossilVariants.add("cranidos");
+        HeldItemHandler.fossilVariants.add("shieldon");
+        HeldItemHandler.fossilVariants.add("tyrunt");
+        HeldItemHandler.fossilVariants.add("amaura");
+
+        ItemHeldItems.variants.add("waterstone");
+        ItemHeldItems.variants.add("firestone");
+        ItemHeldItems.variants.add("leafstone");
+        ItemHeldItems.variants.add("thunderstone");
+        ItemHeldItems.variants.add("moonstone");
+        ItemHeldItems.variants.add("sunstone");
+        ItemHeldItems.variants.add("shinystone");
+        ItemHeldItems.variants.add("ovalstone");
+        ItemHeldItems.variants.add("everstone");
+        ItemHeldItems.variants.add("duskstone");
+        ItemHeldItems.variants.add("dawnstone");
+        ItemHeldItems.variants.add("kingsrock");
+        ItemHeldItems.variants.add("dubiousdisc");
+        ItemHeldItems.variants.add("electirizer");
+        ItemHeldItems.variants.add("magmarizer");
+        ItemHeldItems.variants.add("reapercloth");
+        ItemHeldItems.variants.add("prismscale");
+        ItemHeldItems.variants.add("protector");
+        ItemHeldItems.variants.add("upgrade");
+        ItemHeldItems.variants.add("metalcoat");
+
         MinecraftForge.EVENT_BUS.register(this);
         initBerries();
         DBLoader.trainerDatabases.add("trainers.xml");
