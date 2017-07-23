@@ -41,10 +41,10 @@ public class Damp extends Ability
         for (int i = 0; i < 2; i++)
             if (args != null && args.length > i)
             {
-                if (args[i] instanceof IPokemob)
+                if (IPokemob.class.isInstance(args[i]))
                 {
                     MinecraftForge.EVENT_BUS.register(this);
-                    mob = (IPokemob) (args[i]);
+                    mob = IPokemob.class.cast(args[i]);
                 }
                 if (args[i] instanceof Integer)
                 {

@@ -42,11 +42,11 @@ public class Synchronize extends Ability
         for (int i = 0; i < 1; i++)
             if (args != null && args.length > i)
             {
-                if (args[i] instanceof IPokemob)
+                if (IPokemob.class.isInstance(args[i]))
                 {
                     MinecraftForge.EVENT_BUS.register(this);
                     location = Vector3.getNewVector().set(args[i]);
-                    pokemob = (IPokemob) args[i];
+                    pokemob = IPokemob.class.cast(args[i]);
                 }
                 if (args[i] instanceof Integer)
                 {

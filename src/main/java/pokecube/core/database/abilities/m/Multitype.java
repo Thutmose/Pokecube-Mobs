@@ -16,7 +16,7 @@ public class Multitype extends Ability
         PokedexEntry entry = mob.getPokedexEntry();
 
         if (!entry.getName().contains("Arceus")) return;
-        ItemStack held = mob.getEntity().getHeldItemMainhand();
+        ItemStack held = mob.getHeldItem();
         if (CompatWrapper.isValid(held) && held.getItem().getRegistryName().getResourceDomain().contains("pokecube")
                 && held.getItem().getRegistryName().getResourcePath().contains("badge") && held.hasTagCompound())
         {
