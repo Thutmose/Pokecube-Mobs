@@ -1,6 +1,5 @@
 package pokecube.core.database.abilities.t;
 
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.database.abilities.AbilityManager;
@@ -36,7 +35,7 @@ public class Trace extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        if (traced != null && ((EntityLiving) mob.getEntity()).getAttackTarget() == null)
+        if (traced != null && mob.getEntity().getAttackTarget() == null)
         {
             traced.destroy();
             traced = null;

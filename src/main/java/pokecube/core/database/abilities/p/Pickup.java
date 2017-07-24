@@ -17,7 +17,7 @@ public class Pickup extends Ability
     @Override
     public void onUpdate(IPokemob mob)
     {
-        EntityLivingBase poke = (EntityLivingBase) mob;
+        EntityLivingBase poke = mob.getEntity();
         if (poke.ticksExisted % 200 == 0 && Math.random() < 0.1)
         {
             if (!CompatWrapper.isValid(poke.getHeldItemMainhand()))

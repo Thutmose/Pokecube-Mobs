@@ -6,6 +6,7 @@
 	},
 	"variants": {
 	    "type": {
+           "null": { "textures":{ "cross": "pokecube:blocks/nullcrop" } },
            "cheri": { "textures":{ "cross": "pokecube:blocks/chericrop" } },
            "chesto": { "textures":{ "cross": "pokecube:blocks/chestocrop" } },
            "pecha": { "textures":{ "cross": "pokecube:blocks/pechacrop" } },

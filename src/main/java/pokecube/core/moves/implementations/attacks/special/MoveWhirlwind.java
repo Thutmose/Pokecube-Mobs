@@ -36,7 +36,7 @@ public class MoveWhirlwind extends Move_Basic
         {
             ((EntityLiving) packet.attacked).setAttackTarget(null);
         }
-        ((EntityLiving) packet.attacker.getEntity()).setAttackTarget(null);
+        packet.attacker.getEntity().setAttackTarget(null);
         packet.attacker.setPokemonAIState(IMoveConstants.ANGRY, false);
     }
 }

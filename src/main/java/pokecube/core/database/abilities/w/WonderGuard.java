@@ -1,6 +1,5 @@
 package pokecube.core.database.abilities.w;
 
-import net.minecraft.entity.Entity;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
@@ -20,7 +19,7 @@ public class WonderGuard extends Ability
         if (attacker == mob || !move.pre || attacker == move.attacked) return;
 
         float eff = PokeType.getAttackEfficiency(attack.getType(move.attacker), mob.getType1(), mob.getType2());
-        if (eff <= 1 && attack.getPWR(attacker, (Entity) mob) > 0)
+        if (eff <= 1 && attack.getPWR(attacker, mob.getEntity()) > 0)
         {
             move.canceled = true;
         }
