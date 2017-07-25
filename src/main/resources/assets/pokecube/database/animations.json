@@ -71,6 +71,21 @@
       ]
     },
     {
+      "name": "acupressure",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:clight_blue:d1:rtrue:l5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:clight_blue:d1:rtrue:l20",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "aerialace",
       "animations": [
         {
@@ -85,6 +100,21 @@
       "animations": [
         {
           "preset": "beam",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "afteryou",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d1:w1:l4:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d1:w1:rtrue:l4:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -191,6 +221,16 @@
       ]
     },
     {
+      "name": "armthrust",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.3:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "aromatherapy",
       "animations": [
         {
@@ -205,6 +245,21 @@
         },
         {
           "preset": "cartFunc:pheart:cpink:d0.7:w4:rtrue:l20:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "1",
+          "starttick": "4"
+        }
+      ]
+    },
+    {
+      "name": "aromaticmist",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d2:w4:l3",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "powder:pmisc:d0.5:w1:l5",
           "duration": "1",
           "starttick": "4"
         }
@@ -264,7 +319,12 @@
       "name": "attract",
       "animations": [
         {
-          "preset": "pons:pheart:d1:w1:l5",
+          "preset": "cartFunc:pheart:d0.7:w1:rtrue:l20:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pendRod:d0.6:w1:rtrue:l10:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
           "duration": "5",
           "starttick": "0"
         }
@@ -285,6 +345,21 @@
       "animations": [
         {
           "preset": "beam:paurora:d0.5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "autotomize",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.6:w1:rtrue:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pendRod:d1:w2:rtrue:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -336,6 +411,16 @@
       ]
     },
     {
+      "name": "batonpass",
+      "animations": [
+        {
+          "preset": "cartFunc:pcloud:d0.5:rtrue:l10",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "belch",
       "animations": [
         {
@@ -350,6 +435,16 @@
       "animations": [
         {
           "preset": "pons",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "bind",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.2:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(5),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -411,6 +506,31 @@
       ]
     },
     {
+      "name": "block",
+      "animations": [
+        {
+          "preset": "cartFunc:pbarrier:d1:w1:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "bodyslam",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:d0.7:w1:l30:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "boneclub",
       "animations": [
         {
@@ -425,6 +545,16 @@
       "animations": [
         {
           "preset": "throw",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "bounce",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -521,6 +651,21 @@
       ]
     },
     {
+      "name": "bulldoze",
+      "animations": [
+        {
+          "preset": "cartFunc:plargeexplode:d0.5:rtrue:l10",
+          "duration": "3",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcrit:cmagenta:d0.3:rfalse:l10:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "2",
+          "starttick": "3"
+        }
+      ]
+    },
+    {
       "name": "bulletseed",
       "animations": [
         {
@@ -546,6 +691,31 @@
       ]
     },
     {
+      "name": "captivate",
+      "animations": [
+        {
+          "preset": "cartFunc:pheart:d0.5:rtrue:l10:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "3",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pendRod:d0.6:rtrue:l10:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "3",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "charge",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:rtrue:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "chargebeam",
       "animations": [
         {
@@ -560,6 +730,21 @@
       "animations": [
         {
           "preset": "cartFunc:pheart:d1:rtrue:l10:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "circlethrow",
+      "animations": [
+        {
+          "preset": "cartFunc:pcloud:d0.2:w2:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -596,15 +781,25 @@
       ]
     },
     {
+      "name": "coil",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.09:w1:rtrue:l4:f(0.5-rand())*(1),(0.5-rand())*(3),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "confide",
       "animations": [
         {
-          "preset": "pont:pmisc",
+          "preset": "cartFunc:pmisc:d0.7:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "2",
           "starttick": "3"
         },
         {
-          "preset": "pons:pmisc",
+          "preset": "cartFunc:pmisc:d0.7:rtrue:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "3",
           "starttick": "0"
         }
@@ -630,6 +825,16 @@
       "animations": [
         {
           "preset": "cartFunc:pmisc:d0.5:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "constrict",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w1.1:l4:f(0.5-rand())*(1),(0.5-rand())*(3),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -731,6 +936,26 @@
       ]
     },
     {
+      "name": "darkestlariat",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psmoke:d0.5:l30:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "darkpulse",
       "animations": [
         {
@@ -761,6 +986,16 @@
       ]
     },
     {
+      "name": "defog",
+      "animations": [
+        {
+          "preset": "flow:pdepthsuspend:d3:w4:l3",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "diamondstorm",
       "animations": [
         {
@@ -777,6 +1012,21 @@
           "preset": "cartFunc:pcrit:cpink:d0.05:w2:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "2",
           "starttick": "3"
+        }
+      ]
+    },
+    {
+      "name": "disable",
+      "animations": [
+        {
+          "preset": "cartFunc:pwitchMagic:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pbarrier",
+          "duration": "5",
+          "starttick": "0"
         }
       ]
     },
@@ -802,6 +1052,86 @@
           "preset": "flow",
           "duration": "5",
           "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "dive",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psplash:d0.02:w3:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "dizzypunch",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "doomdesire",
+      "animations": [
+        {
+          "preset": "cartFunc:penchantmenttable:d0.1:w1:rtrue:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "1",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.2:w2:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "4",
+          "starttick": "1"
+        },
+        {
+          "preset": "cartFunc:pendRod:d0.1:w3:l20:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "2",
+          "starttick": "3"
+        }
+      ]
+    },
+    {
+      "name": "doubleedge",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.3:w1:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.3:w1:l3",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "cartFunc:pmisc:cred:d0.7:w1:rtrue:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "4",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "doubleslap",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "3",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "2",
+          "starttick": "3"
         }
       ]
     },
@@ -854,7 +1184,22 @@
       "name": "dragonpulse",
       "animations": [
         {
-          "preset": "beam",
+          "preset": "flow:pmisc:d5:w0.5:l5",
+          "duration": "4",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d5:w0.5:l5",
+          "duration": "1",
+          "starttick": "4"
+        }
+      ]
+    },
+    {
+      "name": "dragonrage",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d4:w0.5:l5",
           "duration": "5",
           "starttick": "0"
         }
@@ -911,11 +1256,46 @@
       ]
     },
     {
+      "name": "dynamicpunch",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.4:w1:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.4:w1:l3",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "earthpower",
       "animations": [
         {
           "preset": "flow",
           "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "earthquake",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:cmagenta:d0.08:rfalse:l10:f(0.5-rand())*(3),(0.5-rand())*(3),(0.5-rand())*(3)",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:cmagenta:d0.1:rtrue:l10",
+          "duration": "4",
           "starttick": "0"
         }
       ]
@@ -1001,6 +1381,26 @@
       ]
     },
     {
+      "name": "encore",
+      "animations": [
+        {
+          "preset": "cartFunc:pendRod:d1:l7:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "endure",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.5:rtrue:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "energyball",
       "animations": [
         {
@@ -1070,6 +1470,16 @@
       "animations": [
         {
           "preset": "cartFunc:psweepAttack:d1:w1:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "featherdance",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.2:rtrue:l3:f(0.5-rand())*(1),(0.5-rand())*(3),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -1191,6 +1601,31 @@
       ]
     },
     {
+      "name": "flareblitz",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.3:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pflame:d0.4:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "powder:pflame:d0.5:w1:l5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.3:w1:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "flash",
       "animations": [
         {
@@ -1214,7 +1649,7 @@
       "name": "fling",
       "animations": [
         {
-          "preset": "throw",
+          "preset": "throw:pmisc",
           "duration": "5",
           "starttick": "0"
         }
@@ -1254,9 +1689,14 @@
       "name": "focusblast",
       "animations": [
         {
-          "preset": "flow",
-          "duration": "5",
+          "preset": "flow:pmisc:d5:w0.5:l3",
+          "duration": "4",
           "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d5:w0.5:l5",
+          "duration": "1",
+          "starttick": "4"
         }
       ]
     },
@@ -1295,6 +1735,16 @@
         },
         {
           "preset": "cartFunc:pmagicCrit:d0.5:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "foresight",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d1:rtrue:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
           "duration": "5",
           "starttick": "0"
         }
@@ -1356,6 +1806,46 @@
       ]
     },
     {
+      "name": "furyattack",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "furycutter",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.8:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "furyswipes",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psweepAttack:d1:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "fusionflare",
       "animations": [
         {
@@ -1391,6 +1881,16 @@
         {
           "preset": "powder:pwitchMagic:d0.05:w1:rtrue:l10",
           "duration": "2",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "gastroacid",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d0.7:w1.2:l5",
+          "duration": "5",
           "starttick": "0"
         }
       ]
@@ -1521,10 +2021,50 @@
       ]
     },
     {
+      "name": "gyroball",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "3",
+          "starttick": "2"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.5:w1:rtrue:l3",
+          "duration": "2",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "haze",
       "animations": [
         {
           "preset": "powder:plargesmoke:d0.8:w1:l100",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "headbutt",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "headsmash",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.2:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.2:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -1590,6 +2130,21 @@
         },
         {
           "preset": "cartFunc:plargeexplode:d1",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "honeclaws",
+      "animations": [
+        {
+          "preset": "cartFunc:pendRod:d1:rtrue:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psweepAttack:d1:rtrue:l1:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -1841,12 +2396,12 @@
       "name": "ironhead",
       "animations": [
         {
-          "preset": "pons:pmisc:d1:w1:rtrue:l2",
+          "preset": "cartFunc:pmisc:d0.6:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         },
         {
-          "preset": "pont:pcrit:csilver:d1:w1:rtrue:l4",
+          "preset": "cartFunc:pcrit:d0.6:w1:l4:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -1898,6 +2453,46 @@
         },
         {
           "preset": "cartFunc:plargeexplode:d1",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "knockoff",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.4:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:d0.4:l20",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "lastresort",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w2:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.5:w1",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pendRod:d0.5:w1:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2024,6 +2619,26 @@
       ]
     },
     {
+      "name": "lowkick",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "lowsweep",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "luckychant",
       "animations": [
         {
@@ -2133,6 +2748,26 @@
       "animations": [
         {
           "preset": "throw",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "magnetrise",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.5:w1:rtrue:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "magnitude",
+      "animations": [
+        {
+          "preset": "cartFunc:plargeexplode:rtrue",
           "duration": "5",
           "starttick": "0"
         }
@@ -2249,6 +2884,16 @@
       ]
     },
     {
+      "name": "metalsound",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d0.4:w1:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "miracleeye",
       "animations": [
         {
@@ -2339,6 +2984,16 @@
       ]
     },
     {
+      "name": "mudslap",
+      "animations": [
+        {
+          "preset": "flow:pmisc:cbrown:d0.5:w1:l3",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "mysticalfire",
       "animations": [
         {
@@ -2369,6 +3024,16 @@
       ]
     },
     {
+      "name": "naturalgift",
+      "animations": [
+        {
+          "preset": "beam:pendRod:d0.5:w1",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "nightshade",
       "animations": [
         {
@@ -2382,7 +3047,12 @@
       "name": "nightslash",
       "animations": [
         {
-          "preset": "pont:psweepAttack",
+          "preset": "cartFunc:psweepAttack",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2404,6 +3074,31 @@
         {
           "preset": "flow",
           "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "outrage",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.7:w1:l5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.4:w1:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.4:w1:l3",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "cartFunc:pangryVillager:d1.5:w1:rtrue:l5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "4",
           "starttick": "0"
         }
       ]
@@ -2459,6 +3154,41 @@
       ]
     },
     {
+      "name": "perishsong",
+      "animations": [
+        {
+          "preset": "cartFunc:pnote:d0.5:w1:rtrue:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pwitchMagic:d0.5:w1:rtrue:l30:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "petalblizzard",
+      "animations": [
+        {
+          "preset": "flow:pmisc:cpink:d0.8:w4:l5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pmisc:cpurple:d0.8:w4:l5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pmisc:cgreen:d0.8:w4:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "petaldance",
       "animations": [
         {
@@ -2473,6 +3203,26 @@
       "animations": [
         {
           "preset": "throw:w0.1",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "playrough",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.7:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.7:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2519,6 +3269,16 @@
       ]
     },
     {
+      "name": "pound",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.6:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "powdersnow",
       "animations": [
         {
@@ -2533,6 +3293,21 @@
       "animations": [
         {
           "preset": "beam",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "powertrick",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.6:w1:rtrue:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pwitchMagic:d0.5:w1:rtrue:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2674,10 +3449,40 @@
       ]
     },
     {
+      "name": "pursuit",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.7:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.7:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "quickattack",
       "animations": [
         {
           "preset": "cartFunc:pcrit:d0.5:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "rapidspin",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:d0.4:w1:rtrue:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2774,6 +3579,21 @@
       ]
     },
     {
+      "name": "retaliate",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l4:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psweepAttack:d1:w1:l4",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "return",
       "animations": [
         {
@@ -2784,6 +3604,16 @@
         {
           "preset": "pons:pheart:d0.45:w1:l10",
           "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "roar",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d1.5:w3:l5",
+          "duration": "4",
           "starttick": "0"
         }
       ]
@@ -2823,6 +3653,16 @@
       "animations": [
         {
           "preset": "flow",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "rocksmash",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2874,6 +3714,21 @@
       ]
     },
     {
+      "name": "rollout",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "2",
+          "starttick": "3"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d1:w1:rtrue:l2",
+          "duration": "3",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "roost",
       "animations": [
         {
@@ -2885,6 +3740,16 @@
           "preset": "cartFunc:pheart:d0.7:w1:rtrue:l10:f(0.5-rand())*(1.5),(0.5-rand())*(1.5),(0.5-rand())*(1.5)",
           "duration": "1",
           "starttick": "4"
+        }
+      ]
+    },
+    {
+      "name": "rototiller",
+      "animations": [
+        {
+          "preset": "powder:pmisc:d1:w5:l5",
+          "duration": "5",
+          "starttick": "0"
         }
       ]
     },
@@ -2908,6 +3773,21 @@
       "animations": [
         {
           "preset": "flow:pflame:d10",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "sacredsword",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w1:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psweepAttack:d0.5:w1:l3",
           "duration": "5",
           "starttick": "0"
         }
@@ -2947,7 +3827,27 @@
       "name": "scald",
       "animations": [
         {
-          "preset": "flow",
+          "preset": "flow:psplash:d10:w0.5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:psplash:d0.5:w1:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "2",
+          "starttick": "3"
+        }
+      ]
+    },
+    {
+      "name": "scaryface",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:cpurple:d0.5:w1:rtrue:l5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pangryVillager:d0.8:w1:rtrue:l5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
           "duration": "5",
           "starttick": "0"
         }
@@ -2964,6 +3864,16 @@
       ]
     },
     {
+      "name": "screech",
+      "animations": [
+        {
+          "preset": "flow:pmisc:csilver:d0.7",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "secretpower",
       "animations": [
         {
@@ -2974,10 +3884,60 @@
       ]
     },
     {
+      "name": "seedbomb",
+      "animations": [
+        {
+          "preset": "cartFunc:plava:cpurple:d0.4:w1:l30:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "flow:pmisc:d0.7:w1:l4",
+          "duration": "4",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d1:w1:l4",
+          "duration": "1",
+          "starttick": "4"
+        }
+      ]
+    },
+    {
       "name": "seedflare",
       "animations": [
         {
-          "preset": "flow",
+          "preset": "cartFunc:pendRod:d0.6:rtrue:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "4",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pmisc:d3",
+          "duration": "4",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pendRod:d5:w0.5",
+          "duration": "4",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d5:w0.5",
+          "duration": "1",
+          "starttick": "4"
+        }
+      ]
+    },
+    {
+      "name": "seismictoss",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d5:w0.5",
           "duration": "5",
           "starttick": "0"
         }
@@ -3043,6 +4003,31 @@
         },
         {
           "preset": "cartFunc:pmisc:d0.5:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "shadowsneak",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d0.4:w0.6:l5:f3.1.3",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcrit:d0.4:w0.6:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "2",
+          "starttick": "3"
+        }
+      ]
+    },
+    {
+      "name": "sharpen",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:cwhite:d0.7:rtrue:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
           "duration": "5",
           "starttick": "0"
         }
@@ -3119,10 +4104,25 @@
       ]
     },
     {
+      "name": "skullbash",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.7:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:d0.7:w1:l30:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "slash",
       "animations": [
         {
-          "preset": "pont:psweepAttack",
+          "preset": "cartFunc:psweepAttack",
           "duration": "5",
           "starttick": "0"
         }
@@ -3133,6 +4133,16 @@
       "animations": [
         {
           "preset": "powder",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "sleeptalk",
+      "animations": [
+        {
+          "preset": "cartFunc:pnote:d1:w2:rtrue",
           "duration": "5",
           "starttick": "0"
         }
@@ -3169,6 +4179,21 @@
       ]
     },
     {
+      "name": "smackdown",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.6:w1:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "1",
+          "starttick": "4"
+        },
+        {
+          "preset": "flow:pmisc:d0.5:w0.1:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "4",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "smog",
       "animations": [
         {
@@ -3184,6 +4209,21 @@
         {
           "preset": "powder:plargesmoke",
           "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "snarl",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d3:w2.3",
+          "duration": "4",
+          "starttick": "1"
+        },
+        {
+          "preset": "cartFunc:pnote:d1:rtrue:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "1",
           "starttick": "0"
         }
       ]
@@ -3279,6 +4319,26 @@
       ]
     },
     {
+      "name": "sparklingaria",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d0.5:w0.5:l5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pnote:d0.08:l5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pbubble:d0.1:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "spiderweb",
       "animations": [
         {
@@ -3324,6 +4384,36 @@
       ]
     },
     {
+      "name": "spiritshackle",
+      "animations": [
+        {
+          "preset": "beam:pcrit:d0.01:l5",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "beam:pwitchMagic:d0.05:l30",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "spite",
+      "animations": [
+        {
+          "preset": "cartFunc:pwitchMagic:d0.5:l10:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:cpurple:d0.5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "splash",
       "animations": [
         {
@@ -3338,6 +4428,16 @@
       "animations": [
         {
           "preset": "powder",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "stealthrock",
+      "animations": [
+        {
+          "preset": "powder:pcrit:d1:w5:l30",
           "duration": "5",
           "starttick": "0"
         }
@@ -3444,6 +4544,26 @@
       ]
     },
     {
+      "name": "superpower",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.4:w1:l3",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.4:w1.5:l3:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "supersonic",
       "animations": [
         {
@@ -3478,6 +4598,16 @@
         },
         {
           "preset": "pont:pangryVillager:d1:w1:l3",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "sweetscent",
+      "animations": [
+        {
+          "preset": "flow:pmisc:cpink:d2:w3:l5",
           "duration": "5",
           "starttick": "0"
         }
@@ -3524,6 +4654,21 @@
       ]
     },
     {
+      "name": "takedown",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.4:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:d0.4:w1:l20:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "taunt",
       "animations": [
         {
@@ -3557,7 +4702,12 @@
       "name": "thrash",
       "animations": [
         {
-          "preset": "pons",
+          "preset": "cartFunc:pcrit:d0.4:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.4:l5",
           "duration": "5",
           "starttick": "0"
         }
@@ -3647,12 +4797,12 @@
       "name": "torment",
       "animations": [
         {
-          "preset": "pont:pangryVillager:d1:w1:l3",
-          "duration": "5",
-          "starttick": "0"
+          "preset": "cartFunc:pangryVillager:d1:w1:l5",
+          "duration": "1",
+          "starttick": "4"
         },
         {
-          "preset": "pons:pmisc:d1:w1:l3",
+          "preset": "cartFunc:pmisc:d1:w1:rtrue:l6:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
           "duration": "5",
           "starttick": "0"
         }
@@ -3673,6 +4823,21 @@
       "animations": [
         {
           "preset": "cartFunc:pmagicCrit:d0.05:w1:l600:f(0.5-rand())*(13),(0.5-rand())*(2),(0.5-rand())*(13)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "toxicthread",
+      "animations": [
+        {
+          "preset": "flow:pmisc:csilver:d0.5:w1.5:l6",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "flow:pwitchMagic:cwhite:d4:w1.5:l3",
           "duration": "5",
           "starttick": "0"
         }
@@ -3733,6 +4898,36 @@
       "animations": [
         {
           "preset": "throw:w0.1",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "twister",
+      "animations": [
+        {
+          "preset": "cartFunc:psweepAttack:d0.005:w1:l5:f(0.5-rand())*(2),(0.5-rand())*(25),(0.5-rand())*(2)",
+          "duration": "4",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pcloud:d0.05:w1:l30:f(0.5-rand())*(2),(0.5-rand())*(25),(0.5-rand())*(2)",
+          "duration": "4",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "uproar",
+      "animations": [
+        {
+          "preset": "cartFunc:pnote:d0.8:w1:rtrue:l5:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.9:w1:rtrue:l3:f(0.5-rand())*(2),(0.5-rand())*(2),(0.5-rand())*(2)",
           "duration": "5",
           "starttick": "0"
         }
@@ -3914,6 +5109,21 @@
       ]
     },
     {
+      "name": "withdraw",
+      "animations": [
+        {
+          "preset": "cartFunc:psplash:cmagenta:d0.5:rtrue:l10:f(0.5-rand())*(3.2),(0.5-rand())*(3.2),(0.5-rand())*(3.2)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:cmagenta:d0.5:rtrue:l10",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
       "name": "wonderroom",
       "animations": [
         {
@@ -3938,6 +5148,76 @@
         },
         {
           "preset": "cartFunc:pmisc:cblue:d0.07:rtrue:l650:f-30,(0.5-rand())*(60),(0.5-rand())*(60)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "woodhammer",
+      "animations": [
+        {
+          "preset": "cartFunc:pcrit:d0.5:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pmisc:d0.5:w1:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:plargeexplode:d0.5:w1:l5",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "workup",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:cred:d0.4:w1:rtrue:l5:f(0.5-rand())*(1),(0.5-rand())*(1),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "worryseed",
+      "animations": [
+        {
+          "preset": "flow:pmisc:d0.1",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pwitchMagic:d1:l40",
+          "duration": "1",
+          "starttick": "4"
+        }
+      ]
+    },
+    {
+      "name": "wrap",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.1:f(0.5-rand())*(1),(0.5-rand())*(3),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        }
+      ]
+    },
+    {
+      "name": "wringout",
+      "animations": [
+        {
+          "preset": "cartFunc:pmisc:d0.1:f(0.5-rand())*(1),(0.5-rand())*(3),(0.5-rand())*(1)",
+          "duration": "5",
+          "starttick": "0"
+        },
+        {
+          "preset": "cartFunc:pwitchMagic:d0.5:l15",
           "duration": "5",
           "starttick": "0"
         }
