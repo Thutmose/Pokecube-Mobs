@@ -283,7 +283,8 @@
         },
         "misc": {
           "moves": "attract, bind, block, bodyslam, bulldoze, bulletseed, captivate, confide, cut, defensecurl, doubleteam, earthquake, echoedvoice, energyball, facade, flash, frenzyplant, frustration, furycutter, gigadrain, gigaimpact, grassknot, grasspledge, headbutt, hiddenpower, hyperbeam, knockoff, lightscreen, mimic, mudslap, naturalgift, naturepower, outrage, protect, rest, return, roar, rocksmash, round, safeguard, secretpower, seedbomb, sleeptalk, sludgebomb, snore, solarbeam, strength, stringshot, substitute, sunnyday, swagger, swordsdance, synthesis, toxic, venoshock, worryseed"
-        }
+        },
+        "evolutionMoves":"petaldance"
       }
     },
     {
@@ -600,7 +601,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, blastburn, bodyslam, brickbreak, bulldoze, captivate, confide, cut, defensecurl, defog, dig, doubleedge, doubleteam, dragonclaw, dragonpulse, dragontail, dynamicpunch, earthquake, echoedvoice, endure, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, fling, fly, focusblast, focuspunch, frustration, furycutter, gigaimpact, headbutt, heatwave, hiddenpower, holdhands, honeclaws, hyperbeam, incinerate, irontail, megakick, megapunch, mimic, mudslap, naturalgift, ominouswind, outrage, overheat, poweruppunch, protect, rest, return, roar, rockslide, rocksmash, rocktomb, roost, round, secretpower, seismictoss, shadowclaw, skydrop, sleeptalk, snore, solarbeam, steelwing, strength, substitute, sunnyday, swagger, swift, swordsdance, tailwind, thunderpunch, toxic, twister, willowisp"
-        }
+        },
+        "evolutionMoves":"wingattack"
       }
     },
     {
@@ -1167,7 +1169,8 @@
         },
         "misc": {
           "moves": "bugbite, electroweb, irondefense, stringshot"
-        }
+        },
+        "evolutionMoves":"harden"
       }
     },
     {
@@ -1254,7 +1257,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, aircutter, attract, bugbite, confide, defog, doubleedge, doubleteam, dreameater, electroweb, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, mimic, naturalgift, nightmare, ominouswind, protect, psychic, psychup, raindance, rest, return, roost, round, safeguard, secretpower, shadowball, signalbeam, skillswap, sleeptalk, snore, solarbeam, stringshot, strugglebug, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uturn, venoshock"
-        }
+        },
+        "evolutionMoves":"gust"
       }
     },
     {
@@ -1430,7 +1434,8 @@
         },
         "misc": {
           "moves": "bugbite, electroweb, irondefense, stringshot"
-        }
+        },
+        "evolutionMoves":"wingattack"
       }
     },
     {
@@ -1521,7 +1526,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, aircutter, attract, brickbreak, bugbite, captivate, confide, cut, defog, doubleedge, doubleteam, drillrun, electroweb, endeavor, endure, facade, falseswipe, flash, frustration, furycutter, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, knockoff, mimic, naturalgift, ominouswind, payback, poisonjab, protect, rest, return, rocksmash, roost, round, secretpower, silverwind, sleeptalk, sludgebomb, snore, solarbeam, stringshot, strugglebug, substitute, sunnyday, swagger, swift, swordsdance, tailwind, thief, toxic, uturn, venoshock, xscissor"
-        }
+        },
+        "evolutionMoves":"twineedle"
       }
     },
     {
@@ -2240,7 +2246,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, bodyslam, captivate, chargebeam, confide, covet, cut, defensecurl, dig, doubleteam, endeavor, endure, facade, frustration, gigaimpact, grassknot, headbutt, hiddenpower, hyperbeam, icebeam, icywind, irontail, lastresort, mimic, mudslap, naturalgift, pluck, protect, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, shadowball, shockwave, sleeptalk, snore, strength, substitute, sunnyday, superfang, swagger, swift, swordsdance, taunt, thief, thunder, thunderbolt, thunderwave, toxic, uproar, uturn, wildcharge, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"scaryface"
       }
     },
     {
@@ -2345,7 +2352,8 @@
         },
         "misc": {
           "moves": "attract, bide, bite, blizzard, bodyslam, bubblebeam, bulkup, captivate, chargebeam, confide, counter, covet, cut, darkpulse, defensecurl, dig, doubleteam, embargo, endure, facade, finalgambit, flamewheel, frustration, furyswipes, gigaimpact, grassknot, headbutt, hiddenpower, hyperbeam, icebeam, icywind, irontail, lastresort, mefirst, mimic, mudslap, naturalgift, pluck, protect, quash, rage, raindance, rest, retaliate, return, revenge, reversal, roar, rocksmash, round, screech, secretpower, shadowball, shadowclaw, shockwave, skullbash, sleeptalk, sludgebomb, sludgewave, snarl, snatch, snore, stockpile, strength, substitute, sunnyday, swagger, swallow, swift, switcheroo, swordsdance, takedown, taunt, thief, thunder, thunderbolt, thunderwave, torment, toxic, uproar, uturn, venoshock, watergun, wildcharge, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"scaryface"
       }
     },
     {
@@ -2743,7 +2751,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, bind, bodyslam, bulldoze, captivate, confide, darkpulse, dig, doubleedge, doubleteam, dragontail, earthquake, endure, facade, frustration, gastroacid, gigadrain, gigaimpact, gunkshot, headbutt, hiddenpower, hyperbeam, infestation, irontail, mimic, naturalgift, payback, poisonjab, protect, raindance, rest, return, rockslide, rocktomb, round, secretpower, seedbomb, sleeptalk, sludgebomb, sludgewave, snatch, snore, spite, strength, substitute, sunnyday, swagger, thief, torment, toxic, venoshock"
-        }
+        },
+        "evolutionMoves":"crunch"
       }
     },
     {
@@ -3067,7 +3076,8 @@
         },
         "misc": {
           "moves": "attract, bestow, bide, bodyslam, brickbreak, calmmind, captivate, charge, chargebeam, confide, counter, covet, defensecurl, dig, disarmingvoice, doubleedge, doubleslap, doubleteam, dynamicpunch, echoedvoice, electroweb, encore, endure, facade, fakeout, flail, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, headbutt, helpinghand, hiddenpower, hyperbeam, irontail, knockoff, lightscreen, luckychant, magnetrise, megakick, megapunch, mimic, mudslap, naturalgift, payday, present, protect, psychic, psyshock, rage, raindance, reflect, rest, return, reversal, rocksmash, rollout, round, safeguard, secretpower, seismictoss, shockwave, signalbeam, skullbash, sleeptalk, snore, strength, submission, substitute, swagger, swift, takedown, thief, thunder, thunderbolt, thunderpunch, thunderwave, tickle, toxic, voltswitch, volttackle, wildcharge, wish"
-        }
+        },
+        "evolutionMoves":"psychic"
       }
     },
     {
@@ -3477,7 +3487,8 @@
         },
         "misc": {
           "moves": "aerialace, amnesia, attract, auroraveil, bide, blizzard, bodyslam, brickbreak, bulldoze, captivate, chipaway, confide, counter, covet, crushclaw, curse, cut, dig, doubleedge, doubleteam, dynamicpunch, earthpower, earthquake, endure, facade, fissure, flail, fling, focusblast, focuspunch, frostbreath, frustration, furycutter, furyswipes, gigaimpact, gyroball, hail, headbutt, hiddenpower, honeclaws, hyperbeam, iciclecrash, iciclespear, irondefense, ironhead, irontail, knockoff, leechlife, metalclaw, mimic, mudshot, mudslap, naturalgift, nightslash, poisonjab, powdersnow, protect, rage, rapidspin, rest, return, rockclimb, rockslide, rocksmash, rocktomb, rototiller, round, safeguard, sandstorm, scratch, secretpower, seismictoss, shadowclaw, skullbash, sleeptalk, snore, stealthrock, stoneedge, strength, submission, substitute, sunnyday, superfang, swagger, swift, swordsdance, takedown, thief, toxic, workup, xscissor"
-        }
+        },
+        "evolutionMoves":"iciclespear"
       }
     },
     {
@@ -4731,7 +4742,8 @@
         },
         "misc": {
           "moves": "agility, attract, aurorabeam, auroraveil, babydolleyes, bide, blizzard, bodyslam, calmmind, captivate, charm, confide, covet, darkpulse, dazzlinggleam, dig, disable, doubleedge, doubleteam, dreameater, ember, encore, endure, energyball, extrasensory, facade, feintattack, flail, foulplay, freezedry, frostbreath, frustration, gigaimpact, grudge, hail, headbutt, hex, hiddenpower, howl, hyperbeam, hypnosis, icebeam, icywind, insplit, irontail, mimic, mist, moonblast, naturalgift, ominouswind, payback, powdersnow, powerswap, protect, psychup, psyshock, rage, raindance, reflect, rest, return, roar, roleplay, round, safeguard, secretpower, sheercold, skullbash, sleeptalk, snore, solarbeam, spite, substitute, sunnyday, swagger, swift, tailslap, tailwhip, takedown, toxic, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"dazzlinggleam"
       }
     },
     {
@@ -5833,7 +5845,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, aircutter, attract, bugbite, captivate, confide, defog, doubleedge, doubleteam, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, mimic, naturalgift, ominouswind, protect, psychic, rest, return, roost, round, secretpower, signalbeam, skillswap, sleeptalk, sludgebomb, snore, solarbeam, stringshot, strugglebug, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uturn, venoshock, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"gust"
       }
     },
     {
@@ -6129,7 +6142,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bodyslam, bulldoze, captivate, confide, cut, dig, doubleedge, doubleteam, earthpower, earthquake, echoedvoice, facade, frustration, gigaimpact, hiddenpower, honeclaws, hyperbeam, mimic, naturalgift, protect, rest, return, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, shadowclaw, sleeptalk, sludgebomb, sludgewave, snore, stealthrock, stoneedge, substitute, sunnyday, swagger, thief, toxic"
-        }
+        },
+        "evolutionMoves":"sandtomb"
       }
     },
     {
@@ -6323,7 +6337,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bodyslam, confide, covet, cut, darkpulse, defensecurl, dig, doubleedge, doubleteam, dreameater, echoedvoice, endure, facade, flash, foulplay, frustration, gunkshot, happyhour, headbutt, hiddenpower, honeclaws, hypervoice, icywind, irontail, knockoff, lastresort, mimic, mudslap, naturalgift, nightmare, payback, protect, psychup, raindance, rest, retaliate, return, round, secretpower, seedbomb, shadowball, shadowclaw, shockwave, sleeptalk, snatch, snore, spite, substitute, sunnyday, swagger, swift, taunt, thief, thunder, thunderbolt, torment, toxic, uproar, uturn, waterpulse, workup"
-        }
+        },
+        "evolutionMoves":"sandtomb"
       }
     },
     {
@@ -6563,7 +6578,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bodyslam, confide, covet, cut, darkpulse, defensecurl, dig, doubleedge, doubleteam, dreameater, echoedvoice, embargo, endure, facade, flash, foulplay, frustration, gigaimpact, gunkshot, headbutt, hiddenpower, honeclaws, hyperbeam, hypervoice, icywind, irontail, knockoff, lastresort, mimic, mudslap, naturalgift, nightmare, payback, protect, psychup, raindance, rest, retaliate, return, roar, round, secretpower, seedbomb, shadowball, shadowclaw, shockwave, sleeptalk, snatch, snore, spite, substitute, sunnyday, swagger, taunt, thief, thunder, thunderbolt, torment, toxic, uproar, uturn, waterpulse, workup"
-        }
+        },
+        "evolutionMoves":"swift"
       }
     },
     {
@@ -6683,7 +6699,8 @@
             "32": "powergem",
             "65": "feint"
           }
-        }
+        },
+        "evolutionMoves":"swift"
       }
     },
     {
@@ -7099,7 +7116,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, bodyslam, brickbreak, bulkup, bulldoze, captivate, confide, covet, defensecurl, dig, doubleedge, doubleteam, dualchop, dynamicpunch, earthquake, endeavor, endure, facade, firepunch, fling, focusblast, focuspunch, frustration, gigaimpact, gunkshot, headbutt, helpinghand, hiddenpower, honeclaws, hyperbeam, icepunch, irontail, lowkick, lowsweep, megakick, megapunch, metronome, mimic, mudslap, naturalgift, outrage, overheat, payback, poisonjab, poweruppunch, protect, psychup, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, roleplay, round, secretpower, seedbomb, sleeptalk, smackdown, snore, spite, stoneedge, strength, substitute, sunnyday, swagger, swift, taunt, thief, thunder, thunderbolt, thunderpunch, toxic, uproar, uturn, vacuumwave, workup"
-        }
+        },
+        "evolutionMoves":"rage"
       }
     },
     {
@@ -7588,7 +7606,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, bodyslam, brickbreak, bulkup, bulldoze, captivate, confide, counter, defensecurl, dig, dive, doubleedge, doubleteam, earthquake, endeavor, facade, fling, focusblast, focuspunch, frustration, gigaimpact, hail, headbutt, helpinghand, hiddenpower, hyperbeam, icebeam, icepunch, icywind, lowsweep, megakick, megapunch, metronome, mimic, mudslap, naturalgift, payback, poisonjab, poweruppunch, protect, psychic, raindance, rest, return, rockslide, rocksmash, rocktomb, round, scald, secretpower, seismictoss, sleeptalk, snore, strength, substitute, surf, swagger, thief, toxic, vacuumwave, waterfall, waterpulse, whirlpool, workup"
-        }
+        },
+        "evolutionMoves":"submission"
       }
     },
     {
@@ -7767,7 +7786,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, calmmind, captivate, chargebeam, confide, counter, dazzlinggleam, doubleedge, doubleteam, drainpunch, dreameater, dynamicpunch, embargo, endure, energyball, facade, firepunch, flash, fling, focuspunch, foulplay, frustration, grassknot, gravity, headbutt, hiddenpower, icepunch, irontail, knockoff, lightscreen, magiccoat, magicroom, megakick, megapunch, metronome, mimic, naturalgift, nightmare, protect, psychic, psychup, psyshock, raindance, recycle, reflect, rest, return, roleplay, round, safeguard, secretpower, seismictoss, shadowball, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, substitute, sunnyday, swagger, taunt, thief, thunderpunch, thunderwave, torment, toxic, trick, trickroom, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"kinesis"
       }
     },
     {
@@ -7855,7 +7875,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, calmmind, captivate, chargebeam, confide, counter, dazzlinggleam, doubleedge, doubleteam, drainpunch, dreameater, dynamicpunch, embargo, endure, energyball, facade, firepunch, flash, fling, focusblast, focuspunch, foulplay, frustration, gigaimpact, grassknot, gravity, headbutt, hiddenpower, hyperbeam, icepunch, irontail, knockoff, lightscreen, magiccoat, magicroom, megakick, megapunch, metronome, mimic, naturalgift, nightmare, protect, psychic, psychup, psyshock, raindance, recycle, reflect, rest, return, roleplay, round, safeguard, secretpower, seismictoss, shadowball, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, substitute, sunnyday, swagger, taunt, thief, thunderpunch, thunderwave, torment, toxic, trick, trickroom, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"kinesis"
       }
     },
     {
@@ -8144,7 +8165,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, brickbreak, bulkup, bulldoze, captivate, confide, dig, doubleedge, doubleteam, dualchop, earthquake, endure, facade, fireblast, firepunch, flamethrower, fling, focusblast, focuspunch, frustration, gigaimpact, headbutt, helpinghand, hiddenpower, hyperbeam, icepunch, incinerate, knockoff, lightscreen, lowkick, lowsweep, megakick, megapunch, metronome, mimic, mudslap, naturalgift, payback, poisonjab, poweruppunch, protect, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, roleplay, round, secretpower, sleeptalk, smackdown, snore, stoneedge, strength, substitute, sunnyday, superpower, swagger, thief, thunderpunch, toxic, vacuumwave, workup"
-        }
+        },
+        "evolutionMoves":"strength"
       }
     },
     {
@@ -8411,7 +8433,8 @@
         },
         "misc": {
           "moves": "attract, bind, bodyslam, bugbite, captivate, confide, cut, doubleedge, doubleteam, endure, energyball, facade, flash, frustration, gastroacid, gigadrain, gigaimpact, grassknot, hiddenpower, hyperbeam, infestation, knockoff, mimic, naturepower, protect, reflect, rest, return, round, secretpower, seedbomb, sleeptalk, sludgebomb, snore, solarbeam, substitute, suckerpunch, sunnyday, swagger, swordsdance, synthesis, thief, toxic, venoshock, worryseed"
-        }
+        },
+        "evolutionMoves":"leaftornado"
       }
     },
     {
@@ -9399,7 +9422,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, bounce, confide, doubleteam, drillrun, echoedvoice, endure, facade, fireblast, flamecharge, flamethrower, frustration, gigaimpact, headbutt, heatwave, hiddenpower, hyperbeam, incinerate, irontail, lowkick, mimic, naturalgift, overheat, poisonjab, protect, rest, return, round, secretpower, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, swagger, swift, toxic, wildcharge, willowisp"
-        }
+        },
+        "evolutionMoves":"furyattack"
       }
     },
     {
@@ -9651,7 +9675,8 @@
         },
         "misc": {
           "moves": "aerialace, afteryou, aquatail, attract, avalanche, blizzard, block, bodyslam, brickbreak, brine, bulldoze, calmmind, captivate, confide, counter, dig, dive, doubleedge, doubleteam, drainpunch, dreameater, dynamicpunch, earthquake, echoedvoice, endure, facade, fireblast, flamethrower, flash, fling, focusblast, focuspunch, foulplay, frustration, furycutter, gigaimpact, grassknot, hail, hiddenpower, hyperbeam, icebeam, icepunch, icywind, incinerate, irondefense, irontail, lightscreen, magiccoat, megakick, megapunch, mimic, mudslap, naturalgift, nightmare, protect, psychic, psychup, psyshock, raindance, recycle, rest, return, rocksmash, round, safeguard, scald, secretpower, seismictoss, shadowball, signalbeam, skillswap, sleeptalk, snore, strength, substitute, sunnyday, surf, swagger, swift, telekinesis, thunderwave, toxic, trick, trickroom, waterpulse, whirlpool, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"withdraw"
       }
     },
     {
@@ -9897,7 +9922,8 @@
         },
         "misc": {
           "moves": "chargebeam, confide, doubleedge, doubleteam, electroweb, endure, explosion, facade, flash, flashcannon, frustration, gigaimpact, gravity, gyroball, hiddenpower, hyperbeam, irondefense, lightscreen, magiccoat, magnetrise, mimic, naturalgift, protect, psychup, raindance, recycle, reflect, rest, return, rollout, round, secretpower, shockwave, signalbeam, sleeptalk, snore, substitute, sunnyday, swagger, swift, thunder, thunderbolt, thunderwave, toxic, voltswitch, wildcharge"
-        }
+        },
+        "evolutionMoves":"triattack"
       }
     },
     {
@@ -10222,7 +10248,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, bodyslam, captivate, confide, doubleedge, doubleteam, echoedvoice, endeavor, endure, facade, fly, frustration, gigaimpact, hiddenpower, hyperbeam, knockoff, mimic, mudslap, payback, protect, rest, return, roost, round, secretpower, skyattack, sleeptalk, snore, steelwing, substitute, sunnyday, swagger, swift, taunt, thief, torment, toxic, uproar, workup"
-        }
+        },
+        "evolutionMoves":"triattack"
       }
     },
     {
@@ -10422,7 +10449,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, avalanche, blizzard, bodyslam, captivate, confide, dive, doubleedge, doubleteam, drillrun, echoedvoice, endure, facade, fling, frostbreath, frustration, gigaimpact, hail, hiddenpower, hyperbeam, icebeam, icywind, irontail, mimic, naturalgift, protect, raindance, rest, return, round, safeguard, secretpower, signalbeam, sleeptalk, snore, substitute, surf, swagger, thief, toxic, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"sheercold"
       }
     },
     {
@@ -10680,7 +10708,8 @@
         },
         "misc": {
           "moves": "attract, block, bodyslam, brickbreak, captivate, confide, darkpulse, dig, doubleteam, dynamicpunch, endure, explosion, facade, fireblast, firepunch, flamethrower, fling, focusblast, focuspunch, frustration, gigadrain, gigaimpact, gunkshot, hiddenpower, hyperbeam, icepunch, incinerate, infestation, mimic, naturalgift, painsplit, payback, poisonjab, poweruppunch, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, round, secretpower, selfdestruct, shadowball, shockwave, sleeptalk, sludgebomb, sludgewave, snore, strength, substitute, sunnyday, swagger, taunt, thief, thunder, thunderbolt, thunderpunch, torment, toxic, venoshock"
-        }
+        },
+        "evolutionMoves":"venomdrench"
       }
     },
     {
@@ -10750,7 +10779,8 @@
         },
         "misc": {
           "moves": "acidspray, attract, brickbreak, confide, curse, darkpulse, dig, doubleteam, explosion, facade, fireblast, flamethrower, fling, focusblast, frustration, gigaimpact, haze, hiddenpower, hyperbeam, imprison, incinerate, infestation, lick, meanlook, payback, poisonjab, poweruppunch, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, round, scaryface, secretpower, shadowball, shadowpunch, shadowsneak, sleeptalk, sludgebomb, sludgewave, spitup, stockpile, strength, substitute, sunnyday, swagger, swallow, taunt, thief, thunder, thunderbolt, torment, toxic, venoshock"
-        }
+        },
+        "evolutionMoves":"venomdrench"
       }
     },
     {
@@ -11145,7 +11175,8 @@
         },
         "misc": {
           "moves": "attract, captivate, confide, darkpulse, dazzlinggleam, doubleteam, dreameater, embargo, endure, energyball, explosion, facade, firepunch, fling, foulplay, frustration, gigadrain, hiddenpower, icepunch, icywind, infestation, knockoff, mimic, naturalgift, ominouswind, painsplit, payback, poisonjab, protect, psychic, psychup, raindance, rest, return, round, secretpower, selfdestruct, shadowball, shadowclaw, skillswap, sleeptalk, sludgebomb, snatch, snore, spite, substitute, sunnyday, swagger, taunt, telekinesis, thief, thunderbolt, thunderpunch, torment, toxic, trick, trickroom, uproar, venoshock, willowisp, wonderroom"
-        }
+        },
+        "evolutionMoves":"shadowpunch"
       }
     },
     {
@@ -11237,7 +11268,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, brickbreak, captivate, confide, counter, darkpulse, dazzlinggleam, doubleedge, doubleteam, drainpunch, dreameater, dynamicpunch, embargo, endure, energyball, explosion, facade, firepunch, fling, focusblast, focuspunch, foulplay, frustration, gigadrain, gigaimpact, headbutt, hiddenpower, hyperbeam, icepunch, icywind, infestation, knockoff, megakick, megapunch, metronome, mimic, naturalgift, ominouswind, painsplit, payback, poisonjab, poweruppunch, protect, psychic, psychup, raindance, rest, return, rocksmash, roleplay, round, secretpower, seismictoss, selfdestruct, shadowball, shadowclaw, skillswap, sleeptalk, sludgebomb, sludgewave, snatch, snore, spite, strength, substitute, sunnyday, swagger, taunt, telekinesis, thief, thunder, thunderbolt, thunderpunch, torment, toxic, trick, trickroom, uproar, venoshock, willowisp, wonderroom"
-        }
+        },
+        "evolutionMoves":"shadowpunch"
       }
     },
     {
@@ -12203,7 +12235,8 @@
         },
         "misc": {
           "moves": "attract, block, bulletseed, captivate, confide, doubleedge, doubleteam, dreameater, endure, energyball, explosion, facade, flash, frustration, gigadrain, gigaimpact, grassknot, gravity, headbutt, hiddenpower, hyperbeam, infestation, lightscreen, lowkick, magiccoat, mimic, naturepower, nightmare, protect, psychic, psychup, psyshock, reflect, rest, return, rollout, round, secretpower, seedbomb, selfdestruct, skillswap, sleeptalk, sludgebomb, snore, solarbeam, strength, substitute, sunnyday, swagger, swordsdance, synthesis, telekinesis, thief, toxic, trickroom, worryseed, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"stomp"
       }
     },
     {
@@ -12250,7 +12283,8 @@
             "27": "eggbomb",
             "17": "psyshock"
           }
-        }
+        },
+        "evolutionMoves":"dragonhammer"
       }
     },
     {
@@ -12599,7 +12633,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, bounce, brickbreak, bulkup, bulldoze, captivate, confide, covet, doubleedge, doubleteam, dynamicpunch, earthquake, facade, fling, focusblast, focuspunch, frustration, headbutt, helpinghand, hiddenpower, knockoff, lowkick, lowsweep, megapunch, metronome, mimic, mudslap, naturalgift, poisonjab, poweruppunch, protect, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, roleplay, round, secretpower, seismictoss, sleeptalk, snore, stoneedge, strength, substitute, suckerpunch, sunnyday, superpower, swagger, swift, thief, toxic, workup"
-        }
+        },
+        "evolutionMoves":"doublekick"
       }
     },
     {
@@ -12673,7 +12708,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, brickbreak, bulkup, bulldoze, captivate, confide, covet, doubleedge, doubleteam, drainpunch, dynamicpunch, earthquake, facade, firepunch, fling, focusblast, focuspunch, frustration, headbutt, helpinghand, hiddenpower, icepunch, lowkick, lowsweep, megakick, metronome, mimic, mudslap, naturalgift, poweruppunch, protect, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, roleplay, round, secretpower, seismictoss, sleeptalk, snore, stoneedge, strength, substitute, sunnyday, swagger, swift, thief, thunderpunch, toxic, workup"
-        }
+        },
+        "evolutionMoves":"cometpunch"
       }
     },
     {
@@ -12947,7 +12983,8 @@
         },
         "misc": {
           "moves": "attract, captivate, confide, darkpulse, doubleteam, endure, explosion, facade, fireblast, flamethrower, flash, frustration, gigaimpact, gyroball, hiddenpower, hyperbeam, incinerate, infestation, mimic, naturalgift, painsplit, payback, protect, raindance, rest, return, rollout, round, secretpower, shadowball, shockwave, sleeptalk, sludgebomb, snore, spite, substitute, sunnyday, swagger, taunt, thief, thunder, thunderbolt, torment, toxic, uproar, venoshock, willowisp"
-        }
+        },
+        "evolutionMoves":"doublehit"
       }
     },
     {
@@ -13139,7 +13176,8 @@
         },
         "misc": {
           "moves": "ancientpower, aquatail, attract, avalanche, blizzard, block, bodyslam, brickbreak, bulldoze, captivate, confide, cut, dig, doubleedge, doubleteam, dragonpulse, dragontail, drillrun, dynamicpunch, earthpower, earthquake, endeavor, endure, facade, fireblast, firepunch, flamethrower, fling, focusblast, focuspunch, frustration, furycutter, gigaimpact, headbutt, hiddenpower, hyperbeam, icebeam, icepunch, icywind, incinerate, irontail, megakick, megapunch, mimic, mudslap, naturalgift, outrage, payback, poisonjab, poweruppunch, protect, raindance, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, sandstorm, secretpower, seismictoss, shadowclaw, shockwave, sleeptalk, smackdown, snore, spite, stealthrock, stoneedge, strength, substitute, sunnyday, superpower, surf, swagger, swordsdance, thief, thunder, thunderbolt, thunderpunch, toxic, uproar, whirlpool"
-        }
+        },
+        "evolutionMoves":"hammerarm"
       }
     },
     {
@@ -14981,7 +15019,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, avalanche, blizzard, bodyslam, bounce, brine, bulldoze, captivate, confide, darkpulse, dive, doubleedge, doubleteam, dragonpulse, dragontail, earthquake, endure, facade, fireblast, flamethrower, frustration, gigaimpact, hail, headbutt, hiddenpower, hyperbeam, icebeam, icywind, incinerate, ironhead, irontail, mimic, naturalgift, outrage, payback, protect, raindance, rest, return, roar, rocksmash, round, sandstorm, scald, secretpower, sleeptalk, snore, spite, stoneedge, strength, substitute, surf, swagger, taunt, thunder, thunderbolt, thunderwave, torment, toxic, uproar, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"bite"
       }
     },
     {
@@ -15430,7 +15469,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, bite, blizzard, bodyslam, brine, celebrate, confide, covet, dig, dive, doubleedge, doubleteam, echoedvoice, facade, frustration, gigaimpact, hail, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, icebeam, icywind, irontail, lastresort, mimic, mudslap, protect, raindance, rest, retaliate, return, roar, rocksmash, round, scald, secretpower, shadowball, signalbeam, sleeptalk, snore, strength, substitute, sunnyday, surf, swagger, swift, toxic, waterfall, waterpulse, whirlpool, workup"
-        }
+        },
+        "evolutionMoves":"watergun"
       }
     },
     {
@@ -15511,7 +15551,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, celebrate, chargebeam, confide, covet, dig, doubleedge, doubleteam, echoedvoice, facade, flash, frustration, gigaimpact, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, irontail, lastresort, lightscreen, magnetrise, mimic, mudslap, protect, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, shadowball, shockwave, signalbeam, sleeptalk, snore, strength, substitute, sunnyday, swagger, swift, thunder, thunderbolt, thunderwave, toxic, voltswitch, wildcharge, workup"
-        }
+        },
+        "evolutionMoves":"thundershock"
       }
     },
     {
@@ -15592,7 +15633,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, celebrate, confide, covet, dig, doubleedge, doubleteam, echoedvoice, facade, fireblast, flamecharge, flamethrower, frustration, gigaimpact, headbutt, healbell, heatwave, helpinghand, hiddenpower, hyperbeam, hypervoice, incinerate, irontail, lastresort, mimic, mudslap, overheat, protect, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, shadowball, sleeptalk, snore, strength, substitute, sunnyday, superpower, swagger, swift, toxic, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"ember"
       }
     },
     {
@@ -15865,7 +15907,8 @@
         },
         "misc": {
           "moves": "attract, bind, blizzard, bodyslam, captivate, confide, dive, doubleedge, doubleteam, earthpower, endure, facade, frustration, gigaimpact, gyroball, hail, headbutt, hiddenpower, hyperbeam, icebeam, icywind, irondefense, knockoff, mimic, naturalgift, protect, raindance, rest, return, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, scald, secretpower, seismictoss, sleeptalk, smackdown, snore, stealthrock, stoneedge, substitute, surf, swagger, thief, toxic, waterfall, waterpulse"
-        }
+        },
+        "evolutionMoves":"spikecannon"
       }
     },
     {
@@ -16039,7 +16082,8 @@
         },
         "misc": {
           "moves": "aerialace, aquatail, attract, blizzard, bodyslam, brickbreak, brine, captivate, confide, cut, dig, dive, doubleedge, doubleteam, earthpower, facade, frustration, furycutter, gigadrain, gigaimpact, hail, headbutt, hiddenpower, honeclaws, hyperbeam, icebeam, icywind, irondefense, knockoff, lowkick, megakick, mimic, mudslap, naturalgift, naturepower, protect, raindance, rest, return, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, sandstorm, scald, secretpower, seismictoss, sleeptalk, smackdown, snore, stealthrock, stoneedge, substitute, superpower, surf, swagger, swordsdance, thief, toxic, waterfall, waterpulse, whirlpool, xscissor"
-        }
+        },
+        "evolutionMoves":"slash"
       }
     },
     {
@@ -16829,7 +16873,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, aquatail, attract, barrier, bind, blizzard, bodyslam, brickbreak, bulldoze, captivate, confide, cut, defog, dive, doubleedge, doubleteam, dracometeor, dragonclaw, dragonpulse, dragontail, dynamicpunch, earthquake, endure, facade, fireblast, firepunch, flamethrower, fling, fly, focusblast, focuspunch, frustration, furycutter, gigaimpact, hail, headbutt, heatwave, hiddenpower, honeclaws, hyperbeam, icebeam, icepunch, icywind, incinerate, ironhead, irontail, lightscreen, mimic, mudslap, naturalgift, ominouswind, outrage, poweruppunch, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, roost, round, safeguard, sandstorm, secretpower, shockwave, skydrop, sleeptalk, snore, steelwing, stoneedge, strength, substitute, sunnyday, superpower, surf, swagger, swift, tailwind, thunder, thunderbolt, thunderpunch, thunderwave, toxic, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"wingattack"
       }
     },
     {
@@ -17361,7 +17406,8 @@
         },
         "misc": {
           "moves": "attract, bulldoze, bulletseed, captivate, confide, cut, doubleedge, doubleteam, dragontail, earthquake, echoedvoice, endure, energyball, facade, flash, frenzyplant, frustration, furycutter, gigadrain, gigaimpact, grassknot, grasspledge, headbutt, hiddenpower, hyperbeam, irontail, lightscreen, magiccoat, mimic, mudslap, naturepower, outrage, protect, reflect, rest, return, rocksmash, round, safeguard, secretpower, seedbomb, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, swagger, swordsdance, synthesis, toxic, worryseed"
-        }
+        },
+        "evolutionMoves":"petaldance"
       }
     },
     {
@@ -18152,7 +18198,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bodyslam, brickbreak, chargebeam, confide, covet, cut, dig, doubleteam, dynamicpunch, echoedvoice, endure, facade, firepunch, flamethrower, fling, focusblast, focuspunch, frustration, furycutter, gigaimpact, grassknot, headbutt, helpinghand, hiddenpower, honeclaws, hyperbeam, hypervoice, icebeam, icepunch, irontail, knockoff, lastresort, mimic, mudslap, poweruppunch, protect, raindance, rest, retaliate, return, rocksmash, rollout, round, secretpower, shadowball, shadowclaw, shockwave, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, superfang, surf, swagger, swift, thief, thunder, thunderbolt, thunderpunch, toxic, trick, uproar, uturn, waterpulse, whirlpool, workup"
-        }
+        },
+        "evolutionMoves":"agility"
       }
     },
     {
@@ -18703,7 +18750,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, bounce, bugbite, captivate, confide, dig, doubleedge, doubleteam, electroweb, endure, facade, flash, foulplay, frustration, gigadrain, gigaimpact, hiddenpower, honeclaws, hyperbeam, infestation, mimic, naturalgift, poisonjab, protect, psychic, rest, return, round, secretpower, signalbeam, sleeptalk, sludgebomb, snore, solarbeam, strugglebug, substitute, sunnyday, swagger, thief, toxic, venoshock, xscissor"
-        }
+        },
+        "evolutionMoves":"swordsdance"
       }
     },
     {
@@ -18790,7 +18838,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, captivate, confide, darkpulse, doubleedge, doubleteam, endure, facade, fly, frustration, gigadrain, gigaimpact, heatwave, hiddenpower, hyperbeam, mimic, naturalgift, ominouswind, payback, pluck, protect, raindance, rest, return, roost, round, secretpower, shadowball, skyattack, sleeptalk, sludgebomb, snatch, snore, steelwing, substitute, sunnyday, superfang, swagger, tailwind, taunt, thief, torment, toxic, twister, uproar, uturn, venoshock, xscissor, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"crosspoison"
       }
     },
     {
@@ -19008,7 +19057,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bounce, captivate, chargebeam, confide, dazzlinggleam, dive, doubleedge, doubleteam, endure, facade, flash, frustration, gigaimpact, hail, healbell, hiddenpower, hyperbeam, icebeam, icywind, mimic, naturalgift, protect, raindance, rest, return, round, scald, secretpower, shockwave, signalbeam, sleeptalk, snore, substitute, suckerpunch, surf, swagger, thunder, thunderbolt, thunderwave, toxic, voltswitch, waterfall, waterpulse, wildcharge"
-        }
+        },
+        "evolutionMoves":"stockpile,swallow,spitup"
       }
     },
     {
@@ -19607,7 +19657,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, calmmind, captivate, confide, dazzlinggleam, defog, doubleedge, doubleteam, dreameater, endure, facade, flash, fly, foulplay, frustration, gigadrain, gigaimpact, grassknot, heatwave, hiddenpower, hyperbeam, lightscreen, magiccoat, magicroom, mimic, naturalgift, nightmare, painsplit, pluck, protect, psychic, psychup, psyshock, raindance, reflect, rest, return, roost, round, secretpower, shadowball, signalbeam, silverwind, skillswap, skyattack, sleeptalk, snore, solarbeam, steelwing, substitute, sunnyday, swagger, swift, tailwind, telekinesis, thief, thunderwave, toxic, trick, trickroom, twister, uturn, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"airslash"
       }
     },
     {
@@ -19993,7 +20044,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, brickbreak, bulldoze, captivate, chargebeam, confide, counter, defensecurl, doubleedge, doubleteam, dragonpulse, dynamicpunch, echoedvoice, electroweb, endure, facade, firepunch, flash, fling, focusblast, focuspunch, frustration, gigaimpact, headbutt, healbell, hiddenpower, hyperbeam, irontail, lightscreen, magnetrise, megakick, megapunch, mimic, naturalgift, outrage, poweruppunch, protect, raindance, rest, return, rocksmash, round, safeguard, secretpower, seismictoss, shockwave, signalbeam, sleeptalk, snore, strength, substitute, swagger, swift, thunder, thunderbolt, thunderpunch, thunderwave, toxic, voltswitch, wildcharge"
-        }
+        },
+        "evolutionMoves":"thunderpunch"
       }
     },
     {
@@ -20093,7 +20145,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, bulletseed, captivate, confide, cut, dazzlinggleam, doubleedge, doubleteam, drainpunch, endure, energyball, facade, flash, fling, frustration, gastroacid, gigadrain, gigaimpact, grassknot, hiddenpower, hyperbeam, infestation, mimic, naturalgift, naturepower, protect, rest, return, round, safeguard, secretpower, seedbomb, sleeptalk, sludgebomb, snore, solarbeam, substitute, sunnyday, swagger, swordsdance, synthesis, toxic, uproar, venoshock, worryseed"
-        }
+        },
+        "evolutionMoves":"magicalleaf"
       }
     },
     {
@@ -20341,7 +20394,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, block, bodyslam, brickbreak, bulldoze, calmmind, captivate, confide, covet, dig, doubleteam, dynamicpunch, earthpower, earthquake, explosion, facade, firepunch, fling, focuspunch, foulplay, frustration, helpinghand, hiddenpower, icepunch, lowkick, megakick, megapunch, mudslap, naturalgift, naturepower, poweruppunch, protect, psychup, rest, return, rockpolish, rockslide, rocksmash, rocktomb, roleplay, round, sandstorm, secretpower, seismictoss, sleeptalk, smackdown, snore, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, taunt, thief, thunderpunch, torment, toxic"
-        }
+        },
+        "evolutionMoves":"slam"
       }
     },
     {
@@ -21348,7 +21402,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, calmmind, celebrate, confide, covet, cut, dazzlinggleam, dig, doubleedge, doubleteam, dreameater, echoedvoice, facade, flash, frustration, gigaimpact, grassknot, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, irontail, lastresort, lightscreen, magiccoat, magicroom, mimic, mudslap, nightmare, protect, psychic, psychup, psyshock, raindance, reflect, rest, retaliate, return, round, secretpower, shadowball, signalbeam, skillswap, sleeptalk, snore, substitute, sunnyday, swagger, telekinesis, toxic, trick, trickroom, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"confusion"
       }
     },
     {
@@ -21430,7 +21485,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, celebrate, confide, covet, cut, darkpulse, dig, doubleedge, doubleteam, dreameater, echoedvoice, facade, flash, foulplay, frustration, gigaimpact, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, irontail, lastresort, mimic, mudslap, nightmare, payback, protect, psychic, psychup, raindance, rest, retaliate, return, round, secretpower, shadowball, sleeptalk, snarl, snatch, snore, spite, substitute, suckerpunch, sunnyday, swagger, swift, taunt, torment, toxic, wonderroom, workup"
-        }
+        },
+        "evolutionMoves":"pursuit"
       }
     },
     {
@@ -22530,7 +22586,8 @@
         },
         "misc": {
           "moves": "attract, block, bodyslam, bugbite, bulldoze, captivate, confide, defensecurl, dig, doubleteam, drillrun, earthquake, explosion, facade, flashcannon, frustration, gigadrain, gigaimpact, gravity, gyroball, headbutt, hiddenpower, hyperbeam, irondefense, lightscreen, magnetrise, mimic, painsplit, payback, protect, reflect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, sandstorm, secretpower, signalbeam, sleeptalk, snore, solarbeam, stealthrock, strength, stringshot, strugglebug, substitute, sunnyday, swagger, toxic, venoshock, voltswitch"
-        }
+        },
+        "evolutionMoves":"mirrorshot,autotomize"
       }
     },
     {
@@ -23986,7 +24043,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, bulldoze, captivate, confide, defensecurl, doubleedge, doubleteam, earthpower, earthquake, endure, explosion, facade, fireblast, flamecharge, flamethrower, frustration, gigaimpact, gyroball, heatwave, hiddenpower, hyperbeam, incinerate, infestation, irondefense, lightscreen, mimic, mudslap, naturalgift, naturepower, overheat, painsplit, protect, reflect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, selfdestruct, sleeptalk, smackdown, snore, solarbeam, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, toxic, willowisp"
-        }
+        },
+        "evolutionMoves":"shellsmash"
       }
     },
     {
@@ -24206,7 +24264,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, bulldoze, captivate, confide, defensecurl, dig, doubleteam, earthpower, earthquake, endeavor, facade, frustration, gigaimpact, hail, headbutt, hiddenpower, hyperbeam, icebeam, icywind, lightscreen, mimic, naturalgift, protect, raindance, reflect, rest, return, roar, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, sleeptalk, snore, stealthrock, stoneedge, strength, substitute, superpower, swagger, toxic"
-        }
+        },
+        "evolutionMoves":"furyattack"
       }
     },
     {
@@ -24488,7 +24547,8 @@
         },
         "misc": {
           "moves": "attract, bind, blizzard, bounce, brine, captivate, chargebeam, confide, defensecurl, dive, doubleedge, doubleteam, endure, energyball, facade, fireblast, flamethrower, flashcannon, frustration, gigaimpact, gunkshot, hiddenpower, hyperbeam, icebeam, icywind, incinerate, mimic, mudslap, naturalgift, payback, protect, psychic, raindance, rest, return, round, scald, secretpower, seedbomb, seismictoss, signalbeam, sleeptalk, sludgebomb, sludgewave, smackdown, snore, stringshot, substitute, sunnyday, surf, swagger, thief, thunderwave, toxic, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"octazooka"
       }
     },
     {
@@ -25284,7 +25344,8 @@
         },
         "misc": {
           "moves": "attract, block, bounce, bulldoze, captivate, confide, doubleedge, doubleteam, earthpower, earthquake, echoedvoice, endeavor, endure, facade, frustration, gigaimpact, gunkshot, gyroball, headbutt, hiddenpower, hyperbeam, hypervoice, irondefense, irontail, knockoff, lastresort, mimic, naturalgift, poisonjab, protect, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, seedbomb, sleeptalk, snore, stealthrock, stoneedge, strength, substitute, sunnyday, superpower, swagger, toxic"
-        }
+        },
+        "evolutionMoves":"furyattack"
       }
     },
     {
@@ -25719,7 +25780,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bodyslam, brickbreak, bulkup, bulldoze, captivate, confide, covet, dig, doubleedge, doubleteam, drillrun, earthquake, endeavor, facade, frustration, gyroball, headbutt, helpinghand, hiddenpower, lowkick, lowsweep, megakick, mimic, mudslap, naturalgift, protect, raindance, rest, retaliate, return, rockslide, rocksmash, roleplay, rollout, round, sandstorm, secretpower, seismictoss, sleeptalk, snore, stoneedge, strength, substitute, suckerpunch, sunnyday, swagger, swift, thief, toxic, twister, workup"
-        }
+        },
+        "evolutionMoves":"rollingkick"
       }
     },
     {
@@ -27239,7 +27301,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, bodyslam, brickbreak, captivate, confide, counter, cut, dig, doubleedge, doubleteam, drainpunch, dynamicpunch, endeavor, endure, energyball, facade, falseswipe, flash, fling, focuspunch, frustration, gigadrain, grassknot, grasspledge, headbutt, hiddenpower, irontail, lowkick, lowsweep, megakick, megapunch, mimic, mudslap, naturepower, poweruppunch, protect, rest, return, rockslide, rocksmash, rocktomb, round, safeguard, secretpower, seedbomb, seismictoss, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, swagger, swift, swordsdance, synthesis, thunderpunch, toxic, worryseed, xscissor"
-        }
+        },
+        "evolutionMoves":"furycutter"
       }
     },
     {
@@ -27330,7 +27393,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, bodyslam, brickbreak, bulldoze, captivate, confide, counter, cut, dig, doubleedge, doubleteam, dragonclaw, dragonpulse, drainpunch, dualchop, dynamicpunch, earthquake, endeavor, endure, energyball, facade, falseswipe, flash, fling, focusblast, focuspunch, frenzyplant, frustration, gigadrain, gigaimpact, grassknot, grasspledge, headbutt, hiddenpower, honeclaws, hyperbeam, irontail, lowkick, lowsweep, megakick, megapunch, mimic, mudslap, naturepower, outrage, poweruppunch, protect, rest, return, roar, rockslide, rocksmash, rocktomb, round, safeguard, secretpower, seedbomb, seismictoss, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, swagger, swift, swordsdance, synthesis, thunderpunch, toxic, worryseed, xscissor"
-        }
+        },
+        "evolutionMoves":"dualchop"
       }
     },
     {
@@ -27581,7 +27645,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bodyslam, bounce, brickbreak, bulkup, captivate, confide, cut, dig, doubleedge, doubleteam, dualchop, dynamicpunch, echoedvoice, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, fling, focusblast, focuspunch, frustration, furycutter, headbutt, heatwave, helpinghand, hiddenpower, honeclaws, incinerate, lastresort, lowkick, lowsweep, megakick, megapunch, mimic, mudslap, naturalgift, overheat, poisonjab, poweruppunch, protect, rest, return, rockslide, rocksmash, rocktomb, round, secretpower, seismictoss, shadowclaw, sleeptalk, snore, strength, substitute, sunnyday, swagger, swift, swordsdance, thunderpunch, toxic, vacuumwave, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"doublekick"
       }
     },
     {
@@ -27684,7 +27749,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, blastburn, bodyslam, bounce, brickbreak, bulkup, bulldoze, captivate, confide, cut, dig, doubleedge, doubleteam, dualchop, dynamicpunch, earthquake, echoedvoice, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, fling, focusblast, focuspunch, frustration, furycutter, gigaimpact, headbutt, heatwave, helpinghand, hiddenpower, honeclaws, hyperbeam, incinerate, knockoff, lastresort, lowkick, lowsweep, megakick, megapunch, mimic, mudslap, naturalgift, overheat, poisonjab, poweruppunch, protect, rest, return, roar, rockslide, rocksmash, rocktomb, roleplay, round, secretpower, seismictoss, shadowclaw, sleeptalk, snore, solarbeam, stoneedge, strength, substitute, sunnyday, superpower, swagger, swift, swordsdance, thunderpunch, toxic, vacuumwave, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"blazekick"
       }
     },
     {
@@ -27809,7 +27875,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bodyslam, captivate, confide, defensecurl, dig, dive, doubleteam, earthpower, echoedvoice, endeavor, endure, facade, frustration, hail, headbutt, hiddenpower, icebeam, icywind, irontail, lowkick, mimic, naturalgift, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, rollout, round, scald, secretpower, sleeptalk, sludgewave, snore, strength, substitute, superpower, surf, swagger, toxic, uproar, waterfall, waterpledge, waterpulse"
-        }
+        },
+        "evolutionMoves":"mudshot"
       }
     },
     {
@@ -28179,7 +28246,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, captivate, confide, counter, covet, darkpulse, dig, doubleedge, doubleteam, embargo, endure, facade, foulplay, frustration, gigaimpact, headbutt, hiddenpower, hyperbeam, hypervoice, incinerate, irontail, mimic, mudslap, naturalgift, payback, protect, psychup, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, shadowball, sleeptalk, snarl, snatch, snore, spite, strength, substitute, sunnyday, superfang, swagger, taunt, thief, torment, toxic, uproar"
-        }
+        },
+        "evolutionMoves":"snarl"
       }
     },
     {
@@ -28582,7 +28650,8 @@
         },
         "misc": {
           "moves": "bugbite, electroweb, irondefense, stringshot"
-        }
+        },
+        "evolutionMoves":"harden"
       }
     },
     {
@@ -28668,7 +28737,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, bugbite, captivate, confide, defog, doubleedge, doubleteam, electroweb, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, mimic, naturalgift, ominouswind, protect, psychic, rest, return, roost, round, safeguard, secretpower, shadowball, signalbeam, sleeptalk, snore, solarbeam, stringshot, strugglebug, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uturn, venoshock"
-        }
+        },
+        "evolutionMoves":"gust"
       }
     },
     {
@@ -28745,7 +28815,8 @@
         },
         "misc": {
           "moves": "bugbite, electroweb, irondefense, stringshot"
-        }
+        },
+        "evolutionMoves":"harden"
       }
     },
     {
@@ -28831,7 +28902,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, aircutter, attract, bugbite, captivate, confide, defog, doubleedge, doubleteam, electroweb, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, lightscreen, mimic, naturalgift, ominouswind, protect, psychic, rest, return, roost, round, secretpower, shadowball, signalbeam, sleeptalk, sludgebomb, snore, solarbeam, stringshot, strugglebug, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uturn, venoshock"
-        }
+        },
+        "evolutionMoves":"gust"
       }
     },
     {
@@ -29019,7 +29091,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, bodyslam, brickbreak, bulletseed, captivate, confide, dive, doubleedge, doubleteam, drainpunch, dynamicpunch, echoedvoice, endure, energyball, facade, firepunch, flash, fling, frustration, gigadrain, grassknot, hail, headbutt, hiddenpower, honeclaws, hypervoice, icebeam, icepunch, icywind, knockoff, mimic, mudslap, naturalgift, naturepower, poweruppunch, protect, raindance, rest, return, rocksmash, round, scald, secretpower, seedbomb, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, surf, swagger, swordsdance, synthesis, thief, thunderpunch, toxic, uproar, waterfall, waterpulse, whirlpool, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"razorleaf"
       }
     },
     {
@@ -29770,7 +29843,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, blizzard, captivate, confide, defog, doubleedge, doubleteam, echoedvoice, endure, facade, fling, fly, frustration, gigaimpact, gunkshot, hail, hiddenpower, hyperbeam, icebeam, icywind, knockoff, mimic, mudslap, naturalgift, ominouswind, payback, pluck, protect, raindance, rest, return, roost, round, scald, secretpower, seedbomb, shockwave, skyattack, skydrop, sleeptalk, snore, steelwing, substitute, surf, swagger, swift, tailwind, thief, toxic, uproar, uturn, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"protect"
       }
     },
     {
@@ -29897,6 +29971,7 @@
           },
           {
             "name": "Gallade",
+            "sexe": "male",
             "item_preset": "dawnstone"
           }
         ],
@@ -30489,7 +30564,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, brickbreak, bulkup, captivate, confide, cut, doubleedge, doubleteam, drainpunch, endure, energyball, facade, falseswipe, flash, fling, focusblast, focuspunch, frustration, furycutter, gigadrain, gigaimpact, grassknot, helpinghand, hiddenpower, hyperbeam, irontail, lowsweep, megakick, megapunch, mimic, mudslap, poweruppunch, protect, rest, retaliate, return, rockslide, rocksmash, rocktomb, round, safeguard, secretpower, seedbomb, seismictoss, sleeptalk, sludgebomb, snatch, snore, solarbeam, stoneedge, strength, substitute, sunnyday, superpower, swagger, swordsdance, synthesis, thunderpunch, toxic, vacuumwave, venoshock, workup, worryseed"
-        }
+        },
+        "evolutionMoves":"machpunch"
       }
     },
     {
@@ -30801,7 +30877,8 @@
         },
         "misc": {
           "moves": "aerialace, afteryou, attract, blizzard, block, brickbreak, bulkup, bulldoze, captivate, confide, covet, cut, doubleedge, doubleteam, dynamicpunch, earthquake, endure, facade, fireblast, firepunch, flamethrower, fling, focusblast, focuspunch, frustration, furycutter, gigaimpact, gunkshot, headbutt, hiddenpower, honeclaws, hyperbeam, icebeam, icepunch, icywind, incinerate, lowkick, lowsweep, megakick, megapunch, mimic, mudslap, naturalgift, poweruppunch, protect, quash, raindance, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, seismictoss, shadowball, shadowclaw, shockwave, sleeptalk, smackdown, snore, solarbeam, strength, substitute, suckerpunch, sunnyday, swagger, taunt, thunder, thunderbolt, thunderpunch, toxic, waterpulse, workup"
-        }
+        },
+        "evolutionMoves":"swagger"
       }
     },
     {
@@ -30967,7 +31044,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, bugbite, captivate, confide, cut, defog, dig, doubleedge, doubleteam, facade, falseswipe, flash, frustration, gigadrain, gigaimpact, hiddenpower, honeclaws, hyperbeam, mimic, mudslap, naturalgift, ominouswind, protect, rest, return, roost, round, sandstorm, secretpower, shadowball, sleeptalk, snore, solarbeam, spite, stringshot, strugglebug, substitute, sunnyday, swagger, swift, swordsdance, thief, toxic, uproar, uturn, xscissor"
-        }
+        },
+        "evolutionMoves":"doubleteam,screech,furycutter"
       }
     },
     {
@@ -31233,7 +31311,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, bodyslam, brickbreak, bulldoze, captivate, confide, counter, defensecurl, doubleedge, doubleteam, dynamicpunch, earthquake, echoedvoice, endeavor, endure, facade, fireblast, firepunch, flamethrower, fling, frustration, headbutt, hiddenpower, hypervoice, icebeam, icepunch, icywind, incinerate, lowkick, megakick, megapunch, mimic, mudslap, naturalgift, overheat, poweruppunch, protect, psychup, raindance, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, rollout, round, secretpower, seismictoss, shadowball, shockwave, sleeptalk, smackdown, snore, solarbeam, strength, substitute, sunnyday, swagger, taunt, thunderpunch, torment, toxic, uproar, waterpulse, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"bite"
       }
     },
     {
@@ -31319,7 +31398,8 @@
         },
         "misc": {
           "moves": "attract, avalanche, blizzard, bodyslam, brickbreak, bulldoze, captivate, confide, counter, defensecurl, doubleedge, doubleteam, dynamicpunch, earthquake, echoedvoice, endeavor, endure, facade, fireblast, firepunch, flamethrower, fling, focusblast, frustration, gigaimpact, headbutt, hiddenpower, hyperbeam, hypervoice, icebeam, icepunch, icywind, incinerate, lowkick, megakick, megapunch, mimic, mudslap, naturalgift, outrage, overheat, poweruppunch, protect, psychup, raindance, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, rollout, round, secretpower, seismictoss, shadowball, shockwave, sleeptalk, smackdown, snore, solarbeam, strength, substitute, sunnyday, surf, swagger, taunt, thunderpunch, torment, toxic, uproar, waterpulse, whirlpool, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"crunch"
       }
     },
     {
@@ -33608,7 +33688,8 @@
         },
         "misc": {
           "moves": "attract, block, bulldoze, bulletseed, captivate, confide, counter, defensecurl, doubleedge, doubleteam, dreameater, dynamicpunch, earthquake, endure, explosion, facade, firepunch, frustration, gastroacid, gigadrain, gigaimpact, gunkshot, headbutt, hiddenpower, hyperbeam, icebeam, icepunch, infestation, mimic, naturalgift, nightmare, painsplit, poweruppunch, protect, raindance, rest, return, rocksmash, rollout, round, secretpower, seedbomb, selfdestruct, shadowball, shockwave, sleeptalk, sludgebomb, sludgewave, snatch, snore, solarbeam, strength, substitute, sunnyday, swagger, thunderpunch, toxic, venoshock, waterpulse"
-        }
+        },
+        "evolutionMoves":"bodyslam"
       }
     },
     {
@@ -33804,7 +33885,8 @@
         },
         "misc": {
           "moves": "attract, avalanche, blizzard, bounce, bulldoze, captivate, confide, darkpulse, dive, doubleteam, earthquake, endure, facade, frustration, furycutter, gigaimpact, hail, hiddenpower, hyperbeam, icebeam, icywind, mimic, mudslap, naturalgift, payback, poisonjab, protect, raindance, rest, retaliate, return, roar, rocksmash, rocktomb, round, scald, secretpower, sleeptalk, snarl, snore, spite, strength, substitute, superfang, surf, swagger, taunt, thief, torment, toxic, uproar, waterfall, waterpulse, whirlpool, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"slash"
       }
     },
     {
@@ -34285,7 +34367,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, bulldoze, captivate, confide, dig, doubleedge, doubleteam, earthpower, earthquake, echoedvoice, explosion, facade, fireblast, flamecharge, flamethrower, flashcannon, frustration, gigaimpact, headbutt, heatwave, hiddenpower, hyperbeam, incinerate, ironhead, mimic, mudslap, naturalgift, naturepower, overheat, protect, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, selfdestruct, sleeptalk, snore, solarbeam, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, toxic, willowisp"
-        }
+        },
+        "evolutionMoves":"rockslide"
       }
     },
     {
@@ -34693,7 +34776,8 @@
         },
         "misc": {
           "moves": "attract, bodyslam, bounce, brickbreak, bulldoze, calmmind, captivate, chargebeam, confide, counter, covet, doubleedge, doubleteam, drainpunch, dreameater, dynamicpunch, energyball, facade, firepunch, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, headbutt, healbell, hiddenpower, hyperbeam, icepunch, icywind, irontail, lightscreen, magiccoat, megakick, megapunch, mimic, mudslap, naturalgift, payback, poweruppunch, protect, psychic, psychup, psyshock, raindance, recycle, reflect, rest, return, roleplay, round, secretpower, seismictoss, shadowball, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, substitute, sunnyday, swagger, swift, taunt, telekinesis, thief, thunderpunch, thunderwave, torment, toxic, trick, trickroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"teeterdance"
       }
     },
     {
@@ -34991,7 +35075,8 @@
         },
         "misc": {
           "moves": "aircutter, attract, bodyslam, bugbite, bulldoze, captivate, confide, defog, dig, doubleedge, doubleteam, dracometeor, dragonpulse, earthpower, earthquake, facade, fly, frustration, gigadrain, headbutt, heatwave, hiddenpower, hyperbeam, mimic, naturalgift, ominouswind, outrage, protect, rest, return, rockslide, rocksmash, rocktomb, roost, round, sandstorm, secretpower, signalbeam, silverwind, sleeptalk, snore, solarbeam, steelwing, strength, strugglebug, substitute, sunnyday, superpower, swagger, swift, tailwind, toxic, twister, uproar, uturn"
-        }
+        },
+        "evolutionMoves":"dragonbreath"
       }
     },
     {
@@ -35070,7 +35155,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, bodyslam, bugbite, bulldoze, captivate, confide, defog, dig, doubleedge, doubleteam, dracometeor, dragonclaw, dragonpulse, dragontail, earthpower, earthquake, facade, fireblast, firepunch, flamethrower, fly, frustration, gigadrain, gigaimpact, headbutt, heatwave, hiddenpower, honeclaws, hyperbeam, incinerate, irontail, mimic, naturalgift, ominouswind, outrage, poweruppunch, protect, rest, return, rockslide, rocksmash, rocktomb, roost, round, sandstorm, secretpower, signalbeam, silverwind, sleeptalk, snore, solarbeam, steelwing, stoneedge, strength, strugglebug, substitute, sunnyday, superpower, swagger, swift, tailwind, thunderpunch, toxic, twister, uproar, uturn"
-        }
+        },
+        "evolutionMoves":"dragonclaw"
       }
     },
     {
@@ -35245,7 +35331,8 @@
         },
         "misc": {
           "moves": "attract, block, bodyslam, brickbreak, bulletseed, captivate, confide, cut, darkpulse, doubleedge, doubleteam, drainpunch, embargo, endure, energyball, facade, flash, fling, focusblast, focuspunch, foulplay, frustration, furycutter, gigadrain, gigaimpact, grassknot, headbutt, hiddenpower, hyperbeam, lowkick, megakick, megapunch, mimic, mudslap, naturalgift, naturepower, payback, poisonjab, poweruppunch, protect, rest, retaliate, return, roleplay, round, sandstorm, secretpower, seedbomb, seismictoss, sleeptalk, snore, solarbeam, spite, strength, substitute, sunnyday, superpower, swagger, swordsdance, synthesis, thunderpunch, toxic, venoshock, worryseed"
-        }
+        },
+        "evolutionMoves":"spikyshield"
       }
     },
     {
@@ -35440,7 +35527,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, bodyslam, bulldoze, captivate, confide, dazzlinggleam, doubleedge, doubleteam, dracometeor, dragonclaw, dragonpulse, dreameater, earthquake, echoedvoice, endure, facade, fireblast, flamethrower, fly, frustration, gigaimpact, healbell, heatwave, hiddenpower, honeclaws, hyperbeam, hypervoice, icebeam, incinerate, irontail, mimic, mudslap, ominouswind, outrage, protect, psychup, raindance, rest, return, roar, rocksmash, roost, round, safeguard, secretpower, skyattack, sleeptalk, snore, solarbeam, steelwing, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uproar, wonderroom"
-        }
+        },
+        "evolutionMoves":"dragonbreath"
       }
     },
     {
@@ -36082,7 +36170,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bounce, bulldoze, captivate, confide, dive, doubleedge, doubleteam, earthpower, earthquake, endure, facade, frustration, gigaimpact, hail, headbutt, hiddenpower, hyperbeam, icebeam, icywind, mimic, naturalgift, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, round, sandstorm, scald, secretpower, sleeptalk, snore, stoneedge, strength, substitute, surf, swagger, toxic, waterfall, waterpulse, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"thrash"
       }
     },
     {
@@ -36294,7 +36383,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, avalanche, blizzard, brickbreak, captivate, confide, counter, cut, darkpulse, dig, dive, doubleteam, endeavor, endure, facade, falseswipe, fling, frustration, furycutter, gigaimpact, hail, hiddenpower, honeclaws, hyperbeam, icebeam, icywind, irondefense, knockoff, mimic, mudslap, naturalgift, naturepower, payback, protect, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, round, scald, secretpower, sleeptalk, sludgebomb, sludgewave, snarl, snore, spite, strength, substitute, superpower, surf, swagger, swordsdance, taunt, toxic, waterfall, waterpulse, whirlpool, xscissor"
-        }
+        },
+        "evolutionMoves":"swift"
       }
     },
     {
@@ -36471,7 +36561,8 @@
         },
         "misc": {
           "moves": "allyswitch, bulldoze, calmmind, chargebeam, confide, dazzlinggleam, dig, doubleedge, doubleteam, dreameater, drillrun, earthpower, earthquake, endure, explosion, facade, flash, frustration, gigaimpact, grassknot, gravity, gyroball, headbutt, hiddenpower, hyperbeam, icebeam, lightscreen, magiccoat, mimic, naturalgift, protect, psychic, psychup, psyshock, raindance, recycle, reflect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, round, safeguard, sandstorm, secretpower, shadowball, signalbeam, skillswap, sleeptalk, smackdown, snore, solarbeam, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, telekinesis, toxic, trick, trickroom, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"hyperbeam"
       }
     },
     {
@@ -36978,7 +37069,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, avalanche, bind, blizzard, bodyslam, bulldoze, confide, dive, doubleedge, doubleteam, dragonpulse, dragontail, endure, facade, frustration, gigaimpact, hail, hiddenpower, hyperbeam, icebeam, icywind, ironhead, irontail, lightscreen, magiccoat, mimic, mudslap, naturalgift, protect, psychup, raindance, rest, return, round, safeguard, scald, secretpower, sleeptalk, snore, substitute, surf, swagger, swift, toxic, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"waterpulse"
       }
     },
     {
@@ -37587,7 +37679,8 @@
         },
         "misc": {
           "moves": "attract, bind, blizzard, bodyslam, brickbreak, bulldoze, calmmind, captivate, chargebeam, confide, counter, darkpulse, doubleedge, doubleteam, dreameater, dynamicpunch, earthquake, embargo, endure, facade, firepunch, flash, fling, focuspunch, frustration, gigaimpact, gravity, headbutt, hiddenpower, hyperbeam, icebeam, icepunch, icywind, infestation, megakick, megapunch, metronome, mimic, mudslap, naturalgift, nightmare, painsplit, payback, poweruppunch, protect, psychic, psychup, raindance, rest, return, rockslide, rocksmash, rocktomb, round, secretpower, seismictoss, shadowball, skillswap, sleeptalk, snatch, snore, spite, strength, substitute, suckerpunch, sunnyday, swagger, taunt, telekinesis, thief, thunderpunch, torment, toxic, trick, trickroom, willowisp, wonderroom"
-        }
+        },
+        "evolutionMoves":"shadowpunch"
       }
     },
     {
@@ -38041,6 +38134,7 @@
           },
           {
             "name": "Froslass",
+            "sexe": "female",
             "item_preset": "dawnstone"
           }
         ],
@@ -38236,7 +38330,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, block, bodyslam, bulldoze, captivate, confide, darkpulse, defensecurl, doubleedge, doubleteam, earthquake, endure, explosion, facade, flash, frostbreath, frustration, gigaimpact, gyroball, hail, hiddenpower, hyperbeam, icebeam, icywind, ironhead, lightscreen, mimic, naturalgift, payback, protect, raindance, rest, return, round, safeguard, secretpower, selfdestruct, shadowball, signalbeam, sleeptalk, snore, spite, substitute, superfang, swagger, taunt, torment, toxic, waterpulse"
-        }
+        },
+        "evolutionMoves":"freezedry"
       }
     },
     {
@@ -38480,7 +38575,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bulldoze, captivate, confide, dive, doubleedge, doubleteam, earthquake, echoedvoice, endure, facade, frostbreath, frustration, hail, headbutt, hiddenpower, icebeam, icywind, irontail, mimic, mudslap, naturalgift, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, signalbeam, sleeptalk, snore, strength, substitute, superfang, surf, swagger, toxic, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"swagger"
       }
     },
     {
@@ -38585,7 +38681,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, avalanche, blizzard, block, bulldoze, captivate, confide, dive, doubleedge, doubleteam, earthquake, echoedvoice, endure, facade, frostbreath, frustration, furycutter, gigaimpact, hail, headbutt, hiddenpower, hyperbeam, icebeam, icywind, ironhead, irontail, mimic, mudslap, naturalgift, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, signalbeam, sleeptalk, snore, strength, substitute, superfang, surf, swagger, toxic, waterfall, waterpulse, whirlpool"
-        }
+        },
+        "evolutionMoves":"icefang"
       }
     },
     {
@@ -39211,7 +39308,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bodyslam, brickbreak, captivate, confide, cut, doubleteam, dracometeor, dragonclaw, dragonpulse, facade, fireblast, flamethrower, frustration, furycutter, hiddenpower, honeclaws, hypervoice, incinerate, irondefense, mimic, mudslap, naturalgift, outrage, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, rollout, round, secretpower, shadowclaw, sleeptalk, snore, strength, substitute, sunnyday, swagger, toxic, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"protect"
       }
     },
     {
@@ -39294,7 +39392,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, aquatail, attract, bodyslam, brickbreak, bulldoze, captivate, confide, cut, defog, doubleteam, dracometeor, dragonclaw, dragonpulse, dragontail, earthquake, facade, fireblast, flamethrower, fly, frustration, furycutter, gigaimpact, heatwave, hiddenpower, honeclaws, hyperbeam, hypervoice, incinerate, irontail, mimic, mudslap, naturalgift, ominouswind, outrage, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, rollout, roost, round, secretpower, shadowclaw, sleeptalk, snore, steelwing, stoneedge, strength, substitute, sunnyday, swagger, swift, tailwind, toxic, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"fly"
       }
     },
     {
@@ -39533,7 +39632,8 @@
         },
         "misc": {
           "moves": "aerialace, bodyslam, brickbreak, bulldoze, confide, cut, defensecurl, doubleedge, doubleteam, dynamicpunch, earthquake, endure, explosion, facade, flash, flashcannon, frustration, furycutter, grassknot, gravity, gyroball, headbutt, hiddenpower, honeclaws, hyperbeam, icepunch, icywind, irondefense, ironhead, lightscreen, magnetrise, mimic, mudslap, naturalgift, poweruppunch, protect, psychic, psychup, psyshock, raindance, reflect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, sandstorm, secretpower, selfdestruct, shadowball, signalbeam, sleeptalk, sludgebomb, snore, stealthrock, strength, substitute, sunnyday, swagger, swift, telekinesis, thunderpunch, toxic, trick, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"confusion,metalclaw"
       }
     },
     {
@@ -39633,7 +39733,8 @@
         },
         "misc": {
           "moves": "aerialace, block, bodyslam, brickbreak, bulldoze, confide, cut, defensecurl, doubleedge, doubleteam, dynamicpunch, earthquake, endure, explosion, facade, flash, flashcannon, frustration, furycutter, gigaimpact, grassknot, gravity, gyroball, headbutt, hiddenpower, honeclaws, hyperbeam, icepunch, icywind, irondefense, ironhead, lightscreen, magnetrise, mimic, mudslap, naturalgift, poweruppunch, protect, psychic, psychup, psyshock, raindance, reflect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, sandstorm, secretpower, selfdestruct, shadowball, signalbeam, sleeptalk, sludgebomb, snore, stealthrock, strength, substitute, sunnyday, swagger, swift, telekinesis, thunderpunch, toxic, trick, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"hammerarm"
       }
     },
     {
@@ -41254,7 +41355,8 @@
         },
         "misc": {
           "moves": "attract, block, bulldoze, bulletseed, captivate, confide, cut, doubleteam, earthpower, earthquake, endure, energyball, facade, flash, frenzyplant, frustration, gigadrain, gigaimpact, grassknot, grasspledge, headbutt, hiddenpower, hyperbeam, ironhead, irontail, lightscreen, mudslap, naturalgift, naturepower, outrage, protect, reflect, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, safeguard, sandstorm, secretpower, seedbomb, sleeptalk, snore, solarbeam, stealthrock, stoneedge, strength, substitute, sunnyday, superpower, swagger, swordsdance, synthesis, toxic, worryseed"
-        }
+        },
+        "evolutionMoves":"earthquake"
       }
     },
     {
@@ -41442,7 +41544,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, brickbreak, bulkup, captivate, confide, covet, cut, dig, doubleteam, dualchop, endeavor, endure, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, fling, focusblast, focuspunch, frustration, grassknot, gunkshot, headbutt, heatwave, helpinghand, hiddenpower, honeclaws, incinerate, irontail, lowkick, lowsweep, mudslap, naturalgift, overheat, poisonjab, poweruppunch, protect, rest, retaliate, return, rockslide, rocksmash, rocktomb, roleplay, rollout, round, secretpower, shadowclaw, sleeptalk, snore, stealthrock, strength, substitute, sunnyday, swagger, swift, swordsdance, taunt, thunderpunch, torment, toxic, uturn, vacuumwave, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"machpunch"
       }
     },
     {
@@ -41527,7 +41630,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, blastburn, brickbreak, bulkup, bulldoze, calmmind, captivate, confide, covet, cut, dig, doubleteam, dualchop, earthquake, endeavor, endure, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gunkshot, headbutt, heatwave, helpinghand, hiddenpower, honeclaws, hyperbeam, incinerate, irontail, lowkick, lowsweep, mudslap, naturalgift, overheat, poisonjab, poweruppunch, protect, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, roleplay, rollout, round, secretpower, shadowclaw, sleeptalk, snore, solarbeam, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, swift, swordsdance, taunt, thunderpunch, torment, toxic, uturn, vacuumwave, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"closecombat"
       }
     },
     {
@@ -41715,7 +41819,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, blizzard, brickbreak, captivate, confide, covet, cut, defog, dig, dive, doubleteam, echoedvoice, endure, facade, fling, frustration, grassknot, hail, headbutt, hiddenpower, honeclaws, icebeam, icywind, naturalgift, pluck, protect, quash, raindance, rest, return, rocksmash, rocktomb, round, scald, secretpower, shadowclaw, signalbeam, sleeptalk, snore, stealthrock, strength, substitute, surf, swagger, toxic, waterfall, waterpledge, waterpulse"
-        }
+        },
+        "evolutionMoves":"metalclaw"
       }
     },
     {
@@ -41801,7 +41906,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, avalanche, blizzard, brickbreak, bulldoze, captivate, confide, covet, cut, defog, dig, dive, doubleteam, earthquake, echoedvoice, endure, facade, flashcannon, fling, frustration, furycutter, gigaimpact, grassknot, hail, headbutt, hiddenpower, honeclaws, hydrocannon, hyperbeam, icebeam, icywind, irondefense, knockoff, naturalgift, pluck, protect, quash, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, scald, secretpower, shadowclaw, signalbeam, sleeptalk, snore, stealthrock, steelwing, strength, substitute, surf, swagger, swordsdance, toxic, waterfall, waterpledge, waterpulse"
-        }
+        },
+        "evolutionMoves":"aquajet"
       }
     },
     {
@@ -42093,7 +42199,8 @@
         },
         "misc": {
           "moves": "aerialace, aircutter, attract, captivate, confide, defog, doubleteam, echoedvoice, endeavor, endure, facade, fly, frustration, gigaimpact, heatwave, hiddenpower, hyperbeam, mudslap, naturalgift, ominouswind, pluck, protect, raindance, rest, retaliate, return, roost, round, secretpower, skyattack, sleeptalk, snore, steelwing, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uproar, uturn, workup"
-        }
+        },
+        "evolutionMoves":"closecombat"
       }
     },
     {
@@ -42335,7 +42442,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bulldoze, captivate, chargebeam, confide, covet, cut, dig, dive, doubleteam, echoedvoice, facade, fling, focuspunch, frustration, furycutter, gigaimpact, grassknot, hiddenpower, hyperbeam, icebeam, icywind, irontail, lastresort, mudslap, naturalgift, pluck, protect, raindance, rest, retaliate, return, rocksmash, round, scald, secretpower, shadowball, shockwave, sleeptalk, snore, stealthrock, strength, substitute, sunnyday, superfang, superpower, surf, swagger, swift, taunt, thief, thunder, thunderbolt, thunderwave, toxic, waterfall, waterpulse, whirlpool, workup"
-        }
+        },
+        "evolutionMoves":"watergun"
       }
     },
     {
@@ -42488,7 +42596,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, bugbite, captivate, confide, cut, doubleteam, echoedvoice, endeavor, endure, facade, falseswipe, flash, frustration, gigaimpact, healbell, hiddenpower, honeclaws, hyperbeam, hypervoice, infestation, knockoff, mudslap, naturalgift, poweruppunch, protect, raindance, rest, return, rocksmash, round, secretpower, silverwind, sleeptalk, snore, strength, stringshot, strugglebug, substitute, sunnyday, swagger, swordsdance, taunt, toxic, uproar, xscissor"
-        }
+        },
+        "evolutionMoves":"furycutter"
       }
     },
     {
@@ -43095,7 +43204,8 @@
         },
         "misc": {
           "moves": "attract, avalanche, blizzard, brickbreak, bulldoze, captivate, confide, cut, dig, doubleteam, dragonpulse, dragontail, earthpower, earthquake, endeavor, endure, facade, fireblast, firepunch, flamethrower, fling, focusblast, focuspunch, frustration, gigaimpact, hiddenpower, hyperbeam, icebeam, incinerate, ironhead, irontail, mudslap, naturalgift, outrage, painsplit, payback, poweruppunch, protect, raindance, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, shockwave, sleeptalk, smackdown, snore, spite, stealthrock, stoneedge, strength, substitute, sunnyday, superpower, surf, swagger, swordsdance, thief, thunder, thunderbolt, thunderpunch, toxic, uproar, whirlpool, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"endeavor"
       }
     },
     {
@@ -43246,7 +43356,8 @@
         },
         "misc": {
           "moves": "attract, avalanche, blizzard, block, bulldoze, captivate, confide, dig, doubleteam, earthpower, earthquake, facade, fireblast, flamethrower, flashcannon, frustration, gigaimpact, hiddenpower, hyperbeam, icebeam, incinerate, irondefense, ironhead, irontail, magiccoat, magnetrise, mudslap, naturalgift, outrage, protect, raindance, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, shockwave, sleeptalk, smackdown, snore, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, taunt, thunder, thunderbolt, torment, toxic"
-        }
+        },
+        "evolutionMoves":"block"
       }
     },
     {
@@ -43408,7 +43519,8 @@
         },
         "misc": {
           "moves": "bulletseed, endure, naturalgift, stringshot, suckerpunch"
-        }
+        },
+        "evolutionMoves":"quiverdance"
       }
     },
     {
@@ -43572,7 +43684,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, aircutter, attract, bugbite, captivate, confide, defog, doubleteam, dreameater, electroweb, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, mudslap, naturalgift, ominouswind, protect, psychic, psychup, raindance, rest, return, roost, round, safeguard, secretpower, shadowball, signalbeam, skillswap, sleeptalk, snore, solarbeam, stringshot, strugglebug, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, twister, uturn, venoshock"
-        }
+        },
+        "evolutionMoves":"quiverdance"
       }
     },
     {
@@ -43583,6 +43696,7 @@
         "evolutions": [
           {
             "name": "Vespiquen",
+            "sexe": "female",
             "level": 21
           }
         ],
@@ -43739,7 +43853,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, aircutter, attract, bugbite, confide, cut, defog, doubleteam, endeavor, endure, facade, flash, fling, frustration, gigaimpact, hiddenpower, honeclaws, hyperbeam, infestation, mudslap, naturalgift, ominouswind, protect, quash, raindance, rest, return, roost, round, secretpower, signalbeam, silverwind, sleeptalk, sludgebomb, snore, stringshot, strugglebug, substitute, sunnyday, swagger, swift, tailwind, thief, toxic, uturn, venoshock, xscissor"
-        }
+        },
+        "evolutionMoves":"slash"
       }
     },
     {
@@ -44244,7 +44359,8 @@
         },
         "misc": {
           "moves": "attract, confide, dazzlinggleam, doubleteam, energyball, facade, flash, frustration, gigadrain, gigaimpact, grassknot, helpinghand, hiddenpower, hyperbeam, naturepower, protect, rest, return, round, safeguard, secretpower, seedbomb, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, swordsdance, synthesis, toxic, worryseed"
-        }
+        },
+        "evolutionMoves":"petaldance"
       }
     },
     {
@@ -44926,7 +45042,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, blizzard, bounce, captivate, chargebeam, confide, covet, cut, dig, doubleteam, drainpunch, endeavor, facade, firepunch, fling, focusblast, focuspunch, frustration, furycutter, gigaimpact, grassknot, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, icebeam, icepunch, irontail, lastresort, lowkick, lowsweep, magiccoat, mudslap, naturalgift, poweruppunch, protect, raindance, rest, retaliate, return, rocksmash, round, secretpower, shadowball, shockwave, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, swagger, swift, thunder, thunderbolt, thunderpunch, thunderwave, toxic, uproar, waterpulse, workup"
-        }
+        },
+        "evolutionMoves":"return"
       }
     },
     {
@@ -45352,7 +45469,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bulldoze, confide, covet, cut, dig, doubleteam, dreameater, echoedvoice, endure, facade, flash, foulplay, frustration, furycutter, gigaimpact, headbutt, hiddenpower, honeclaws, hyperbeam, hypervoice, irontail, knockoff, lastresort, mudslap, naturalgift, payback, protect, psychup, raindance, rest, retaliate, return, roar, rollout, round, secretpower, shadowball, shadowclaw, shockwave, sleeptalk, snatch, snore, substitute, suckerpunch, sunnyday, superfang, swagger, swift, taunt, thief, thunder, thunderbolt, torment, toxic, uturn, waterpulse, workup"
-        }
+        },
+        "evolutionMoves":"swagger"
       }
     },
     {
@@ -45620,7 +45738,8 @@
         },
         "misc": {
           "moves": "attract, captivate, confide, cut, darkpulse, defog, dig, doubleteam, endure, explosion, facade, fireblast, flamethrower, foulplay, frustration, furycutter, gigaimpact, headbutt, hiddenpower, honeclaws, hyperbeam, incinerate, irontail, mudslap, naturalgift, payback, poisonjab, protect, raindance, rest, return, roar, rocksmash, round, secretpower, shadowball, shadowclaw, sleeptalk, sludgebomb, snarl, snatch, snore, strength, substitute, suckerpunch, sunnyday, swagger, swift, taunt, thief, torment, toxic, venoshock"
-        }
+        },
+        "evolutionMoves":"flamethrower"
       }
     },
     {
@@ -45810,7 +45929,8 @@
         },
         "misc": {
           "moves": "ancientpower, block, bulldoze, calmmind, chargebeam, confide, doubleteam, dreameater, earthquake, endure, explosion, facade, flash, flashcannon, frustration, gigaimpact, grassknot, gravity, gyroball, hiddenpower, hyperbeam, irondefense, ironhead, lightscreen, naturalgift, payback, protect, psychic, psychup, psyshock, raindance, recycle, reflect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, safeguard, sandstorm, secretpower, shadowball, signalbeam, skillswap, sleeptalk, snore, solarbeam, stealthrock, strength, substitute, sunnyday, swagger, telekinesis, toxic, trick, trickroom, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"block"
       }
     },
     {
@@ -46415,7 +46535,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bulldoze, captivate, confide, cut, dig, doubleteam, dracometeor, dragonclaw, dragonpulse, dualchop, earthpower, earthquake, endure, facade, fireblast, flamethrower, frustration, furycutter, headbutt, hiddenpower, honeclaws, incinerate, ironhead, irontail, mudslap, naturalgift, outrage, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, shadowclaw, sleeptalk, snore, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, swift, toxic"
-        }
+        },
+        "evolutionMoves":"dualchop"
       }
     },
     {
@@ -46493,7 +46614,8 @@
         },
         "misc": {
           "moves": "aerialace, aquatail, attract, brickbreak, bulldoze, captivate, confide, cut, dig, doubleteam, dracometeor, dragonclaw, dragonpulse, dragontail, dualchop, earthpower, earthquake, endure, facade, falseswipe, fireblast, flamethrower, fling, frustration, furycutter, gigaimpact, headbutt, hiddenpower, honeclaws, hyperbeam, incinerate, ironhead, irontail, mudslap, naturalgift, outrage, poisonjab, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, shadowclaw, sleeptalk, snore, stealthrock, stoneedge, strength, substitute, sunnyday, surf, swagger, swift, swordsdance, toxic, whirlpool"
-        }
+        },
+        "evolutionMoves":"crunch"
       }
     },
     {
@@ -46780,7 +46902,8 @@
         },
         "misc": {
           "moves": "attract, brickbreak, bulkup, bulldoze, calmmind, captivate, confide, darkpulse, dig, doubleteam, dragonpulse, drainpunch, dualchop, earthquake, endure, facade, flashcannon, fling, focusblast, focuspunch, forcepalm, frustration, furycutter, gigaimpact, headbutt, helpinghand, hiddenpower, honeclaws, hyperbeam, icepunch, irondefense, irontail, lowkick, lowsweep, magnetrise, mudslap, naturalgift, payback, poisonjab, poweruppunch, protect, psychic, raindance, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, roleplay, round, secretpower, shadowball, shadowclaw, sleeptalk, snore, stoneedge, strength, substitute, sunnyday, swagger, swift, swordsdance, thunderpunch, toxic, waterpulse, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"aurasphere"
       }
     },
     {
@@ -48124,7 +48247,8 @@
         },
         "misc": {
           "moves": "chargebeam, confide, doubleteam, electroweb, endure, explosion, facade, flash, flashcannon, frustration, gigaimpact, gravity, gyroball, headbutt, hiddenpower, hyperbeam, irondefense, ironhead, lightscreen, magiccoat, magnetrise, naturalgift, protect, psychup, raindance, recycle, reflect, rest, return, rollout, round, secretpower, shockwave, signalbeam, sleeptalk, snore, substitute, sunnyday, swagger, swift, thunder, thunderbolt, thunderwave, toxic, voltswitch, wildcharge"
-        }
+        },
+        "evolutionMoves":"triattack"
       }
     },
     {
@@ -48732,7 +48856,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bulletseed, celebrate, confide, covet, dig, doubleteam, echoedvoice, energyball, facade, flash, frustration, furycutter, gigadrain, gigaimpact, grassknot, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, irontail, knockoff, lastresort, mudslap, naturepower, protect, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, seedbomb, shadowball, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, swagger, swift, swordsdance, synthesis, toxic, workup, worryseed, xscissor"
-        }
+        },
+        "evolutionMoves":"razorleaf"
       }
     },
     {
@@ -48814,7 +48939,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, avalanche, blizzard, celebrate, confide, covet, dig, doubleteam, echoedvoice, facade, frostbreath, frustration, gigaimpact, hail, headbutt, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, icebeam, icywind, irontail, lastresort, mudslap, protect, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, shadowball, signalbeam, sleeptalk, snore, strength, substitute, sunnyday, swagger, swift, toxic, waterpulse, workup"
-        }
+        },
+        "evolutionMoves":"icywind"
       }
     },
     {
@@ -49157,7 +49283,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, bulkup, bulldoze, calmmind, captivate, chargebeam, confide, cut, dazzlinggleam, doubleteam, drainpunch, dreameater, dualchop, earthquake, echoedvoice, endure, facade, falseswipe, firepunch, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, headbutt, helpinghand, hiddenpower, hyperbeam, hypervoice, icepunch, knockoff, lightscreen, lowkick, lowsweep, magiccoat, magicroom, mudslap, naturalgift, painsplit, poisonjab, poweruppunch, protect, psychic, psychup, psyshock, raindance, recycle, reflect, rest, retaliate, return, rockslide, rocksmash, rocktomb, round, safeguard, secretpower, shadowball, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, stoneedge, strength, substitute, sunnyday, swagger, swift, swordsdance, taunt, telekinesis, thief, thunderbolt, thunderpunch, thunderwave, torment, toxic, trick, trickroom, vacuumwave, willowisp, wonderroom, workup, xscissor, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"slash"
       }
     },
     {
@@ -49426,7 +49553,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, block, confide, doubleteam, dreameater, embargo, endure, facade, flash, fling, frostbreath, frustration, gigaimpact, hail, headbutt, hiddenpower, hyperbeam, icebeam, icepunch, icywind, lightscreen, mudslap, naturalgift, painsplit, payback, protect, psychic, psychup, raindance, rest, return, round, safeguard, secretpower, shadowball, shockwave, signalbeam, sleeptalk, snatch, snore, spite, substitute, suckerpunch, swagger, taunt, telekinesis, thunder, thunderbolt, thunderwave, torment, toxic, trick, waterpulse"
-        }
+        },
+        "evolutionMoves":"ominouswind"
       }
     },
     {
@@ -51861,7 +51989,8 @@
         },
         "misc": {
           "moves": "attract, brickbreak, bulldoze, confide, covet, doubleteam, echoedvoice, endeavor, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, fling, focusblast, focuspunch, frustration, grassknot, gyroball, heatwave, helpinghand, hiddenpower, incinerate, irontail, lowkick, lowsweep, overheat, poisonjab, poweruppunch, protect, rest, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, sleeptalk, snore, solarbeam, stoneedge, strength, substitute, sunnyday, superpower, swagger, taunt, thunderpunch, toxic, wildcharge, willowisp, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"armthrust"
       }
     },
     {
@@ -52280,7 +52409,8 @@
         },
         "misc": {
           "moves": "aerialace, aquatail, attract, blizzard, block, confide, covet, cut, dig, dive, doubleteam, dragontail, facade, falseswipe, fling, frustration, gigaimpact, grassknot, hail, helpinghand, hiddenpower, holdback, hydrocannon, hyperbeam, icebeam, icywind, irontail, knockoff, protect, raindance, rest, retaliate, return, rocksmash, round, scald, secretpower, sleeptalk, snore, strength, substitute, superpower, surf, swagger, swordsdance, taunt, toxic, waterfall, waterpledge, waterpulse, xscissor"
-        }
+        },
+        "evolutionMoves":"slash"
       }
     },
     {
@@ -52479,7 +52609,8 @@
         },
         "misc": {
           "moves": "afteryou, aquatail, attract, confide, covet, cut, dig, doubleteam, dreameater, endeavor, facade, firepunch, flamethrower, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gunkshot, helpinghand, hiddenpower, hyperbeam, icepunch, irontail, knockoff, lastresort, lightscreen, lowkick, poweruppunch, protect, psychup, raindance, rest, retaliate, return, rocksmash, round, secretpower, seedbomb, shadowball, shockwave, signalbeam, sleeptalk, snore, strength, substitute, sunnyday, superfang, swagger, swordsdance, thunder, thunderbolt, thunderpunch, thunderwave, toxic, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"confuseray"
       }
     },
     {
@@ -54386,7 +54517,8 @@
         },
         "misc": {
           "moves": "attract, block, bulldoze, confide, doubleteam, earthpower, earthquake, explosion, facade, flashcannon, frustration, gigaimpact, gravity, hiddenpower, hyperbeam, irondefense, ironhead, naturepower, protect, rest, return, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, sleeptalk, smackdown, snore, solarbeam, stealthrock, stoneedge, strength, substitute, superpower, swagger, toxic"
-        }
+        },
+        "evolutionMoves":"powergem"
       }
     },
     {
@@ -54739,7 +54871,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, bulldoze, confide, cut, dig, doubleteam, drillrun, earthpower, earthquake, facade, fling, focusblast, frustration, gigaimpact, hiddenpower, honeclaws, hyperbeam, irondefense, ironhead, magnetrise, poisonjab, protect, rest, return, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, shadowclaw, sleeptalk, sludgebomb, snore, stealthrock, strength, substitute, swagger, swordsdance, toxic, xscissor"
-        }
+        },
+        "evolutionMoves":"horndrill"
       }
     },
     {
@@ -55385,7 +55518,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, bounce, brickbreak, bulldoze, confide, dig, doubleteam, drainpunch, earthpower, earthquake, echoedvoice, endeavor, facade, fling, focusblast, focuspunch, frustration, gastroacid, gigaimpact, grassknot, hail, hiddenpower, hyperbeam, hypervoice, icepunch, icywind, infestation, knockoff, lowkick, payback, poisonjab, poweruppunch, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, round, scald, secretpower, sleeptalk, sludgebomb, sludgewave, snore, stealthrock, strength, substitute, surf, swagger, toxic, uproar, venoshock, waterpulse"
-        }
+        },
+        "evolutionMoves":"acid"
       }
     },
     {
@@ -55723,7 +55857,8 @@
         },
         "misc": {
           "moves": "attract, bugbite, calmmind, confide, cut, doubleteam, dreameater, electroweb, energyball, facade, flash, frustration, gigadrain, grassknot, hiddenpower, irondefense, lightscreen, magiccoat, naturepower, payback, protect, rest, return, round, safeguard, secretpower, seedbomb, signalbeam, sleeptalk, snore, solarbeam, strugglebug, substitute, sunnyday, swagger, synthesis, toxic, worryseed"
-        }
+        },
+        "evolutionMoves":"protect"
       }
     },
     {
@@ -55797,7 +55932,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bugbite, calmmind, confide, cut, doubleteam, dreameater, electroweb, energyball, facade, falseswipe, flash, frustration, gigadrain, gigaimpact, grassknot, healbell, helpinghand, hiddenpower, honeclaws, hyperbeam, irondefense, knockoff, lightscreen, magiccoat, naturepower, payback, poisonjab, protect, reflect, rest, retaliate, return, round, safeguard, secretpower, seedbomb, shadowclaw, signalbeam, sleeptalk, snore, solarbeam, steelwing, strugglebug, substitute, sunnyday, swagger, swordsdance, synthesis, toxic, worryseed, xscissor"
-        }
+        },
+        "evolutionMoves":"slash"
       }
     },
     {
@@ -55987,7 +56123,8 @@
         },
         "misc": {
           "moves": "attract, bugbite, confide, doubleteam, endeavor, facade, frustration, gyroball, hiddenpower, infestation, irondefense, payback, poisonjab, protect, rest, return, rocksmash, round, secretpower, signalbeam, sleeptalk, sludgebomb, snore, solarbeam, strugglebug, substitute, sunnyday, swagger, toxic, venoshock"
-        }
+        },
+        "evolutionMoves":"irondefense"
       }
     },
     {
@@ -56064,7 +56201,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, bugbite, bulldoze, confide, cut, dig, doubleteam, earthquake, endeavor, facade, frustration, gigaimpact, gyroball, hiddenpower, hyperbeam, infestation, irondefense, irontail, payback, poisonjab, protect, rest, return, rockslide, rocksmash, rocktomb, round, secretpower, signalbeam, sleeptalk, sludgebomb, snatch, snore, solarbeam, strength, strugglebug, substitute, sunnyday, superpower, swagger, swordsdance, toxic, venoshock, xscissor"
-        }
+        },
+        "evolutionMoves":"batonpass"
       }
     },
     {
@@ -56993,7 +57131,8 @@
         },
         "misc": {
           "moves": "attract, brickbreak, bulkup, bulldoze, confide, dig, doubleteam, earthquake, endeavor, facade, fireblast, firepunch, flamecharge, flamethrower, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gyroball, heatwave, hiddenpower, hyperbeam, incinerate, overheat, payback, poweruppunch, protect, psychic, rest, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, sleeptalk, smackdown, snatch, snore, solarbeam, stoneedge, strength, substitute, sunnyday, superpower, swagger, taunt, thief, torment, toxic, uproar, uturn, willowisp, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"hammerarm"
       }
     },
     {
@@ -57754,7 +57893,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, block, calmmind, confide, darkpulse, doubleteam, dreameater, embargo, energyball, facade, flash, frustration, gigaimpact, grassknot, hiddenpower, hyperbeam, infestation, irondefense, knockoff, magiccoat, painsplit, payback, protect, psychic, psychup, raindance, rest, return, roleplay, round, safeguard, secretpower, shadowball, shockwave, skillswap, sleeptalk, snatch, snore, spite, substitute, swagger, telekinesis, thief, toxic, trick, trickroom, willowisp, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"scaryface"
       }
     },
     {
@@ -58494,7 +58634,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bounce, calmmind, confide, covet, cut, darkpulse, dig, doubleteam, embargo, facade, flamethrower, fling, focusblast, foulplay, frustration, gigaimpact, grassknot, hiddenpower, honeclaws, hyperbeam, hypervoice, incinerate, knockoff, lowkick, lowsweep, payback, protect, psychup, raindance, rest, retaliate, return, roar, rocksmash, round, secretpower, shadowball, shadowclaw, sleeptalk, sludgebomb, snarl, snatch, snore, spite, substitute, sunnyday, swagger, swordsdance, taunt, thief, torment, toxic, trick, uproar, uturn"
-        }
+        },
+        "evolutionMoves":"nightslash"
       }
     },
     {
@@ -59218,7 +59359,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, calmmind, confide, doubleteam, drainpunch, dreameater, embargo, endeavor, energyball, explosion, facade, firepunch, flash, flashcannon, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gravity, gyroball, helpinghand, hiddenpower, hyperbeam, icepunch, infestation, irondefense, knockoff, lightscreen, magiccoat, painsplit, poweruppunch, protect, psychic, psychup, psyshock, raindance, reflect, rest, return, rockslide, rocksmash, rocktomb, roleplay, round, safeguard, secretpower, shadowball, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, strength, substitute, superpower, swagger, telekinesis, thunder, thunderpunch, thunderwave, toxic, trick, trickroom, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"dizzypunch"
       }
     },
     {
@@ -59864,7 +60006,8 @@
         },
         "misc": {
           "moves": "attract, bounce, confide, cut, doubleteam, echoedvoice, energyball, facade, flash, frustration, gigadrain, gigaimpact, grassknot, hiddenpower, hyperbeam, lastresort, lightscreen, naturepower, protect, raindance, rest, retaliate, return, rocksmash, round, safeguard, secretpower, seedbomb, shadowball, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, swordsdance, synthesis, thunderwave, toxic, wildcharge, workup, worryseed"
-        }
+        },
+        "evolutionMoves":"hornleech"
       }
     },
     {
@@ -60832,7 +60975,8 @@
         },
         "misc": {
           "moves": "attract, bounce, bugbite, chargebeam, confide, cut, doubleteam, electroweb, energyball, facade, flash, frustration, gastroacid, gigadrain, gigaimpact, hiddenpower, hyperbeam, infestation, lightscreen, magnetrise, poisonjab, protect, raindance, rest, return, round, secretpower, shockwave, signalbeam, sleeptalk, snore, strugglebug, substitute, swagger, thief, thunder, thunderbolt, thunderwave, toxic, voltswitch, wildcharge, xscissor"
-        }
+        },
+        "evolutionMoves":"stickyweb"
       }
     },
     {
@@ -61037,7 +61181,8 @@
         },
         "misc": {
           "moves": "aerialace, block, bulldoze, confide, cut, doubleteam, endeavor, energyball, explosion, facade, flash, flashcannon, frustration, gigadrain, gigaimpact, grassknot, gravity, gyroball, hiddenpower, honeclaws, hyperbeam, irondefense, ironhead, knockoff, magnetrise, naturepower, payback, poisonjab, protect, rest, return, rockpolish, rocksmash, round, sandstorm, secretpower, seedbomb, shadowclaw, sleeptalk, snore, solarbeam, stealthrock, strength, substitute, sunnyday, swagger, swordsdance, thunder, thunderbolt, thunderwave, toxic, worryseed"
-        }
+        },
+        "evolutionMoves":"powerwhip"
       }
     },
     {
@@ -61286,7 +61431,8 @@
         },
         "misc": {
           "moves": "chargebeam, confide, doubleteam, facade, flashcannon, frustration, gigaimpact, hiddenpower, hyperbeam, protect, rest, return, rockpolish, rocksmash, round, sandstorm, secretpower, sleeptalk, substitute, swagger, thunder, thunderbolt, thunderwave, toxic, trickroom, voltswitch, wildcharge"
-        }
+        },
+        "evolutionMoves":"magneticflux"
       }
     },
     {
@@ -61536,7 +61682,8 @@
         },
         "misc": {
           "moves": "acrobatics, aquatail, attract, bind, bounce, brickbreak, chargebeam, confide, cut, doubleteam, dragonclaw, dragonpulse, dragontail, drainpunch, facade, firepunch, flamethrower, flash, flashcannon, focuspunch, frustration, gastroacid, gigadrain, gigaimpact, grassknot, hiddenpower, honeclaws, hyperbeam, irontail, knockoff, lightscreen, magnetrise, outrage, poweruppunch, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, shockwave, signalbeam, sleeptalk, snore, strength, substitute, superfang, superpower, swagger, thunder, thunderbolt, thunderpunch, thunderwave, toxic, uturn, voltswitch, wildcharge"
-        }
+        },
+        "evolutionMoves":"crunch"
       }
     },
     {
@@ -62431,7 +62578,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, blizzard, brickbreak, bulkup, bulldoze, confide, covet, cut, dig, dive, doubleteam, echoedvoice, facade, fling, focusblast, focuspunch, frostbreath, frustration, gigaimpact, grassknot, hail, hiddenpower, honeclaws, hyperbeam, icebeam, icepunch, icywind, lowkick, poweruppunch, protect, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, shadowclaw, sleeptalk, snore, stoneedge, strength, substitute, superpower, surf, swagger, swordsdance, taunt, toxic, waterpulse"
-        }
+        },
+        "evolutionMoves":"iciclecrash"
       }
     },
     {
@@ -63225,7 +63373,8 @@
         },
         "misc": {
           "moves": "block, brickbreak, bulldoze, chargebeam, confide, doubleteam, drainpunch, earthpower, earthquake, facade, firepunch, flash, flashcannon, fling, fly, focusblast, focuspunch, frustration, gigaimpact, grassknot, gravity, gyroball, hiddenpower, hyperbeam, icebeam, icepunch, icywind, irondefense, lowkick, lowsweep, magiccoat, poweruppunch, protect, psychic, raindance, rest, return, rockpolish, rockslide, rocksmash, rocktomb, round, safeguard, secretpower, shadowball, shockwave, signalbeam, sleeptalk, snore, solarbeam, stealthrock, stoneedge, strength, substitute, superpower, swagger, telekinesis, thief, thunderbolt, thunderpunch, toxic, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"heavyslam"
       }
     },
     {
@@ -63667,7 +63816,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bulkup, confide, cut, doubleteam, facade, fly, frustration, gigaimpact, heatwave, hiddenpower, honeclaws, hyperbeam, pluck, protect, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, roost, round, secretpower, shadowclaw, skyattack, skydrop, sleeptalk, snore, steelwing, strength, substitute, sunnyday, superpower, swagger, tailwind, toxic, uturn, workup, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"superpower"
       }
     },
     {
@@ -63837,7 +63987,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, block, confide, cut, darkpulse, doubleteam, embargo, facade, fly, foulplay, frustration, gigaimpact, heatwave, hiddenpower, hyperbeam, incinerate, irondefense, knockoff, payback, protect, psychup, raindance, rest, retaliate, return, rocksmash, rocktomb, roost, round, secretpower, shadowball, skyattack, sleeptalk, snarl, snatch, snore, steelwing, substitute, sunnyday, swagger, tailwind, taunt, thief, torment, toxic, uturn"
-        }
+        },
+        "evolutionMoves":"bonerush"
       }
     },
     {
@@ -64423,7 +64574,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, bugbite, calmmind, confide, doubleteam, facade, fireblast, flamecharge, flamethrower, fly, frustration, gigadrain, gigaimpact, heatwave, hiddenpower, hyperbeam, incinerate, lightscreen, magnetrise, overheat, poisonjab, protect, psychic, rest, return, roost, round, safeguard, secretpower, signalbeam, sleeptalk, snore, solarbeam, strugglebug, substitute, sunnyday, swagger, tailwind, toxic, uturn, wildcharge, willowisp, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"quiverdance"
       }
     },
     {
@@ -65918,7 +66070,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, bulkup, bulldoze, confide, cut, dig, doubleteam, drainpunch, dualchop, endeavor, energyball, facade, flash, fling, focuspunch, frustration, gigadrain, grassknot, grasspledge, gyroball, helpinghand, hiddenpower, honeclaws, irondefense, ironhead, irontail, lowkick, lowsweep, naturepower, painsplit, payback, poisonjab, poweruppunch, protect, reflect, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, seedbomb, shadowclaw, sleeptalk, sludgebomb, smackdown, snore, solarbeam, stoneedge, strength, substitute, sunnyday, superfang, superpower, swagger, swordsdance, synthesis, taunt, thunderpunch, toxic, worryseed, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"needlearm"
       }
     },
     {
@@ -66014,7 +66167,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, block, brickbreak, bulkup, bulldoze, confide, cut, dig, doubleteam, dragonclaw, drainpunch, dualchop, earthquake, endeavor, energyball, facade, flash, fling, focusblast, focuspunch, frenzyplant, frustration, gigadrain, gigaimpact, grassknot, grasspledge, gyroball, helpinghand, hiddenpower, honeclaws, hyperbeam, irondefense, ironhead, irontail, lowkick, lowsweep, naturepower, painsplit, payback, poisonjab, poweruppunch, protect, reflect, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, seedbomb, shadowclaw, sleeptalk, sludgebomb, smackdown, snore, solarbeam, stoneedge, strength, substitute, sunnyday, superfang, superpower, swagger, swordsdance, synthesis, taunt, thunderpunch, toxic, worryseed, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"spikyshield"
       }
     },
     {
@@ -66352,7 +66506,8 @@
         },
         "misc": {
           "moves": "attract, blastburn, calmmind, confide, covet, cut, dazzlinggleam, doubleteam, dreameater, echoedvoice, embargo, facade, fireblast, firepledge, firepunch, flamecharge, flamethrower, foulplay, frustration, gigaimpact, grassknot, heatwave, hiddenpower, hyperbeam, incinerate, irontail, lightscreen, lowkick, magiccoat, magicroom, overheat, poweruppunch, protect, psychic, psychup, psyshock, raindance, recycle, rest, return, roleplay, round, safeguard, secretpower, shadowball, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, solarbeam, substitute, sunnyday, swagger, thief, thunderpunch, toxic, trick, trickroom, willowisp, wonderroom, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"mysticalfire"
       }
     },
     {
@@ -66610,7 +66765,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, blizzard, bounce, confide, cut, darkpulse, dig, dive, doubleteam, echoedvoice, facade, fling, frustration, gigaimpact, grassknot, gunkshot, hiddenpower, hydrocannon, hyperbeam, icebeam, icepunch, icywind, lowkick, poweruppunch, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, roleplay, round, scald, secretpower, sleeptalk, smackdown, snatch, snore, spite, strength, substitute, surf, swagger, taunt, thief, toxic, uturn, waterfall, waterpledge, waterpulse"
-        }
+        },
+        "evolutionMoves":"watershuriken"
       }
     },
     {
@@ -67052,7 +67208,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, confide, doubleteam, facade, fireblast, flamecharge, flamethrower, fly, frustration, heatwave, hiddenpower, incinerate, overheat, protect, rest, return, roost, round, secretpower, sleeptalk, snatch, snore, steelwing, substitute, sunnyday, swagger, swordsdance, tailwind, taunt, thief, toxic, uturn, willowisp"
-        }
+        },
+        "evolutionMoves":"ember"
       }
     },
     {
@@ -67410,7 +67567,8 @@
         },
         "misc": {
           "moves": "bugbite, electroweb, irondefense, protect"
-        }
+        },
+        "evolutionMoves":"protect"
       }
     },
     {
@@ -67486,7 +67644,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, bugbite, calmmind, confide, doubleteam, dreameater, electroweb, endeavor, energyball, facade, flash, frustration, gigadrain, gigaimpact, hiddenpower, holdhands, hyperbeam, infestation, lightscreen, protect, psychic, psychup, raindance, rest, return, roost, round, safeguard, secretpower, signalbeam, sleeptalk, snore, solarbeam, strugglebug, substitute, sunnyday, swagger, tailwind, thief, toxic, uturn"
-        }
+        },
+        "evolutionMoves":"gust"
       }
     },
     {
@@ -68178,7 +68337,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, bounce, brickbreak, bulkup, bulldoze, confide, dig, doubleteam, earthquake, energyball, facade, frustration, gigadrain, gigaimpact, grassknot, hiddenpower, hyperbeam, irontail, naturepower, payback, protect, raindance, rest, retaliate, return, roar, rockslide, rocksmash, round, secretpower, seedbomb, sleeptalk, snore, solarbeam, strength, substitute, sunnyday, superpower, surf, swagger, synthesis, toxic, wildcharge, worryseed, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"aerialace"
       }
     },
     {
@@ -68366,7 +68526,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, block, brickbreak, bulkup, bulldoze, confide, covet, cut, darkpulse, dig, doubleteam, dragonclaw, drainpunch, dualchop, earthquake, echoedvoice, embargo, endeavor, facade, falseswipe, firepunch, fling, focusblast, focuspunch, foulplay, frustration, gigaimpact, grassknot, gunkshot, helpinghand, hiddenpower, honeclaws, hyperbeam, hypervoice, icepunch, infestation, ironhead, knockoff, lowkick, lowsweep, outrage, payback, poisonjab, poweruppunch, protect, quash, raindance, rest, retaliate, return, roar, rockslide, rocksmash, rocktomb, round, secretpower, shadowclaw, sleeptalk, sludgebomb, snarl, snatch, snore, spite, stoneedge, strength, substitute, sunnyday, superpower, surf, swagger, swordsdance, taunt, thief, thunderpunch, torment, toxic, uproar, xscissor, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"bulletpunch"
       }
     },
     {
@@ -69993,7 +70154,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, bounce, confide, cut, darkpulse, dive, doubleteam, dragonpulse, facade, flashcannon, focusblast, frustration, gigaimpact, helpinghand, hiddenpower, hyperbeam, icebeam, icywind, irontail, protect, raindance, rest, return, rockslide, round, scald, secretpower, shadowball, sleeptalk, sludgebomb, sludgewave, smackdown, snore, substitute, surf, swagger, swordsdance, toxic, uturn, venoshock, waterfall, waterpulse"
-        }
+        },
+        "evolutionMoves":"aurasphere"
       }
     },
     {
@@ -70346,7 +70508,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, block, brickbreak, bulldoze, confide, darkpulse, dig, doubleteam, dracometeor, dragonclaw, dragonpulse, dragontail, earthpower, earthquake, facade, frustration, gigaimpact, hiddenpower, honeclaws, hyperbeam, hypervoice, irondefense, ironhead, irontail, outrage, protect, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, sandstorm, secretpower, sleeptalk, snore, stealthrock, stoneedge, strength, substitute, sunnyday, superpower, swagger, toxic, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"rockslide"
       }
     },
     {
@@ -70528,7 +70691,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bulldoze, calmmind, chargebeam, confide, darkpulse, doubleteam, dragontail, dreameater, earthpower, earthquake, echoedvoice, facade, flash, flashcannon, frostbreath, frustration, gigaimpact, hail, hiddenpower, hyperbeam, hypervoice, icebeam, icywind, irondefense, ironhead, irontail, lightscreen, magnetrise, naturepower, outrage, protect, psychic, psychup, raindance, reflect, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, safeguard, sandstorm, secretpower, sleeptalk, snore, stealthrock, stoneedge, substitute, swagger, thunder, thunderbolt, thunderwave, toxic, waterpulse, zenheadbutt"
-        }
+        },
+        "evolutionMoves":"freezedry"
       }
     },
     {
@@ -70609,7 +70773,8 @@
         },
         "misc": {
           "moves": "attract, calmmind, celebrate, confide, covet, cut, dazzlinggleam, dig, doubleteam, echoedvoice, facade, flash, frustration, gigaimpact, healbell, helpinghand, hiddenpower, hyperbeam, hypervoice, irontail, lastresort, lightscreen, magiccoat, protect, psychup, psyshock, raindance, reflect, rest, retaliate, return, round, safeguard, secretpower, shadowball, skillswap, sleeptalk, snore, substitute, sunnyday, swagger, toxic"
-        }
+        },
+        "evolutionMoves":"fairywind"
       }
     },
     {
@@ -71162,7 +71327,8 @@
         },
         "misc": {
           "moves": "aquatail, attract, blizzard, bulldoze, confide, doubleteam, dracometeor, dragonpulse, dragontail, earthquake, facade, fireblast, firepunch, flamethrower, focusblast, focuspunch, frustration, gigaimpact, hail, hiddenpower, hyperbeam, icebeam, incinerate, infestation, irontail, outrage, protect, raindance, rest, return, rockslide, rocksmash, round, secretpower, shockwave, sleeptalk, sludgebomb, sludgewave, snore, strength, substitute, sunnyday, superpower, swagger, thunder, thunderbolt, thunderpunch, toxic, waterpulse"
-        }
+        },
+        "evolutionMoves":"aquatail"
       }
     },
     {
@@ -71423,7 +71589,8 @@
         },
         "misc": {
           "moves": "attract, block, bulldoze, calmmind, confide, cut, darkpulse, dig, doubleteam, drainpunch, dreameater, earthquake, energyball, facade, focusblast, foulplay, frustration, gigadrain, gigaimpact, grassknot, hiddenpower, honeclaws, hyperbeam, magiccoat, naturepower, painsplit, poisonjab, poweruppunch, protect, psychic, reflect, rest, return, rockslide, rocksmash, roleplay, round, safeguard, secretpower, seedbomb, shadowball, shadowclaw, skillswap, sleeptalk, snore, solarbeam, spite, strength, substitute, sunnyday, swagger, thief, toxic, trick, trickroom, willowisp, worryseed, xscissor"
-        }
+        },
+        "evolutionMoves":"shadowclaw"
       }
     },
     {
@@ -71984,7 +72151,8 @@
         },
         "misc": {
           "moves": "afteryou, attract, blizzard, block, bulldoze, confide, doubleteam, earthquake, facade, flash, flashcannon, frostbreath, frustration, gigaimpact, gyroball, hail, hiddenpower, hyperbeam, icebeam, icywind, irondefense, ironhead, protect, raindance, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, round, safeguard, secretpower, sleeptalk, snore, stoneedge, strength, substitute, superpower, surf, swagger, toxic, waterpulse"
-        }
+        },
+        "evolutionMoves":"bodyslam"
       }
     },
     {
@@ -73071,7 +73239,8 @@
         },
         "misc": {
           "moves": "acrobatics, attract, batonpass, confide, confuseray, curse, defog, doubleteam, echoedvoice, energyball, facade, falseswipe, frenzyplant, frustration, gigaimpact, grassknot, grasspledge, haze, hiddenpower, lightscreen, lowsweep, naturepower, ominouswind, protect, rest, return, roost, round, safeguard, shadowball, shadowclaw, sleeptalk, smackdown, solarbeam, steelwing, substitute, sunnyday, swagger, swordsdance, toxic, uturn, workup"
-        }
+        },
+        "evolutionMoves":"spiritshackle"
       }
     },
     {
@@ -73351,7 +73520,8 @@
         },
         "misc": {
           "moves": "acrobatics, attract, blastburn, bodyslam, brickbreak, brutalswing, bulkup, bulldoze, confide, crunch, darkpulse, doubleteam, earthquake, embargo, facade, fakeout, fireblast, firepledge, flamecharge, flamethrower, fling, focusblast, frustration, gigaimpact, heatwave, hiddenpower, hyperbeam, leechlife, lowsweep, nastyplot, overheat, protect, quash, rest, return, revenge, roar, round, shadowclaw, sleeptalk, snarl, substitute, sunnyday, swagger, swordsdance, taunt, torment, toxic, uturn, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"darkestlariat"
       }
     },
     {
@@ -73633,7 +73803,8 @@
         },
         "misc": {
           "moves": "acrobatics, amnesia, aquaring, aromaticmist, attract, blizzard, charm, confide, dazzlinggleam, doubleteam, echoedvoice, energyball, facade, frustration, gigaimpact, hail, hiddenpower, hydrocannon, icebeam, lightscreen, perishsong, protect, psychic, psychup, raindance, reflect, rest, return, round, scald, shadowball, sleeptalk, substitute, surf, swagger, toxic, waterfall, waterpledge, wonderroom, workup"
-        }
+        },
+        "evolutionMoves":"sparklingaria"
       }
     },
     {
@@ -73919,7 +74090,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, boomburst, bravebird, brickbreak, confide, doubleteam, echoedvoice, flamecharge, flashcannon, fly, frustration, hiddenpower, mirrormove, overheat, protect, rest, return, roost, round, sleeptalk, smackdown, steelwing, substitute, sunnyday, swagger, swordsdance, tailwind, thief, toxic, uproar, uturn, workup"
-        }
+        },
+        "evolutionMoves":"beakblast"
       }
     },
     {
@@ -74323,7 +74495,8 @@
         },
         "misc": {
           "moves": "acrobatics, attract, chargebeam, confide, doubleteam, electroweb, endure, facade, frustration, harden, hiddenpower, lightscreen, mudshot, poisonjab, protect, raindance, rest, return, round, sleeptalk, substitute, swagger, thunderbolt, thunderwave, toxic, voltswitch, wildcharge, xscissor"
-        }
+        },
+        "evolutionMoves":"charge"
       }
     },
     {
@@ -74407,7 +74580,8 @@
         },
         "misc": {
           "moves": ", acrobatics, attract, chargebeam, confide, crunch, discharge, doubleteam, electroweb, endure, energyball, facade, flashcannon, frustration, gigaimpact, harden, hiddenpower, hyperbeam, lightscreen, mudshot, poisonjab, protect, raindance, rest, return, roost, round, skydrop, sleeptalk, solarbeam, substitute, swagger, theusercrunchesupthetargetwithsharpfangsthismayalsolowerthetargetsdefensestat, theuserstrikeseverythingarounditbylettinglooseaflareofelectricitythismayalsocauseparalysis, thunder, thunderbolt, thunderwave, toxic, voltswitch, wildcharge, xscissor"
-        }
+        },
+        "evolutionMoves":"thunderbolt"
       }
     },
     {
@@ -74613,7 +74787,8 @@
         },
         "misc": {
           "moves": ", amnesia, attract, blizzard, brickbreak, brutalswing, bulkup, bulldoze, confide, doubleteam, earthquake, endeavor, facade, fling, focusblast, frostbreath, frustration, gigaimpact, hail, hiddenpower, icebeam, payback, protect, raindance, rest, return, rockslide, rocktomb, round, scald, sleeptalk, stoneedge, substitute, sunnyday, superpower, swagger, theuserstorespowerthenattacksiftheusermovesafterthetargetthisattackspowerwillbedoubled, thief, toxic, wideguard, workup"
-        }
+        },
+        "evolutionMoves":"icepunch"
       }
     },
     {
@@ -74901,7 +75076,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, attract, batonpass, bestow, calmmind, confide, dazzlinggleam, doubleteam, dreameater, energyball, facade, frustration, hiddenpower, infestation, leechlife, lightscreen, moonblast, naturepower, protect, psychic, psychup, reflect, rest, return, roost, round, safeguard, skillswap, sleeptalk, solarbeam, speedswap, substitute, sunnyday, swagger, thief, toxic, uturn"
-        }
+        },
+        "evolutionMoves":"pollenpuff"
       }
     },
     {
@@ -75121,7 +75297,8 @@
         },
         "misc": {
           "moves": "attract, brickbreak, bulkup, confide, crushclaw, doubleteam, echoedvoice, facade, firefang, frustration, hiddenpower, protect, rest, return, roar, rockpolish, rockslide, rocktomb, round, sleeptalk, snarl, stoneedge, substitute, suckerpunch, swagger, swordsdance, taunt, thrash, thunderfang, toxic"
-        }
+        },
+        "evolutionMoves":"accelerock"
       }
     },
     {
@@ -75227,7 +75404,8 @@
         },
         "misc": {
           "moves": "attract, brickbreak, bulkup, confide, crushclaw, doubleteam, echoedvoice, facade, firefang, frustration, hiddenpower, protect, rest, return, roar, rockpolish, rockslide, rocktomb, round, sleeptalk, snarl, stoneedge, substitute, suckerpunch, swagger, swordsdance, taunt, thrash, thunderfang, toxic"
-        }
+        },
+        "evolutionMoves":"counter"
       }
     },
     {
@@ -75503,7 +75681,8 @@
         },
         "misc": {
           "moves": "attract, blizzard, confide, doubleteam, facade, frostbreath, frustration, hail, haze, hiddenpower, icebeam, infestation, lightscreen, payback, poisonjab, protect, raindance, rest, return, round, safeguard, scald, sleeptalk, sludgebomb, sludgewave, smackdown, spitup, stockpile, substitute, surf, swagger, swallow, toxic, venoshock"
-        }
+        },
+        "evolutionMoves":"banefulbunker"
       }
     },
     {
@@ -75974,7 +76153,8 @@
         },
         "misc": {
           "moves": "aerialace, aromatherapy, attract, brickbreak, confide, defog, doubleteam, energyball, facade, falseswipe, fling, frustration, gigadrain, gigaimpact, grassknot, hiddenpower, hyperbeam, leafstorm, leechlife, lowsweep, naturepower, payback, poisonjab, protect, rest, return, round, safeguard, sleeptalk, solarbeam, substitute, sunnyday, swagger, swordsdance, toxic, weatherball, xscissor"
-        }
+        },
+        "evolutionMoves":"petalblizzard"
       }
     },
     {
@@ -76143,6 +76323,7 @@
       "stats": {
         "evolutions": [
           {
+            "sexe": "female",
             "name": "Salazzle"
           }
         ],
@@ -76294,7 +76475,8 @@
         },
         "misc": {
           "moves": "acrobatics, attract, belch, confide, doubleteam, dragonclaw, dragontail, facade, fakeout, fireblast, flamecharge, flamethrower, fling, frustration, hiddenpower, knockoff, leechlife, overheat, payback, poisonjab, protect, rest, return, round, sandattack, scratch, shadowclaw, sleeptalk, sludgebomb, sludgewave, snatch, substitute, swagger, taunt, thief, torment, toxic, venoshock, willowisp"
-        }
+        },
+        "evolutionMoves":"captivate"
       }
     },
     {
@@ -76466,7 +76648,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, brutalswing, bulkup, bulldoze, confide, doubleteam, dragonclaw, earthquake, endure, facade, fling, focusblast, forcepalm, frustration, gigaimpact, hiddenpower, hyperbeam, icepunch, lowsweep, megakick, payback, protect, rest, return, roar, rockslide, rocktomb, round, shadowclaw, sleeptalk, stompingtantrum, substitute, swagger, swordsdance, taunt, thunderpunch, toxic, wideguard, workup"
-        }
+        },
+        "evolutionMoves":"bind"
       }
     },
     {
@@ -76615,7 +76798,8 @@
         },
         "misc": {
           "moves": "acupressure, attract, charm, confide, dazzlinggleam, doubleteam, energyball, facade, feint, flail, fling, frustration, grassknot, grasswhistle, hiddenpower, lightscreen, lowsweep, naturepower, payback, playrough, protect, reflect, rest, return, round, safeguard, sleeptalk, solarbeam, substitute, sunnyday, swagger, synthesis, toxic"
-        }
+        },
+        "evolutionMoves":"doubleslap"
       }
     },
     {
@@ -76683,7 +76867,8 @@
         },
         "misc": {
           "moves": ", acrobatics, acupressure, attract, charm, confide, dazzlinggleam, doubleteam, energyball, facade, feint, fling, frustration, gigaimpact, grassknot, grasswhistle, hiddenpower, lightscreen, lowsweep, naturepower, payback, playnice, playrough, protect, reflect, rest, return, round, safeguard, sleeptalk, solarbeam, substitute, sunnyday, swagger, synthesis, theuserandthetargetbecomefriendsandthetargetlosesitswilltofightthislowersthetargetsattackstat, toxic, uturn"
-        }
+        },
+        "evolutionMoves":"tropkick"
       }
     },
     {
@@ -77102,7 +77287,8 @@
         },
         "misc": {
           "moves": "aerialace, aquajet, attract, blizzard, brickbreak, bulkup, confide, darkpulse, doubleteam, facade, falseswipe, fling, focusblast, frostbreath, frustration, gigaimpact, hail, harden, hiddenpower, icebeam, leechlife, metalclaw, payback, poisonjab, protect, psychup, raindance, rest, return, rockslide, rocktomb, round, scald, shadowclaw, sleeptalk, sludgebomb, sludgewave, snarl, spikes, substitute, surf, swagger, swordsdance, taunt, toxic, venoshock, waterfall, wideguard, xscissor"
-        }
+        },
+        "evolutionMoves":"firstimpression"
       }
     },
     {
@@ -77495,7 +77681,8 @@
         },
         "misc": {
           "moves": "aerialace, confide, doubleteam, dracometeor, dragonclaw, explosion, facade, flamecharge, flamethrower, flashcannon, frustration, gigaimpact, hail, hiddenpower, hyperbeam, icebeam, payback, protect, raindance, rest, return, roar, rockslide, round, sandstorm, shadowball, shadowclaw, sleeptalk, snarl, steelwing, substitute, sunnyday, surf, swagger, swordsdance, thunderbolt, thunderwave, toxic, uturn, workup, xscissor"
-        }
+        },
+        "evolutionMoves":"multiattack"
       }
     },
     {
@@ -78483,7 +78670,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, brutalswing, bulkup, bulldoze, confide, counter, doubleteam, dracometeor, dragonbreath, dragonclaw, dragontail, earthquake, echoedvoice, facade, falseswipe, fling, focusblast, frustration, hiddenpower, payback, protect, rest, return, reversal, roar, rockslide, rocktomb, round, safeguard, sandstorm, shadowclaw, sleeptalk, substitute, swagger, swordsdance, taunt, toxic, workup, xscissor"
-        }
+        },
+        "evolutionMoves":"skyuppercut"
       }
     },
     {
@@ -78553,7 +78741,8 @@
         },
         "misc": {
           "moves": "aerialace, attract, brickbreak, brutalswing, bulkup, bulldoze, confide, counter, doubleteam, dracometeor, dragonbreath, dragonclaw, dragontail, earthquake, echoedvoice, facade, falseswipe, flamethrower, flashcannon, fling, focusblast, frustration, gigaimpact, hiddenpower, hyperbeam, payback, poisonjab, protect, rest, return, reversal, roar, rockpolish, rockslide, rocktomb, round, safeguard, sandstorm, shadowclaw, sleeptalk, substitute, swagger, swordsdance, taunt, toxic, workup, xscissor"
-        }
+        },
+        "evolutionMoves":"clangingscales"
       }
     },
     {
@@ -78963,7 +79152,8 @@
         },
         "misc": {
           "moves": "splash"
-        }
+        },
+        "evolutionMoves":"cosmicpower"
       }
     },
     {
@@ -79032,7 +79222,8 @@
         },
         "misc": {
           "moves": "bulldoze, calmmind, confide, doubleteam, earthquake, facade, fireblast, flamecharge, flamethrower, flashcannon, focusblast, frustration, gigaimpact, gyroball, hiddenpower, hyperbeam, lightscreen, protect, psychic, psychup, psyshock, reflect, rest, return, roar, rockslide, rocktomb, round, safeguard, sleeptalk, snarl, solarbeam, splash, stoneedge, substitute, sunnyday, swagger, thunder, thunderbolt, thunderwave, toxic, trickroom, wildcharge, workup"
-        }
+        },
+        "evolutionMoves":"sunsteelstrike"
       }
     },
     {
@@ -79102,7 +79293,8 @@
         },
         "misc": {
           "moves": "acrobatics, aerialace, blizzard, calmmind, chargebeam, confide, dazzlinggleam, doubleteam, dreameater, facade, fly, focusblast, frustration, gigaimpact, hiddenpower, hyperbeam, icebeam, lightscreen, protect, psychic, psychup, psyshock, reflect, rest, return, roar, roost, round, safeguard, shadowball, shadowclaw, skydrop, sleeptalk, solarbeam, splash, substitute, sunnyday, swagger, thunder, thunderbolt, thunderwave, toxic, trickroom, willowisp, workup"
-        }
+        },
+        "evolutionMoves":"moongeistbeam"
       }
     },
     {
