@@ -76324,7 +76324,8 @@
         "evolutions": [
           {
             "sexe": "female",
-            "name": "Salazzle"
+            "name": "Salazzle",
+            "level": 33
           }
         ],
         "spawnRules": [
