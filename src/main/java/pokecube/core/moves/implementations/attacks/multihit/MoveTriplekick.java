@@ -21,11 +21,11 @@ public class MoveTriplekick extends Move_Basic
             playSounds(packet.attacker.getEntity(), packet.attacked, null);
             byte statusChange = STATUS_NON;
             byte changeAddition = CHANGE_NONE;
-            if (move.statusChange != STATUS_NON && MovesUtils.rand.nextInt(100) <= move.statusChance)
+            if (move.statusChange != STATUS_NON && MovesUtils.rand.nextFloat() <= move.statusChance)
             {
                 statusChange = move.statusChange;
             }
-            if (move.change != CHANGE_NONE && MovesUtils.rand.nextInt(100) <= move.chanceChance)
+            if (move.change != CHANGE_NONE && MovesUtils.rand.nextFloat() <= move.chanceChance)
             {
                 changeAddition = move.change;
             }
