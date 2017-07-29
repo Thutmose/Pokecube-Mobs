@@ -12,7 +12,7 @@ public class PokecubeHelper
     public double dive(IPokemob mob)
     {
         double x = 1;
-        Entity entity = (Entity) mob;
+        Entity entity = mob.getEntity();
         if (entity.getEntityWorld().getBlockState(entity.getPosition()).getBlock() == Blocks.WATER
                 && mob.getType1() == PokeType.getType("water"))
         {
@@ -29,7 +29,7 @@ public class PokecubeHelper
     public double dusk(IPokemob mob)
     {
         double x = 1;
-        Entity entity = (Entity) mob;
+        Entity entity = mob.getEntity();
         int light = entity.getEntityWorld().getLight(entity.getPosition());
         if (light < 5)
         {
@@ -77,7 +77,7 @@ public class PokecubeHelper
     public double quick(IPokemob mob)
     {
         double x = 1;
-        Entity entity = (Entity) mob;
+        Entity entity = mob.getEntity();
         double alive = entity.ticksExisted;
         if (mob.getPokemonAIState(IMoveConstants.ANGRY) == false && alive < 601)
         {
@@ -89,7 +89,7 @@ public class PokecubeHelper
     public double timer(IPokemob mob)
     {
         double x = 1;
-        Entity entity = (Entity) mob;
+        Entity entity = mob.getEntity();
         double alive = entity.ticksExisted;
         if (alive > 1500 && alive < 3001)
         {

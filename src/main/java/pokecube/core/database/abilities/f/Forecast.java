@@ -21,7 +21,7 @@ public class Forecast extends Ability
     {
         if (mob.getPokedexNb() != 351) return;// Only affect castform.
 
-        Entity pokemob = (Entity) mob;
+        Entity pokemob = mob.getEntity();
         if (pokemob.ticksExisted % 20 != 9) return;// Only check once per
                                                    // second.
 
