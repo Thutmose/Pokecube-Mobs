@@ -1,6 +1,5 @@
 package pokecube.core.moves.implementations.attacks.multihit;
 
-import net.minecraft.entity.Entity;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.moves.MovesUtils;
 import pokecube.core.moves.templates.Move_Basic;

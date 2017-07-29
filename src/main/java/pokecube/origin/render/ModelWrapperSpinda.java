@@ -10,11 +10,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
-import pokecube.modelloader.client.render.AnimationLoader.Model;
-import pokecube.modelloader.client.render.DefaultIModelRenderer;
-import pokecube.modelloader.client.render.wrappers.ModelWrapper;
+import thut.core.client.render.animation.ModelHolder;
 import thut.core.client.render.model.IExtendedModelPart;
+import thut.core.client.render.model.IModelRenderer;
 import thut.core.client.render.model.IRetexturableModel;
+import thut.core.client.render.wrappers.ModelWrapper;
 
 public class ModelWrapperSpinda extends ModelWrapper
 {
@@ -35,7 +35,7 @@ public class ModelWrapperSpinda extends ModelWrapper
     private static final ResourceLocation shinyeb  = new ResourceLocation("pokecube_mobs",
             "gen_3/entity/textures/spindaearsbases.png");
 
-    public ModelWrapperSpinda(Model model, DefaultIModelRenderer<?> renderer)
+    public ModelWrapperSpinda(ModelHolder model, IModelRenderer<?> renderer)
     {
         super(model, renderer);
     }
@@ -48,16 +48,16 @@ public class ModelWrapperSpinda extends ModelWrapper
         GlStateManager.pushMatrix();
         GlStateManager.disableCull();
         IPokemob spinda = CapabilityPokemob.getPokemobFor(entityIn);
-        for (String partName : renderer.parts.keySet())
+        for (String partName : imodel.getParts().keySet())
         {
             IExtendedModelPart part = imodel.getParts().get(partName);
             if (part == null) continue;
             try
             {
-                if (renderer.texturer != null && part instanceof IRetexturableModel)
+                if (renderer.getTexturer() != null && part instanceof IRetexturableModel)
                 {
-                    renderer.texturer.bindObject(entityIn);
-                    if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.texturer);
+                    renderer.getTexturer().bindObject(entityIn);
+                    if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.getTexturer());
                     else((IRetexturableModel) part).setTexturer(null);
                 }
                 if (part.getParent() == null)
@@ -123,7 +123,7 @@ public class ModelWrapperSpinda extends ModelWrapper
                     }
 
                     // Render the model normally.
-                    if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.texturer);
+                    if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.getTexturer());
                     GlStateManager.pushMatrix();
                     part.renderAll();
                     GlStateManager.popMatrix();
