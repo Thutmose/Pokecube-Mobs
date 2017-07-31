@@ -72,8 +72,9 @@ public class ModelPichu extends APokemobModel
     public void setLivingAnimations(EntityLivingBase entityliving, float f, float f1, float f2)
     {
         EntityPokemob entity = (EntityPokemob) entityliving;
+        IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
 
-        if (entity.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || f1 < 0.001 || entity.isRiding())
+        if (mob.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || f1 < 0.001 || entity.isRiding())
         {
             float bodyAngle = 0.1F;
             float xOffset = 0;

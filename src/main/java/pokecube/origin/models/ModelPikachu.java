@@ -14,10 +14,7 @@ import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import thut.api.entity.IMobColourable;
 
-/**
- * @author Manchou
- *
- */
+/** @author Manchou */
 public class ModelPikachu extends APokemobModel
 {
     public ModelPikachu()
@@ -51,14 +48,14 @@ public class ModelPikachu extends APokemobModel
         super.render(entity, f, f1, f2, f3, f4, f5);
         setRotationAngles(f, f1, f2, f3, f4, f5, entity);
         GL11.glPushMatrix();
-        if(entity instanceof IMobColourable)
+        if (entity instanceof IMobColourable)
         {
             IMobColourable mob = (IMobColourable) entity;
             int[] cols = mob.getRGBA();
-            GL11.glColor4f(cols[0]/255f, cols[1]/255f, cols[2]/255f, cols[3]/255f);
+            GL11.glColor4f(cols[0] / 255f, cols[1] / 255f, cols[2] / 255f, cols[3] / 255f);
         }
         IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
-        GL11.glTranslated(0, 0.9 + (1-mob.getSize()) * 0.5 , 0);
+        GL11.glTranslated(0, 0.9 + (1 - mob.getSize()) * 0.5, 0);
         GL11.glScaled(0.4 * mob.getSize(), 0.4 * mob.getSize(), 0.4 * mob.getSize());
         headMain.render(f5);
         body.render(f5);
@@ -77,9 +74,10 @@ public class ModelPikachu extends APokemobModel
     @Override
     public void setLivingAnimations(EntityLivingBase entityliving, float f, float f1, float f2)
     {
-        EntityPokemob entity = (EntityPokemob)entityliving;
+        EntityPokemob entity = (EntityPokemob) entityliving;
+        IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
 
-        if (entity.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || f1 < 0.001 || entity.isRiding())
+        if (mob.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || f1 < 0.001 || entity.isRiding())
         {
             float bodyAngle = 0.1F;
             float xOffset = 0;
@@ -91,8 +89,8 @@ public class ModelPikachu extends APokemobModel
             footLeft.setRotationPoint(1F + xOffset, 23F, -2F);
             handRight.setRotationPoint(-4F + xOffset, 15F, -3F);
             handLeft.setRotationPoint(2F + xOffset, 15F, -3F);
-            footRight.rotateAngleX = ((float)Math.PI * 3F / 2F);
-            footLeft.rotateAngleX = ((float)Math.PI * 3F / 2F);
+            footRight.rotateAngleX = ((float) Math.PI * 3F / 2F);
+            footLeft.rotateAngleX = ((float) Math.PI * 3F / 2F);
             footRight.rotateAngleY = 0.5F;
             footLeft.rotateAngleY = -0.5F;
             handRight.rotateAngleX = 5.811947F;
@@ -105,15 +103,15 @@ public class ModelPikachu extends APokemobModel
         else
         {
             body.setRotationPoint(0.0F, 18F, 2.0F);
-            body.rotateAngleX = ((float)Math.PI / 2F);
+            body.rotateAngleX = ((float) Math.PI / 2F);
             tail.setRotationPoint(-5F, 16F, 4F);
             footRight.setRotationPoint(-4F, 20F, 5F);
             footLeft.setRotationPoint(1.5F, 20F, 5F);
             handRight.setRotationPoint(-3.5F, 20F, -4F);
             handLeft.setRotationPoint(1.5F, 20F, -4F);
             footRight.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
-            footLeft.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
-            handRight.rotateAngleX = MathHelper.cos(f * 0.6662F + (float)Math.PI) * 1.4F * f1;
+            footLeft.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * 1.4F * f1;
+            handRight.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * 1.4F * f1;
             handLeft.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1;
             headMain.setRotationPoint(-1F, 14, -7.5F);
             snout.setRotationPoint(-1F, 14, -7F);
@@ -134,8 +132,8 @@ public class ModelPikachu extends APokemobModel
     public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
     {
         super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-        headMain.rotateAngleX = f4 / (180F / (float)Math.PI);
-        headMain.rotateAngleY = f3 / (180F / (float)Math.PI);
+        headMain.rotateAngleX = f4 / (180F / (float) Math.PI);
+        headMain.rotateAngleY = f3 / (180F / (float) Math.PI);
         rightEar.rotateAngleY = headMain.rotateAngleY;
         rightEar.rotateAngleX = headMain.rotateAngleX;
         leftEar.rotateAngleY = headMain.rotateAngleY;
@@ -161,8 +159,8 @@ public class ModelPikachu extends APokemobModel
     public ModelRenderer footLeft;
     public ModelRenderer handRight;
     public ModelRenderer handLeft;
-    ModelRenderer rightEar;
-    ModelRenderer leftEar;
-    ModelRenderer snout;
-    ModelRenderer tail;
+    ModelRenderer        rightEar;
+    ModelRenderer        leftEar;
+    ModelRenderer        snout;
+    ModelRenderer        tail;
 }
