@@ -20,10 +20,14 @@ public class Damp extends Ability
     @SubscribeEvent
     public void denyBoom(ExplosionEvent.Start boom)
     {
-        Vector3 boomLoc = Vector3.getNewVector().set(boom.getExplosion().getPosition());
-        if (boomLoc.distToEntity(mob.getEntity()) < range)
+        if (mob.getEntity().isDead) destroy();
+        else
         {
-            boom.setCanceled(true);
+            Vector3 boomLoc = Vector3.getNewVector().set(boom.getExplosion().getPosition());
+            if (boomLoc.distToEntity(mob.getEntity()) < range)
+            {
+                boom.setCanceled(true);
+            }
         }
     }
 

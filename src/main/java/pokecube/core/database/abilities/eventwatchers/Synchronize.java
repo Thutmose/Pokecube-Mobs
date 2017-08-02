@@ -29,7 +29,8 @@ public class Synchronize extends Ability
     @SubscribeEvent
     public void editNature(SpawnEvent.Post event)
     {
-        if (event.location.distToSq(location) < range * range && Math.random() > 0.5)
+        if (pokemob.getEntity().isDead) destroy();
+        else if (event.location.distToSq(location) < range * range && Math.random() > 0.5)
         {
             event.pokemob.setNature(pokemob.getNature());
         }
