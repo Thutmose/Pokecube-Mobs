@@ -20,12 +20,12 @@ public class Pickup extends Ability
         EntityLivingBase poke = mob.getEntity();
         if (poke.ticksExisted % 200 == 0 && Math.random() < 0.1)
         {
-            if (!CompatWrapper.isValid(poke.getHeldItemMainhand()))
+            if (!CompatWrapper.isValid(mob.getHeldItem()))
             {
                 List<?> items = new ArrayList<Object>(PokecubeItems.heldItems);
                 Collections.shuffle(items);
                 ItemStack item = (ItemStack) items.get(0);
-                if (CompatWrapper.isValid(item)) poke.setHeldItem(EnumHand.MAIN_HAND, item.copy());
+                if (CompatWrapper.isValid(item)) mob.setHeldItem(item.copy());
             }
         }
     }
