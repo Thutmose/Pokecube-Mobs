@@ -75692,7 +75692,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Mudsdale"
+            "name": "Mudsdale",
+            "level": 30
           }
         ],
         "spawnRules": [
