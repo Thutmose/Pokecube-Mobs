@@ -54,12 +54,6 @@ public class ModelWrapperSpinda extends ModelWrapper
             if (part == null) continue;
             try
             {
-                if (renderer.getTexturer() != null && part instanceof IRetexturableModel)
-                {
-                    renderer.getTexturer().bindObject(entityIn);
-                    if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.getTexturer());
-                    else((IRetexturableModel) part).setTexturer(null);
-                }
                 if (part.getParent() == null)
                 {
                     Random rand = new Random(spinda.getRNGValue());
@@ -121,9 +115,12 @@ public class ModelWrapperSpinda extends ModelWrapper
                         GL11.glMatrixMode(GL11.GL_MODELVIEW);
                         GlStateManager.popMatrix();
                     }
-
                     // Render the model normally.
-                    if (!statusRender) ((IRetexturableModel) part).setTexturer(renderer.getTexturer());
+                    if (renderer.getTexturer() != null && part instanceof IRetexturableModel)
+                    {
+                        renderer.getTexturer().bindObject(entityIn);
+                        ((IRetexturableModel) part).setTexturer(renderer.getTexturer());
+                    }
                     GlStateManager.pushMatrix();
                     part.renderAll();
                     GlStateManager.popMatrix();
