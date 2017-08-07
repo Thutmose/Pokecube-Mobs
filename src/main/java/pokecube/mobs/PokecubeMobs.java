@@ -44,7 +44,6 @@ import pokecube.core.database.PokedexEntry.EvolutionData;
 import pokecube.core.database.stats.CaptureStats;
 import pokecube.core.database.stats.EggStats;
 import pokecube.core.database.stats.StatsCollector;
-import pokecube.core.database.worldgen.XMLWorldgenHandler;
 import pokecube.core.events.CaptureEvent.Post;
 import pokecube.core.events.CaptureEvent.Pre;
 import pokecube.core.events.EvolveEvent;
@@ -65,7 +64,6 @@ import pokecube.core.items.berries.BerryManager;
 import pokecube.core.items.pokecubes.EntityPokecube;
 import pokecube.core.items.pokecubes.PokecubeManager;
 import pokecube.core.utils.Tools;
-import pokecube.core.world.gen.template.PokecubeTemplates;
 import pokecube.modelloader.CommonProxy;
 import pokecube.modelloader.IMobProvider;
 import pokecube.modelloader.ModPokecubeML;
@@ -657,13 +655,6 @@ public class PokecubeMobs implements IMobProvider
 
     public static void checkConfigFiles()
     {
-        File file = new File("./config/pokecube.cfg");
-        String seperator = System.getProperty("file.separator");
-        String folder = file.getAbsolutePath();
-        String name = file.getName();
-        PokecubeTemplates.TEMPLATES = folder.replace(name, "pokecube" + seperator + "structures" + seperator + "");
-        PokecubeTemplates.initFiles();
-        XMLWorldgenHandler.loadDefaults(new File(PokecubeTemplates.TEMPLATES, "worldgen.xml"));
         writeDefaultConfig();
         return;
     }

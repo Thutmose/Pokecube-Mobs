@@ -39772,7 +39772,12 @@
         },
         "mass": 942.9,
         "captureRate": 3,
-        "movementType": "floating"
+        "movementType": "floating",
+        "logics": {
+          "values": {
+            "fly": "TRUE"
+          }
+        }
       }
     },
     {
@@ -67404,7 +67409,7 @@
             "location": {
               "values": {
                 "typesBlacklist": "cold,hot,mountain",
-                "types": "plains,forest"
+                "anyType": "plains,forest"
               }
             }
           },
@@ -67414,7 +67419,7 @@
             "location": {
               "values": {
                 "typesBlacklist": "cold",
-                "types": "ocean,beach"
+                "anyType": "ocean,beach"
               }
             }
           },
@@ -67468,7 +67473,7 @@
             "level": 12,
             "location": {
               "values": {
-                "types": "swamp,jungle"
+                "anyType": "swamp,jungle"
               }
             }
           },
