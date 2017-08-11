@@ -1,11 +1,11 @@
 package pokecube.core.moves.implementations.attacks.water;
 
 import net.minecraft.util.text.ITextComponent;
-import pokecube.core.commands.CommandTools;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Basic;
+import thut.core.common.commands.CommandTools;
 
 public class MoveSplash extends Move_Basic
 {
