@@ -76118,8 +76118,8 @@
         },
         "sizes": {
           "values": {
-            "width": "0.9",
-            "length": "0.9",
+            "width": "0.5",
+            "length": "0.5",
             "height": "0.9"
           }
         },
@@ -77569,7 +77569,7 @@
         },
         "sizes": {
           "values": {
-            "width": "1.9",
+            "width": "0.9",
             "length": "1.9",
             "height": "1.9"
           }
@@ -77641,7 +77641,7 @@
         },
         "sizes": {
           "values": {
-            "width": "2.3",
+            "width": "1",
             "length": "2.3",
             "height": "2.3"
           }
