@@ -14,12 +14,7 @@ public class PokecubeHelper
         double x = 1;
         Entity entity = mob.getEntity();
         if (entity.getEntityWorld().getBlockState(entity.getPosition()).getBlock() == Blocks.WATER
-                && mob.getType1() == PokeType.getType("water"))
-        {
-            x = 3.5;
-        }
-        if (entity.getEntityWorld().getBlockState(entity.getPosition()).getBlock() == Blocks.WATER
-                && mob.getType2() == PokeType.getType("water"))
+                && mob.isType(PokeType.getType("water")))
         {
             x = 3.5;
         }

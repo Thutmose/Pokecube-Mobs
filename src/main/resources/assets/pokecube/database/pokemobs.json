@@ -40691,7 +40691,8 @@
             "normal": "Delta Stream"
           }
         },
-        "mass": 392.0
+        "mass": 392.0,
+        "movementType": "flying"
       }
     },
     {
@@ -44398,7 +44399,7 @@
             "values": {
               "typesBlacklist": "cold",
               "types": "ocean,cave",
-              "rate": "0.2",
+              "rate": "0.1",
               "water": "true"
             }
           },
@@ -44406,7 +44407,7 @@
             "values": {
               "typesBlacklist": "cold",
               "types": "beach,cave",
-              "rate": "0.2",
+              "rate": "0.1",
               "water": "true"
             }
           },
@@ -44414,7 +44415,7 @@
             "values": {
               "typesBlacklist": "cold",
               "types": "ocean",
-              "rate": "0.4",
+              "rate": "0.2",
               "water": "true"
             }
           },
@@ -44422,7 +44423,7 @@
             "values": {
               "typesBlacklist": "cold",
               "types": "beach",
-              "rate": "0.4",
+              "rate": "0.2",
               "water": "true"
             }
           }
@@ -44490,6 +44491,51 @@
         "misc": {
           "moves": "ancientpower, attract, blizzard, captivate, confide, dive, doubleteam, earthpower, endure, facade, frustration, hail, headbutt, hiddenpower, icebeam, icywind, infestation, naturalgift, painsplit, protect, raindance, rest, return, round, scald, secretpower, sleeptalk, snore, stringshot, substitute, surf, swagger, toxic, waterpulse, whirlpool"
         }
+      }
+    },
+    {
+      "name": "Shellos West",
+      "number": 422,
+      "stats": {
+        "evolutions": [
+          {
+            "name": "Gastrodon West"
+          }
+        ],
+        "spawnRules": [
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "ocean,cave",
+              "rate": "0.1",
+              "water": "true"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "beach,cave",
+              "rate": "0.1",
+              "water": "true"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "ocean",
+              "rate": "0.2",
+              "water": "true"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "beach",
+              "rate": "0.2",
+              "water": "true"
+            }
+          }
+        ]
       }
     },
     {
@@ -44573,6 +44619,10 @@
           "moves": "ancientpower, attract, blizzard, block, bulldoze, captivate, confide, dig, dive, doubleteam, earthpower, earthquake, endure, facade, flash, frustration, gigaimpact, hail, headbutt, hiddenpower, hyperbeam, icebeam, icywind, infestation, naturalgift, painsplit, protect, raindance, rest, return, rockslide, rocksmash, rocktomb, round, sandstorm, scald, secretpower, sleeptalk, sludgebomb, sludgewave, snore, stoneedge, strength, stringshot, substitute, surf, swagger, toxic, waterfall, waterpulse, whirlpool"
         }
       }
+    },
+    {
+      "name": "Gastrodon West",
+      "number": 423
     },
     {
       "name": "Ambipom",
@@ -75527,6 +75577,35 @@
         "misc": {
           "moves": "attract, bulldoze, confide, doubleteam, earthquake, facade, frustration, hail, hiddenpower, icebeam, mist, muddywater, protect, raindance, rest, return, round, scald, sleeptalk, substitute, surf, swagger, toxic, uturn, waterfall, waterpulse, watersport"
         }
+      }
+    },
+    {
+      "name": "Wishiwashi School",
+      "number": 746,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "135",
+            "spatk": "140",
+            "def": "130",
+            "spd": "30",
+            "hp": "45",
+            "atk": "140"
+          }
+        },
+        "sizes": {
+          "values": {
+            "width": "4.0",
+            "length": "8.2",
+            "height": "4.0"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Water"
+          }
+        },
+        "mass": 78.6
       }
     },
     {
