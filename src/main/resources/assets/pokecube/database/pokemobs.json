@@ -44913,7 +44913,7 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Lopunny"
+            "name": "Lopunny",
             "happy": true
           }
         ],
@@ -70275,7 +70275,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Heliolisk"
+            "name": "Heliolisk",
+            "item_preset": "sunstone"
           }
         ],
         "species": "Lizard",
@@ -71710,7 +71711,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gourgeist Average"
+            "name": "Gourgeist Average",
+            "trade": true
           }
         ],
         "species": "Plant",
@@ -71789,7 +71791,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gourgeist Large"
+            "name": "Gourgeist Large",
+            "trade": true
           }
         ],
         "stats": {
@@ -71825,7 +71828,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gourgeist Small"
+            "name": "Gourgeist Small",
+            "trade": true
           }
         ],
         "stats": {
@@ -71861,7 +71865,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gourgeist Super"
+            "name": "Gourgeist Super",
+            "trade": true
           }
         ],
         "stats": {
@@ -74701,7 +74706,12 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Crabominable"
+            "name": "Crabominable",
+            "location": {
+              "values": {
+                "types": "cave"
+              }
+            }
           }
         ],
         "drops": [
@@ -75012,7 +75022,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Ribombee"
+            "name": "Ribombee",
+            "level": 25
           }
         ],
         "drops": [
@@ -75670,7 +75681,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Toxapex"
+            "name": "Toxapex",
+            "level": 38
           }
         ],
         "spawnRules": [
@@ -76005,7 +76017,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Araquanid"
+            "name": "Araquanid",
+            "level": 22
           }
         ],
         "spawnRules": [
@@ -76158,7 +76171,9 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Lurantis"
+            "name": "Lurantis",
+            "level": 34,
+            "time": "day"
           }
         ],
         "spawnRules": [
@@ -76304,7 +76319,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Shiinotic"
+            "name": "Shiinotic",
+            "level": 24
           }
         ],
         "spawnRules": [
@@ -76627,7 +76643,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Bewear"
+            "name": "Bewear",
+            "level": 27
           }
         ],
         "spawnRules": [
@@ -76800,7 +76817,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Steenee"
+            "name": "Steenee",
+            "level": 18
           }
         ],
         "spawnRules": [
@@ -76877,7 +76895,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Tsareena"
+            "name": "Tsareena",
+            "move": "stomp"
           }
         ],
         "stats": {
@@ -77301,7 +77320,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Golisopod"
+            "name": "Golisopod",
+            "level": 30
           }
         ],
         "spawnRules": [
@@ -77676,7 +77696,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Silvally"
+            "name": "Silvally",
+            "happy": true
           }
         ],
         "spawnRules": [
@@ -78659,7 +78680,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Hakamo-o"
+            "name": "Hakamo-o",
+            "level": 35
           }
         ],
         "spawnRules": [
@@ -78747,7 +78769,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Kommo-o"
+            "name": "Kommo-o",
+            "level": 45
           }
         ],
         "stats": {

@@ -35,6 +35,7 @@ public class Move_Teleport extends Move_Basic
         if (attackedMob != null)
         {
             attackedMob.setPokemonAIState(IMoveConstants.ANGRY, false);
+            attackedMob.getEntity().setAttackTarget(null);
         }
         if (attacker.getPokemonAIState(IMoveConstants.TAMED) && !angry)
         {
