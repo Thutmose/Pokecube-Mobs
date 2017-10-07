@@ -42459,7 +42459,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Kricketune"
+            "name": "Kricketune",
+            "level": "10"
           }
         ],
         "species": "Insecta",
@@ -42605,6 +42606,18 @@
         },
         "evolutionMoves":"furycutter"
       }
+    },
+    {
+      "name": "Kricketune Female",
+      "number": 402,
+      "gender": "female",
+      "genderBase": "Kricketune"
+    },
+    {
+      "name": "Kricketune Male",
+      "number": 402,
+      "gender": "Male",
+      "genderBase": "Kricketune"
     },
     {
       "name": "Shinx",
@@ -44380,7 +44393,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gastrodon"
+            "name": "Gastrodon",
+            "level": 30
           }
         ],
         "species": "Gastropoda",
@@ -44499,7 +44513,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gastrodon West"
+            "name": "Gastrodon West",
+            "level": 30
           }
         ],
         "spawnRules": [
@@ -44899,6 +44914,7 @@
         "evolutions": [
           {
             "name": "Lopunny"
+            "happy": true
           }
         ],
         "species": "Leporidae",
@@ -45325,7 +45341,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Purugly"
+            "name": "Purugly",
+            "level": 38
           }
         ],
         "species": "Cat",
@@ -45611,7 +45628,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Skuntank"
+            "name": "Skuntank",
+            "level": 34
           }
         ],
         "species": "Mustela",
@@ -47658,7 +47676,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Lumineon"
+            "name": "Lumineon",
+            "level": 31
           }
         ],
         "species": "Fish",
@@ -47843,7 +47862,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Mantine"
+            "name": "Mantine",
+            "level": 30
           }
         ],
         "species": "Kite",
@@ -52675,7 +52695,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Herdier"
+            "name": "Herdier",
+            "level": 16
           }
         ],
         "species": "Dog",
@@ -52770,7 +52791,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Stoutland"
+            "name": "Stoutland",
+            "level": 32
           }
         ],
         "species": "Dog",
@@ -53156,7 +53178,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Simisage"
+            "name": "Simisage",
+            "item_preset": "leafstone"
           }
         ],
         "species": "Monkey",
@@ -53315,7 +53338,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Simisear"
+            "name": "Simisear",
+            "item_preset": "leafstone"
           }
         ],
         "species": "Monkey",
@@ -53474,7 +53498,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Simipour"
+            "name": "Simipour",
+            "item_preset": "leafstone"
           }
         ],
         "species": "Monkey",
@@ -54750,7 +54775,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Excadrill"
+            "name": "Excadrill",
+            "level": 31
           }
         ],
         "species": "Mole",
@@ -55060,7 +55086,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gurdurr"
+            "name": "Gurdurr",
+            "level": 25
           }
         ],
         "species": "Fighter",
@@ -55154,7 +55181,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Conkeldurr"
+            "name": "Conkeldurr",
+            "trade": true
           }
         ],
         "species": "Fighter",
@@ -55760,7 +55788,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Swadloon"
+            "name": "Swadloon",
+            "level": 20
           }
         ],
         "species": "Leaf Insecta",
@@ -55853,7 +55882,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Leavanny"
+            "name": "Leavanny",
+            "happy": true
           }
         ],
         "species": "Leaf Insecta",
@@ -57525,7 +57555,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Scrafty"
+            "name": "Scrafty",
+            "level": 39
           }
         ],
         "species": "Shedding",
@@ -57959,7 +57990,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Carracosta"
+            "name": "Carracosta",
+            "level": 37
           }
         ],
         "species": "Turtle",
@@ -58136,7 +58168,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Archeops"
+            "name": "Archeops",
+            "level": 37
           }
         ],
         "species": "Bird",
@@ -58343,7 +58376,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Garbodor"
+            "name": "Garbodor",
+            "level": 36
           }
         ],
         "species": "Amorphous",
@@ -58700,7 +58734,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Cinccino"
+            "name": "Cinccino",
+            "item_preset": "shinystone"
           }
         ],
         "species": "Rodent",
@@ -58894,7 +58929,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gothorita"
+            "name": "Gothorita",
+            "level": 32
           }
         ],
         "species": "Hominid",
@@ -58986,7 +59022,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gothitelle"
+            "name": "Gothitelle",
+            "level": 41
           }
         ],
         "species": "Hominid",
@@ -59425,7 +59462,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Swanna"
+            "name": "Swanna",
+            "level": 35
           }
         ],
         "species": "Bird",
@@ -60169,7 +60207,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Escavalier"
+            "name": "Escavalier",
+            "trade": true
           }
         ],
         "species": "Insecta",
@@ -60561,7 +60600,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Jellicent"
+            "name": "Jellicent",
+            "level": 40
           }
         ],
         "species": "Jellyfish",
@@ -61748,7 +61788,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Beheeyem"
+            "name": "Beheeyem",
+            "level": 42
           }
         ],
         "species": "Cerebral",
@@ -62729,7 +62770,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Accelgor"
+            "name": "Accelgor",
+            "trade": true
           }
         ],
         "species": "Gastropoda",
@@ -62986,7 +63028,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Mienshao"
+            "name": "Mienshao",
+            "level": 50
           }
         ],
         "species": "Fighter",
@@ -63274,7 +63317,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Golurk"
+            "name": "Golurk",
+            "level": 43
           }
         ],
         "species": "Automaton",
@@ -63713,7 +63757,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Braviary"
+            "name": "Braviary",
+            "level": 54
           }
         ],
         "species": "Bird",
@@ -63882,7 +63927,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Mandibuzz"
+            "name": "Mandibuzz",
+            "level": 54
           }
         ],
         "species": "Bird",
@@ -67754,7 +67800,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Pyroar"
+            "name": "Pyroar",
+            "level": 35
           }
         ],
         "species": "Cat",
@@ -67965,7 +68012,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Floette"
+            "name": "Floette",
+            "level": 19
           }
         ],
         "species": "Fairy Plant",
@@ -68052,7 +68100,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Florges"
+            "name": "Florges",
+            "item_preset": "shinystone"
           }
         ],
         "species": "Fairy Plant",
@@ -68194,7 +68243,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Gogoat"
+            "name": "Gogoat",
+            "level": 32
           }
         ],
         "species": "Artiodactyla",
@@ -69177,7 +69227,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Aromatisse"
+            "name": "Aromatisse",
+            "trade": true
           }
         ],
         "species": "Perfume",
@@ -69344,7 +69395,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Slurpuff"
+            "name": "Slurpuff",
+            "trade": true
           }
         ],
         "species": "CottonCandy",
@@ -69706,7 +69758,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Barbaracle"
+            "name": "Barbaracle",
+            "level": 39
           }
         ],
         "species": "Crustacea",
@@ -69875,7 +69928,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Dragalge"
+            "name": "Dragalge",
+            "level": 48
           }
         ],
         "species": "Fish",
@@ -70063,7 +70117,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Clawitzer"
+            "name": "Clawitzer",
+            "level": 37
           }
         ],
         "species": "Crustacea",
@@ -77008,7 +77063,8 @@
         "expMode": "Fast",
         "genderRatio": 190,
         "logics": {},
-        "formeItems": {}
+        "formeItems": {},
+        "movementType": "floating"
       },
       "moves": {
         "lvlupMoves": {
