@@ -47771,6 +47771,12 @@
       }
     },
     {
+      "name": "Finneon Female",
+      "number": 456,
+      "gender": "female",
+      "genderBase": "Finneon"
+    },
+    {
       "name": "Lumineon",
       "number": 457,
       "base": true,
@@ -47854,6 +47860,12 @@
           "moves": "aircutter, aquatail, attract, blizzard, bounce, confide, defog, dive, doubleteam, endure, facade, flash, frustration, gigaimpact, hail, hiddenpower, hyperbeam, icebeam, icywind, naturalgift, ominouswind, payback, protect, psychup, raindance, rest, return, round, safeguard, scald, secretpower, signalbeam, sleeptalk, snore, substitute, surf, swagger, swift, tailwind, toxic, twister, uturn, waterfall, waterpulse"
         }
       }
+    },
+    {
+      "name": "Lumineon Female",
+      "number": 457,
+      "gender": "female",
+      "genderBase": "Lumineon"
     },
     {
       "name": "Mantyke",
