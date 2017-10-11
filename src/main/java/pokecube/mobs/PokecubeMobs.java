@@ -98,7 +98,7 @@ public class PokecubeMobs implements IMobProvider
                 if (result.status == Status.OUTDATED)
                 {
                     ITextComponent mess = ClientProxy.getOutdatedMessage(result, "Pokecube Mobs");
-                    (event.player).addChatMessage(mess);
+                    (event.player).sendMessage(mess);
                 }
             }
         }
@@ -564,7 +564,7 @@ public class PokecubeMobs implements IMobProvider
                     evt.caught.getEntity().setDead();
                     cube.motionX = cube.motionZ = 0;
                     cube.motionY = 0.1;
-                    cube.getEntityWorld().spawnEntityInWorld(cube.copy());
+                    cube.getEntityWorld().spawnEntity(cube.copy());
                     evt.pokecube.setDead();
                 }
                 evt.setCanceled(true);
@@ -609,7 +609,7 @@ public class PokecubeMobs implements IMobProvider
                 evt.caught.getEntity().setDead();
                 cube.motionX = cube.motionZ = 0;
                 cube.motionY = 0.1;
-                cube.getEntityWorld().spawnEntityInWorld(cube.copy());
+                cube.getEntityWorld().spawnEntity(cube.copy());
                 evt.setCanceled(true);
                 evt.pokecube.setDead();
             }
@@ -655,7 +655,7 @@ public class PokecubeMobs implements IMobProvider
                 {
                     String message = "A sweet smell is coming from "
                             + shuckle.getPokemonDisplayName().getFormattedText();
-                    ((EntityPlayer) shuckle.getPokemonOwner()).addChatMessage(new TextComponentString(message));
+                    ((EntityPlayer) shuckle.getPokemonOwner()).sendMessage(new TextComponentString(message));
                 }
                 shuckle.setHeldItem(new ItemStack(PokecubeItems.berryJuice));
                 return;
@@ -670,7 +670,7 @@ public class PokecubeMobs implements IMobProvider
                 {
                     String message = "The smell coming from " + shuckle.getPokemonDisplayName().getFormattedText()
                             + " has changed";
-                    ((EntityPlayer) shuckle.getPokemonOwner()).addChatMessage(new TextComponentString(message));
+                    ((EntityPlayer) shuckle.getPokemonOwner()).sendMessage(new TextComponentString(message));
                 }
                 shuckle.setHeldItem(candy);
                 return;
