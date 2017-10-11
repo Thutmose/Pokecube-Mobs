@@ -1,0 +1,10 @@
+{
+  "parent": "pokecube:block/pokecubes",
+  "textures": {
+    "top": "pokecube:items/safaricubetop",
+    "bottom": "pokecube:items/safaricubebottom",
+    "front": "pokecube:items/safaricubefront",
+    "side": "pokecube:items/safaricubeside",
+    "back": "pokecube:items/safaricubeback"
+  }
+}

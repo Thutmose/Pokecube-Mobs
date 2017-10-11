@@ -1,13 +1,39 @@
 package pokecube.mobs;
 
+import java.util.List;
+
+import javax.xml.namespace.QName;
+
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.projectile.EntityFishHook;
 import net.minecraft.init.Blocks;
+import net.minecraft.util.math.AxisAlignedBB;
+import pokecube.core.PokecubeItems;
+import pokecube.core.database.SpawnBiomeMatcher;
+import pokecube.core.database.SpawnBiomeMatcher.SpawnCheck;
+import pokecube.core.database.PokedexEntryLoader.SpawnRule;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.interfaces.PokecubeMod;
+import pokecube.core.interfaces.IPokemob.HappinessType;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.utils.PokeType;
+import thut.api.maths.Vector3;
 
 public class PokecubeHelper
 {
+    private static SpawnBiomeMatcher moonMatcher;
+
+    static
+    {
+        SpawnRule rule = new SpawnRule();
+        rule.values.put(new QName("rate"), "1");
+        rule.values.put(new QName("types"), "moon");
+        moonMatcher = new SpawnBiomeMatcher(rule);
+    }
 
     public double dive(IPokemob mob)
     {
@@ -99,5 +125,81 @@ public class PokecubeHelper
             x = 4;
         }
         return x;
+    }
+
+    public double level(IPokemob mob)
+    {
+        EntityLiving entity = mob.getEntity();
+        int level = mob.getLevel();
+        int otherLevel = 0;
+        EntityLivingBase target = entity.getAttackTarget();
+        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        if (targetMob == null || (otherLevel = targetMob.getLevel()) <= level) return 1;
+        if (otherLevel <= 2 * level) return 2;
+        if (otherLevel <= 4 * level) return 4;
+        return 8;
+    }
+
+    public double lure(IPokemob mob)
+    {
+        EntityLiving entity = mob.getEntity();
+        if (mob.getPokedexEntry().swims())
+        {// grow in 1.12
+            AxisAlignedBB bb = Vector3.getNewVector().set(entity).addTo(0, entity.getEyeHeight(), 0).getAABB()
+                    .expandXyz(PokecubeMod.core.getConfig().fishHookBaitRange);
+            List<EntityFishHook> hooks = entity.getEntityWorld().getEntitiesWithinAABB(EntityFishHook.class, bb);
+            if (!hooks.isEmpty())
+            {
+                for (EntityFishHook hook : hooks)
+                {
+                    if (hook.caughtEntity == entity) return 5;
+                }
+            }
+        }
+        return 1;
+    }
+
+    public double moon(IPokemob mob)
+    {
+        if (mob.getPokedexEntry().canEvolve(1, PokecubeItems.getStack("moonstone"))) return 4;
+        if (moonMatcher
+                .matches(new SpawnCheck(Vector3.getNewVector().set(mob.getEntity()), mob.getEntity().getEntityWorld())))
+            return 4;
+        return 1;
+    }
+
+    public double love(IPokemob mob)
+    {
+        EntityLiving entity = mob.getEntity();
+        EntityLivingBase target = entity.getAttackTarget();
+        IPokemob targetMob = CapabilityPokemob.getPokemobFor(target);
+        if (targetMob == null || !(target instanceof EntityAnimal)) return 1;
+        if (mob.canMate((EntityAnimal) target)) return 8;
+        return 1;
+    }
+
+    public int heavy(IPokemob mob)
+    {
+        double mass = mob.getWeight();
+        if (mass < 100) return -20;
+        if (mass < 200) return 0;
+        if (mass < 300) return 20;
+        if (mass < 450) return 30;
+        return 40;
+    }
+
+    public double fast(IPokemob mob)
+    {
+        return mob.getPokedexEntry().getStatVIT() < 100 ? 1 : 4;
+    }
+
+    public void luxury(IPokemob mob)
+    {
+        // Randomly increase happiness for being outside of pokecube.
+        if (Math.random() > 0.999 && mob.getPokemonAIState(IMoveConstants.TAMED))
+        {
+            HappinessType.applyHappiness(mob, HappinessType.TIME);
+            HappinessType.applyHappiness(mob, HappinessType.TIME);
+        }
     }
 }

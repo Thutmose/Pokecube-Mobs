@@ -12,6 +12,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import com.google.gson.JsonPrimitive;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -20,7 +21,8 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextComponentString;
 import pokecube.core.database.Database;
-import pokecube.core.database.PokedexEntry;;
+import pokecube.core.database.PokedexEntry;
+import pokecube.core.interfaces.IPokecube;;
 
 public class CommandGenStuff extends CommandBase
 {
@@ -41,10 +43,10 @@ public class CommandGenStuff extends CommandBase
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
     {
         sender.addChatMessage(new TextComponentString("Starting File Output"));
-        for(PokedexEntry e: Database.allFormes)
+        for (PokedexEntry e : Database.allFormes)
         {
             registerAchievements(e);
-        }        
+        }
         File dir = new File("./mods/pokecube/assets/pokecube_mobs/");
         if (!dir.exists()) dir.mkdirs();
         File file = new File(dir, "sounds.json");
@@ -59,9 +61,11 @@ public class CommandGenStuff extends CommandBase
         {
             e.printStackTrace();
         }
+        generatePokecubesJsons();
+
         sender.addChatMessage(new TextComponentString("Finished File Output"));
     }
-    
+
     /** Comment these out to re-generate advancements. */
     public static void registerAchievements(PokedexEntry entry)
     {
@@ -90,6 +94,79 @@ public class CommandGenStuff extends CommandBase
         }
     }
 
+    public static void generatePokecubesJsons()
+    {
+        for (ResourceLocation l : IPokecube.BEHAVIORS.getKeys())
+        {
+            String cube = l.getResourcePath();
+            JsonObject blockJson = new JsonObject();
+            blockJson.addProperty("parent", "pokecube:block/pokecubes");
+            JsonObject textures = new JsonObject();
+            textures.addProperty("top", "pokecube:items/" + cube + "cube" + "top");
+            textures.addProperty("bottom", "pokecube:items/" + cube + "cube" + "bottom");
+            textures.addProperty("front", "pokecube:items/" + cube + "cube" + "front");
+            textures.addProperty("side", "pokecube:items/" + cube + "cube" + "side");
+            textures.addProperty("back", "pokecube:items/" + cube + "cube" + "back");
+            blockJson.add("textures", textures);
+
+            File dir = new File("./mods/pokecube/assets/pokecube/models/block/");
+            if (!dir.exists()) dir.mkdirs();
+            File file = new File(dir, cube + "cube" + ".json");
+            String json = AdvancementGenerator.GSON.toJson(blockJson);
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            JsonObject itemJson = new JsonObject();
+            itemJson.addProperty("parent", "pokecube:block/" + cube + "cube");
+            JsonObject display = new JsonObject();
+            JsonObject thirdPerson = new JsonObject();
+            JsonArray rotation = new JsonArray();
+            JsonArray translation = new JsonArray();
+            JsonArray scale = new JsonArray();
+
+            rotation.add(new JsonPrimitive(10));
+            rotation.add(new JsonPrimitive(-45));
+            rotation.add(new JsonPrimitive(170));
+
+            translation.add(new JsonPrimitive(0));
+            translation.add(new JsonPrimitive(1.5));
+            translation.add(new JsonPrimitive(-2.75));
+
+            scale.add(new JsonPrimitive(0.375));
+            scale.add(new JsonPrimitive(0.375));
+            scale.add(new JsonPrimitive(0.375));
+
+            thirdPerson.add("rotation", rotation);
+            thirdPerson.add("translation", translation);
+            thirdPerson.add("scale", scale);
+            display.add("thirdperson", thirdPerson);
+            itemJson.add("display", display);
+
+            dir = new File("./mods/pokecube/assets/pokecube/models/item/");
+            if (!dir.exists()) dir.mkdirs();
+            file = new File(dir, cube + "cube" + ".json");
+            json = AdvancementGenerator.GSON.toJson(itemJson);
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+        }
+    }
 
     public static class SoundJsonGenerator
     {

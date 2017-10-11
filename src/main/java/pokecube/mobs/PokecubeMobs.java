@@ -16,6 +16,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.common.ForgeVersion;
@@ -53,6 +54,7 @@ import pokecube.core.events.onload.InitDatabase;
 import pokecube.core.events.onload.RegisterPokecubes;
 import pokecube.core.handlers.HeldItemHandler;
 import pokecube.core.interfaces.IMoveConstants;
+import pokecube.core.interfaces.IPokecube;
 import pokecube.core.interfaces.IPokecube.DefaultPokecubeBehavior;
 import pokecube.core.interfaces.IPokecube.NormalPokecubeBehavoir;
 import pokecube.core.interfaces.IPokecube.PokecubeBehavior;
@@ -385,70 +387,149 @@ public class PokecubeMobs implements IMobProvider
     @SubscribeEvent
     public void registerPokecubes(RegisterPokecubes event)
     {
-        String[] cubes = { "poke", "great", "ultra", "master", "snag", "dusk", "quick", "timer", "net", "nest", "dive",
-                "repeat", "premier", "cherish" };
-        int[] indecies = { 0, 1, 2, 3, 99, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
-        for (int i = 0; i < cubes.length; i++)
-        {
-            event.cubePrefixes.put(indecies[i], cubes[i]);
-        }
-
         final PokecubeHelper helper = new PokecubeHelper();
-
-        event.behaviors.put(0, new NormalPokecubeBehavoir(1));
-        event.behaviors.put(1, new NormalPokecubeBehavoir(1.5));
-        event.behaviors.put(2, new NormalPokecubeBehavoir(2));
-        event.behaviors.put(3, new NormalPokecubeBehavoir(255));
-        event.behaviors.put(5, new DefaultPokecubeBehavior()
+        PokecubeBehavior.DEFAULTCUBE = new ResourceLocation(MODID, "poke");
+        
+        event.behaviors.add(new NormalPokecubeBehavoir(1).setName(PokecubeBehavior.DEFAULTCUBE));
+        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setName(MODID, "great"));
+        event.behaviors.add(new NormalPokecubeBehavoir(2).setName(MODID, "ultra"));
+        event.behaviors.add(new NormalPokecubeBehavoir(255).setName(MODID, "master"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
             public double getCaptureModifier(IPokemob mob)
             {
                 return helper.dusk(mob);
             }
-        });
-        event.behaviors.put(6, new DefaultPokecubeBehavior()
+        }.setName(MODID, "dusk"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
             public double getCaptureModifier(IPokemob mob)
             {
                 return helper.quick(mob);
             }
-        });
-        event.behaviors.put(7, new DefaultPokecubeBehavior()
+        }.setName(MODID, "quick"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
             public double getCaptureModifier(IPokemob mob)
             {
                 return helper.timer(mob);
             }
-        });
-        event.behaviors.put(8, new DefaultPokecubeBehavior()
+        }.setName(MODID, "timer"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
             public double getCaptureModifier(IPokemob mob)
             {
                 return helper.net(mob);
             }
-        });
-        event.behaviors.put(9, new DefaultPokecubeBehavior()
+        }.setName(MODID, "net"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
             public double getCaptureModifier(IPokemob mob)
             {
                 return helper.nest(mob);
             }
-        });
-        event.behaviors.put(10, new DefaultPokecubeBehavior()
+        }.setName(MODID, "nest"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
             public double getCaptureModifier(IPokemob mob)
             {
                 return helper.dive(mob);
             }
-        });
-        event.behaviors.put(12, new NormalPokecubeBehavoir(1));
-        event.behaviors.put(13, new NormalPokecubeBehavoir(1));
+        }.setName(MODID, "dive"));
+
+        event.behaviors.add(new NormalPokecubeBehavoir(1).setName(MODID, "premier"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1).setName(MODID, "cherish"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setName(MODID, "safari"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.level(mob);
+            }
+        }.setName(MODID, "level"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.lure(mob);
+            }
+        }.setName(MODID, "lure"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.moon(mob);
+            }
+        }.setName(MODID, "moon"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public void onPostCapture(Post evt)
+            {
+                IPokemob mob = evt.caught;
+                mob.addHappiness(200 - mob.getHappiness());
+            }
+
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return 1;
+            }
+        }.setName(MODID, "friend"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.love(mob);
+            }
+        }.setName(MODID, "love"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1)
+        {
+            @Override
+            public int getAdditionalBonus(IPokemob mob)
+            {
+                return helper.heavy(mob);
+            }
+        }.setName(MODID, "heavy"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.fast(mob);
+            }
+        }.setName(MODID, "fast"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setName(MODID, "sport"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1)
+        {
+            @Override
+            public void onUpdate(IPokemob mob)
+            {
+                helper.luxury(mob);
+            }
+        }.setName(MODID, "luxury"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1)
+        {
+            @Override
+            public void onPostCapture(Post evt)
+            {
+                IPokemob mob = evt.caught;
+                mob.getEntity().setHealth(mob.getEntity().getMaxHealth());
+                mob.healStatus();
+            }
+        }.setName(MODID, "heal"));
+        event.behaviors.add(new NormalPokecubeBehavoir(255).setName(MODID, "park"));
+        event.behaviors.add(new NormalPokecubeBehavoir(255).setName(MODID, "dream"));
 
         PokecubeBehavior snag = new PokecubeBehavior()
         {
@@ -541,8 +622,8 @@ public class PokecubeMobs implements IMobProvider
 
         };
 
-        event.behaviors.put(99, snag);
-        event.behaviors.put(11, repeat);
+        event.behaviors.add(snag.setName(MODID, "snag"));
+        event.behaviors.add(repeat.setName(MODID, "repeat"));
     }
 
     @SubscribeEvent
@@ -623,7 +704,8 @@ public class PokecubeMobs implements IMobProvider
             {
                 ItemStack item = inv.getStackInSlot(n);
                 if (item == CompatWrapper.nullStack) hasSpace = true;
-                if (!hasCube && PokecubeItems.getCubeId(item) >= 0 && !PokecubeManager.isFilled(item))
+                ResourceLocation key = PokecubeItems.getCubeId(item);
+                if (!hasCube && key != null && IPokecube.BEHAVIORS.containsKey(key) && !PokecubeManager.isFilled(item))
                 {
                     hasCube = true;
                     cube = item;
