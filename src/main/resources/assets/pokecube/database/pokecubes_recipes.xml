@@ -9,7 +9,7 @@
     <Recipe map=" T ,PPP,   ">//Snagcube
         <Output n="3" id="pokecube:snagcube"/>
         <Input id="pokecube:premiercube" key="P"/>
-        <Input id="minecraft:ghast_tear" d="1" key="T"/>
+        <Input id="minecraft:ghast_tear" key="T"/>
     </Recipe>
     <Recipe map=" R ,PPP,   ">//Pokecube
         <Output n="3" id="pokecube:pokecube"/>
