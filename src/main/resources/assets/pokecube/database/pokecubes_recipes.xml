@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Recipes>
+    <Recipe map="IGI,CBC,III">//Snagcube
+        <Output n="3" id="pokecube:pokeseal"/>
+        <Input id="minecraft:ghast_tear" d="1" key="G"/>
+        <Input id="minecraft:stone_button" key="B"/>
+        <Input id="minecraft:coal" d="32767" key="C"/>
+        <Input id="minecraft:iron_ingot" key="I"/>
+    </Recipe>
+    <Recipe map="RRR,CBC,III">//Pokecube
+        <Output n="6" id="pokecube:pokecube"/>
+        <Input id="minecraft:iron_ingot" key="I"/>
+        <Input id="minecraft:redstone" key="R"/>
+        <Input id="minecraft:stone_button" key="B"/>
+        <Input id="minecraft:coal" d="32767" key="C"/>
+    </Recipe>
+    <Recipe map="RLR,CBC,III">//Greatcube
+        <Output n="4" id="pokecube:greatcube"/>
+        <Input id="minecraft:iron_ingot" key="I"/>
+        <Input id="minecraft:redstone" key="R"/>
+        <Input id="minecraft:stone_button" key="B"/>
+        <Input id="minecraft:coal" d="32767" key="C"/>
+        <Input id="minecraft:dye" d="4" key="L"/>
+    </Recipe>
+    <Recipe map="GFG,CBC,III">//Ultracube
+        <Output n="3" id="pokecube:ultracube"/>
+        <Input id="minecraft:iron_ingot" key="I"/>
+        <Input id="minecraft:gold_ingot" key="G"/>
+        <Input id="minecraft:stone_button" key="B"/>
+        <Input id="minecraft:coal" d="32767" key="C"/>
+        <Input id="minecraft:flint" key="F"/>
+    </Recipe>
+    <Recipe map="III,CBC,III">//Premiercube
+        <Output n="2" id="pokecube:premiercube"/>
+        <Input id="minecraft:iron_ingot" key="I"/>
+        <Input id="minecraft:stone_button" key="B"/>
+        <Input id="minecraft:coal" d="32767" key="C"/>
+    </Recipe>
+    <Recipe map="CGC,GPG,CGC">//Duskcube
+        <Output n="1" id="pokecube:duskcube"/>
+        <Input id="minecraft:dye" d="2" key="G"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:coal" key="C"/>
+    </Recipe>
+    <Recipe map="CGC,GPG,CGC">//Quckcube
+        <Output n="1" id="pokecube:quickcube"/>
+        <Input id="minecraft:dye" d="4" key="G"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:gold_ingot" key="C"/>
+    </Recipe>
+    <Recipe map="CSC,CPC,QQQ">//Timercube
+        <Output n="1" id="pokecube:timercube"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:coal" key="C"/>
+        <Input id="minecraft:sand" d="1" key="S"/>
+        <Input id="minecraft:quartz" key="Q"/>
+    </Recipe>
+    <Recipe map="SSS,SPS,SSS">//Netcube
+        <Output n="1" id="pokecube:netcube"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:string" key="S"/>
+    </Recipe>
+    <Recipe map="GIG,IPI,GGG">//Nestcube
+        <Output n="1" id="pokecube:nestcube"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:tallgrass" d="32767" key="G"/>
+        <Input id="minecraft:gold_ingot" d="32767" key="I"/>
+    </Recipe>
+    <Recipe map="WWW,IPI,WWW">//Divecube
+        <Output n="1" id="pokecube:divecube"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:dye" d="4" key="I"/>
+        <Input id="minecraft:water_bucket" key="W"/>
+    </Recipe>
+    <Recipe map="RRR,CPC,III">//Repeatcube
+        <Output n="1" id="pokecube:repeatcube"/>
+        <Input id="minecraft:iron_ingot" key="I"/>
+        <Input id="minecraft:redstone" key="R"/>
+        <Input id="pokecube:premiercube" key="P"/>
+        <Input id="minecraft:coal" key="C"/>
+    </Recipe>
+</Recipes>

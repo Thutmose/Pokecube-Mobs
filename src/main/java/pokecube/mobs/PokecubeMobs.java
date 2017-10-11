@@ -43,6 +43,7 @@ import pokecube.core.database.Database;
 import pokecube.core.database.Database.EnumDatabase;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.PokedexEntry.EvolutionData;
+import pokecube.core.database.recipes.XMLRecipeHandler;
 import pokecube.core.database.stats.CaptureStats;
 import pokecube.core.database.stats.EggStats;
 import pokecube.core.database.stats.StatsCollector;
@@ -764,6 +765,10 @@ public class PokecubeMobs implements IMobProvider
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
             copyDatabaseFile("pokemobs.json");
+            copyDatabaseFile("pokecubes_recipes.xml");
+            copyDatabaseFile("pokemob_item_recipes.xml");
+            XMLRecipeHandler.recipeFiles.add("pokecubes_recipes");
+            XMLRecipeHandler.recipeFiles.add("pokemob_item_recipes");
             DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_adventures");
             CONFIGLOC = Database.CONFIGLOC.replace("database", "trainers");
             temp = new File(Database.CONFIGLOC);

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Recipes>
+    <Recipe map="SSS,SWS,SSS">//Waterstone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"waterstone"}</tag>
+        </Output>
+        <Input id="minecraft:stone" key="S"/>
+        <Input id="minecraft:water_bucket" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Firestone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"firestone"}</tag>
+        </Output>
+        <Input id="minecraft:stone" key="S"/>
+        <Input id="minecraft:torch" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Leafstone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"leafstone"}</tag>
+        </Output>
+        <Input id="minecraft:stone" key="S"/>
+        <Input id="minecraft:sapling" d="32767" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Thunderstone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"thunderstone"}</tag>
+        </Output>
+        <Input id="minecraft:stone" key="S"/>
+        <Input id="minecraft:redstone" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Everstone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"everstone"}</tag>
+        </Output>
+        <Input id="minecraft:stone" key="S"/>
+        <Input id="minecraft:obsidian" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Duskstone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"duskstone"}</tag>
+        </Output>
+        <Input id="minecraft:soul_sand" key="S"/>
+        <Input id="minecraft:torch" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Dawnstone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"dawnstone"}</tag>
+        </Output>
+        <Input id="minecraft:dye" d="4" key="S"/>
+        <Input id="minecraft:torch" key="W"/>
+    </Recipe>
+    <Recipe map="SSS,SWS,SSS">//Shinystone
+        <Output n="1" id="pokecube:held">
+            <tag>{type:"shinystone"}</tag>
+        </Output>
+        <Input id="minecraft:quartz" key="S"/>
+        <Input id="minecraft:glowstone_dust" key="W"/>
+    </Recipe>
+</Recipes>
