@@ -77,7 +77,7 @@ import thut.api.maths.Vector3;
 import thut.core.client.ClientProxy;
 import thut.lib.CompatWrapper;
 
-@Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = PokecubeMobs.VERSION, dependencies = "required-after:pokecube;required-after:pokecube_adventures", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMobs.MCVERSIONS)
+@Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = Reference.VERSION, dependencies = "required-after:pokecube;required-after:pokecube_adventures", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = Reference.MINVERSION, acceptedMinecraftVersions = Reference.MCVERSIONS)
 public class PokecubeMobs implements IMobProvider
 {
     public static class UpdateNotifier
@@ -107,10 +107,7 @@ public class PokecubeMobs implements IMobProvider
 
     Map<PokedexEntry, Integer> genMap     = Maps.newHashMap();
     public static final String MODID      = "pokecube_mobs";
-    public static final String VERSION    = "@VERSION@";
     public static final String UPDATEURL  = "https://gist.githubusercontent.com/Thutmose/4d7320c36696cd39b336/raw/mobs.json";
-
-    public final static String MCVERSIONS = "*";
 
     public PokecubeMobs()
     {
@@ -390,7 +387,7 @@ public class PokecubeMobs implements IMobProvider
     {
         final PokecubeHelper helper = new PokecubeHelper();
         PokecubeBehavior.DEFAULTCUBE = new ResourceLocation("pokecube", "poke");
-        
+
         event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName(PokecubeBehavior.DEFAULTCUBE));
         event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName("pokecube", "great"));
         event.behaviors.add(new NormalPokecubeBehavoir(2).setRegistryName("pokecube", "ultra"));

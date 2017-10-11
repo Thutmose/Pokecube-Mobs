@@ -17,16 +17,16 @@ import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.events.PostPostInit;
 import pokecube.mobs.PokecubeMobs;
+import pokecube.mobs.Reference;
 import pokecube.origin.models.ModelPichu;
 import pokecube.origin.models.ModelPikachu;
 import thut.core.common.config.ConfigBase;
 import thut.core.common.config.Configure;
 
-@Mod(modid = PokecubeOrigin.MODID, name = "Pokecube Origin", version = PokecubeOrigin.VERSION, acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMobs.MCVERSIONS)
+@Mod(modid = PokecubeOrigin.MODID, name = "Pokecube Origin", version = Reference.VERSION, acceptableRemoteVersions = "*", acceptedMinecraftVersions = "*")
 public class PokecubeOrigin
 {
     public static final String MODID   = "pokecube_origin";
-    public static final String VERSION = "@VERSION@";
     private Config             config;
 
     @EventHandler
