@@ -24,10 +24,10 @@ public class Move_Teleport extends Move_Basic
     {
         IPokemob attacker = packet.attacker;
         Entity attacked = packet.attacked;
-        IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
         Entity target = attacker.getEntity().getAttackTarget();
+        if (attacked == attacker.getEntity() && target != null) attacked = target;
+        IPokemob attackedMob = CapabilityPokemob.getPokemobFor(attacked);
         boolean angry = attacker.getPokemonAIState(IMoveConstants.ANGRY);
-        if (attacked == attacker) attacked = target;
         if (attacked instanceof EntityLiving)
         {
             ((EntityLiving) attacked).setAttackTarget(null);
@@ -52,6 +52,7 @@ public class Move_Teleport extends Move_Basic
             }
         }
         super.postAttack(packet);
+        attacker.setPokemonAIState(IMoveConstants.ANGRY, false);
         attacker.getEntity().setAttackTarget(null);
     }
 }
