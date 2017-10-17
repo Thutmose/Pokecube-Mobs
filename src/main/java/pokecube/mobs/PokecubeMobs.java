@@ -77,7 +77,7 @@ import thut.api.maths.Vector3;
 import thut.core.client.ClientProxy;
 import thut.lib.CompatWrapper;
 
-@Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = PokecubeMobs.VERSION, dependencies = "required-after:pokecube;required-after:pokecube_adventures", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMobs.MCVERSIONS)
+@Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = Reference.VERSION, dependencies = "required-after:pokecube;required-after:pokecube_adventures", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = Reference.MINVERSION, acceptedMinecraftVersions = Reference.MCVERSIONS)
 public class PokecubeMobs implements IMobProvider
 {
     public static class UpdateNotifier
@@ -99,18 +99,15 @@ public class PokecubeMobs implements IMobProvider
                 if (result.status == Status.OUTDATED)
                 {
                     ITextComponent mess = ClientProxy.getOutdatedMessage(result, "Pokecube Mobs");
-                    (event.player).addChatMessage(mess);
+                    (event.player).sendMessage(mess);
                 }
             }
         }
     }
 
-    Map<PokedexEntry, Integer> genMap     = Maps.newHashMap();
-    public static final String MODID      = "pokecube_mobs";
-    public static final String VERSION    = "@VERSION@";
-    public static final String UPDATEURL  = "https://gist.githubusercontent.com/Thutmose/4d7320c36696cd39b336/raw/mobs.json";
-
-    public final static String MCVERSIONS = "*";
+    Map<PokedexEntry, Integer> genMap    = Maps.newHashMap();
+    public static final String MODID     = "pokecube_mobs";
+    public static final String UPDATEURL = "https://gist.githubusercontent.com/Thutmose/4d7320c36696cd39b336/raw/mobs.json";
 
     public PokecubeMobs()
     {
@@ -206,7 +203,7 @@ public class PokecubeMobs implements IMobProvider
 
         MinecraftForge.EVENT_BUS.register(this);
         initBerries();
-        MegaWearablesHelper.initExtraWearables();
+        if (Loader.isModLoaded("thut_wearables")) MegaWearablesHelper.initExtraWearables();
         DBLoader.trainerDatabases.add("trainers.xml");
         DBLoader.tradeDatabases.add("trades.xml");
     }
@@ -390,12 +387,12 @@ public class PokecubeMobs implements IMobProvider
     public void registerPokecubes(RegisterPokecubes event)
     {
         final PokecubeHelper helper = new PokecubeHelper();
-        PokecubeBehavior.DEFAULTCUBE = new ResourceLocation(MODID, "poke");
-        
+        PokecubeBehavior.DEFAULTCUBE = new ResourceLocation("pokecube", "poke");
+
         event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName(PokecubeBehavior.DEFAULTCUBE));
-        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName(MODID, "great"));
-        event.behaviors.add(new NormalPokecubeBehavoir(2).setRegistryName(MODID, "ultra"));
-        event.behaviors.add(new NormalPokecubeBehavoir(255).setRegistryName(MODID, "master"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName("pokecube", "great"));
+        event.behaviors.add(new NormalPokecubeBehavoir(2).setRegistryName("pokecube", "ultra"));
+        event.behaviors.add(new NormalPokecubeBehavoir(255).setRegistryName("pokecube", "master"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -403,7 +400,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.dusk(mob);
             }
-        }.setRegistryName(MODID, "dusk"));
+        }.setRegistryName("pokecube", "dusk"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -411,7 +408,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.quick(mob);
             }
-        }.setRegistryName(MODID, "quick"));
+        }.setRegistryName("pokecube", "quick"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -419,7 +416,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.timer(mob);
             }
-        }.setRegistryName(MODID, "timer"));
+        }.setRegistryName("pokecube", "timer"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -427,7 +424,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.net(mob);
             }
-        }.setRegistryName(MODID, "net"));
+        }.setRegistryName("pokecube", "net"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -435,7 +432,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.nest(mob);
             }
-        }.setRegistryName(MODID, "nest"));
+        }.setRegistryName("pokecube", "nest"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -443,11 +440,11 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.dive(mob);
             }
-        }.setRegistryName(MODID, "dive"));
+        }.setRegistryName("pokecube", "dive"));
 
-        event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName(MODID, "premier"));
-        event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName(MODID, "cherish"));
-        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName(MODID, "safari"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName("pokecube", "premier"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName("pokecube", "cherish"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName("pokecube", "safari"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -455,7 +452,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.level(mob);
             }
-        }.setRegistryName(MODID, "level"));
+        }.setRegistryName("pokecube", "level"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -463,7 +460,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.lure(mob);
             }
-        }.setRegistryName(MODID, "lure"));
+        }.setRegistryName("pokecube", "lure"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -471,7 +468,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.moon(mob);
             }
-        }.setRegistryName(MODID, "moon"));
+        }.setRegistryName("pokecube", "moon"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -486,7 +483,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return 1;
             }
-        }.setRegistryName(MODID, "friend"));
+        }.setRegistryName("pokecube", "friend"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -494,7 +491,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.love(mob);
             }
-        }.setRegistryName(MODID, "love"));
+        }.setRegistryName("pokecube", "love"));
         event.behaviors.add(new NormalPokecubeBehavoir(1)
         {
             @Override
@@ -502,7 +499,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.heavy(mob);
             }
-        }.setRegistryName(MODID, "heavy"));
+        }.setRegistryName("pokecube", "heavy"));
         event.behaviors.add(new DefaultPokecubeBehavior()
         {
             @Override
@@ -510,8 +507,8 @@ public class PokecubeMobs implements IMobProvider
             {
                 return helper.fast(mob);
             }
-        }.setRegistryName(MODID, "fast"));
-        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName(MODID, "sport"));
+        }.setRegistryName("pokecube", "fast"));
+        event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName("pokecube", "sport"));
         event.behaviors.add(new NormalPokecubeBehavoir(1)
         {
             @Override
@@ -519,7 +516,7 @@ public class PokecubeMobs implements IMobProvider
             {
                 helper.luxury(mob);
             }
-        }.setRegistryName(MODID, "luxury"));
+        }.setRegistryName("pokecube", "luxury"));
         event.behaviors.add(new NormalPokecubeBehavoir(1)
         {
             @Override
@@ -529,9 +526,9 @@ public class PokecubeMobs implements IMobProvider
                 mob.getEntity().setHealth(mob.getEntity().getMaxHealth());
                 mob.healStatus();
             }
-        }.setRegistryName(MODID, "heal"));
-        event.behaviors.add(new NormalPokecubeBehavoir(255).setRegistryName(MODID, "park"));
-        event.behaviors.add(new NormalPokecubeBehavoir(255).setRegistryName(MODID, "dream"));
+        }.setRegistryName("pokecube", "heal"));
+        event.behaviors.add(new NormalPokecubeBehavoir(255).setRegistryName("pokecube", "park"));
+        event.behaviors.add(new NormalPokecubeBehavoir(255).setRegistryName("pokecube", "dream"));
 
         PokecubeBehavior snag = new PokecubeBehavior()
         {
@@ -566,7 +563,7 @@ public class PokecubeMobs implements IMobProvider
                     evt.caught.getEntity().setDead();
                     cube.motionX = cube.motionZ = 0;
                     cube.motionY = 0.1;
-                    cube.getEntityWorld().spawnEntityInWorld(cube.copy());
+                    cube.getEntityWorld().spawnEntity(cube.copy());
                     evt.pokecube.setDead();
                 }
                 evt.setCanceled(true);
@@ -611,7 +608,7 @@ public class PokecubeMobs implements IMobProvider
                 evt.caught.getEntity().setDead();
                 cube.motionX = cube.motionZ = 0;
                 cube.motionY = 0.1;
-                cube.getEntityWorld().spawnEntityInWorld(cube.copy());
+                cube.getEntityWorld().spawnEntity(cube.copy());
                 evt.setCanceled(true);
                 evt.pokecube.setDead();
             }
@@ -624,8 +621,8 @@ public class PokecubeMobs implements IMobProvider
 
         };
 
-        event.behaviors.add(snag.setRegistryName(MODID, "snag"));
-        event.behaviors.add(repeat.setRegistryName(MODID, "repeat"));
+        event.behaviors.add(snag.setRegistryName("pokecube", "snag"));
+        event.behaviors.add(repeat.setRegistryName("pokecube", "repeat"));
     }
 
     @SubscribeEvent
@@ -657,7 +654,7 @@ public class PokecubeMobs implements IMobProvider
                 {
                     String message = "A sweet smell is coming from "
                             + shuckle.getPokemonDisplayName().getFormattedText();
-                    ((EntityPlayer) shuckle.getPokemonOwner()).addChatMessage(new TextComponentString(message));
+                    ((EntityPlayer) shuckle.getPokemonOwner()).sendMessage(new TextComponentString(message));
                 }
                 shuckle.setHeldItem(new ItemStack(PokecubeItems.berryJuice));
                 return;
@@ -672,7 +669,7 @@ public class PokecubeMobs implements IMobProvider
                 {
                     String message = "The smell coming from " + shuckle.getPokemonDisplayName().getFormattedText()
                             + " has changed";
-                    ((EntityPlayer) shuckle.getPokemonOwner()).addChatMessage(new TextComponentString(message));
+                    ((EntityPlayer) shuckle.getPokemonOwner()).sendMessage(new TextComponentString(message));
                 }
                 shuckle.setHeldItem(candy);
                 return;
