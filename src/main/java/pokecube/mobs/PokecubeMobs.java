@@ -206,6 +206,7 @@ public class PokecubeMobs implements IMobProvider
 
         MinecraftForge.EVENT_BUS.register(this);
         initBerries();
+        MegaWearablesHelper.initExtraWearables();
         DBLoader.trainerDatabases.add("trainers.xml");
         DBLoader.tradeDatabases.add("trades.xml");
     }
