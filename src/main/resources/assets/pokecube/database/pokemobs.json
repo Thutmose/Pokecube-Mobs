@@ -10572,7 +10572,8 @@
       "stats": {
         "evolutions": [
           {
-            "name": "Muk Alola"
+            "name": "Muk Alola",
+            "level": 38
           }
         ],
         "drops": [
