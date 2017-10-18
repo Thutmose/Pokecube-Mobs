@@ -5,8 +5,8 @@ import java.io.File;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.ModMetadata;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -17,16 +17,16 @@ import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.events.PostPostInit;
 import pokecube.mobs.PokecubeMobs;
+import pokecube.mobs.Reference;
 import pokecube.origin.models.ModelPichu;
 import pokecube.origin.models.ModelPikachu;
 import thut.core.common.config.ConfigBase;
 import thut.core.common.config.Configure;
 
-@Mod(modid = PokecubeOrigin.MODID, name = "Pokecube Origin", version = PokecubeOrigin.VERSION, acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMobs.MCVERSIONS)
+@Mod(modid = PokecubeOrigin.MODID, name = "Pokecube Origin", version = Reference.VERSION, acceptableRemoteVersions = "*", acceptedMinecraftVersions = "*")
 public class PokecubeOrigin
 {
     public static final String MODID   = "pokecube_origin";
-    public static final String VERSION = "@VERSION@";
     private Config             config;
 
     @EventHandler
