@@ -71794,6 +71794,14 @@
             "trade": true
           }
         ],
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.08"
+            }
+          }
+        ],
         "species": "Plant",
         "foodMat": "light",
         "stats": {
@@ -71874,6 +71882,14 @@
             "trade": true
           }
         ],
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.08"
+            }
+          }
+        ],
         "stats": {
           "values": {
             "spdef": "55",
@@ -71911,6 +71927,14 @@
             "trade": true
           }
         ],
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.08"
+            }
+          }
+        ],
         "stats": {
           "values": {
             "spdef": "55",
@@ -71946,6 +71970,14 @@
           {
             "name": "Gourgeist Super",
             "trade": true
+          }
+        ],
+        "spawnRules": [
+          {
+            "values": {
+              "types": "spooky",
+              "rate": "0.08"
+            }
           }
         ],
         "stats": {
