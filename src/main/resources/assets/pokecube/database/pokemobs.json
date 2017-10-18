@@ -71784,13 +71784,13 @@
       }
     },
     {
-      "name": "Pumpkaboo Average",
+      "name": "Pumpkaboo",
       "number": 710,
       "base": true,
       "stats": {
         "evolutions": [
           {
-            "name": "Gourgeist Average",
+            "name": "Gourgeist",
             "trade": true
           }
         ],
@@ -71976,7 +71976,7 @@
       }
     },
     {
-      "name": "Gourgeist Average",
+      "name": "Gourgeist",
       "number": 711,
       "base": true,
       "stats": {
