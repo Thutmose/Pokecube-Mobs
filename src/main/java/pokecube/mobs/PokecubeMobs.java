@@ -206,6 +206,7 @@ public class PokecubeMobs implements IMobProvider
         if (Loader.isModLoaded("thut_wearables")) MegaWearablesHelper.initExtraWearables();
         DBLoader.trainerDatabases.add("trainers.xml");
         DBLoader.tradeDatabases.add("trades.xml");
+        MiscItemHelper.init();
     }
 
     @EventHandler
