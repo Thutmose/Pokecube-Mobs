@@ -5536,7 +5536,9 @@
                   }
                 }
               ]
-            }
+            },
+            "cooldown": 800,
+            "baseHunger": 250
           }
         ]
       },
@@ -9569,7 +9571,32 @@
           "values": {
             "shoulder": "FALSE"
           }
-        }
+        },
+        "interactions": [
+          {
+            "key": {
+              "values": {
+                "d": "32767",
+                "id": "minecraft:shears"
+              }
+            },
+            "action": {
+              "values": {
+                "type": "item"
+              },
+              "drops": [
+                {
+                  "values": {
+                    "id": "minecraft:porkchop",
+                    "n": "1"
+                  }
+                }
+              ]
+            },
+            "cooldown": 800,
+            "baseHunger": 500
+          }
+        ]
       },
       "moves": {
         "lvlupMoves": {
@@ -19781,7 +19808,9 @@
                   }
                 }
               ]
-            }
+            },
+            "cooldown": 800,
+            "baseHunger": 250
           },
           {
             "key": {
