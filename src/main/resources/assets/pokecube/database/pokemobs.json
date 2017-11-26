@@ -37974,14 +37974,14 @@
           {
             "values": {
               "types": "cold",
-              "rate": "0.2",
+              "rate": "0.1",
               "night": "false"
             }
           },
           {
             "values": {
               "types": "wasteland",
-              "rate": "0.2",
+              "rate": "0.1",
               "night": "false"
             }
           }
@@ -40642,6 +40642,15 @@
       "legend": true,
       "stats": {
         "species": "SkyHigh",
+        "drops": [
+          {
+            "values": {
+              "r": "1",
+              "id": "minecraft:nether_star",
+              "n": "1"
+            }
+          }
+        ],
         "spawnRules": [
           {
             "values": {
