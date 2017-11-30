@@ -225,8 +225,7 @@ public class CommandGenStuff extends CommandBase
             displayJson.add("icon", icon);
             displayJson.add("title", title);
             displayJson.add("description", description);
-            // if (entry.legendary) displayJson.addProperty("frame",
-            // "challenge");
+            if (entry.legendary) displayJson.addProperty("frame", "challenge");
             return displayJson;
         }
 
