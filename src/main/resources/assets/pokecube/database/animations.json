@@ -170,7 +170,7 @@
       "animations": [
         {
           "preset": "throw",
-          "duration": "5",
+          "duration": "15",
           "starttick": "0"
         }
       ]
@@ -335,7 +335,7 @@
       "animations": [
         {
           "preset": "throw",
-          "duration": "5",
+          "duration": "15",
           "starttick": "0"
         }
       ]
@@ -1150,7 +1150,7 @@
       "animations": [
         {
           "preset": "throw",
-          "duration": "5",
+          "duration": "15",
           "starttick": "0"
         }
       ]
@@ -2748,7 +2748,7 @@
       "animations": [
         {
           "preset": "throw",
-          "duration": "5",
+          "duration": "10",
           "starttick": "0"
         }
       ]
@@ -2978,7 +2978,7 @@
       "animations": [
         {
           "preset": "throw",
-          "duration": "5",
+          "duration": "10",
           "starttick": "0"
         }
       ]

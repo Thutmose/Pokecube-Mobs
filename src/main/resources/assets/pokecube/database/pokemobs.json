@@ -1958,7 +1958,7 @@
             "values": {
               "types": "forest",
               "min": "5",
-              "rate": "0.6",
+              "rate": "0.4",
               "max": "10"
             }
           },
@@ -1966,7 +1966,7 @@
             "values": {
               "types": "plains",
               "min": "5",
-              "rate": "0.6",
+              "rate": "0.4",
               "max": "10"
             }
           }
@@ -2079,7 +2079,7 @@
             "values": {
               "types": "forest",
               "min": "5",
-              "rate": "0.3",
+              "rate": "0.1",
               "max": "10"
             }
           },
@@ -2087,7 +2087,7 @@
             "values": {
               "types": "plains",
               "min": "5",
-              "rate": "0.3",
+              "rate": "0.1",
               "max": "10"
             }
           }
