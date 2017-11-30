@@ -1,10 +1,13 @@
 package pokecube.core.moves.implementations.attacks.multihit;
 
-import pokecube.core.interfaces.IPokemob.MovePacket;
-import pokecube.core.moves.MovesUtils;
-import pokecube.core.moves.templates.Move_Basic;
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
-public class MoveTriplekick extends Move_Basic
+import net.minecraft.entity.Entity;
+import pokecube.core.interfaces.IPokemob;
+import pokecube.core.moves.templates.Move_MultiHit;
+
+public class MoveTriplekick extends Move_MultiHit
 {
     public MoveTriplekick()
     {
@@ -12,29 +15,8 @@ public class MoveTriplekick extends Move_Basic
     }
 
     @Override
-    public void onAttack(MovePacket packet)
+    public int getCount(@Nonnull IPokemob user, @Nullable Entity target)
     {
-        int PWR = this.getPWR();
-        for (int i = 0; i < 3; i++)
-        {
-            playSounds(packet.attacker.getEntity(), packet.attacked, null);
-            byte statusChange = STATUS_NON;
-            byte changeAddition = CHANGE_NONE;
-            if (move.statusChange != STATUS_NON && MovesUtils.rand.nextFloat() <= move.statusChance)
-            {
-                statusChange = move.statusChange;
-            }
-            if (move.change != CHANGE_NONE && MovesUtils.rand.nextFloat() <= move.chanceChance)
-            {
-                changeAddition = move.change;
-            }
-            MovePacket second = new MovePacket(packet.attacker, packet.attacked, name, move.type, PWR, move.crit,
-                    statusChange, changeAddition);
-            super.onAttack(second);
-            int finalAttackStrength = second.damageDealt;
-            if (finalAttackStrength != 0) PWR += 10;
-            else break;
-        }
-
+        return 3;
     }
 }
