@@ -1,7 +1,6 @@
 package pokecube.adventures.legends.conditions;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.text.TextComponentString;
 import pokecube.adventures.legends.Condition;
@@ -28,7 +27,7 @@ public class Mew extends Condition
         {
             if (trainer instanceof EntityPlayer) ((EntityPlayer) trainer)
                     .addChatMessage(new TextComponentString("You do not have enough badges to control Mew!"));
-            ActionTeleport.teleportRandomly((EntityLivingBase) pokemon);
+            ActionTeleport.teleportRandomly(pokemon.getEntity());
             return false;
         }
         return true;
