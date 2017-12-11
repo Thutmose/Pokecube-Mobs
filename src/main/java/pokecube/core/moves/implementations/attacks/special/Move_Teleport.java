@@ -2,7 +2,6 @@ package pokecube.core.moves.implementations.attacks.special;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
-import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
@@ -27,14 +26,9 @@ public class Move_Teleport extends Move_Basic
         {
             ((EntityLiving) attacked).setAttackTarget(null);
         }
-        if (attackedMob != null)
+        else if (attackedMob != null)
         {
-            attackedMob.setPokemonAIState(IMoveConstants.ANGRY, false);
             attackedMob.getEntity().setAttackTarget(null);
-        }
-        if (attacker.getPokemonAIState(IMoveConstants.TAMED))
-        {
-            attacker.returnToPokecube();
         }
         super.postAttack(packet);
     }
