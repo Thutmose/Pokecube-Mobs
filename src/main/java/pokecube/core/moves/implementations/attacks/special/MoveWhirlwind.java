@@ -10,6 +10,11 @@ import pokecube.core.moves.templates.Move_Basic;
 public class MoveWhirlwind extends Move_Basic
 {
 
+    public MoveWhirlwind(String string)
+    {
+        super(string);
+    }
+
     public MoveWhirlwind()
     {
         super("whirlwind");

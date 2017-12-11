@@ -34,10 +34,10 @@ public class Registeel extends Condition
     public void onSpawn(IPokemob mob)
     {
         mob = mob.setForSpawn(54500);
-        Vector3 location = Vector3.getNewVector().set(mob).add(0, -1, 0);
+        Vector3 location = Vector3.getNewVector().set(mob.getEntity()).add(0, -1, 0);
         ArrayList<Vector3> locations = new ArrayList<Vector3>();
         boolean check = false;
-        World world = ((Entity) mob).getEntityWorld();
+        World world = mob.getEntity().getEntityWorld();
         locations.add(location.add(0, -1, -1));
         locations.add(location.add(0, -1, +1));
         locations.add(location.add(0, -1, 0));
@@ -68,7 +68,6 @@ public class Registeel extends Condition
             }
             location.setAir(world);
         }
-
     }
 
     @Override
