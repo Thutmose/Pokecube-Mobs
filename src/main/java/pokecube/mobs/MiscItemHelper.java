@@ -1,5 +1,7 @@
 package pokecube.mobs;
 
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -14,6 +16,10 @@ import pokecube.core.events.PostPostInit;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.MovePacket;
 import pokecube.core.interfaces.IPokemobUseable;
+import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.items.UsableItemEffects;
+import pokecube.core.items.UsableItemEffects.VitaminUsable.VitaminEffect;
+import pokecube.core.items.vitamins.ItemVitamin;
 import pokecube.core.utils.PokeType;
 import pokecube.core.utils.Tools;
 
@@ -22,6 +28,68 @@ public class MiscItemHelper
     public static void init()
     {
         MinecraftForge.EVENT_BUS.register(new MiscItemHelper());
+
+        ItemVitamin.vitamins.add("carbos");
+        ItemVitamin.vitamins.add("zinc");
+        ItemVitamin.vitamins.add("protein");
+        ItemVitamin.vitamins.add("calcium");
+        ItemVitamin.vitamins.add("hpup");
+        ItemVitamin.vitamins.add("iron");
+
+        VitaminEffect value = new VitaminEffect()
+        {
+            @Override
+            public boolean onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
+            {
+                return feedToPokemob(stack, pokemob.getEntity());
+            }
+        };
+
+        UsableItemEffects.VitaminUsable.effects.put("carbos", value);
+        UsableItemEffects.VitaminUsable.effects.put("zinc", value);
+        UsableItemEffects.VitaminUsable.effects.put("protein", value);
+        UsableItemEffects.VitaminUsable.effects.put("calcium", value);
+        UsableItemEffects.VitaminUsable.effects.put("hpup", value);
+        UsableItemEffects.VitaminUsable.effects.put("iron", value);
+    }
+
+    public static boolean feedToPokemob(ItemStack stack, Entity entity)
+    {
+        IPokemob pokemob = CapabilityPokemob.getPokemobFor(entity);
+        if (pokemob != null)
+        {
+            if (Tools.isSameStack(stack, PokecubeItems.getStack("hpup")))
+            {
+                pokemob.addEVs(new byte[] { 10, 0, 0, 0, 0, 0 });
+                return true;
+            }
+            if (Tools.isSameStack(stack, PokecubeItems.getStack("protein")))
+            {
+                pokemob.addEVs(new byte[] { 0, 10, 0, 0, 0, 0 });
+                return true;
+            }
+            if (Tools.isSameStack(stack, PokecubeItems.getStack("iron")))
+            {
+                pokemob.addEVs(new byte[] { 0, 0, 10, 0, 0, 0 });
+                return true;
+            }
+            if (Tools.isSameStack(stack, PokecubeItems.getStack("calcium")))
+            {
+                pokemob.addEVs(new byte[] { 0, 0, 0, 10, 0, 0 });
+                return true;
+            }
+            if (Tools.isSameStack(stack, PokecubeItems.getStack("zinc")))
+            {
+                pokemob.addEVs(new byte[] { 0, 0, 0, 0, 10, 0 });
+                return true;
+            }
+            if (Tools.isSameStack(stack, PokecubeItems.getStack("carbos")))
+            {
+                pokemob.addEVs(new byte[] { 0, 0, 0, 0, 0, 10 });
+                return true;
+            }
+        }
+        return false;
     }
 
     public static class CharcoalEffect implements IPokemobUseable, ICapabilityProvider
