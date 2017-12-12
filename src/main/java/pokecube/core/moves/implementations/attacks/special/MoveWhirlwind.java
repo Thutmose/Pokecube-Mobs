@@ -33,7 +33,6 @@ public class MoveWhirlwind extends Move_Basic
                 // TODO message here for move failing;
                 return;
             }
-            attacked.setPokemonAIState(IMoveConstants.ANGRY, false);
             if (attacked.getPokemonAIState(IMoveConstants.TAMED)) attacked.returnToPokecube();
         }
         // ends the battle
