@@ -20,7 +20,7 @@
         <Output n="3" id="pokecube:greatcube"/>
         <Input id="pokecube:premiercube" key="P"/>
         <Input id="minecraft:redstone" key="R"/>
-        <Input oreDict="dyeBlue" key="L"/>
+        <Input id="minecraft:dye" d="4" key="L"/>
     </Recipe>
     <Recipe map="GFG,PPP,   ">//Ultracube
         <Output n="3" id="pokecube:ultracube"/>
@@ -30,13 +30,13 @@
     </Recipe>
     <Recipe map="CGC,GPG,CGC">//Duskcube
         <Output n="1" id="pokecube:duskcube"/>
-        <Input oreDict="dyeGreen" key="G"/>
+        <Input id="minecraft:dye" d="2" key="G"/>
         <Input id="pokecube:premiercube" key="P"/>
         <Input id="minecraft:coal" key="C"/>
     </Recipe>
     <Recipe map="CGC,GPG,CGC">//Quckcube
         <Output n="1" id="pokecube:quickcube"/>
-        <Input oreDict="dyeBlue" key="G"/>
+        <Input id="minecraft:dye" d="4" key="G"/>
         <Input id="pokecube:premiercube" key="P"/>
         <Input id="minecraft:gold_ingot" key="C"/>
     </Recipe>
@@ -45,7 +45,7 @@
         <Input id="pokecube:premiercube" key="P"/>
         <Input id="minecraft:coal" key="C"/>
         <Input id="minecraft:sand" d="1" key="S"/>
-        <Input oreDict="gemQuartz" key="Q"/>
+        <Input id="minecraft:quartz" key="Q"/>
     </Recipe>
     <Recipe map="SSS,SPS,SSS">//Netcube
         <Output n="1" id="pokecube:netcube"/>
@@ -61,7 +61,7 @@
     <Recipe map="WWW,IPI,WWW">//Divecube
         <Output n="1" id="pokecube:divecube"/>
         <Input id="pokecube:premiercube" key="P"/>
-        <Input oreDict="dyeBlue" key="I"/>
+        <Input id="minecraft:dye" d="4" key="I"/>
         <Input id="minecraft:water_bucket" key="W"/>
     </Recipe>
     <Recipe map="RRR,CPC,III">//Repeatcube

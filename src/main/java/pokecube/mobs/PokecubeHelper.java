@@ -146,7 +146,7 @@ public class PokecubeHelper
         if (mob.getPokedexEntry().swims())
         {// grow in 1.12
             AxisAlignedBB bb = Vector3.getNewVector().set(entity).addTo(0, entity.getEyeHeight(), 0).getAABB()
-                    .grow(PokecubeMod.core.getConfig().fishHookBaitRange);
+                    .expandXyz(PokecubeMod.core.getConfig().fishHookBaitRange);
             List<EntityFishHook> hooks = entity.getEntityWorld().getEntitiesWithinAABB(EntityFishHook.class, bb);
             if (!hooks.isEmpty())
             {

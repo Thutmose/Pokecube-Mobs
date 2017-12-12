@@ -51,7 +51,7 @@ public class MegaWearablesHelper
                 float dx = -0.0f, dy = .235f, dz = 0.25f;
                 GL11.glTranslatef(dx, dy, dz);
                 GlStateManager.pushMatrix();
-                int brightness = wearer.getBrightnessForRender();
+                int brightness = wearer.getBrightnessForRender(partialTicks);
                 int[] col = new int[] { 255, 255, 255, 255, brightness };
                 minecraft.renderEngine.bindTexture(keystone);
                 model.renderOnly("stone");
@@ -65,7 +65,7 @@ public class MegaWearablesHelper
                     int damage = stack.getTagCompound().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
-                Color colour = new Color(ret.getColorValue() + 0xFF000000);
+                Color colour = new Color(ret.getMapColor().colorValue + 0xFF000000);
                 col[0] = colour.getRed();
                 col[2] = colour.getGreen();
                 col[1] = colour.getBlue();
@@ -107,7 +107,7 @@ public class MegaWearablesHelper
                 double s = 1;
                 GL11.glScaled(s, s, s);
                 GL11.glTranslatef(dx, dy, dz);
-                int brightness = wearer.getBrightnessForRender();
+                int brightness = wearer.getBrightnessForRender(partialTicks);
                 int[] col = new int[] { 255, 255, 255, 255, brightness };
                 minecraft.renderEngine.bindTexture(keystone);
                 model.renderOnly("stone");
@@ -124,7 +124,7 @@ public class MegaWearablesHelper
                     int damage = stack.getTagCompound().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
-                Color colour = new Color(ret.getColorValue() + 0xFF000000);
+                Color colour = new Color(ret.getMapColor().colorValue + 0xFF000000);
                 col[0] = colour.getRed();
                 col[2] = colour.getGreen();
                 col[1] = colour.getBlue();
@@ -162,7 +162,7 @@ public class MegaWearablesHelper
                 float dx = -0.0f, dy = .0f, dz = 0.01f;
                 GL11.glTranslatef(dx, dy, dz);
                 GlStateManager.pushMatrix();
-                int brightness = wearer.getBrightnessForRender();
+                int brightness = wearer.getBrightnessForRender(partialTicks);
                 int[] col = new int[] { 255, 255, 255, 255, brightness };
                 minecraft.renderEngine.bindTexture(keystone);
                 model.renderOnly("keystone");
@@ -176,7 +176,7 @@ public class MegaWearablesHelper
                     int damage = stack.getTagCompound().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
-                Color colour = new Color(ret.getColorValue() + 0xFF000000);
+                Color colour = new Color(ret.getMapColor().colorValue + 0xFF000000);
                 col[0] = colour.getRed();
                 col[2] = colour.getGreen();
                 col[1] = colour.getBlue();
@@ -214,7 +214,7 @@ public class MegaWearablesHelper
                 float dx = -0.0f, dy = .0f, dz = -0.3f;
                 GL11.glTranslatef(dx, dy, dz);
                 GlStateManager.pushMatrix();
-                int brightness = wearer.getBrightnessForRender();
+                int brightness = wearer.getBrightnessForRender(partialTicks);
                 int[] col = new int[] { 255, 255, 255, 255, brightness };
                 minecraft.renderEngine.bindTexture(keystone);
                 model.renderOnly("keystone");
@@ -228,7 +228,7 @@ public class MegaWearablesHelper
                     int damage = stack.getTagCompound().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
-                Color colour = new Color(ret.getColorValue() + 0xFF000000);
+                Color colour = new Color(ret.getMapColor().colorValue + 0xFF000000);
                 col[0] = colour.getRed();
                 col[2] = colour.getGreen();
                 col[1] = colour.getBlue();
@@ -267,7 +267,7 @@ public class MegaWearablesHelper
                 float dx = -0.0f, dy = .01f, dz = -0.25f;
                 GL11.glTranslatef(dx, dy, dz);
                 GlStateManager.pushMatrix();
-                int brightness = wearer.getBrightnessForRender();
+                int brightness = wearer.getBrightnessForRender(partialTicks);
                 int[] col = new int[] { 255, 255, 255, 255, brightness };
                 minecraft.renderEngine.bindTexture(keystone);
                 model.renderOnly("keystone");
@@ -281,7 +281,7 @@ public class MegaWearablesHelper
                     int damage = stack.getTagCompound().getInteger("dyeColour");
                     ret = EnumDyeColor.byDyeDamage(damage);
                 }
-                Color colour = new Color(ret.getColorValue() + 0xFF000000);
+                Color colour = new Color(ret.getMapColor().colorValue + 0xFF000000);
                 col[0] = colour.getRed();
                 col[2] = colour.getGreen();
                 col[1] = colour.getBlue();

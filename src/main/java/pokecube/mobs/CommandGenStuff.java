@@ -28,13 +28,13 @@ public class CommandGenStuff extends CommandBase
 {
 
     @Override
-    public String getName()
+    public String getCommandName()
     {
         return "pokemobsfiles";
     }
 
     @Override
-    public String getUsage(ICommandSender sender)
+    public String getCommandUsage(ICommandSender sender)
     {
         return "/pokemobsfiles";
     }
@@ -42,7 +42,7 @@ public class CommandGenStuff extends CommandBase
     @Override
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
     {
-        sender.sendMessage(new TextComponentString("Starting File Output"));
+        sender.addChatMessage(new TextComponentString("Starting File Output"));
         for (PokedexEntry e : Database.allFormes)
         {
             registerAchievements(e);
@@ -63,7 +63,7 @@ public class CommandGenStuff extends CommandBase
         }
         generatePokecubesJsons();
 
-        sender.sendMessage(new TextComponentString("Finished File Output"));
+        sender.addChatMessage(new TextComponentString("Finished File Output"));
     }
 
     /** Comment these out to re-generate advancements. */
@@ -225,7 +225,8 @@ public class CommandGenStuff extends CommandBase
             displayJson.add("icon", icon);
             displayJson.add("title", title);
             displayJson.add("description", description);
-            if (entry.legendary) displayJson.addProperty("frame", "challenge");
+            // if (entry.legendary) displayJson.addProperty("frame",
+            // "challenge");
             return displayJson;
         }
 

@@ -98,7 +98,7 @@ public class Regice extends Condition
         if (!check)
         {
             String message = "msg.reginotlookright.txt";
-            trainer.sendMessage(new TextComponentTranslation(message));
+            trainer.addChatMessage(new TextComponentTranslation(message));
             return false;
         }
         return true;
