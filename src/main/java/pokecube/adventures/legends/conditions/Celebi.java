@@ -18,8 +18,8 @@ public class Celebi extends Condition implements ISpecialCaptureCondition, ISpec
     public boolean canCapture(Entity trainer, IPokemob pokemon)
     {
         if (!canCapture(trainer)) return false;
-        int count1 = CaptureStats.getTotalUniqueOfTypeCaughtBy(trainer.getUniqueID(), PokeType.getType("grass"));
-        int count2 = KillStats.getTotalUniqueOfTypeKilledBy(trainer.getUniqueID(), PokeType.getType("grass"));
+        int count1 = CaptureStats.getUniqueOfTypeCaughtBy(trainer.getUniqueID(), PokeType.getType("grass"));
+        int count2 = KillStats.getUniqueOfTypeKilledBy(trainer.getUniqueID(), PokeType.getType("grass"));
         int count3 = SpecialCaseRegister.countSpawnableTypes(PokeType.getType("grass"));
         double captureFactor = (double) count1 / (double) count3;
         if (captureFactor >= 0.75 && count1 >= count2) { return true; }
