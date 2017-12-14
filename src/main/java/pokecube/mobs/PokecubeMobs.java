@@ -207,6 +207,7 @@ public class PokecubeMobs implements IMobProvider
         DBLoader.trainerDatabases.add("trainers.xml");
         DBLoader.tradeDatabases.add("trades.xml");
         MiscItemHelper.init();
+        checkConfigFiles();
     }
 
     @EventHandler
@@ -699,7 +700,6 @@ public class PokecubeMobs implements IMobProvider
     @SubscribeEvent
     public void registerDatabases(InitDatabase.Pre evt)
     {
-        checkConfigFiles();
         Database.addDatabase("pokemobs.json", EnumDatabase.POKEMON);
     }
 
