@@ -16,7 +16,7 @@ public class Raikou extends Condition
     public boolean canCapture(Entity trainer, IPokemob pokemon)
     {
         if (!canCapture(trainer)) return false;
-        int count1 = CaptureStats.getTotalUniqueOfTypeCaughtBy(trainer.getUniqueID(), PokeType.getType("electric"));
+        int count1 = CaptureStats.getUniqueOfTypeCaughtBy(trainer.getUniqueID(), PokeType.getType("electric"));
         int count2 = SpecialCaseRegister.countSpawnableTypes(PokeType.getType("electric"));
         if (((double) count1) / ((double) count2) >= 0.5) { return true; }
         if (pokemon != null && !trainer.getEntityWorld().isRemote)
