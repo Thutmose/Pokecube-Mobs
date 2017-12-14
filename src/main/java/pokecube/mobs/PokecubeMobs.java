@@ -8,6 +8,7 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
+import java.util.logging.Level;
 
 import com.google.common.collect.Maps;
 
@@ -751,7 +752,7 @@ public class PokecubeMobs implements IMobProvider
         File temp1 = new File(CONFIGLOC + name);
         if (temp1.exists() && !Database.FORCECOPY)
         {
-            System.out.println(" Not Overwriting old database " + name);
+            PokecubeMod.log("Not Overwriting old database: " + temp1);
             return;
         }
         ArrayList<String> rows = Database.getFile(DBLOCATION + name);
@@ -759,6 +760,8 @@ public class PokecubeMobs implements IMobProvider
         try
         {
             File file = new File(CONFIGLOC + name);
+            file.getParentFile().mkdirs();
+            PokecubeMod.log("Copying Database File: "+file);
             Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
             for (int i = 0; i < rows.size(); i++)
             {
@@ -769,8 +772,7 @@ public class PokecubeMobs implements IMobProvider
         }
         catch (Exception e)
         {
-            System.err.println(name + " " + n);
-            e.printStackTrace();
+            PokecubeMod.log(Level.SEVERE, name + " " + n, e);
         }
     }
 }
