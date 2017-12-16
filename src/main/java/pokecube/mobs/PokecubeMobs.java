@@ -701,7 +701,11 @@ public class PokecubeMobs implements IMobProvider
     @SubscribeEvent
     public void registerDatabases(InitDatabase.Pre evt)
     {
-        Database.addDatabase("pokemobs.json", EnumDatabase.POKEMON);
+        // Database.addDatabase("pokemobs.json", EnumDatabase.POKEMON);
+        Database.addDatabase("pokemobs_pokedex.json", EnumDatabase.POKEMON);
+        Database.addDatabase("pokemobs_spawns.json", EnumDatabase.POKEMON);
+        Database.addDatabase("pokemobs_drops.json", EnumDatabase.POKEMON);
+        Database.addDatabase("pokemobs_interacts.json", EnumDatabase.POKEMON);
     }
 
     public static void checkConfigFiles()
@@ -724,7 +728,12 @@ public class PokecubeMobs implements IMobProvider
             }
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
-            copyDatabaseFile("pokemobs.json");
+
+            copyDatabaseFile("pokemobs_pokedex.json");
+            copyDatabaseFile("pokemobs_spawns.json");
+            copyDatabaseFile("pokemobs_drops.json");
+            copyDatabaseFile("pokemobs_interacts.json");
+
             copyDatabaseFile("pokecubes_recipes.xml");
             copyDatabaseFile("pokemob_item_recipes.xml");
             XMLRecipeHandler.recipeFiles.add("pokecubes_recipes");
@@ -761,7 +770,7 @@ public class PokecubeMobs implements IMobProvider
         {
             File file = new File(CONFIGLOC + name);
             file.getParentFile().mkdirs();
-            PokecubeMod.log("Copying Database File: "+file);
+            PokecubeMod.log("Copying Database File: " + file);
             Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
             for (int i = 0; i < rows.size(); i++)
             {
