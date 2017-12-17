@@ -893,8 +893,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Shed Skin",
-            "hidden": ""
+            "normal": "Shed Skin"
           }
         },
         "mass": 9.9,
@@ -1094,8 +1093,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Shed Skin",
-            "hidden": ""
+            "normal": "Shed Skin"
           }
         },
         "mass": 10.0,
@@ -7740,8 +7738,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.1,
@@ -7816,8 +7813,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.1,
@@ -7892,8 +7888,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Cursed Body",
-            "hidden": ""
+            "normal": "Cursed Body"
           }
         },
         "mass": 40.5,
@@ -9156,8 +9151,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 1.0,
@@ -9232,8 +9226,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 9.5,
@@ -12456,8 +12449,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Synchronize",
-            "hidden": ""
+            "normal": "Synchronize"
           }
         },
         "mass": 4.0,
@@ -16110,8 +16102,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 1.0,
@@ -16186,8 +16177,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 5.0,
@@ -19796,8 +19786,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Shed Skin",
-            "hidden": ""
+            "normal": "Shed Skin"
           }
         },
         "mass": 152.0,
@@ -20135,8 +20124,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Natural Cure",
-            "hidden": ""
+            "normal": "Natural Cure"
           }
         },
         "mass": 5.0,
@@ -21328,8 +21316,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Shed Skin",
-            "hidden": ""
+            "normal": "Shed Skin"
           }
         },
         "mass": 10.0,
@@ -21463,8 +21450,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Shed Skin",
-            "hidden": ""
+            "normal": "Shed Skin"
           }
         },
         "mass": 11.5,
@@ -22856,8 +22842,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Truant",
-            "hidden": ""
+            "normal": "Truant"
           }
         },
         "mass": 24.0,
@@ -22925,8 +22910,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Vital Spirit",
-            "hidden": ""
+            "normal": "Vital Spirit"
           }
         },
         "mass": 46.5,
@@ -22994,8 +22978,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Truant",
-            "hidden": ""
+            "normal": "Truant"
           }
         },
         "mass": 130.5,
@@ -23209,8 +23192,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Wonder Guard",
-            "hidden": ""
+            "normal": "Wonder Guard"
           }
         },
         "mass": 1.2,
@@ -26180,8 +26162,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 15.3,
@@ -26257,8 +26238,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 82.0,
@@ -26833,8 +26813,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 168.0,
@@ -26907,8 +26886,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 154.0,
@@ -27282,8 +27260,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 21.5,
@@ -27358,8 +27335,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 108.0,
@@ -27870,8 +27846,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Forecast",
-            "hidden": ""
+            "normal": "Forecast"
           }
         },
         "mass": 0.8,
@@ -28459,8 +28434,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 1.0,
@@ -30179,8 +30153,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 40.0,
@@ -30287,8 +30260,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 60.0,
@@ -30395,8 +30367,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Drizzle",
-            "hidden": ""
+            "normal": "Drizzle"
           }
         },
         "mass": 352.0,
@@ -30429,73 +30400,6 @@
             "75": "hydropump",
             "80": "doubleedge",
             "90": "waterspout"
-          }
-        },
-        "misc": {
-          "moves": "ancientpower, aquaring, aquatail, avalanche, blizzard, block, bodyslam, brickbreak, brine, bulldoze, calmmind, confide, defensecurl, dive, doubleedge, doubleteam, earthquake, endure, facade, frustration, gigaimpact, hail, headbutt, hiddenpower, hydropump, hyperbeam, icebeam, icywind, ironhead, liquidation, mimic, muddywater, mudslap, naturalgift, originpulse, protect, psychup, raindance, rest, return, roar, rockslide, rocksmash, rocktomb, round, safeguard, scald, scaryface, secretpower, sheercold, shockwave, signalbeam, sleeptalk, snore, strength, substitute, surf, swagger, swift, thunder, thunderbolt, thunderwave, toxic, uproar, waterfall, waterpulse, waterspout, whirlpool"
-        }
-      }
-    },
-    {
-      "name": "Primal Kyogre",
-      "number": 382,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "140",
-            "spatk": "150",
-            "def": "90",
-            "spd": "90",
-            "hp": "100",
-            "atk": "100"
-          }
-        },
-        "evs": {
-          "values": {
-            "spatk": "3"
-          }
-        },
-        "sizes": {
-          "values": {
-            "width": "9.8",
-            "length": "9.8",
-            "height": "9.8"
-          }
-        },
-        "types": {
-          "values": {
-            "type1": "Water"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Drizzle"
-          }
-        },
-        "mass": 430.0,
-        "captureRate": 3,
-        "baseFriendship": 0,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "45": "originpulse",
-            "35": "icebeam",
-            "15": "aquatail",
-            "1": "ancientpower,waterpulse",
-            "5": "scaryface",
-            "90": "waterspout",
-            "80": "doubleedge",
-            "60": "muddywater",
-            "50": "calmmind",
-            "30": "aquaring",
-            "20": "bodyslam",
-            "75": "hydropump",
-            "65": "sheercold"
           }
         },
         "misc": {
@@ -30577,8 +30481,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Drought",
-            "hidden": ""
+            "normal": "Drought"
           }
         },
         "mass": 950.0,
@@ -30614,36 +30517,6 @@
         "misc": {
           "moves": "aerialace, block, bodyslam, brickbreak, bulkup, bulldoze, confide, counter, cut, defensecurl, dig, doubleedge, doubleteam, dragonclaw, dragonpulse, dragontail, dynamicpunch, earthpower, earthquake, endure, facade, fireblast, firepunch, flamethrower, fling, focusblast, frustration, furycutter, gigaimpact, headbutt, hiddenpower, honeclaws, hyperbeam, incinerate, ironhead, irontail, megakick, megapunch, mimic, mudslap, naturalgift, overheat, poweruppunch, protect, psychup, rest, return, roar, rockpolish, rockslide, rocksmash, rocktomb, rollout, round, safeguard, sandstorm, secretpower, seismictoss, shadowclaw, shockwave, sleeptalk, smackdown, snore, solarbeam, stealthrock, stoneedge, strength, substitute, sunnyday, swagger, swift, swordsdance, thunder, thunderbolt, thunderpunch, thunderwave, toxic, uproar"
         }
-      }
-    },
-    {
-      "name": "Primal Groudon",
-      "number": 383,
-      "stats": {
-        "stats": {},
-        "evs": {},
-        "sizes": {
-          "values": {
-            "width": "5",
-            "length": "5",
-            "height": "5"
-          }
-        },
-        "types": {
-          "values": {
-            "type2": "Fire",
-            "type1": "Ground"
-          }
-        },
-        "abilities": {},
-        "mass": 999.7,
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
-      },
-      "moves": {
-        "lvlupMoves": {},
-        "misc": {}
       }
     },
     {
@@ -30715,8 +30588,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Air Lock",
-            "hidden": ""
+            "normal": "Air Lock"
           }
         },
         "mass": 206.5,
@@ -30824,8 +30696,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Serene Grace",
-            "hidden": ""
+            "normal": "Serene Grace"
           }
         },
         "mass": 1.1,
@@ -30904,8 +30775,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Pressure",
-            "hidden": ""
+            "normal": "Pressure"
           }
         },
         "mass": 60.8,
@@ -33576,8 +33446,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Chlorophyll",
-            "hidden": ""
+            "normal": "Chlorophyll"
           }
         },
         "mass": 3.3,
@@ -33646,8 +33515,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Flower Gift",
-            "hidden": ""
+            "normal": "Flower Gift"
           }
         },
         "mass": 9.3,
@@ -34278,8 +34146,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 4.4,
@@ -34555,8 +34422,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.6,
@@ -36216,8 +36082,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 27.0,
@@ -38069,8 +37934,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.3,
@@ -38302,8 +38166,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.3,
@@ -38378,8 +38241,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.3,
@@ -38453,8 +38315,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.3,
@@ -38755,8 +38616,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Slow Start",
-            "hidden": ""
+            "normal": "Slow Start"
           }
         },
         "mass": 420.0,
@@ -38945,8 +38805,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 85.6,
@@ -39020,8 +38879,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Hydration",
-            "hidden": ""
+            "normal": "Hydration"
           }
         },
         "mass": 3.1,
@@ -39091,8 +38949,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Hydration",
-            "hidden": ""
+            "normal": "Hydration"
           }
         },
         "mass": 1.4,
@@ -39165,8 +39022,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Bad Dreams",
-            "hidden": ""
+            "normal": "Bad Dreams"
           }
         },
         "mass": 50.5,
@@ -39200,69 +39056,6 @@
         },
         "misc": {
           "moves": "aerialace, blizzard, brickbreak, calmmind, chargebeam, confide, cut, darkpulse, darkvoid, disable, doubleteam, drainpunch, dreameater, embargo, endure, facade, feintattack, flash, fling, focusblast, focuspunch, foulplay, frustration, gigaimpact, haze, headbutt, hiddenpower, hyperbeam, hypnosis, icebeam, icywind, incinerate, knockoff, lastresort, mudslap, nastyplot, naturalgift, nightmare, ominouswind, payback, phantomforce, poisonjab, poweruppunch, protect, psychic, psychup, quickattack, raindance, rest, retaliate, return, rockslide, rocksmash, rocktomb, round, secretpower, shadowball, shadowclaw, shockwave, sleeptalk, sludgebomb, snarl, snatch, snore, spite, strength, substitute, suckerpunch, sunnyday, swagger, swift, swordsdance, taunt, thief, throatchop, thunder, thunderbolt, thunderwave, torment, toxic, trick, willowisp, wonderroom, xscissor"
-        }
-      }
-    },
-    {
-      "name": "Shaymin",
-      "number": 492,
-      "base": true,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "100",
-            "spatk": "100",
-            "def": "100",
-            "spd": "100",
-            "hp": "100",
-            "atk": "100"
-          }
-        },
-        "evs": {},
-        "sizes": {
-          "values": {
-            "width": "0.2",
-            "length": "0.2",
-            "height": "0.2"
-          }
-        },
-        "types": {
-          "values": {
-            "type1": "Grass"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Natural Cure, Sky Forme Ability, Serene Grace"
-          }
-        },
-        "mass": 2.1,
-        "captureRate": 45,
-        "baseFriendship": 100,
-        "expMode": "Medium Slow",
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "55": "worryseed",
-            "1": "growth",
-            "100": "seedflare",
-            "46": "naturalgift",
-            "37": "sweetscent",
-            "28": "quickattack",
-            "19": "leechseed",
-            "91": "leafstorm",
-            "82": "sweetkiss",
-            "73": "energyball",
-            "64": "airslash",
-            "10": "magicalleaf"
-          }
-        },
-        "misc": {
-          "moves": "aromatherapy, bulletseed, confide, covet, dazzlinggleam, doubleteam, earthpower, endeavor, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, grassknot, growth, headbutt, healingwish, hiddenpower, hyperbeam, laserfocus, lastresort, leechseed, magicalleaf, mudslap, naturalgift, naturepower, protect, psychic, psychup, rest, return, round, safeguard, secretpower, seedbomb, seedflare, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, sweetkiss, sweetscent, swift, swordsdance, synthesis, tailwind, toxic, worryseed, zenheadbutt"
         }
       }
     },
@@ -39303,8 +39096,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Natural Cure, Sky Forme Ability, Serene Grace",
-            "hidden": "Natural Cure, Serene Grace"
+            "normal": "Natural Cure"
           }
         },
         "mass": 2.1,
@@ -39337,7 +39129,7 @@
           }
         },
         "misc": {
-          "moves": "bulletseed, confide, dazzlinggleam, doubleteam, endure, energyball, facade, flash, frustration, gigaimpact, grassknot, headbutt, hiddenpower, hyperbeam, mudslap, naturepower, protect, psychic, psychup, rest, return, round, safeguard, secretpower, sleeptalk, solarbeam, substitute, sunnyday, swagger, swift, swordsdance, toxic"
+          "moves": "aromatherapy, bulletseed, confide, covet, dazzlinggleam, doubleteam, earthpower, endeavor, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, grassknot, growth, headbutt, healingwish, hiddenpower, hyperbeam, laserfocus, lastresort, leechseed, magicalleaf, mudslap, naturalgift, naturepower, protect, psychic, psychup, rest, return, round, safeguard, secretpower, seedbomb, seedflare, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, sweetkiss, sweetscent, swift, swordsdance, synthesis, tailwind, toxic, worryseed, zenheadbutt"
         }
       }
     },
@@ -39410,7 +39202,7 @@
           }
         },
         "misc": {
-          "moves": "bulletseed, confide, covet, dazzlinggleam, doubleteam, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, grassknot, headbutt, hiddenpower, hyperbeam, lastresort, mudslap, naturepower, protect, psychic, psychup, rest, return, round, safeguard, secretpower, seedbomb, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, swift, swordsdance, synthesis, tailwind, toxic, worryseed, zenheadbutt"
+          "moves": "aromatherapy, bulletseed, confide, covet, dazzlinggleam, doubleteam, earthpower, endeavor, endure, energyball, facade, flash, frustration, gigadrain, gigaimpact, grassknot, growth, headbutt, healingwish, hiddenpower, hyperbeam, laserfocus, lastresort, leechseed, magicalleaf, mudslap, naturalgift, naturepower, protect, psychic, psychup, rest, return, round, safeguard, secretpower, seedbomb, seedflare, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, sweetkiss, sweetscent, swift, swordsdance, synthesis, tailwind, toxic, worryseed, zenheadbutt"
         }
       }
     },
@@ -39450,8 +39242,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Multitype",
-            "hidden": ""
+            "normal": "Multitype"
           }
         },
         "mass": 320.0,
@@ -39832,8 +39623,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Victory Star",
-            "hidden": ""
+            "normal": "Victory Star"
           }
         },
         "mass": 4.0,
@@ -44887,8 +44677,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Mummy",
-            "hidden": ""
+            "normal": "Mummy"
           }
         },
         "mass": 1.5,
@@ -44960,8 +44749,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Mummy",
-            "hidden": ""
+            "normal": "Mummy"
           }
         },
         "mass": 76.5,
@@ -45186,8 +44974,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Defeatist",
-            "hidden": ""
+            "normal": "Defeatist"
           }
         },
         "mass": 9.5,
@@ -45263,8 +45050,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Defeatist",
-            "hidden": ""
+            "normal": "Defeatist"
           }
         },
         "mass": 32.0,
@@ -45487,8 +45273,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Illusion",
-            "hidden": ""
+            "normal": "Illusion"
           }
         },
         "mass": 12.5,
@@ -45561,8 +45346,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Illusion",
-            "hidden": ""
+            "normal": "Illusion"
           }
         },
         "mass": 81.1,
@@ -47506,8 +47290,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Iron Barbs",
-            "hidden": ""
+            "normal": "Iron Barbs"
           }
         },
         "mass": 18.8,
@@ -47880,8 +47663,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 0.3,
@@ -47941,8 +47723,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 22.0,
@@ -48013,8 +47794,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 80.5,
@@ -48825,8 +48605,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 148.0,
@@ -50180,8 +49959,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Hustle",
-            "hidden": ""
+            "normal": "Hustle"
           }
         },
         "mass": 17.3,
@@ -50256,8 +50034,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Hustle",
-            "hidden": ""
+            "normal": "Hustle"
           }
         },
         "mass": 50.0,
@@ -50332,8 +50109,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Levitate",
-            "hidden": ""
+            "normal": "Levitate"
           }
         },
         "mass": 160.0,
@@ -50555,8 +50331,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Justified",
-            "hidden": ""
+            "normal": "Justified"
           }
         },
         "mass": 250.0,
@@ -50629,8 +50404,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Justified",
-            "hidden": ""
+            "normal": "Justified"
           }
         },
         "mass": 260.0,
@@ -50703,8 +50477,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Justified",
-            "hidden": ""
+            "normal": "Justified"
           }
         },
         "mass": 200.0,
@@ -50778,10 +50551,7 @@
         "captureRate": 3,
         "baseFriendship": 90,
         "expMode": "Slow",
-        "genderRatio": 0,
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
+        "genderRatio": 0
       },
       "moves": {
         "lvlupMoves": {
@@ -50975,10 +50745,7 @@
         "captureRate": 3,
         "baseFriendship": 90,
         "expMode": "Slow",
-        "genderRatio": 0,
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
+        "genderRatio": 0
       },
       "moves": {
         "lvlupMoves": {
@@ -51172,8 +50939,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Turboblaze",
-            "hidden": ""
+            "normal": "Turboblaze"
           }
         },
         "mass": 330.0,
@@ -51251,8 +51017,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Teravolt",
-            "hidden": ""
+            "normal": "Teravolt"
           }
         },
         "mass": 345.0,
@@ -51332,10 +51097,7 @@
         "captureRate": 3,
         "baseFriendship": 90,
         "expMode": "Slow",
-        "genderRatio": 0,
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
+        "genderRatio": 0
       },
       "moves": {
         "lvlupMoves": {
@@ -51710,8 +51472,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Justified",
-            "hidden": ""
+            "normal": "Justified"
           }
         },
         "mass": 48.5,
@@ -51792,10 +51553,7 @@
         "mass": 6.5,
         "captureRate": 3,
         "baseFriendship": 100,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
+        "expMode": "Slow"
       },
       "moves": {
         "lvlupMoves": {
@@ -51861,8 +51619,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Serene Grace",
-            "hidden": ""
+            "normal": "Serene Grace"
           }
         },
         "mass": 6.5,
@@ -51993,8 +51750,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Download",
-            "hidden": ""
+            "normal": "Download"
           }
         },
         "mass": 82.5,
@@ -54065,8 +53821,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Fur Coat",
-            "hidden": ""
+            "normal": "Fur Coat"
           }
         },
         "mass": 28.0,
@@ -54280,8 +54035,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "No Guard",
-            "hidden": ""
+            "normal": "No Guard"
           }
         },
         "mass": 2.0,
@@ -54355,8 +54109,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "No Guard",
-            "hidden": ""
+            "normal": "No Guard"
           }
         },
         "mass": 4.5,
@@ -54437,10 +54190,7 @@
         "mass": 53.0,
         "captureRate": 45,
         "expMode": "Medium Fast",
-        "genderRatio": 127,
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
+        "genderRatio": 127
       },
       "moves": {
         "lvlupMoves": {
@@ -54489,8 +54239,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Stance Change",
-            "hidden": ""
+            "normal": "Stance Change"
           }
         },
         "mass": 53.0,
@@ -55344,8 +55093,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Mega Launcher",
-            "hidden": ""
+            "normal": "Mega Launcher"
           }
         },
         "mass": 8.3,
@@ -55416,8 +55164,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Mega Launcher",
-            "hidden": ""
+            "normal": "Mega Launcher"
           }
         },
         "mass": 35.3,
@@ -57303,8 +57050,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Fairy Aura",
-            "hidden": ""
+            "normal": "Fairy Aura"
           }
         },
         "mass": 215.0,
@@ -57381,8 +57127,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Dark Aura",
-            "hidden": ""
+            "normal": "Dark Aura"
           }
         },
         "mass": 203.0,
@@ -57460,8 +57205,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Aura Break, Other Ability, Power Construct",
-            "hidden": ""
+            "normal": "Aura Break, Other Ability, Power Construct"
           }
         },
         "mass": 305.0,
@@ -57537,8 +57281,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Clear Body",
-            "hidden": ""
+            "normal": "Clear Body"
           }
         },
         "mass": 8.8,
@@ -57645,10 +57388,7 @@
         "mass": 490.0,
         "captureRate": 3,
         "baseFriendship": 100,
-        "expMode": "Slow",
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
+        "expMode": "Slow"
       },
       "moves": {
         "lvlupMoves": {
@@ -57763,8 +57503,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Water Absorb",
-            "hidden": ""
+            "normal": "Water Absorb"
           }
         },
         "mass": 195.0,
