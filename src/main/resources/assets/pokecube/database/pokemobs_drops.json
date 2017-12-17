@@ -2432,16 +2432,10 @@
       "name": "Kyogre"
     },
     {
-      "name": "Primal Kyogre"
-    },
-    {
       "name": "Kyogre Primal"
     },
     {
       "name": "Groudon"
-    },
-    {
-      "name": "Primal Groudon"
     },
     {
       "name": "Groudon Primal"
@@ -3027,9 +3021,6 @@
     },
     {
       "name": "Darkrai"
-    },
-    {
-      "name": "Shaymin"
     },
     {
       "name": "Shaymin Land"
@@ -3911,9 +3902,6 @@
       "name": "Keldeo Resolute"
     },
     {
-      "name": "Meloetta"
-    },
-    {
       "name": "Meloetta Aria",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
@@ -4146,9 +4134,6 @@
     },
     {
       "name": "Doublade"
-    },
-    {
-      "name": "Aegislash"
     },
     {
       "name": "Aegislash Blade"
