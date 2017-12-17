@@ -740,12 +740,14 @@ public class PokecubeMobs implements IMobProvider
             {
                 temp.mkdirs();
             }
-            CONFIGLOC = Database.CONFIGLOC;
-            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_pokedex.json");
-            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_spawns.json");
-            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_drops.json");
-            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_interacts.json");
+            DBLOCATION = DBLOCATION + "pokemobs/";
+            copyDatabaseFile("pokemobs_pokedex.json");
+            copyDatabaseFile("pokemobs_spawns.json");
+            copyDatabaseFile("pokemobs_drops.json");
+            copyDatabaseFile("pokemobs_interacts.json");
 
+            DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_mobs");
+            CONFIGLOC = Database.CONFIGLOC;
             copyDatabaseFile("pokecubes_recipes.xml");
             copyDatabaseFile("pokemob_item_recipes.xml");
             XMLRecipeHandler.recipeFiles.add("pokecubes_recipes");
