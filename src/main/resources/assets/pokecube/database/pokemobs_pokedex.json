@@ -10826,7 +10826,7 @@
             "normal": "Mold Breaker"
           }
         },
-        "mass": 305.0
+        "mass": 305.0,
         "logics": {
           "values": {
             "dive": "TRUE"
@@ -30439,7 +30439,6 @@
     {
       "name": "Primal Kyogre",
       "number": 382,
-      "base": true,
       "stats": {
         "stats": {
           "values": {
@@ -30620,7 +30619,6 @@
     {
       "name": "Primal Groudon",
       "number": 383,
-      "base": true,
       "stats": {
         "stats": {},
         "evs": {},
@@ -53597,75 +53595,6 @@
         },
         "misc": {
           "moves": "afteryou, attract, calmmind, confide, covet, dazzlinggleam, doubleteam, echoedvoice, endeavor, energyball, facade, flash, frustration, gigadrain, grassknot, healbell, helpinghand, hiddenpower, magiccoat, naturepower, protect, psychic, raindance, rest, return, round, safeguard, secretpower, seedbomb, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, synthesis, toxic, worryseed"
-        }
-      }
-    },
-    {
-      "name": "Flab꣩",
-      "number": 669,
-      "base": true,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "79",
-            "spatk": "61",
-            "def": "39",
-            "spd": "42",
-            "hp": "44",
-            "atk": "38"
-          }
-        },
-        "evs": {
-          "values": {
-            "spdef": "1"
-          }
-        },
-        "sizes": {
-          "values": {
-            "width": "0.1",
-            "length": "0.1",
-            "height": "0.1"
-          }
-        },
-        "types": {
-          "values": {
-            "type1": "Fairy"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Flower Veil",
-            "hidden": "Symbiosis"
-          }
-        },
-        "mass": 0.1,
-        "captureRate": 225,
-        "expMode": "Medium Fast",
-        "genderRatio": 254,
-        "logics": {},
-        "formeItems": {},
-        "megaRules_old": {}
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "22": "magicalleaf",
-            "33": "aromatherapy",
-            "45": "petaldance",
-            "24": "grassyterrain",
-            "15": "razorleaf",
-            "37": "mistyterrain",
-            "48": "solarbeam",
-            "28": "petalblizzard",
-            "1": "tackle,vinewhip",
-            "6": "fairywind",
-            "41": "moonblast",
-            "20": "wish",
-            "10": "luckychant"
-          }
-        },
-        "misc": {
-          "moves": "afteryou, allyswitch, aromatherapy, attract, calmmind, confide, covet, dazzlinggleam, doubleteam, echoedvoice, endeavor, energyball, facade, fairywind, flash, frustration, gigadrain, grassknot, grassyterrain, healbell, helpinghand, hiddenpower, luckychant, magicalleaf, magiccoat, mistyterrain, moonblast, naturepower, petalblizzard, petaldance, protect, psychic, raindance, razorleaf, rest, return, round, safeguard, secretpower, seedbomb, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, synthesis, tackle, toxic, vinewhip, wish, worryseed"
         }
       }
     },
