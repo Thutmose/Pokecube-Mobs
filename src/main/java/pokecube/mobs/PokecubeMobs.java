@@ -1,8 +1,13 @@
 package pokecube.mobs;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.ArrayList;
@@ -725,9 +730,17 @@ public class PokecubeMobs implements IMobProvider
             {
                 temp.mkdirs();
             }
+            DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_mobs");
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
 
+            CONFIGLOC = CONFIGLOC + "pokemobs" + File.separator;
+            temp = new File(Database.CONFIGLOC);
+            if (!temp.exists())
+            {
+                temp.mkdirs();
+            }
+            CONFIGLOC = Database.CONFIGLOC;
             copyDatabaseFile("pokemobs" + File.separator + "pokemobs_pokedex.json");
             copyDatabaseFile("pokemobs" + File.separator + "pokemobs_spawns.json");
             copyDatabaseFile("pokemobs" + File.separator + "pokemobs_drops.json");
@@ -746,8 +759,6 @@ public class PokecubeMobs implements IMobProvider
             }
             copyDatabaseFile("trainers.xml");
             copyDatabaseFile("trades.xml");
-            DBLOCATION = Database.DBLOCATION.replace("pokecube_adventures", "pokecube");
-            CONFIGLOC = Database.CONFIGLOC.replace("trainers", "database");
         }
         catch (Exception e)
         {
@@ -763,7 +774,7 @@ public class PokecubeMobs implements IMobProvider
             PokecubeMod.log("Not Overwriting old database: " + temp1);
             return;
         }
-        ArrayList<String> rows = Database.getFile(DBLOCATION + name);
+        ArrayList<String> rows = getFile(DBLOCATION + name);
         int n = 0;
         try
         {
@@ -782,5 +793,65 @@ public class PokecubeMobs implements IMobProvider
         {
             PokecubeMod.log(Level.SEVERE, name + " " + n, e);
         }
+    }
+
+    public static ArrayList<String> getFile(String file)
+    {
+        InputStream res = (PokecubeMobs.class).getResourceAsStream(file);
+
+        ArrayList<String> rows = new ArrayList<String>();
+        BufferedReader br = null;
+        String line = "";
+        try
+        {
+
+            br = new BufferedReader(new InputStreamReader(res));
+            while ((line = br.readLine()) != null)
+            {
+                rows.add(line);
+            }
+
+        }
+        catch (FileNotFoundException e)
+        {
+            PokecubeMod.log(Level.SEVERE, "Missing a Database file " + file, e);
+        }
+        catch (NullPointerException e)
+        {
+            try
+            {
+                FileReader temp = new FileReader(new File(file));
+                br = new BufferedReader(temp);
+                while ((line = br.readLine()) != null)
+                {
+                    rows.add(line);
+                }
+            }
+            catch (Exception e1)
+            {
+                PokecubeMod.log(Level.SEVERE, "Error with " + file, e1);
+            }
+
+        }
+        catch (Exception e)
+        {
+            PokecubeMod.log(Level.SEVERE, "Error with " + file, e);
+        }
+        finally
+        {
+            if (br != null)
+            {
+                try
+                {
+                    br.close();
+                }
+                catch (Exception e)
+                {
+                    PokecubeMod.log(Level.SEVERE, "Error with " + file, e);
+                }
+            }
+        }
+
+        return rows;
     }
 }
