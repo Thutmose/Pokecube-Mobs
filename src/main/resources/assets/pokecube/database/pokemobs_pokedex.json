@@ -51517,70 +51517,6 @@
       "legend": true
     },
     {
-      "name": "Meloetta",
-      "number": 648,
-      "base": true,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "128",
-            "spatk": "128",
-            "def": "77",
-            "spd": "90",
-            "hp": "100",
-            "atk": "77"
-          }
-        },
-        "evs": {},
-        "sizes": {
-          "values": {
-            "width": "0.6",
-            "length": "0.6",
-            "height": "0.6"
-          }
-        },
-        "types": {
-          "values": {
-            "type2": "Psychic",
-            "type1": "Normal"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Serene Grace"
-          }
-        },
-        "mass": 6.5,
-        "captureRate": 3,
-        "baseFriendship": 100,
-        "expMode": "Slow"
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "11": "confusion",
-            "78": "closecombat",
-            "57": "psychic",
-            "36": "echoedvoice",
-            "26": "acrobatics",
-            "16": "sing",
-            "1": "round,quickattack,confusion,sing",
-            "6": "quickattack",
-            "71": "roleplay",
-            "50": "wakeupslap",
-            "85": "perishsong",
-            "31": "psybeam",
-            "64": "hypervoice",
-            "21": "teeterdance",
-            "43": "uturn"
-          }
-        },
-        "misc": {
-          "moves": "acrobatics, allyswitch, brickbreak, calmmind, chargebeam, closecombat, confide, confusion, covet, dazzlinggleam, doubleteam, drainpunch, dreameater, dualchop, echoedvoice, embargo, energyball, facade, firepunch, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gravity, healbell, helpinghand, hiddenpower, honeclaws, hyperbeam, hypervoice, icepunch, knockoff, laserfocus, lastresort, lightscreen, lowkick, lowsweep, magiccoat, magicroom, payback, perishsong, poweruppunch, protect, psybeam, psychic, psychup, psyshock, quickattack, raindance, recycle, relicsong, rest, retaliate, return, rocksmash, roleplay, round, safeguard, secretpower, shadowball, shadowclaw, shockwave, signalbeam, sing, skillswap, sleeptalk, snatch, snore, stoneedge, strength, substitute, sunnyday, swagger, teeterdance, telekinesis, thunder, thunderbolt, thunderpunch, thunderwave, toxic, trick, trickroom, uproar, uturn, wakeupslap, wonderroom, workup, zenheadbutt"
-        }
-      }
-    },
-    {
       "name": "Meloetta Aria",
       "number": 648,
       "base": true,
@@ -51643,7 +51579,7 @@
             "36": "echoedvoice",
             "26": "acrobatics",
             "16": "sing",
-            "1": "round",
+            "1": "round,quickattack,confusion,sing",
             "6": "quickattack",
             "71": "roleplay",
             "50": "wakeupslap",
@@ -51655,7 +51591,7 @@
           }
         },
         "misc": {
-          "moves": "acrobatics, brickbreak, calmmind, chargebeam, confide, covet, dazzlinggleam, doubleteam, drainpunch, dreameater, dualchop, echoedvoice, embargo, energyball, facade, firepunch, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gravity, healbell, helpinghand, hiddenpower, honeclaws, hyperbeam, hypervoice, icepunch, knockoff, lastresort, lightscreen, lowkick, lowsweep, magiccoat, magicroom, payback, poweruppunch, protect, psychic, psychup, psyshock, raindance, recycle, relicsong, rest, retaliate, return, rocksmash, roleplay, round, safeguard, secretpower, shadowball, shadowclaw, shockwave, signalbeam, skillswap, sleeptalk, snatch, snore, stoneedge, strength, substitute, sunnyday, swagger, telekinesis, thunder, thunderbolt, thunderpunch, thunderwave, toxic, trick, trickroom, uproar, uturn, wonderroom, workup, zenheadbutt"
+          "moves": "acrobatics, allyswitch, brickbreak, calmmind, chargebeam, closecombat, confide, confusion, covet, dazzlinggleam, doubleteam, drainpunch, dreameater, dualchop, echoedvoice, embargo, energyball, facade, firepunch, flash, fling, focusblast, focuspunch, frustration, gigaimpact, grassknot, gravity, healbell, helpinghand, hiddenpower, honeclaws, hyperbeam, hypervoice, icepunch, knockoff, laserfocus, lastresort, lightscreen, lowkick, lowsweep, magiccoat, magicroom, payback, perishsong, poweruppunch, protect, psybeam, psychic, psychup, psyshock, quickattack, raindance, recycle, relicsong, rest, retaliate, return, rocksmash, roleplay, round, safeguard, secretpower, shadowball, shadowclaw, shockwave, signalbeam, sing, skillswap, sleeptalk, snatch, snore, stoneedge, strength, substitute, sunnyday, swagger, teeterdance, telekinesis, thunder, thunderbolt, thunderpunch, thunderwave, toxic, trick, trickroom, uproar, uturn, wakeupslap, wonderroom, workup, zenheadbutt"
         }
       }
     },
@@ -54149,61 +54085,6 @@
       }
     },
     {
-      "name": "Aegislash",
-      "number": 681,
-      "base": true,
-      "stats": {
-        "stats": {
-          "values": {
-            "spdef": "150",
-            "spatk": "50",
-            "def": "150",
-            "spd": "60",
-            "hp": "60",
-            "atk": "50"
-          }
-        },
-        "evs": {
-          "values": {
-            "spdef": "1",
-            "def": "2"
-          }
-        },
-        "sizes": {
-          "values": {
-            "width": "1.7",
-            "length": "1.7",
-            "height": "1.7"
-          }
-        },
-        "types": {
-          "values": {
-            "type2": "Ghost",
-            "type1": "Steel"
-          }
-        },
-        "abilities": {
-          "values": {
-            "normal": "Stance Change"
-          }
-        },
-        "mass": 53.0,
-        "captureRate": 45,
-        "expMode": "Medium Fast",
-        "genderRatio": 127
-      },
-      "moves": {
-        "lvlupMoves": {
-          "values": {
-            "1": "furycutter,pursuit,autotomize,shadowsneak,slash,irondefense,nightslash,powertrick,ironhead,headsmash,swordsdance,aerialace,kingsshield,sacredsword"
-          }
-        },
-        "misc": {
-          "moves": "aerialace, afteryou, attract, autotomize, block, brickbreak, brutalswing, confide, cut, doubleteam, facade, falseswipe, flashcannon, frustration, furycutter, gigaimpact, gyroball, headsmash, hiddenpower, hyperbeam, irondefense, ironhead, kingsshield, laserfocus, magnetrise, metalsound, nightslash, powertrick, protect, pursuit, raindance, reflect, rest, retaliate, return, rockslide, rocksmash, round, sacredsword, secretpower, shadowball, shadowclaw, shadowsneak, shockwave, slash, sleeptalk, snore, spite, substitute, sunnyday, swagger, swordsdance, tackle, toxic"
-        }
-      }
-    },
-    {
       "name": "Aegislash Blade",
       "number": 681,
       "base": true,
@@ -54261,7 +54142,7 @@
           }
         },
         "misc": {
-          "moves": "aerialace, afteryou, attract, block, brickbreak, confide, cut, doubleteam, facade, falseswipe, flashcannon, frustration, gigaimpact, gyroball, hiddenpower, hyperbeam, irondefense, ironhead, magnetrise, protect, raindance, reflect, rest, retaliate, return, rockslide, rocksmash, round, secretpower, shadowball, shadowclaw, shockwave, sleeptalk, snore, spite, substitute, sunnyday, swagger, swordsdance, toxic"
+          "moves": "aerialace, afteryou, attract, autotomize, block, brickbreak, brutalswing, confide, cut, doubleteam, facade, falseswipe, flashcannon, frustration, furycutter, gigaimpact, gyroball, headsmash, hiddenpower, hyperbeam, irondefense, ironhead, kingsshield, laserfocus, magnetrise, metalsound, nightslash, powertrick, protect, pursuit, raindance, reflect, rest, retaliate, return, rockslide, rocksmash, round, sacredsword, secretpower, shadowball, shadowclaw, shadowsneak, shockwave, slash, sleeptalk, snore, spite, substitute, sunnyday, swagger, swordsdance, tackle, toxic"
         }
       }
     },

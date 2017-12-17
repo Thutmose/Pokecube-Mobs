@@ -3902,9 +3902,6 @@
       "name": "Keldeo Resolute"
     },
     {
-      "name": "Meloetta"
-    },
-    {
       "name": "Meloetta Aria",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
@@ -4137,9 +4134,6 @@
     },
     {
       "name": "Doublade"
-    },
-    {
-      "name": "Aegislash"
     },
     {
       "name": "Aegislash Blade"
