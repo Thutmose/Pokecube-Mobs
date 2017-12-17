@@ -1,12 +1,12 @@
 {
     "pools": [
         {
-            "name": "pool_0",
-            "rolls": 1,
+            "name": "pool_1",
+            "rolls": 3,
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/rabbit_1",
+                    "name": "pokecube:entities/gold_nugget",
                     "weight": 1
                 }
             ]
@@ -17,7 +17,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/redstone_1",
+                    "name": "pokecube:entities/stone_1",
                     "weight": 1
                 }
             ]

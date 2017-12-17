@@ -2,11 +2,11 @@
     "pools": [
         {
             "name": "pool_0",
-            "rolls": 1,
+            "rolls": 2,
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/rabbit_1",
+                    "name": "minecraft:entities/creeper",
                     "weight": 1
                 }
             ]

@@ -17,7 +17,18 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/redstone_1",
+                    "name": "pokecube:entities/gold_nugget",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "name": "pool_1",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "pokecube:entities/emerald_1_10",
                     "weight": 1
                 }
             ]

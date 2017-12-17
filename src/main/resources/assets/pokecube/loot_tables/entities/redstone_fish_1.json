@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/rabbit_1",
+                    "name": "pokecube:entities/fish_1",
                     "weight": 1
                 }
             ]

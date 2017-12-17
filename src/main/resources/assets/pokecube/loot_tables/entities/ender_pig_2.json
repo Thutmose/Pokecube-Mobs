@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/rabbit_1",
+                    "name": "pokecube:entities/pig_2",
                     "weight": 1
                 }
             ]
@@ -17,7 +17,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/redstone_1",
+                    "name": "pokecube:entities/enderpearls_2",
                     "weight": 1
                 }
             ]

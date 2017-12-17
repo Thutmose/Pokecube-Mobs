@@ -19,6 +19,9 @@
       }
     },
     {
+      "name": "Venusaur Mega"
+    },
+    {
       "name": "Charmander",
       "stats": {
         "lootTable": "pokecube:entities/coal_1"
@@ -37,116 +40,91 @@
       }
     },
     {
+      "name": "Charizard Mega-X"
+    },
+    {
+      "name": "Charizard Mega-Y"
+    },
+    {
       "name": "Squirtle",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bowl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bowl"
       }
     },
     {
       "name": "Wartortle",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bowl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bowl"
       }
     },
     {
       "name": "Blastoise",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bowl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bowl"
       }
+    },
+    {
+      "name": "Blastoise Mega"
     },
     {
       "name": "Caterpie",
       "stats": {
-        "lootTable": "pokecube:entities/string_1"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Metapod",
       "stats": {
-        "lootTable": "pokecube:entities/string_2"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Butterfree",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Weedle",
       "stats": {
-        "lootTable": "pokecube:entities/string_1"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Kakuna",
       "stats": {
-        "lootTable": "pokecube:entities/string_2"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Beedrill",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
+    },
+    {
+      "name": "Beedrill Mega"
     },
     {
       "name": "Pidgey",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Pidgeotto",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Pidgeot",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
+    },
+    {
+      "name": "Pidgeot Mega"
     },
     {
       "name": "Rattata",
@@ -175,41 +153,25 @@
     {
       "name": "Spearow",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Fearow",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Ekans",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/leather"
       }
     },
     {
       "name": "Arbok",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/leather"
       }
     },
     {
@@ -233,293 +195,125 @@
     {
       "name": "Sandshrew",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/sand_rabbit_1"
       }
     },
     {
       "name": "Sandshrew Alola",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/snow_rabbit_1"
       }
     },
     {
       "name": "Sandslash",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/sand_rabbit_2"
       }
     },
     {
       "name": "Sandslash Alola",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/snow_rabbit_2"
       }
     },
     {
       "name": "NidoranF",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1",
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/rabbit_1",
+        "heldTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Nidorina",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Nidoqueen",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_3"
+        "lootTable": "pokecube:entities/rabbit_3"
       }
     },
     {
       "name": "NidoranM",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1",
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/rabbit_1",
+        "heldTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Nidorino",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Nidoking",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_3"
+        "lootTable": "pokecube:entities/rabbit_3"
       }
     },
     {
       "name": "Clefairy",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.05",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone",
+        "heldTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Clefable",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.05",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Vulpix",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:blaze_powder",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_rabbit_1"
       }
     },
     {
       "name": "Vulpix Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:snowball",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/snow_rabbit_1"
       }
     },
     {
       "name": "Ninetales",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:blaze_powder",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_rabbit_2"
       }
     },
     {
       "name": "Ninetales Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:snowball",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/snow_rabbit_2"
       }
     },
     {
       "name": "Jigglypuff",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.05",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone",
+        "heldTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Wigglytuff",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.05",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Zubat",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider_eye"
       }
     },
     {
       "name": "Golbat",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider_eye"
       }
     },
     {
@@ -543,406 +337,113 @@
     {
       "name": "Paras",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.5",
-              "id": "minecraft:brown_mushroom",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.5",
-              "id": "minecraft:red_mushroom",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_shrooms_1"
       }
     },
     {
       "name": "Parasect",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.5",
-              "id": "minecraft:brown_mushroom",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "0.5",
-              "id": "minecraft:red_mushroom",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_shrooms_2"
       }
     },
     {
       "name": "Venonat",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider_eye"
       }
     },
     {
       "name": "Venomoth",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider_eye"
       }
     },
     {
       "name": "Diglett",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dirt",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/dirt"
       }
     },
     {
       "name": "Diglett Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dirt",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/dirt"
       }
     },
     {
       "name": "Dugtrio",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dirt",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/dirt"
       }
     },
     {
       "name": "Dugtrio Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dirt",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/dirt"
       }
     },
     {
       "name": "Meowth",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gold_nugget",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:emerald",
-              "n": "1"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.33",
-              "id": "minecraft:emerald",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/money_cat_small",
+        "heldTable": "pokecube:entities/emerald_1_33"
       }
     },
     {
       "name": "Meowth Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gold_nugget",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:emerald",
-              "n": "1"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.33",
-              "id": "minecraft:emerald",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/money_cat_small",
+        "heldTable": "pokecube:entities/emerald_1_33"
       }
     },
     {
       "name": "Persian",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gold_nugget",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:emerald",
-              "n": "3"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.33",
-              "id": "minecraft:emerald",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/money_cat_big",
+        "heldTable": "pokecube:entities/emerald_3_33"
       }
     },
     {
       "name": "Persian Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gold_nugget",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:emerald",
-              "n": "3"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.33",
-              "id": "minecraft:emerald",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/money_cat_big",
+        "heldTable": "pokecube:entities/emerald_3_33"
       }
     },
     {
       "name": "Psyduck",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Golduck",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Mankey",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_1"
       }
     },
     {
       "name": "Primeape",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_1"
       }
     },
     {
       "name": "Growlithe",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:blaze_powder",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_rabbit_1"
       }
     },
     {
       "name": "Arcanine",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit_hide",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_rabbit_2"
       }
     },
     {
@@ -982,6 +483,27 @@
       }
     },
     {
+      "name": "Alakazam Mega"
+    },
+    {
+      "name": "Machop",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_1"
+      }
+    },
+    {
+      "name": "Machoke",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_1"
+      }
+    },
+    {
+      "name": "Machamp",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_1"
+      }
+    },
+    {
       "name": "Bellsprout",
       "stats": {
         "lootTable": "pokecube:entities/wheat_seeds_1"
@@ -1002,308 +524,107 @@
     {
       "name": "Tentacool",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/squid"
       }
     },
     {
       "name": "Tentacruel",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/squid"
       }
     },
     {
       "name": "Geodude",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:cobblestone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cobble_1"
       }
     },
     {
       "name": "Geodude Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_1"
       }
     },
     {
       "name": "Graveler",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_2"
       }
     },
     {
       "name": "Graveler Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gold_nugget",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_gold"
       }
     },
     {
       "name": "Golem",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gold_nugget",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_2"
       }
     },
     {
       "name": "Golem Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_gold"
       }
     },
     {
       "name": "Ponyta",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_cow_1"
       }
     },
     {
       "name": "Rapidash",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_cow_2"
       }
     },
     {
       "name": "Slowpoke",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "kingsrock",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_1",
+        "heldTable": "pokecube:entities/kingsrock"
       }
     },
     {
       "name": "Slowbro",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_1"
       }
+    },
+    {
+      "name": "Slowbro Mega"
     },
     {
       "name": "Magnemite",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:redstone",
-              "n": "10"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_redstone_1"
       }
     },
     {
       "name": "Magneton",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:redstone",
-              "n": "20"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_redstone_2"
       }
     },
     {
       "name": "Farfetch\u0027d",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Doduo",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Dodrio",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
     },
     {
@@ -1357,22 +678,7 @@
     {
       "name": "Gastly",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:ghast_tear",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/ghast_pearls"
       }
     },
     {
@@ -1388,17 +694,12 @@
       }
     },
     {
+      "name": "Gengar Mega"
+    },
+    {
       "name": "Onix",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_2"
       }
     },
     {
@@ -1416,55 +717,25 @@
     {
       "name": "Krabby",
       "stats": {
-        "lootTable": "pokecube:entities/fish_1"
+        "lootTable": "pokecube:entities/shear_fish"
       }
     },
     {
       "name": "Kingler",
       "stats": {
-        "lootTable": "pokecube:entities/fish_1"
+        "lootTable": "pokecube:entities/shear_fish"
       }
     },
     {
       "name": "Voltorb",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:gunpowder",
-              "n": "10"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_creeper_1"
       }
     },
     {
       "name": "Electrode",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:gunpowder",
-              "n": "20"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_creeper_2"
       }
     },
     {
@@ -1480,202 +751,87 @@
       }
     },
     {
+      "name": "Exeggutor Alola"
+    },
+    {
       "name": "Cubone",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.05",
-              "d": "1",
-              "id": "minecraft:skull",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/skull_rabbit_1"
       }
     },
     {
       "name": "Marowak",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.05",
-              "d": "1",
-              "id": "minecraft:skull",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/skull_rabbit_2"
       }
     },
     {
       "name": "Marowak Alola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.05",
-              "d": "1",
-              "id": "minecraft:skull",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/skull_rabbit_2"
       }
+    },
+    {
+      "name": "Hitmonlee"
+    },
+    {
+      "name": "Hitmonchan"
+    },
+    {
+      "name": "Lickitung"
     },
     {
       "name": "Koffing",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gunpowder",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/creeper"
       }
     },
     {
       "name": "Weezing",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gunpowder",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/creeper"
       }
     },
     {
       "name": "Rhyhorn",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_1"
       }
     },
     {
       "name": "Rhydon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_2"
       }
     },
     {
       "name": "Chansey",
       "stats": {
-        "held": [
-          {
-            "values": {
-              "r": "0.5",
-              "id": "ovalstone",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.05",
-              "id": "luckyegg",
-              "n": "1"
-            }
-          }
-        ]
+        "heldTable": "pokecube:entities/lucky_oval"
       }
     },
     {
       "name": "Tangela",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:vine",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/vines"
       }
+    },
+    {
+      "name": "Kangaskhan"
+    },
+    {
+      "name": "Kangaskhan Mega"
     },
     {
       "name": "Horsea",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/squid_fish_1"
       }
     },
     {
       "name": "Seadra",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/squid_fish_2"
       }
     },
     {
@@ -1703,66 +859,36 @@
       }
     },
     {
+      "name": "Mr. Mime"
+    },
+    {
+      "name": "Scyther"
+    },
+    {
+      "name": "Jynx"
+    },
+    {
       "name": "Electabuzz",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "4"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_1"
       }
     },
     {
       "name": "Magmar",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:blaze_rod",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:blaze_powder",
-              "n": "5"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:blaze_rod",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_1"
       }
+    },
+    {
+      "name": "Pinsir"
+    },
+    {
+      "name": "Pinsir Mega"
     },
     {
       "name": "Tauros",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cow_1"
       }
     },
     {
@@ -1776,6 +902,9 @@
       "stats": {
         "lootTable": "pokecube:entities/fish_1"
       }
+    },
+    {
+      "name": "Gyarados Mega"
     },
     {
       "name": "Lapras",
@@ -1792,7 +921,7 @@
     {
       "name": "Eevee",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
@@ -1804,15 +933,7 @@
     {
       "name": "Jolteon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:glowstone_dust",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/glow_rabbit_1"
       }
     },
     {
@@ -1824,92 +945,46 @@
     {
       "name": "Porygon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.2",
-              "id": "minecraft:ender_pearl",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_2"
       }
     },
     {
       "name": "Omanyte",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Omastar",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Kabuto",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Kabutops",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Aerodactyl",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:feather",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Aerodactyl Mega"
+    },
+    {
+      "name": "Snorlax",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_3"
       }
     },
     {
@@ -1949,101 +1024,57 @@
       }
     },
     {
+      "name": "Mewtwo",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Mewtwo Mega-X"
+    },
+    {
+      "name": "Mewtwo Mega-Y"
+    },
+    {
       "name": "Mew",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "mewHair",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/mewhair"
       }
     },
     {
       "name": "Chikorita",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_1"
       }
     },
     {
       "name": "Bayleef",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_2"
       }
     },
     {
       "name": "Meganium",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_2"
       }
     },
     {
       "name": "Cyndaquil",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_1"
       }
     },
     {
       "name": "Quilava",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_2"
       }
     },
     {
       "name": "Typhlosion",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_3"
       }
     },
     {
@@ -2068,15 +1099,7 @@
       "name": "Sentret",
       "stats": {
         "lootTable": "pokecube:entities/rotten_rabbit_1",
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "oranberry",
-              "n": "1"
-            }
-          }
-        ]
+        "heldTable": "pokecube:entities/oranberry_10"
       }
     },
     {
@@ -2088,365 +1111,352 @@
     {
       "name": "Hoothoot",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Noctowl",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
+    },
+    {
+      "name": "Ledyba"
+    },
+    {
+      "name": "Ledian"
     },
     {
       "name": "Spinarak",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Ariados",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Crobat",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider_eye"
       }
     },
     {
       "name": "Chinchou",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:glowstone_dust",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/glow_fish_1"
       }
     },
     {
       "name": "Lanturn",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:glowstone_dust",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/glow_fish_2"
+      }
+    },
+    {
+      "name": "Pichu",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Cleffa",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Igglybuff",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone"
+      }
+    },
+    {
+      "name": "Togepi",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Togetic",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Natu",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Xatu",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Mareep",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:mutton",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "d": "4",
-              "id": "minecraft:wool",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/sheep/yellow"
       }
     },
     {
       "name": "Flaaffy",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:mutton",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wool",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/sheep/white"
       }
     },
     {
       "name": "Ampharos",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:mutton",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/sheep/white"
       }
+    },
+    {
+      "name": "Ampharos Mega"
+    },
+    {
+      "name": "Bellossom"
+    },
+    {
+      "name": "Marill",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Azumarill",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Sudowoodo"
+    },
+    {
+      "name": "Politoed"
+    },
+    {
+      "name": "Hoppip"
+    },
+    {
+      "name": "Skiploom"
     },
     {
       "name": "Jumpluff",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wool",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wool_2"
       }
     },
     {
       "name": "Aipom",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Sunkern",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leaves",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_1"
+      }
+    },
+    {
+      "name": "Sunflora"
+    },
+    {
+      "name": "Yanma",
+      "stats": {
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Wooper",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_1"
       }
     },
     {
       "name": "Quagsire",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_2"
       }
     },
     {
       "name": "Espeon",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Umbreon",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Murkrow",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Slowking",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_3"
+      }
+    },
+    {
+      "name": "Misdreavus",
+      "stats": {
+        "lootTable": "pokecube:entities/enderpearls_1"
+      }
+    },
+    {
+      "name": "Unown",
+      "stats": {
+        "lootTable": "pokecube:entities/enderpearls_1"
+      }
+    },
+    {
+      "name": "Unown_A"
+    },
+    {
+      "name": "Unown_B"
+    },
+    {
+      "name": "Unown_C"
+    },
+    {
+      "name": "Unown_D"
+    },
+    {
+      "name": "Unown_E"
+    },
+    {
+      "name": "Unown_Ex"
+    },
+    {
+      "name": "Unown_F"
+    },
+    {
+      "name": "Unown_G"
+    },
+    {
+      "name": "Unown_H"
+    },
+    {
+      "name": "Unown_I"
+    },
+    {
+      "name": "Unown_J"
+    },
+    {
+      "name": "Unown_K"
+    },
+    {
+      "name": "Unown_L"
+    },
+    {
+      "name": "Unown_M"
+    },
+    {
+      "name": "Unown_N"
+    },
+    {
+      "name": "Unown_O"
+    },
+    {
+      "name": "Unown_P"
+    },
+    {
+      "name": "Unown_Q"
+    },
+    {
+      "name": "Unown_Qu"
+    },
+    {
+      "name": "Unown_R"
+    },
+    {
+      "name": "Unown_S"
+    },
+    {
+      "name": "Unown_T"
+    },
+    {
+      "name": "Unown_U"
+    },
+    {
+      "name": "Unown_V"
+    },
+    {
+      "name": "Unown_W"
+    },
+    {
+      "name": "Unown_X"
+    },
+    {
+      "name": "Unown_Y"
+    },
+    {
+      "name": "Unown_Z"
+    },
+    {
+      "name": "Wobbuffet",
+      "stats": {
+        "lootTable": "pokecube:entities/enderpearls_2"
       }
     },
     {
       "name": "Girafarig",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/ender_cow_1"
       }
     },
     {
       "name": "Pineco",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gunpowder",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/creeper"
       }
     },
     {
       "name": "Forretress",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:gunpowder",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ore",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/creeper_iron_ore"
+      }
+    },
+    {
+      "name": "Dunsparce",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Gligar",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Steelix"
+    },
+    {
+      "name": "Steelix Mega"
+    },
+    {
+      "name": "Snubbull",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Granbull",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
@@ -2456,89 +1466,71 @@
       }
     },
     {
+      "name": "Scizor"
+    },
+    {
+      "name": "Scizor Mega"
+    },
+    {
       "name": "Shuckle",
       "stats": {
         "lootTable": "pokecube:entities/slimeballs_2",
-        "held": [
-          {
-            "values": {
-              "r": "1",
-              "id": "berryjuice",
-              "n": "1"
-            }
-          }
-        ]
+        "heldTable": "pokecube:entities/berryjuice"
       }
     },
     {
       "name": "Heracross",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bones"
+      }
+    },
+    {
+      "name": "Heracross Mega"
+    },
+    {
+      "name": "Sneasel",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Teddiursa",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Ursaring",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_3"
       }
     },
     {
       "name": "Slugma",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:magma_cream",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/magma_cream"
       }
     },
     {
       "name": "Magcargo",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:magma_cream",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/magma_cream"
       }
     },
     {
       "name": "Swinub",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_1"
       }
     },
     {
       "name": "Piloswine",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_1"
       }
+    },
+    {
+      "name": "Corsola"
     },
     {
       "name": "Remoraid",
@@ -2549,21 +1541,13 @@
     {
       "name": "Octillery",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/squid"
       }
     },
     {
       "name": "Delibird",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
@@ -2575,107 +1559,92 @@
     {
       "name": "Skarmory",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_chicken_1"
       }
     },
     {
       "name": "Houndour",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:blaze_rod",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_rabbit_1"
       }
     },
     {
       "name": "Houndoom",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:blaze_rod",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_rabbit_2"
+      }
+    },
+    {
+      "name": "Houndoom Mega"
+    },
+    {
+      "name": "Kingdra",
+      "stats": {
+        "lootTable": "pokecube:entities/squid_fish_2"
+      }
+    },
+    {
+      "name": "Phanpy",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_1"
+      }
+    },
+    {
+      "name": "Donphan",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_3"
+      }
+    },
+    {
+      "name": "Porygon2",
+      "stats": {
+        "lootTable": "pokecube:entities/enderpearls_2"
       }
     },
     {
       "name": "Stantler",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cow_1"
+      }
+    },
+    {
+      "name": "Smeargle",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Tyrogue"
+    },
+    {
+      "name": "Hitmontop"
+    },
+    {
+      "name": "Smoochum",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Elekid",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Magby",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Miltank",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cow_1"
       }
+    },
+    {
+      "name": "Blissey"
     },
     {
       "name": "Raikou",
@@ -2696,525 +1665,375 @@
       }
     },
     {
+      "name": "Larvitar"
+    },
+    {
+      "name": "Pupitar"
+    },
+    {
+      "name": "Tyranitar"
+    },
+    {
+      "name": "Tyranitar Mega"
+    },
+    {
       "name": "Lugia",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
     },
     {
+      "name": "Ho-Oh"
+    },
+    {
+      "name": "Celebi"
+    },
+    {
       "name": "Treecko",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_1"
       }
     },
     {
       "name": "Grovyle",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_2"
       }
     },
     {
       "name": "Sceptile",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_3"
       }
+    },
+    {
+      "name": "Sceptile Mega"
     },
     {
       "name": "Torchic",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:feather",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_chicken_1"
       }
     },
     {
       "name": "Combusken",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:feather",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_chicken_2"
       }
     },
     {
       "name": "Blaziken",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:feather",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_chicken_3"
+      }
+    },
+    {
+      "name": "Blaziken Mega"
+    },
+    {
+      "name": "Mudkip",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Marshtomp",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Swampert",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_2"
+      }
+    },
+    {
+      "name": "Swampert Mega"
+    },
+    {
+      "name": "Poochyena",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Mightyena",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Zigzagoon",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1",
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "oranberry",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/rabbit_1",
+        "heldTable": "pokecube:entities/oranberry"
       }
     },
     {
       "name": "Linoone",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Wurmple",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Silcoon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Beautifly",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Cascoon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Dustox",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
+      }
+    },
+    {
+      "name": "Lotad",
+      "stats": {
+        "lootTable": "minecraft:entities/lilypad"
+      }
+    },
+    {
+      "name": "Lombre",
+      "stats": {
+        "lootTable": "minecraft:entities/lilypad"
+      }
+    },
+    {
+      "name": "Ludicolo",
+      "stats": {
+        "lootTable": "minecraft:entities/lilypad"
       }
     },
     {
       "name": "Seedot",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:pumpkin_seeds",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:melon_seeds",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:beetroot_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/other_seeds"
       }
     },
     {
       "name": "Nuzleaf",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_1"
       }
     },
     {
       "name": "Shiftry",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_2"
       }
     },
     {
       "name": "Taillow",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Swellow",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Wingull",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Pelipper",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Ralts",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ],
-        "held": [
-          {
-            "values": {
-              "r": "0.5",
-              "id": "dawnstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_1",
+        "heldTable": "pokecube:entities/dawnstone"
       }
     },
     {
       "name": "Kirlia",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_2"
       }
     },
     {
       "name": "Gardevoir",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_3"
       }
+    },
+    {
+      "name": "Gardevoir Mega"
+    },
+    {
+      "name": "Surskit"
+    },
+    {
+      "name": "Masquerain"
     },
     {
       "name": "Shroomish",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:brown_mushroom",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:red_mushroom",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_shrooms_1"
       }
     },
     {
       "name": "Breloom",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:brown_mushroom",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:red_mushroom",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_shrooms_2"
       }
     },
     {
       "name": "Slakoth",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Vigoroth",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Slaking",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_3"
+        "lootTable": "pokecube:entities/rabbit_3"
       }
+    },
+    {
+      "name": "Nincada"
+    },
+    {
+      "name": "Ninjask"
+    },
+    {
+      "name": "Shedinja"
     },
     {
       "name": "Whismur",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Loudred",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Exploud",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_3"
+        "lootTable": "pokecube:entities/rabbit_3"
       }
+    },
+    {
+      "name": "Makuhita"
+    },
+    {
+      "name": "Hariyama"
+    },
+    {
+      "name": "Azurill"
+    },
+    {
+      "name": "Nosepass"
     },
     {
       "name": "Skitty",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Delcatty",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
+    },
+    {
+      "name": "Sableye"
+    },
+    {
+      "name": "Sableye Mega"
+    },
+    {
+      "name": "Mawile"
+    },
+    {
+      "name": "Mawile Mega"
     },
     {
       "name": "Aron",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_1"
       }
     },
     {
       "name": "Lairon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_2"
       }
     },
     {
       "name": "Aggron",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_3"
       }
+    },
+    {
+      "name": "Aggron Mega"
+    },
+    {
+      "name": "Meditite"
+    },
+    {
+      "name": "Meditite Female"
+    },
+    {
+      "name": "Medicham"
+    },
+    {
+      "name": "Medicham Mega"
     },
     {
       "name": "Electrike",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_rabbit_1"
       }
     },
     {
       "name": "Manectric",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_rabbit_2"
       }
+    },
+    {
+      "name": "Manectric Mega"
     },
     {
       "name": "Plusle",
@@ -3227,6 +2046,15 @@
       "stats": {
         "lootTable": "pokecube:entities/redstone_rabbit_1"
       }
+    },
+    {
+      "name": "Volbeat"
+    },
+    {
+      "name": "Illumise"
+    },
+    {
+      "name": "Roselia"
     },
     {
       "name": "Gulpin",
@@ -3253,6 +2081,9 @@
       }
     },
     {
+      "name": "Sharpedo Mega"
+    },
+    {
       "name": "Wailmer",
       "stats": {
         "lootTable": "pokecube:entities/fish_1"
@@ -3265,107 +2096,90 @@
       }
     },
     {
+      "name": "Numel",
+      "stats": {
+        "lootTable": "pokecube:entities/cow_1"
+      }
+    },
+    {
+      "name": "Camerupt",
+      "stats": {
+        "lootTable": "pokecube:entities/cow_2"
+      }
+    },
+    {
+      "name": "Camerupt Mega"
+    },
+    {
+      "name": "Torkoal"
+    },
+    {
       "name": "Spoink",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/ender_pig_1"
       }
     },
     {
       "name": "Grumpig",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/ender_pig_2"
       }
+    },
+    {
+      "name": "Spinda",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Trapinch"
+    },
+    {
+      "name": "Vibrava"
+    },
+    {
+      "name": "Flygon"
+    },
+    {
+      "name": "Cacnea"
+    },
+    {
+      "name": "Cacturne"
     },
     {
       "name": "Swablu",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wool",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wool_1"
       }
     },
     {
       "name": "Altaria",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wool",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wool_2"
       }
+    },
+    {
+      "name": "Altaria Mega"
     },
     {
       "name": "Zangoose",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
+    },
+    {
+      "name": "Seviper"
     },
     {
       "name": "Lunatone",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "moonstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/moonstone"
       }
     },
     {
       "name": "Solrock",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "sunstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sunstone"
       }
     },
     {
@@ -3383,71 +2197,43 @@
     {
       "name": "Corphish",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:shears",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/shear_fish"
       }
     },
     {
       "name": "Crawdaunt",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:shears",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/shear_fish"
+      }
+    },
+    {
+      "name": "Baltoy"
+    },
+    {
+      "name": "Claydol"
+    },
+    {
+      "name": "Lileep",
+      "stats": {
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Cradily",
+      "stats": {
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Anorith",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Armaldo",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
@@ -3463,150 +2249,99 @@
       }
     },
     {
+      "name": "Castform"
+    },
+    {
+      "name": "Castform Rain"
+    },
+    {
+      "name": "Castform Snow"
+    },
+    {
+      "name": "Castform Sun"
+    },
+    {
+      "name": "Kecleon"
+    },
+    {
+      "name": "Shuppet"
+    },
+    {
+      "name": "Banette"
+    },
+    {
+      "name": "Banette Mega"
+    },
+    {
       "name": "Duskull",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bones"
       }
     },
     {
       "name": "Dusclops",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bones"
       }
     },
     {
       "name": "Tropius",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:apple",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/apple_cow"
       }
     },
     {
       "name": "Chimecho",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_1"
       }
+    },
+    {
+      "name": "Absol"
+    },
+    {
+      "name": "Absol Mega"
+    },
+    {
+      "name": "Wynaut"
     },
     {
       "name": "Snorunt",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:packed_ice",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
       }
     },
     {
       "name": "Glalie",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:packed_ice",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
       }
+    },
+    {
+      "name": "Glalie Mega"
     },
     {
       "name": "Spheal",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
       }
     },
     {
       "name": "Sealeo",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
       }
     },
     {
       "name": "Walrein",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
+      }
+    },
+    {
+      "name": "Clamperl",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
       }
     },
     {
@@ -3628,73 +2363,97 @@
       }
     },
     {
+      "name": "Luvdisc",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Bagon"
+    },
+    {
+      "name": "Shelgon"
+    },
+    {
+      "name": "Salamence"
+    },
+    {
+      "name": "Salamence Mega"
+    },
+    {
       "name": "Beldum",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_pearls_1"
       }
     },
     {
       "name": "Metang",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:ender_pearl",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_pearls_2"
       }
     },
     {
       "name": "Metagross",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:ender_pearl",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_pearls_3"
       }
+    },
+    {
+      "name": "Metagross Mega"
+    },
+    {
+      "name": "Regirock"
+    },
+    {
+      "name": "Regice"
+    },
+    {
+      "name": "Registeel"
+    },
+    {
+      "name": "Latias",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_2"
+      }
+    },
+    {
+      "name": "Latias Mega"
+    },
+    {
+      "name": "Latios",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_2"
+      }
+    },
+    {
+      "name": "Latios Mega"
+    },
+    {
+      "name": "Kyogre"
+    },
+    {
+      "name": "Primal Kyogre"
+    },
+    {
+      "name": "Kyogre Primal"
+    },
+    {
+      "name": "Groudon"
+    },
+    {
+      "name": "Primal Groudon"
+    },
+    {
+      "name": "Groudon Primal"
     },
     {
       "name": "Rayquaza",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
+    },
+    {
+      "name": "Rayquaza Mega"
     },
     {
       "name": "Jirachi",
@@ -3707,6 +2466,15 @@
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
+    },
+    {
+      "name": "Deoxys Attack"
+    },
+    {
+      "name": "Deoxys Defense"
+    },
+    {
+      "name": "Deoxys Speed"
     },
     {
       "name": "Turtwig",
@@ -3747,37 +2515,37 @@
     {
       "name": "Piplup",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Prinplup",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Empoleon",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
     },
     {
       "name": "Starly",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Staravia",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Staraptor",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
     },
     {
@@ -3791,6 +2559,18 @@
       "stats": {
         "lootTable": "pokecube:entities/rotten_rabbit_2"
       }
+    },
+    {
+      "name": "Kricketot"
+    },
+    {
+      "name": "Kricketune"
+    },
+    {
+      "name": "Kricketune Female"
+    },
+    {
+      "name": "Kricketune Male"
     },
     {
       "name": "Shinx",
@@ -3811,6 +2591,57 @@
       }
     },
     {
+      "name": "Budew"
+    },
+    {
+      "name": "Roserade"
+    },
+    {
+      "name": "Cranidos",
+      "stats": {
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Rampardos",
+      "stats": {
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Shieldon",
+      "stats": {
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Bastiodon",
+      "stats": {
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Burmy"
+    },
+    {
+      "name": "Wormadam"
+    },
+    {
+      "name": "Wormadam Sandy"
+    },
+    {
+      "name": "Wormadam Trash"
+    },
+    {
+      "name": "Mothim"
+    },
+    {
+      "name": "Combee"
+    },
+    {
+      "name": "Vespiquen"
+    },
+    {
       "name": "Pachirisu",
       "stats": {
         "lootTable": "pokecube:entities/redstone_rabbit_1"
@@ -3819,17 +2650,32 @@
     {
       "name": "Buizel",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Floatzel",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
+      "name": "Cherubi"
+    },
+    {
+      "name": "Cherrim"
+    },
+    {
+      "name": "Cherrim Sunny"
+    },
+    {
       "name": "Shellos",
+      "stats": {
+        "lootTable": "pokecube:entities/slimeballs_1"
+      }
+    },
+    {
+      "name": "Shellos West",
       "stats": {
         "lootTable": "pokecube:entities/slimeballs_1"
       }
@@ -3841,134 +2687,184 @@
       }
     },
     {
+      "name": "Gastrodon West",
+      "stats": {
+        "lootTable": "pokecube:entities/slimeballs_2"
+      }
+    },
+    {
+      "name": "Ambipom",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Drifloon"
+    },
+    {
+      "name": "Drifblim"
+    },
+    {
       "name": "Buneary",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Lopunny",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
+    },
+    {
+      "name": "Lopunny Mega"
     },
     {
       "name": "Mismagius",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:ghast_tear",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/ghast_pearls"
       }
     },
     {
       "name": "Honchkrow",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Glameow",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Purugly",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Chingling",
+      "stats": {
+        "lootTable": "pokecube:entities/enderpearls_1"
+      }
+    },
+    {
+      "name": "Stunky",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Skuntank",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Bronzor",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_1"
       }
     },
     {
       "name": "Bronzong",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_2"
       }
     },
     {
       "name": "Bonsly",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:cobblestone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cobble_1"
       }
+    },
+    {
+      "name": "Mime Jr."
+    },
+    {
+      "name": "Happiny"
     },
     {
       "name": "Chatot",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
+    },
+    {
+      "name": "Spiritomb"
+    },
+    {
+      "name": "Gible"
+    },
+    {
+      "name": "Gabite"
+    },
+    {
+      "name": "Garchomp"
+    },
+    {
+      "name": "Garchomp Mega"
+    },
+    {
+      "name": "Munchlax",
+      "stats": {
+        "lootTable": "pokecube:entities/pig_1"
+      }
+    },
+    {
+      "name": "Riolu",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Lucario",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Lucario Mega"
     },
     {
       "name": "Hippopotas",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:sand",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sand_cow_1"
       }
     },
     {
       "name": "Hippowdon",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:sand",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sand_cow_2"
       }
     },
     {
+      "name": "Hippowdon Female"
+    },
+    {
+      "name": "Skorupi"
+    },
+    {
+      "name": "Drapion"
+    },
+    {
+      "name": "Croagunk"
+    },
+    {
+      "name": "Toxicroak"
+    },
+    {
+      "name": "Carnivine"
+    },
+    {
       "name": "Finneon",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Finneon Female",
       "stats": {
         "lootTable": "pokecube:entities/fish_1"
       }
@@ -3980,56 +2876,220 @@
       }
     },
     {
+      "name": "Lumineon Female",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
       "name": "Mantyke",
       "stats": {
         "lootTable": "pokecube:entities/fish_1"
       }
     },
     {
+      "name": "Snover"
+    },
+    {
+      "name": "Abomasnow"
+    },
+    {
+      "name": "Abomasnow Mega"
+    },
+    {
+      "name": "Weavile",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
       "name": "Magnezone",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_redstone_3"
       }
+    },
+    {
+      "name": "Lickilicky"
+    },
+    {
+      "name": "Rhyperior"
+    },
+    {
+      "name": "Tangrowth"
+    },
+    {
+      "name": "Electivire"
+    },
+    {
+      "name": "Magmortar"
+    },
+    {
+      "name": "Togekiss"
+    },
+    {
+      "name": "Yanmega"
     },
     {
       "name": "Leafeon",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Glaceon",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
+    },
+    {
+      "name": "Gliscor"
     },
     {
       "name": "Mamoswine",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/pig_3"
       }
+    },
+    {
+      "name": "Porygon-Z"
+    },
+    {
+      "name": "Gallade"
+    },
+    {
+      "name": "Gallade Mega"
+    },
+    {
+      "name": "Probopass"
+    },
+    {
+      "name": "Dusknoir"
+    },
+    {
+      "name": "Froslass"
+    },
+    {
+      "name": "Rotom"
+    },
+    {
+      "name": "Rotom Fan"
+    },
+    {
+      "name": "Rotom Frost"
+    },
+    {
+      "name": "Rotom Heat"
+    },
+    {
+      "name": "Rotom Mow"
+    },
+    {
+      "name": "Rotom Wash"
+    },
+    {
+      "name": "Uxie"
+    },
+    {
+      "name": "Mesprit"
+    },
+    {
+      "name": "Azelf"
+    },
+    {
+      "name": "Dialga"
+    },
+    {
+      "name": "Palkia"
+    },
+    {
+      "name": "Heatran"
+    },
+    {
+      "name": "Regigigas"
+    },
+    {
+      "name": "Giratina"
+    },
+    {
+      "name": "Giratina Origin"
+    },
+    {
+      "name": "Cresselia"
+    },
+    {
+      "name": "Phione"
     },
     {
       "name": "Manaphy",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
+    },
+    {
+      "name": "Darkrai"
+    },
+    {
+      "name": "Shaymin"
+    },
+    {
+      "name": "Shaymin Land"
+    },
+    {
+      "name": "Shaymin Sky"
+    },
+    {
+      "name": "Arceus"
+    },
+    {
+      "name": "Arceus Bug"
+    },
+    {
+      "name": "Arceus Dark"
+    },
+    {
+      "name": "Arceus Dragon"
+    },
+    {
+      "name": "Arceus Electric"
+    },
+    {
+      "name": "Arceus Fairy"
+    },
+    {
+      "name": "Arceus Fighting"
+    },
+    {
+      "name": "Arceus Fire"
+    },
+    {
+      "name": "Arceus Flying"
+    },
+    {
+      "name": "Arceus Ghost"
+    },
+    {
+      "name": "Arceus Grass"
+    },
+    {
+      "name": "Arceus Ground"
+    },
+    {
+      "name": "Arceus Ice"
+    },
+    {
+      "name": "Arceus Poison"
+    },
+    {
+      "name": "Arceus Psychic"
+    },
+    {
+      "name": "Arceus Rock"
+    },
+    {
+      "name": "Arceus Steel"
+    },
+    {
+      "name": "Arceus Water"
     },
     {
       "name": "Victini",
@@ -4040,319 +3100,310 @@
     {
       "name": "Snivy",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_1"
       }
     },
     {
       "name": "Servine",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_2"
       }
     },
     {
       "name": "Serperior",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_3"
       }
     },
     {
       "name": "Tepig",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_pig_1"
       }
     },
     {
       "name": "Pignite",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_pig_2"
       }
     },
     {
       "name": "Emboar",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:porkchop",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leather",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_pig_3"
+      }
+    },
+    {
+      "name": "Oshawott",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Dewott",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_2"
+      }
+    },
+    {
+      "name": "Samurott",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_3"
       }
     },
     {
       "name": "Patrat",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Watchog",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Lillipup",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Herdier",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Stoutland",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_3"
+      }
+    },
+    {
+      "name": "Purrloin",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Liepard",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Pansage",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Simisage",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Pansear",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Simisear",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Panpour",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Simipour",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Munna",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_1"
       }
     },
     {
       "name": "Musharna",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_2"
       }
     },
     {
       "name": "Pidove",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Tranquill",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Unfezant",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
+      }
+    },
+    {
+      "name": "Blitzle",
+      "stats": {
+        "lootTable": "pokecube:entities/redstone_cow_1"
+      }
+    },
+    {
+      "name": "Zebstrika",
+      "stats": {
+        "lootTable": "pokecube:entities/redstone_cow_2"
       }
     },
     {
       "name": "Roggenrola",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:cobblestone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cobble_1"
       }
     },
     {
       "name": "Boldore",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_2"
       }
     },
     {
       "name": "Gigalith",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stone",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/stone_2"
       }
+    },
+    {
+      "name": "Woobat",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Swoobat",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_2"
+      }
+    },
+    {
+      "name": "Drilbur",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Excadrill",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Audino",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Audino Mega"
+    },
+    {
+      "name": "Timburr"
+    },
+    {
+      "name": "Gurdurr"
+    },
+    {
+      "name": "Conkeldurr"
     },
     {
       "name": "Tympole",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_1"
       }
     },
     {
       "name": "Palpitoad",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_2"
       }
     },
     {
       "name": "Seismitoad",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dirt",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/dirt_1"
       }
+    },
+    {
+      "name": "Throh"
+    },
+    {
+      "name": "Sawk"
+    },
+    {
+      "name": "Sewaddle"
+    },
+    {
+      "name": "Swadloon"
+    },
+    {
+      "name": "Leavanny"
     },
     {
       "name": "Venipede",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
+      }
+    },
+    {
+      "name": "Whirlipede",
+      "stats": {
+        "lootTable": "minecraft:entities/spider"
+      }
+    },
+    {
+      "name": "Scolipede",
+      "stats": {
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Cottonee",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wool",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wool_1"
       }
     },
     {
       "name": "Whimsicott",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wool",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wool_2"
       }
     },
     {
       "name": "Petilil",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/wheat_seeds_1"
       }
     },
     {
       "name": "Lilligant",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:leaves",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/leaves"
       }
     },
     {
@@ -4364,249 +3415,187 @@
     {
       "name": "Sandile",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:sand",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sand_rabbit_1"
       }
     },
     {
       "name": "Krokorok",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:sand",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sand_rabbit_2"
       }
     },
     {
       "name": "Krookodile",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:sand",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sand_rabbit_3"
       }
+    },
+    {
+      "name": "Darumaka"
+    },
+    {
+      "name": "Darmanitan"
+    },
+    {
+      "name": "Darmanitan Zen"
+    },
+    {
+      "name": "Maractus"
     },
     {
       "name": "Dwebble",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:cobblestone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cobble_1"
       }
     },
     {
       "name": "Crustle",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dirt",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/dirt_1"
       }
+    },
+    {
+      "name": "Scraggy",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Scrafty",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Sigilyph"
+    },
+    {
+      "name": "Yamask"
+    },
+    {
+      "name": "Cofagrigus"
     },
     {
       "name": "Tirtouga",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Carracosta",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Archen",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:feather",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Archeops",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:feather",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
+      }
+    },
+    {
+      "name": "Trubbish"
+    },
+    {
+      "name": "Garbodor"
+    },
+    {
+      "name": "Zorua",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Zoroark",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Minccino",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Cinccino",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
+    },
+    {
+      "name": "Gothita"
+    },
+    {
+      "name": "Gothorita"
+    },
+    {
+      "name": "Gothitelle"
     },
     {
       "name": "Solosis",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_1"
       }
     },
     {
       "name": "Duosion",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_2"
       }
     },
     {
       "name": "Reuniclus",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_2"
       }
     },
     {
       "name": "Ducklett",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Swanna",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
+      }
+    },
+    {
+      "name": "Vanillite",
+      "stats": {
+        "lootTable": "pokecube:entities/both_ice"
+      }
+    },
+    {
+      "name": "Vanillish",
+      "stats": {
+        "lootTable": "pokecube:entities/both_ice"
+      }
+    },
+    {
+      "name": "Vanilluxe",
+      "stats": {
+        "lootTable": "pokecube:entities/both_ice"
       }
     },
     {
       "name": "Deerling",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cow_1"
       }
     },
     {
       "name": "Sawsbuck",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:beef",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/cow_2"
       }
     },
     {
@@ -4616,45 +3605,33 @@
       }
     },
     {
+      "name": "Karrablast"
+    },
+    {
+      "name": "Escavalier"
+    },
+    {
       "name": "Foongus",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:red_mushroom",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:brown_mushroom",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_shrooms_1"
       }
     },
     {
       "name": "Amoonguss",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:red_mushroom",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:brown_mushroom",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_shrooms_2"
+      }
+    },
+    {
+      "name": "Frillish",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Jellicent",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
       }
     },
     {
@@ -4666,203 +3643,302 @@
     {
       "name": "Joltik",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_spider_1"
       }
     },
     {
       "name": "Galvantula",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:redstone",
-              "n": "4"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_spider_2"
       }
     },
     {
       "name": "Ferroseed",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_seeds_1"
       }
     },
     {
       "name": "Ferrothorn",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "4"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_seeds_2"
       }
+    },
+    {
+      "name": "Klink"
+    },
+    {
+      "name": "Klang"
+    },
+    {
+      "name": "Klinklang"
     },
     {
       "name": "Tynamo",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_fish_1"
       }
     },
     {
       "name": "Eelektrik",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_fish_2"
       }
     },
     {
       "name": "Eelektross",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_fish_2"
       }
+    },
+    {
+      "name": "Elgyem"
+    },
+    {
+      "name": "Beheeyem"
+    },
+    {
+      "name": "Litwick"
+    },
+    {
+      "name": "Lampent"
+    },
+    {
+      "name": "Chandelure"
     },
     {
       "name": "Axew",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bones"
       }
     },
     {
       "name": "Fraxure",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "4"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bones"
       }
     },
     {
       "name": "Haxorus",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "4"
-            }
-          },
-          {
-            "values": {
-              "r": "0.05",
-              "id": "minecraft:diamond_sword",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/bones"
+      }
+    },
+    {
+      "name": "Cubchoo",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Beartic",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_3"
+      }
+    },
+    {
+      "name": "Cryogonal"
+    },
+    {
+      "name": "Shelmet"
+    },
+    {
+      "name": "Accelgor"
+    },
+    {
+      "name": "Stunfisk",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
       }
     },
     {
       "name": "Mienfoo",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Mienshao",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
+    },
+    {
+      "name": "Druddigon"
+    },
+    {
+      "name": "Golett"
+    },
+    {
+      "name": "Golurk"
+    },
+    {
+      "name": "Pawniard",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Bisharp",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Bouffalant",
+      "stats": {
+        "lootTable": "pokecube:entities/cow_2"
+      }
+    },
+    {
+      "name": "Rufflet",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Braviary",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_2"
+      }
+    },
+    {
+      "name": "Vullaby",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Mandibuzz",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_2"
+      }
+    },
+    {
+      "name": "Heatmor"
     },
     {
       "name": "Durant",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:iron_ingot",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/iron_1"
       }
+    },
+    {
+      "name": "Deino"
+    },
+    {
+      "name": "Zweilous"
+    },
+    {
+      "name": "Hydreigon"
+    },
+    {
+      "name": "Larvesta"
+    },
+    {
+      "name": "Volcarona"
+    },
+    {
+      "name": "Cobalion"
+    },
+    {
+      "name": "Terrakion"
+    },
+    {
+      "name": "Virizion"
+    },
+    {
+      "name": "Tornadus"
+    },
+    {
+      "name": "Tornadus Incarnate"
+    },
+    {
+      "name": "Tornadus Therian"
+    },
+    {
+      "name": "Thundurus"
+    },
+    {
+      "name": "Thundurus Incarnate"
+    },
+    {
+      "name": "Thundurus Therian"
+    },
+    {
+      "name": "Reshiram",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Zekrom",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Landorus"
+    },
+    {
+      "name": "Landorus Incarnate"
+    },
+    {
+      "name": "Landorus Therian"
+    },
+    {
+      "name": "Kyurem",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Kyurem Black",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Kyurem White",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Keldeo"
+    },
+    {
+      "name": "Keldeo Resolute"
+    },
+    {
+      "name": "Meloetta"
+    },
+    {
+      "name": "Meloetta Aria",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Meloetta Pirouette",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Genesect"
+    },
+    {
+      "name": "GenesectBDrive"
+    },
+    {
+      "name": "GenesectCDrive"
+    },
+    {
+      "name": "GenesectDDrive"
+    },
+    {
+      "name": "GenesectSDrive"
     },
     {
       "name": "Chespin",
@@ -4873,258 +3949,250 @@
     {
       "name": "Quilladin",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:iron_chestplate",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/chestplate_seeds_1"
       }
     },
     {
       "name": "Chesnaught",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:wheat_seeds",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:iron_chestplate",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/chestplate_seeds_2"
       }
     },
     {
       "name": "Fennekin",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_rabbit_1"
       }
     },
     {
       "name": "Braixen",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stick",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:blaze_powder",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_stick_rabbit_1"
       }
     },
     {
       "name": "Delphox",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:stick",
-              "n": "3"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:blaze_rod",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:blaze_powder",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/blaze_stick_rabbit_2"
       }
+    },
+    {
+      "name": "Froakie",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Frogadier",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_2"
+      }
+    },
+    {
+      "name": "Greninja",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_3"
+      }
+    },
+    {
+      "name": "Greninja Ash"
     },
     {
       "name": "Bunnelby",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Diggersby",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Fletchling",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Fletchinder",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Talonflame",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
     },
     {
       "name": "Scatterbug",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider"
       }
     },
     {
       "name": "Spewpa",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/spider"
       }
+    },
+    {
+      "name": "Vivillon",
+      "stats": {
+        "lootTable": "pokecube:entities/spider"
+      }
+    },
+    {
+      "name": "Vivillon Elegant"
+    },
+    {
+      "name": "Vivillon End"
+    },
+    {
+      "name": "Vivillon Hell"
+    },
+    {
+      "name": "Vivillon Highplains"
+    },
+    {
+      "name": "Vivillon IcySnow"
+    },
+    {
+      "name": "Vivillon Modern"
+    },
+    {
+      "name": "Vivillon Monsoon"
+    },
+    {
+      "name": "Vivillon Ocean"
+    },
+    {
+      "name": "Vivillon Polar"
+    },
+    {
+      "name": "Vivillon Sandstorm"
+    },
+    {
+      "name": "Vivillon Sun"
     },
     {
       "name": "Litleo",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Pyroar",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
+    },
+    {
+      "name": "Flabebe"
+    },
+    {
+      "name": "Flabébé"
+    },
+    {
+      "name": "Floette"
+    },
+    {
+      "name": "Florges"
     },
     {
       "name": "Skiddo",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:mutton",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sheep_1"
       }
     },
     {
       "name": "Gogoat",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:mutton",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/sheep_2"
+      }
+    },
+    {
+      "name": "Pancham",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Pangoro",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_2"
+      }
+    },
+    {
+      "name": "Furfrou",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Espurr",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Meowstic",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
+    },
+    {
+      "name": "Honedge"
+    },
+    {
+      "name": "Doublade"
+    },
+    {
+      "name": "Aegislash"
+    },
+    {
+      "name": "Aegislash Blade"
+    },
+    {
+      "name": "Aegislash Shield"
+    },
+    {
+      "name": "Spritzee"
+    },
+    {
+      "name": "Aromatisse"
+    },
+    {
+      "name": "Swirlix"
+    },
+    {
+      "name": "Slurpuff"
     },
     {
       "name": "Inkay",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/squid"
       }
     },
     {
       "name": "Malamar",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:dye",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/squid"
+      }
+    },
+    {
+      "name": "Binacle",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Barbaracle",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
       }
     },
     {
@@ -5140,93 +4208,63 @@
       }
     },
     {
+      "name": "Clauncher",
+      "stats": {
+        "lootTable": "pokecube:entities/shear_fish"
+      }
+    },
+    {
+      "name": "Clawitzer",
+      "stats": {
+        "lootTable": "pokecube:entities/shear_fish"
+      }
+    },
+    {
       "name": "Helioptile",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_rabbit_1"
       }
     },
     {
       "name": "Heliolisk",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_rabbit_2"
       }
     },
     {
       "name": "Tyrunt",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Tyrantrum",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Amaura",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Aurorus",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fossil_mob"
       }
     },
     {
       "name": "Sylveon",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Hawlucha",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
@@ -5238,120 +4276,85 @@
     {
       "name": "Carbink",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:quartz",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.05",
-              "id": "minecraft:diamond",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/quartz_diamond"
       }
     },
     {
       "name": "Goomy",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_1"
       }
     },
     {
       "name": "Sliggoo",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_2"
       }
     },
     {
       "name": "Goodra",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:slime_ball",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/slimeballs_2"
       }
     },
     {
       "name": "Klefki",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/enderpearls_1"
       }
+    },
+    {
+      "name": "Phantump"
+    },
+    {
+      "name": "Trevenant"
+    },
+    {
+      "name": "Pumpkaboo"
+    },
+    {
+      "name": "Pumpkaboo Large"
+    },
+    {
+      "name": "Pumpkaboo Small"
+    },
+    {
+      "name": "Pumpkaboo Super"
+    },
+    {
+      "name": "Gourgeist"
+    },
+    {
+      "name": "Gourgeist Large"
+    },
+    {
+      "name": "Gourgeist Small"
+    },
+    {
+      "name": "Gourgeist Super"
     },
     {
       "name": "Bergmite",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:packed_ice",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
       }
     },
     {
       "name": "Avalugg",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ice",
-              "n": "2"
-            }
-          },
-          {
-            "values": {
-              "r": "0.1",
-              "id": "minecraft:packed_ice",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/both_ice"
+      }
+    },
+    {
+      "name": "Noibat",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_1"
+      }
+    },
+    {
+      "name": "Noivern",
+      "stats": {
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
@@ -5367,254 +4370,141 @@
       }
     },
     {
+      "name": "Zygarde",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
       "name": "Diancie",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:diamond",
-              "n": "5"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:nether_star",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/diamond_legend"
+      }
+    },
+    {
+      "name": "Diancie Mega"
+    },
+    {
+      "name": "Hoopa"
+    },
+    {
+      "name": "Hoopa Confined",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Hoopa Unbound",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Volcanion",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
       }
     },
     {
       "name": "Rowlet",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Dartrix",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Decidueye",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
     },
     {
       "name": "Litten",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_rabbit_1"
       }
     },
     {
       "name": "Torracat",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_rabbit_2"
       }
     },
     {
       "name": "Incineroar",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:rabbit",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:coal",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/coal_rabbit_3"
       }
     },
     {
       "name": "Popplio",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fish_1"
       }
     },
     {
       "name": "Brionne",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fish_2"
       }
     },
     {
       "name": "Primarina",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:fish",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:bone",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/fish_2"
       }
     },
     {
       "name": "Pikipek",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_1"
+        "lootTable": "pokecube:entities/chicken_1"
       }
     },
     {
       "name": "Trumbeak",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_2"
+        "lootTable": "pokecube:entities/chicken_2"
       }
     },
     {
       "name": "Toucannon",
       "stats": {
-        "lootTable": "pokecube:entities/chicken_like_3"
+        "lootTable": "pokecube:entities/chicken_3"
       }
     },
     {
       "name": "Yungoos",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Gumshoos",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_2"
+        "lootTable": "pokecube:entities/rabbit_2"
       }
     },
     {
       "name": "Grubbin",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Charjabug",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:string",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_spider_1"
       }
     },
     {
       "name": "Vikavolt",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:spider_eye",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:redstone",
-              "n": "3"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/redstone_spider_2"
       }
     },
     {
@@ -5632,68 +4522,37 @@
     {
       "name": "Oricorio",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:chicken",
-              "n": "1"
-            }
-          },
-          {
-            "values": {
-              "r": "1",
-              "id": "minecraft:ender_pearl",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/ender_chicken_1"
       }
     },
     {
       "name": "Cutiefly",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.25",
-              "id": "minecraft:glowstone_dust",
-              "n": "1"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/glowstone_dust"
       }
     },
     {
       "name": "Ribombee",
       "stats": {
-        "drops": [
-          {
-            "values": {
-              "r": "0.5",
-              "id": "minecraft:glowstone_dust",
-              "n": "2"
-            }
-          }
-        ]
+        "lootTable": "pokecube:entities/glowstone_dust"
       }
     },
     {
       "name": "Rockruff",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_1"
+        "lootTable": "pokecube:entities/rabbit_1"
       }
     },
     {
       "name": "Lycanroc",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_3"
+        "lootTable": "pokecube:entities/rabbit_3"
       }
     },
     {
       "name": "Lycanroc Midnight",
       "stats": {
-        "lootTable": "pokecube:entities/rabbit_like_3"
+        "lootTable": "pokecube:entities/rabbit_3"
       }
     },
     {
@@ -5701,6 +4560,150 @@
       "stats": {
         "lootTable": "pokecube:entities/fish_1"
       }
+    },
+    {
+      "name": "Wishiwashi School",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_2"
+      }
+    },
+    {
+      "name": "Mareanie",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Toxapex",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Mudbray",
+      "stats": {
+        "lootTable": "pokecube:entities/cow_1"
+      }
+    },
+    {
+      "name": "Mudsdale",
+      "stats": {
+        "lootTable": "pokecube:entities/cow_2"
+      }
+    },
+    {
+      "name": "Dewpider"
+    },
+    {
+      "name": "Araquanid"
+    },
+    {
+      "name": "Fomantis"
+    },
+    {
+      "name": "Lurantis"
+    },
+    {
+      "name": "Morelull"
+    },
+    {
+      "name": "Shiinotic"
+    },
+    {
+      "name": "Salandit"
+    },
+    {
+      "name": "Salazzle"
+    },
+    {
+      "name": "Stufful"
+    },
+    {
+      "name": "Bewear"
+    },
+    {
+      "name": "Bounsweet"
+    },
+    {
+      "name": "Steenee"
+    },
+    {
+      "name": "Tsareena"
+    },
+    {
+      "name": "Comfey"
+    },
+    {
+      "name": "Oranguru"
+    },
+    {
+      "name": "Passimian"
+    },
+    {
+      "name": "Wimpod",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Golisopod",
+      "stats": {
+        "lootTable": "pokecube:entities/fish_1"
+      }
+    },
+    {
+      "name": "Sandygast"
+    },
+    {
+      "name": "Palossand"
+    },
+    {
+      "name": "Pyukumuku"
+    },
+    {
+      "name": "Type: Null"
+    },
+    {
+      "name": "Silvally"
+    },
+    {
+      "name": "Minior"
+    },
+    {
+      "name": "Blue Core Minior"
+    },
+    {
+      "name": "Green Core Minior"
+    },
+    {
+      "name": "Indigo Core Minior"
+    },
+    {
+      "name": "Orange Core Minior"
+    },
+    {
+      "name": "Red Core Minior"
+    },
+    {
+      "name": "Violet Core Minior"
+    },
+    {
+      "name": "Yellow Core Minior"
+    },
+    {
+      "name": "Komala",
+      "stats": {
+        "lootTable": "pokecube:entities/rabbit_1"
+      }
+    },
+    {
+      "name": "Turtonator"
+    },
+    {
+      "name": "Togedemaru"
+    },
+    {
+      "name": "Mimikyu"
     },
     {
       "name": "Bruxish",
@@ -5711,16 +4714,89 @@
     {
       "name": "Drampa",
       "stats": {
-        "held": [
-          {
-            "values": {
-              "r": "0.1",
-              "id": "persimberry",
-              "n": "1"
-            }
-          }
-        ]
+        "heldTable": "pokecube:entities/persimberry"
       }
+    },
+    {
+      "name": "Dhelmise"
+    },
+    {
+      "name": "Jangmo-o"
+    },
+    {
+      "name": "Hakamo-o"
+    },
+    {
+      "name": "Kommo-o"
+    },
+    {
+      "name": "Tapu Koko"
+    },
+    {
+      "name": "Tapu Lele"
+    },
+    {
+      "name": "Tapu Bulu"
+    },
+    {
+      "name": "Tapu Fini"
+    },
+    {
+      "name": "Cosmog"
+    },
+    {
+      "name": "Cosmoem"
+    },
+    {
+      "name": "Solgaleo"
+    },
+    {
+      "name": "Lunala"
+    },
+    {
+      "name": "Nihilego"
+    },
+    {
+      "name": "Buzzwole"
+    },
+    {
+      "name": "Pheromosa"
+    },
+    {
+      "name": "Xurkitree"
+    },
+    {
+      "name": "Celesteela"
+    },
+    {
+      "name": "Kartana"
+    },
+    {
+      "name": "Guzzlord"
+    },
+    {
+      "name": "Necrozma"
+    },
+    {
+      "name": "Magearna"
+    },
+    {
+      "name": "Marshadow"
+    },
+    {
+      "name": "Poipole"
+    },
+    {
+      "name": "Naganadel"
+    },
+    {
+      "name": "Stakataka"
+    },
+    {
+      "name": "Blacephalon"
+    },
+    {
+      "name": "Zeraora"
     }
   ]
 }

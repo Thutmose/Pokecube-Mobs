@@ -17,7 +17,18 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/redstone_1",
+                    "name": "minecraft:entities/blaze",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "name": "pool_2",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "pokecube:entities/stick",
                     "weight": 1
                 }
             ]

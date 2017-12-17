@@ -17,7 +17,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "pokecube:entities/redstone_1",
+                    "name": "pokecube:entities/wither_skull",
                     "weight": 1
                 }
             ]
