@@ -701,7 +701,6 @@ public class PokecubeMobs implements IMobProvider
     @SubscribeEvent
     public void registerDatabases(InitDatabase.Pre evt)
     {
-        // Database.addDatabase("pokemobs.json", EnumDatabase.POKEMON);
         Database.addDatabase("pokemobs_pokedex.json", EnumDatabase.POKEMON);
         Database.addDatabase("pokemobs_spawns.json", EnumDatabase.POKEMON);
         Database.addDatabase("pokemobs_drops.json", EnumDatabase.POKEMON);
@@ -729,10 +728,10 @@ public class PokecubeMobs implements IMobProvider
             copyDatabaseFile("moves.json");
             copyDatabaseFile("animations.json");
 
-            copyDatabaseFile("pokemobs_pokedex.json");
-            copyDatabaseFile("pokemobs_spawns.json");
-            copyDatabaseFile("pokemobs_drops.json");
-            copyDatabaseFile("pokemobs_interacts.json");
+            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_pokedex.json");
+            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_spawns.json");
+            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_drops.json");
+            copyDatabaseFile("pokemobs" + File.separator + "pokemobs_interacts.json");
 
             copyDatabaseFile("pokecubes_recipes.xml");
             copyDatabaseFile("pokemob_item_recipes.xml");
