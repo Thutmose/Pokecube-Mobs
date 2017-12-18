@@ -409,8 +409,14 @@ public class PokecubeMobs implements IMobProvider
                 return helper.dive(mob);
             }
         }.setRegistryName("pokecube", "dive"));
-
-        event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName("pokecube", "premier"));
+        event.behaviors.add(new DefaultPokecubeBehavior()
+        {
+            @Override
+            public double getCaptureModifier(IPokemob mob)
+            {
+                return helper.premier(mob);
+            }
+        }.setRegistryName("pokecube", "premier"));
         event.behaviors.add(new NormalPokecubeBehavoir(1).setRegistryName("pokecube", "cherish"));
         event.behaviors.add(new NormalPokecubeBehavoir(1.5).setRegistryName("pokecube", "safari"));
         event.behaviors.add(new DefaultPokecubeBehavior()
