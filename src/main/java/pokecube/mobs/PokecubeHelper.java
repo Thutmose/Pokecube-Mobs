@@ -100,9 +100,19 @@ public class PokecubeHelper
         double x = 1;
         Entity entity = mob.getEntity();
         double alive = entity.ticksExisted;
-        if (mob.getPokemonAIState(IMoveConstants.ANGRY) == false && alive < 601)
+        if (!mob.getPokemonAIState(IMoveConstants.ANGRY) && alive < 601)
         {
             x = 4;
+        }
+        return x;
+    }
+
+    public double premier(IPokemob mob)
+    {
+        double x = 0.25;
+        if (!mob.getPokemonAIState(IMoveConstants.ANGRY))
+        {
+            x = 1;
         }
         return x;
     }
