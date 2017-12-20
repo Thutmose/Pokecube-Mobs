@@ -17,7 +17,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "minecraft:entities/packed_ice_10",
+                    "name": "pokecube:entities/packed_ice_10",
                     "weight": 1
                 }
             ]

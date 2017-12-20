@@ -17,7 +17,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "minecraft:entities/iron_chestplate",
+                    "name": "pokecube:entities/iron_chestplate",
                     "weight": 1
                 }
             ]

@@ -17,7 +17,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "minecraft:entities/cow_1",
+                    "name": "pokecube:entities/cow_1",
                     "weight": 1
                 }
             ]

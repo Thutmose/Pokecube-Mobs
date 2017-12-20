@@ -1809,19 +1809,19 @@
     {
       "name": "Lotad",
       "stats": {
-        "lootTable": "minecraft:entities/lilypad"
+        "lootTable": "pokecube:entities/lilypad"
       }
     },
     {
       "name": "Lombre",
       "stats": {
-        "lootTable": "minecraft:entities/lilypad"
+        "lootTable": "pokecube:entities/lilypad"
       }
     },
     {
       "name": "Ludicolo",
       "stats": {
-        "lootTable": "minecraft:entities/lilypad"
+        "lootTable": "pokecube:entities/lilypad"
       }
     },
     {
@@ -3656,13 +3656,22 @@
       }
     },
     {
-      "name": "Klink"
+      "name": "Klink",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_1"
+      }
     },
     {
-      "name": "Klang"
+      "name": "Klang",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_2"
+      }
     },
     {
-      "name": "Klinklang"
+      "name": "Klinklang",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_3"
+      }
     },
     {
       "name": "Tynamo",
@@ -4130,16 +4139,28 @@
       }
     },
     {
-      "name": "Honedge"
+      "name": "Honedge",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_1"
+      }
     },
     {
-      "name": "Doublade"
+      "name": "Doublade",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_2"
+      }
     },
     {
-      "name": "Aegislash Blade"
+      "name": "Aegislash Blade",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_3"
+      }
     },
     {
-      "name": "Aegislash Shield"
+      "name": "Aegislash Shield",
+      "stats": {
+        "lootTable": "pokecube:entities/iron_3"
+      }
     },
     {
       "name": "Spritzee"
