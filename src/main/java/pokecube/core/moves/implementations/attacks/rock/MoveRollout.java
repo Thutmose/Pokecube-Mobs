@@ -13,6 +13,11 @@ public class MoveRollout extends Move_Basic
         super("rollout");
     }
 
+    public MoveRollout(String string)
+    {
+        super(string);
+    }
+
     @Override
     public void onAttack(MovePacket packet)
     {
@@ -33,7 +38,8 @@ public class MoveRollout extends Move_Basic
         {
             rollOut = attacker.getMoveStats().ROLLOUTCOUNTER = 0;
         }
-        return (int) Math.max(this.getPWR(), (rollOut * 1.5) * this.getPWR() * defCurl);
+        rollOut = Math.max(0, rollOut);
+        return (int) (Math.pow(2, rollOut) * this.getPWR() * defCurl);
     }
 
 }
