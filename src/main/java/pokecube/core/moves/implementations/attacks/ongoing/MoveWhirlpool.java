@@ -6,12 +6,12 @@ import net.minecraft.entity.EntityLiving;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.moves.templates.Move_Ongoing;
 
-public class Move_Firespin extends Move_Ongoing
+public class MoveWhirlpool extends Move_Ongoing
 {
 
-    public Move_Firespin()
+    public MoveWhirlpool()
     {
-        super("firespin");
+        super("whirlpool");
     }
 
     @Override
