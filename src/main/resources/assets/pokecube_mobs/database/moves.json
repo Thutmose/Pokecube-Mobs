@@ -6279,6 +6279,7 @@
       "wideArea": "No",
       "magiccoat": "No",
       "protect": "No",
+      "interceptable": "false",
       "mirrormove": "No"
     },
     {

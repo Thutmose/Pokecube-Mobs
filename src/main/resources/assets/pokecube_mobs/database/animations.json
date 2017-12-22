@@ -1877,7 +1877,7 @@
           "preset": "cartFunc:plargeexplode:d0.05:w1:l10",
           "duration": "1",
           "starttick": "40",
-          "applyAfter:" true
+          "applyAfter": true
         },
         {
           "preset": "powder:pwitchMagic:d0.05:w1:rtrue:l10",
