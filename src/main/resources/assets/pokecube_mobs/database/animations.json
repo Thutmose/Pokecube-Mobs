@@ -4685,6 +4685,17 @@
       ]
     },
     {
+      "name": "teleport",
+      "animations": [
+        {
+          "preset": "pons:plargeexplode:d0.9:w2:l1",
+          "duration": "10",
+          "starttick": "0",
+          "applyAfter": 5
+        }
+      ]
+    },
+    {
       "name": "thief",
       "animations": [
         {
