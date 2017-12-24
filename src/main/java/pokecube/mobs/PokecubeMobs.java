@@ -29,6 +29,7 @@ import net.minecraftforge.common.ForgeVersion;
 import net.minecraftforge.common.ForgeVersion.CheckResult;
 import net.minecraftforge.common.ForgeVersion.Status;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 import net.minecraftforge.fml.client.FMLClientHandler;
 import net.minecraftforge.fml.common.Loader;
@@ -49,6 +50,7 @@ import pokecube.core.database.Database;
 import pokecube.core.database.Database.EnumDatabase;
 import pokecube.core.database.PokedexEntry;
 import pokecube.core.database.PokedexEntry.EvolutionData;
+import pokecube.core.database.abilities.p.Pickup;
 import pokecube.core.database.recipes.XMLRecipeHandler;
 import pokecube.core.database.stats.CaptureStats;
 import pokecube.core.database.stats.EggStats;
@@ -219,6 +221,15 @@ public class PokecubeMobs implements IMobProvider
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        Configuration config = PokecubeCore.instance.getPokecubeConfig(event);
+        config.load();
+        String var = config.getString("pickuploottable", Configuration.CATEGORY_GENERAL, "",
+                "If Set, this is the loot table that pickup will use.");
+        if (!var.isEmpty())
+        {
+            Pickup.lootTable = new ResourceLocation(var);
+        }
+        config.save();
         if (event.getSide() == Side.CLIENT)
         {
             new UpdateNotifier();
