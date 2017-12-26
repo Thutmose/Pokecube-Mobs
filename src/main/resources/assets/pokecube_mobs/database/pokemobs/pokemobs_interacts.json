@@ -5657,11 +5657,13 @@
         "evolutions": [
           {
             "name": "Wormadam",
-            "level": 20
+            "level": 20,
+            "sexe": "female"
           },
           {
             "name": "Mothim",
-            "level": 20
+            "level": 20,
+            "sexe": "male"
           }
         ],
         "species": "Insecta"

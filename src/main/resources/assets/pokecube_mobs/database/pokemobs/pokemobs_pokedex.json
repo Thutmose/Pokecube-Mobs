@@ -43761,6 +43761,14 @@
       }
     },
     {
+      "name": "Basculin Red",
+      "number": 550
+    },
+    {
+      "name": "Basculin Blue",
+      "number": 550
+    },
+    {
       "name": "Sandile",
       "number": 551,
       "base": true,
@@ -53220,6 +53228,18 @@
       }
     },
     {
+      "name": "PyroarF",
+      "number": 668,
+      "gender": "female",
+      "genderBase": "Pyroar"
+    },
+    {
+      "name": "PyroarM",
+      "number": 668,
+      "gender": "male",
+      "genderBase": "Pyroar"
+    },
+    {
       "name": "Flabebe",
       "number": 669,
       "base": true,
@@ -58835,6 +58855,11 @@
       }
     },
     {
+      "name": "Oricorio Baile",
+      "number": 741,
+      "stats": {}
+    },
+    {
       "name": "Cutiefly",
       "number": 742,
       "base": true,
@@ -60198,8 +60223,8 @@
         },
         "sizes": {
           "values": {
-            "width": "2.1",
-            "length": "2.1",
+            "width": "1.1",
+            "length": "1.1",
             "height": "2.1"
           }
         },
@@ -61878,7 +61903,7 @@
         },
         "sizes": {
           "values": {
-            "width": "0.6",
+            "width": "0.3",
             "length": "0.6",
             "height": "0.6"
           }
@@ -61947,7 +61972,7 @@
         },
         "sizes": {
           "values": {
-            "width": "1.2",
+            "width": "1.0",
             "length": "1.2",
             "height": "1.2"
           }
@@ -62019,7 +62044,7 @@
         },
         "sizes": {
           "values": {
-            "width": "1.6",
+            "width": "1.0",
             "length": "1.6",
             "height": "1.6"
           }
@@ -62092,8 +62117,8 @@
         },
         "sizes": {
           "values": {
-            "width": "1.8",
-            "length": "1.8",
+            "width": "1.3",
+            "length": "1.0",
             "height": "1.8"
           }
         },
@@ -62160,8 +62185,8 @@
         },
         "sizes": {
           "values": {
-            "width": "1.2",
-            "length": "1.2",
+            "width": "0.8",
+            "length": "0.8",
             "height": "1.2"
           }
         },
@@ -62228,8 +62253,8 @@
         },
         "sizes": {
           "values": {
-            "width": "1.9",
-            "length": "1.9",
+            "width": "1.4",
+            "length": "1.0",
             "height": "1.9"
           }
         },
@@ -62296,7 +62321,7 @@
         },
         "sizes": {
           "values": {
-            "width": "1.3",
+            "width": "0.9",
             "length": "1.3",
             "height": "1.3"
           }
@@ -62550,7 +62575,7 @@
         "sizes": {
           "values": {
             "width": "4.0",
-            "length": "4.0",
+            "length": "1.0",
             "height": "4.0"
           }
         },
@@ -62620,8 +62645,8 @@
         },
         "sizes": {
           "values": {
-            "width": "1.2",
-            "length": "1.2",
+            "width": "0.8",
+            "length": "0.8",
             "height": "1.2"
           }
         },
@@ -62692,8 +62717,8 @@
         },
         "sizes": {
           "values": {
-            "width": "2.4",
-            "length": "2.4",
+            "width": "2.0",
+            "length": "1.5",
             "height": "2.4"
           }
         },
@@ -62830,8 +62855,8 @@
         },
         "sizes": {
           "values": {
-            "width": "3.8",
-            "length": "3.8",
+            "width": "1",
+            "length": "2",
             "height": "3.8"
           }
         },
@@ -63497,8 +63522,8 @@
         },
         "sizes": {
           "values": {
-            "width": "1.8",
-            "length": "1.8",
+            "width": "0.8",
+            "length": "0.8",
             "height": "1.8"
           }
         },
