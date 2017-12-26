@@ -132,6 +132,7 @@ public class PokecubeMobs implements IMobProvider
         HeldItemHandler.megaVariants.add("shiny_charm");
         HeldItemHandler.megaVariants.add("omegaorb");
         HeldItemHandler.megaVariants.add("alphaorb");
+        HeldItemHandler.megaVariants.add("abomasnowmega");
         HeldItemHandler.megaVariants.add("absolmega");
         HeldItemHandler.megaVariants.add("aerodactylmega");
         HeldItemHandler.megaVariants.add("aggronmega");
