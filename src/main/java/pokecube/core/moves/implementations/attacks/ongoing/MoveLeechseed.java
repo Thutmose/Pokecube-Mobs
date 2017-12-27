@@ -2,7 +2,6 @@ package pokecube.core.moves.implementations.attacks.ongoing;
 
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.DamageSource;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
 import pokecube.core.interfaces.entity.IOngoingAffected;
@@ -20,24 +19,23 @@ public class MoveLeechseed extends Move_Ongoing
     @Override
     public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        if (mob.getEntity() instanceof EntityLiving)
+        EntityLivingBase living = mob.getEntity();
+        IPokemob pokemob = CapabilityPokemob.getPokemobFor(living);
+        float factor = 0.0625f;
+        if (pokemob != null)
         {
-            EntityLiving living = (EntityLiving) mob.getEntity();
-            if (living.getAttackTarget() != null)
-            {
-                IPokemob pokemob = CapabilityPokemob.getPokemobFor(living);
-                EntityLivingBase target = living.getAttackTarget();
-                float factor = 0.0625f;
-                if (pokemob != null)
-                {
-                    factor *= (pokemob.getMoveStats().TOXIC_COUNTER + 1);
-                }
-                float thisMaxHP = living.getMaxHealth();
-                int damage = Math.max(1, (int) (factor * thisMaxHP));
-                living.attackEntityFrom(DamageSource.generic, damage);
-                target.setHealth(Math.min(target.getHealth() + damage, target.getMaxHealth()));
-            }
+            factor *= (pokemob.getMoveStats().TOXIC_COUNTER + 1);
         }
+        float thisMaxHP = living.getMaxHealth();
+        int damage = Math.max(1, (int) (factor * thisMaxHP));
+        living.attackEntityFrom(getOngoingDamage(mob.getEntity()), damage);
+        EntityLivingBase target;
+        if (living instanceof EntityLiving)
+        {
+            target = ((EntityLiving) living).getAttackTarget();
+        }
+        else target = living.getAITarget();
+        if (target != null) target.setHealth(Math.min(target.getHealth() + damage, target.getMaxHealth()));
     }
 
     @Override
