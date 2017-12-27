@@ -1,6 +1,5 @@
 package pokecube.core.moves.implementations.attacks.ongoing;
 
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
@@ -29,12 +28,9 @@ public class MoveLeechseed extends Move_Ongoing
         float thisMaxHP = living.getMaxHealth();
         int damage = Math.max(1, (int) (factor * thisMaxHP));
         living.attackEntityFrom(getOngoingDamage(mob.getEntity()), damage);
-        EntityLivingBase target;
-        if (living instanceof EntityLiving)
-        {
-            target = ((EntityLiving) living).getAttackTarget();
-        }
-        else target = living.getAITarget();
+        EntityLivingBase target = living.getAttackingEntity();
+        if (target == null) target = living.getAITarget();
+        if (target == null) target = living.getLastAttacker();
         if (target != null) target.setHealth(Math.min(target.getHealth() + damage, target.getMaxHealth()));
     }
 
