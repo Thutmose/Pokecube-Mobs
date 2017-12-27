@@ -1,7 +1,6 @@
 package pokecube.core.moves.implementations.attacks.special;
 
 import pokecube.core.interfaces.IPokemob.MovePacket;
-import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.moves.templates.Move_Basic;
 
 public class MoveRest extends Move_Basic
@@ -18,7 +17,7 @@ public class MoveRest extends Move_Basic
         super.postAttack(packet);
         if (packet.canceled || packet.failed) return;
         packet.attacker.healStatus();
-        packet.attacker.setStatus(STATUS_SLP);
-        packet.attacker.setStatusTimer((short) (PokecubeMod.core.getConfig().attackCooldown * 2));
+        packet.attacker.healChanges();
+        packet.attacker.setStatus(STATUS_SLP, 2);
     }
 }

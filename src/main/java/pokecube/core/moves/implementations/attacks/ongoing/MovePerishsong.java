@@ -1,8 +1,7 @@
 package pokecube.core.moves.implementations.attacks.ongoing;
 
-import net.minecraft.entity.EntityLiving;
-import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.entity.IOngoingAffected;
+import pokecube.core.interfaces.entity.IOngoingAffected.IOngoingEffect;
 import pokecube.core.moves.templates.Move_Ongoing;
 
 public class MovePerishsong extends Move_Ongoing
@@ -14,22 +13,15 @@ public class MovePerishsong extends Move_Ongoing
     }
 
     @Override
-    public void doOngoingEffect(EntityLiving mob)
+    public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        Move_Ongoing move = this;
-        IPokemob pokemob = CapabilityPokemob.getPokemobFor(mob);
-        if (pokemob != null)
+        if (effect.getDuration() == 0)
         {
-            int duration = pokemob.getOngoingEffects().get(move);
-            if (duration == 0)
-            {
-                mob.setHealth(0);
-            }
-            // TODO perish counter here.
+            mob.getEntity().setHealth(0);
         }
         else
         {
-            // TODO Insert code for an on-screen message here.
+            // TODO perish counter here.
         }
     }
 

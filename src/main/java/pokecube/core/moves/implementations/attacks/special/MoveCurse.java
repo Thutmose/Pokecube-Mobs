@@ -24,19 +24,25 @@ public class MoveCurse extends Move_Basic
         if (packet.attacker.isType(PokeType.getType("ghost")))
         {
             IPokemob target = CapabilityPokemob.getPokemobFor(packet.attacked);
+            boolean apply = true;
             if (target != null)
             {
+                apply = false;
                 if ((target.getChanges() & CHANGE_CURSE) == 0)
                 {
-                    MovePacket move = new MovePacket(packet.attacker, packet.attacked, getName(), ghost, 0, 0, (byte) 0,
-                            CHANGE_CURSE, true);
-                    target.onMoveUse(move);
-                    if (!move.canceled)
-                    {
-                        target.addChange(CHANGE_CURSE);
-                        packet.attacker.getEntity().attackEntityFrom(DamageSource.MAGIC,
-                                packet.attacker.getEntity().getMaxHealth() / 2);
-                    }
+                    apply = true;
+                }
+            }
+            if (apply)
+            {
+                MovePacket move = new MovePacket(packet.attacker, packet.attacked, getName(), ghost, 0, 0, (byte) 0,
+                        CHANGE_CURSE, true);
+                if (target != null) target.onMoveUse(move);
+                if (!move.canceled)
+                {
+                    MovesUtils.addChange(packet.attacked, packet.attacker, CHANGE_CURSE);
+                    packet.attacker.getEntity().attackEntityFrom(DamageSource.MAGIC,
+                            packet.attacker.getEntity().getMaxHealth() / 2);
                 }
             }
         }

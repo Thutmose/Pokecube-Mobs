@@ -1221,7 +1221,8 @@
             "normal": "Adapatability"
           }
         },
-        "mass": 40.5
+        "mass": 40.5,
+        "movementType": "flying"
       }
     },
     {
@@ -1475,7 +1476,8 @@
             "normal": "No Guard"
           }
         },
-        "mass": 50.5
+        "mass": 50.5,
+        "movementType": "flying"
       }
     },
     {

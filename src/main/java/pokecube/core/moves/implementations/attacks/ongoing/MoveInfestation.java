@@ -1,7 +1,8 @@
 package pokecube.core.moves.implementations.attacks.ongoing;
 
-import net.minecraft.entity.EntityLiving;
 import net.minecraft.util.DamageSource;
+import pokecube.core.interfaces.entity.IOngoingAffected;
+import pokecube.core.interfaces.entity.IOngoingAffected.IOngoingEffect;
 import pokecube.core.moves.templates.Move_Ongoing;
 
 public class MoveInfestation extends Move_Ongoing
@@ -13,10 +14,10 @@ public class MoveInfestation extends Move_Ongoing
     }
 
     @Override
-    public void doOngoingEffect(EntityLiving mob)
+    public void doOngoingEffect(IOngoingAffected mob, IOngoingEffect effect)
     {
-        float thisMaxHP = mob.getMaxHealth();
+        float thisMaxHP = mob.getEntity().getMaxHealth();
         int damage = Math.max(1, (int) (0.125 * thisMaxHP));
-        mob.attackEntityFrom(DamageSource.GENERIC, damage);
+        mob.getEntity().attackEntityFrom(DamageSource.GENERIC, damage);
     }
 }
