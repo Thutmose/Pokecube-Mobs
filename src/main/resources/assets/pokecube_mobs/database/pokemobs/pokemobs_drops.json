@@ -4364,7 +4364,19 @@
       }
     },
     {
-      "name": "Zygarde",
+      "name": "Zygarde 50%",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Zygarde 10%",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Zygarde 100%",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
