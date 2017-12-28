@@ -313,7 +313,7 @@ public class PokecubeMobs implements IMobProvider
                     }
                 }
             }
-            for (PokedexEntry e : Database.allFormes)
+            for (PokedexEntry e : Database.getSortedFormes())
             {
                 int gen1 = e.getGen();
                 if (genMap.containsKey(e))

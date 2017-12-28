@@ -43,7 +43,7 @@ public class CommandGenStuff extends CommandBase
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
     {
         sender.addChatMessage(new TextComponentString("Starting File Output"));
-        for (PokedexEntry e : Database.allFormes)
+        for (PokedexEntry e : Database.getSortedFormes())
         {
             registerAchievements(e);
         }
