@@ -127,11 +127,10 @@ public class MiscItemHelper
             return capability == IPokemobUseable.USABLEITEM_CAP;
         }
 
-        @SuppressWarnings("unchecked")
         @Override
         public <T> T getCapability(Capability<T> capability, EnumFacing facing)
         {
-            return hasCapability(capability, facing) ? (T) this : null;
+            return hasCapability(capability, facing) ? IPokemobUseable.USABLEITEM_CAP.cast(this) : null;
         }
 
     }
