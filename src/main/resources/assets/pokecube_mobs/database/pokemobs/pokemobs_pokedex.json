@@ -16148,6 +16148,7 @@
       "name": "Unown",
       "number": 201,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -32043,6 +32044,7 @@
       "name": "Kricketune",
       "number": 402,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -43690,6 +43692,7 @@
       "name": "Basculin",
       "number": 550,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -50608,6 +50611,7 @@
       "number": 641,
       "breed": false,
       "legend": true,
+      "sound": "Tornadus Therian",
       "stats": {
         "stats": {
           "values": {
@@ -50738,6 +50742,7 @@
       "number": 642,
       "breed": false,
       "legend": true,
+      "sound": "Thundurus Therian",
       "stats": {
         "stats": {
           "values": {
@@ -51025,6 +51030,7 @@
       "number": 645,
       "breed": false,
       "legend": true,
+      "sound": "Landorus Therian",
       "stats": {
         "stats": {
           "values": {
@@ -52965,6 +52971,7 @@
       "name": "Pyroar",
       "number": 668,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -58656,6 +58663,7 @@
       "name": "Oricorio",
       "number": 741,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -58727,6 +58735,7 @@
     {
       "name": "Oricorio Baile",
       "number": 741,
+      "sound": "Oricorio Baile",
       "stats": {
         "types": {
           "values": {
@@ -58739,11 +58748,38 @@
     {
       "name": "Oricorio Sensu",
       "number": 741,
+      "sound": "Oricorio Sensu",
       "stats": {
         "types": {
           "values": {
             "type2": "Flying",
             "type1": "Ghost"
+          }
+        }
+      }
+    },
+    {
+      "name": "Oricorio Pa'u",
+      "number": 741,
+      "sound": "Oricorio Pa'u",
+      "stats": {
+        "types": {
+          "values": {
+            "type2": "Flying",
+            "type1": "Psychic"
+          }
+        }
+      }
+    },
+    {
+      "name": "Oricorio Pom-Pom",
+      "number": 741,
+      "sound": "Oricorio Pom-Pom",
+      "stats": {
+        "types": {
+          "values": {
+            "type2": "Flying",
+            "type1": "Electric"
           }
         }
       }

@@ -5963,7 +5963,30 @@
     },
     {
       "name": "forestscurse",
-      "readableName": "Forestâ€™s Curse"
+      "readableName": "Forest\u0027s Curse",
+      "type": "Grass",
+      "category": "Other",
+      "pp": "20",
+      "pwr": "0",
+      "acc": "100",
+      "battleEffect": "The user puts a forest curse on the target. The target is now Grass type as well.",
+      "secondaryEffect": "Target gains the Grass-type",
+      "detailedEffect": "Boosts all stats by 1 stage",
+      "effectRate": "-- %",
+      "tmNum": "None",
+      "speedPriority": "0",
+      "target": "Selected Target",
+      "contact": "No",
+      "soundType": "No",
+      "punchType": "No",
+      "snatchable": "No",
+      "zMove": "Yes",
+      "defrosts": "No",
+      "wideArea": "No",
+      "magiccoat": "Yes",
+      "protect": "Yes",
+      "mirrormove": "Yes",
+      "zVersion": "Stats ?"
     },
     {
       "name": "foulplay",
@@ -8734,7 +8757,30 @@
     },
     {
       "name": "kingsshield",
-      "readableName": "Kingâ€™s Shield"
+      "readableName": "King\u0027s Shield",
+      "type": "Steel",
+      "category": "Other",
+      "pp": "10",
+      "pwr": "0",
+      "acc": "0",
+      "battleEffect": "The user takes a defensive stance while it protects itself from damage. It also harshly lowers the Attack stat of any attacker who makes direct contact.",
+      "secondaryEffect": "Lowers opponent's Attack two stages if hit by physical contact. Fails on successive uses",
+      "detailedEffect": "Resets all lowered stat modifications",
+      "effectRate": "-- %",
+      "tmNum": "None",
+      "speedPriority": "4",
+      "target": "Self",
+      "contact": "No",
+      "soundType": "No",
+      "punchType": "No",
+      "snatchable": "No",
+      "zMove": "Yes",
+      "defrosts": "No",
+      "wideArea": "No",
+      "magiccoat": "No",
+      "protect": "No",
+      "mirrormove": "No",
+      "zVersion": "Reset Stats"
     },
     {
       "name": "knockoff",
@@ -8764,7 +8810,29 @@
     },
     {
       "name": "landswrath",
-      "readableName": "Landâ€™s Wrath"
+      "readableName": "Land\u0027s Wrath",
+      "type": "Ground",
+      "category": "Physical",
+      "pp": "10",
+      "pwr": "90",
+      "acc": "100",
+      "battleEffect": "The user gathers the energy of the land and focuses that power on opposing Pokémon to damage them.",
+      "secondaryEffect": "No effect.",
+      "effectRate": "-- %",
+      "tmNum": "None",
+      "speedPriority": "0",
+      "target": "All Adjacent Foes",
+      "contact": "No",
+      "soundType": "No",
+      "punchType": "No",
+      "snatchable": "No",
+      "zMove": "Yes",
+      "defrosts": "No",
+      "wideArea": "No",
+      "magiccoat": "No",
+      "protect": "Yes",
+      "mirrormove": "Yes",
+      "zVersion": "Tectonic Rage"
     },
     {
       "name": "laserfocus",
@@ -9869,7 +9937,7 @@
       "magiccoat": "No",
       "protect": "Yes",
       "mirrormove": "Yes",
-      "zVersion": "Restores replacementâ€™s HP"
+      "zVersion": "Restores replacement\u0027s HP"
     },
     {
       "name": "metalburst",
@@ -11213,7 +11281,7 @@
       "magiccoat": "Yes",
       "protect": "Yes",
       "mirrormove": "Yes",
-      "zVersion": "Restores replacementâ€™s HP"
+      "zVersion": "Restores replacement\u0027s HP"
     },
     {
       "name": "payback",
