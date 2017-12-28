@@ -800,7 +800,7 @@ public class PokecubeMobs implements IMobProvider
         {
             File file = new File(CONFIGLOC + name);
             file.getParentFile().mkdirs();
-            PokecubeMod.log("Copying Database File: " + file);
+            if (PokecubeMod.debug) PokecubeMod.log("Copying Database File: " + file);
             Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), "UTF-8"));
             for (int i = 0; i < rows.size(); i++)
             {

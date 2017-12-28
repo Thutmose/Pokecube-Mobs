@@ -9342,7 +9342,19 @@
       }
     },
     {
-      "name": "Zygarde",
+      "name": "Zygarde 50%",
+      "stats": {
+        "species": "Order"
+      }
+    },
+    {
+      "name": "Zygarde 10%",
+      "stats": {
+        "species": "Order"
+      }
+    },
+    {
+      "name": "Zygarde 100%",
       "stats": {
         "species": "Order"
       }
@@ -9576,6 +9588,11 @@
             "name": "Lycanroc Midnight",
             "level": 25,
             "time": "night"
+          },
+          {
+            "name": "Lycanroc Dusk",
+            "level": 25,
+            "time": "dusk"
           }
         ]
       }
@@ -9610,6 +9627,34 @@
     },
     {
       "name": "Lycanroc Midnight",
+      "stats": {
+        "interactions": [
+          {
+            "male": false,
+            "key": {
+              "values": {
+                "id": "minecraft:bucket"
+              }
+            },
+            "action": {
+              "values": {
+                "type": "item"
+              },
+              "drops": [
+                {
+                  "values": {
+                    "id": "minecraft:milk_bucket",
+                    "n": "1"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lycanroc Dusk",
       "stats": {
         "interactions": [
           {

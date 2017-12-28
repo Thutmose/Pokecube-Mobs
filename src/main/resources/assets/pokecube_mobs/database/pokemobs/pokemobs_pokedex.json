@@ -16148,6 +16148,7 @@
       "name": "Unown",
       "number": 201,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -32043,6 +32044,7 @@
       "name": "Kricketune",
       "number": 402,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -43690,6 +43692,7 @@
       "name": "Basculin",
       "number": 550,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -50608,6 +50611,7 @@
       "number": 641,
       "breed": false,
       "legend": true,
+      "sound": "Tornadus Therian",
       "stats": {
         "stats": {
           "values": {
@@ -50738,6 +50742,7 @@
       "number": 642,
       "breed": false,
       "legend": true,
+      "sound": "Thundurus Therian",
       "stats": {
         "stats": {
           "values": {
@@ -51025,6 +51030,7 @@
       "number": 645,
       "breed": false,
       "legend": true,
+      "sound": "Landorus Therian",
       "stats": {
         "stats": {
           "values": {
@@ -52965,6 +52971,7 @@
       "name": "Pyroar",
       "number": 668,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -56880,7 +56887,7 @@
       }
     },
     {
-      "name": "Zygarde",
+      "name": "Zygarde 50%",
       "number": 718,
       "base": true,
       "breed": false,
@@ -56916,7 +56923,7 @@
         },
         "abilities": {
           "values": {
-            "normal": "Aura Break, Other Ability, Power Construct"
+            "normal": "Aura Break, Power Construct"
           }
         },
         "mass": 305.0,
@@ -56952,6 +56959,68 @@
         "misc": {
           "moves": "bind, bite, block, brickbreak, bulldoze, camouflage, coil, confide, coreenforcer, crunch, dig, doubleteam, dracometeor, dragonbreath, dragondance, dragonpulse, dragontail, earthpower, earthquake, extremespeed, facade, focusblast, frustration, gigaimpact, glare, grassknot, haze, hiddenpower, hyperbeam, hypervoice, irontail, landswrath, outrage, painsplit, protect, rest, return, rockslide, rocksmash, round, safeguard, sandstorm, secretpower, shockwave, sleeptalk, sludgewave, snore, spite, stompingtantrum, stoneedge, strength, substitute, sunnyday, superpower, swagger, thousandarrows, thousandwaves, toxic, zenheadbutt"
         }
+      }
+    },
+    {
+      "name": "Zygarde 10%",
+      "number": 718,
+      "breed": false,
+      "legend": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "85",
+            "spatk": "61",
+            "def": "71",
+            "spd": "115",
+            "hp": "54",
+            "atk": "100"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "1.2",
+            "width": "0.8",
+            "height": "1.2"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Aura Break, Power Construct"
+          }
+        },
+        "mass": 33.5
+      }
+    },
+    {
+      "name": "Zygarde 100%",
+      "number": 718,
+      "breed": false,
+      "legend": true,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "95",
+            "spatk": "91",
+            "def": "121",
+            "spd": "85",
+            "hp": "216",
+            "atk": "100"
+          }
+        },
+        "sizes": {
+          "values": {
+            "length": "3",
+            "width": "3",
+            "height": "4.5"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Power Construct"
+          }
+        },
+        "mass": 610.0
       }
     },
     {
@@ -58594,6 +58663,7 @@
       "name": "Oricorio",
       "number": 741,
       "base": true,
+      "dummy": true,
       "stats": {
         "stats": {
           "values": {
@@ -58665,7 +58735,54 @@
     {
       "name": "Oricorio Baile",
       "number": 741,
-      "stats": {}
+      "sound": "Oricorio Baile",
+      "stats": {
+        "types": {
+          "values": {
+            "type2": "Flying",
+            "type1": "Fire"
+          }
+        }
+      }
+    },
+    {
+      "name": "Oricorio Sensu",
+      "number": 741,
+      "sound": "Oricorio Sensu",
+      "stats": {
+        "types": {
+          "values": {
+            "type2": "Flying",
+            "type1": "Ghost"
+          }
+        }
+      }
+    },
+    {
+      "name": "Oricorio Pa'u",
+      "number": 741,
+      "sound": "Oricorio Pa'u",
+      "stats": {
+        "types": {
+          "values": {
+            "type2": "Flying",
+            "type1": "Psychic"
+          }
+        }
+      }
+    },
+    {
+      "name": "Oricorio Pom-Pom",
+      "number": 741,
+      "sound": "Oricorio Pom-Pom",
+      "stats": {
+        "types": {
+          "values": {
+            "type2": "Flying",
+            "type1": "Electric"
+          }
+        }
+      }
     },
     {
       "name": "Cutiefly",
@@ -58966,7 +59083,7 @@
           "values": {
             "width": "0.8",
             "length": "0.8",
-            "height": "0.8"
+            "height": "1.1"
           }
         },
         "types": {
@@ -59010,6 +59127,74 @@
           "moves": "attract, brickbreak, bulkup, confide, crushclaw, doubleteam, echoedvoice, facade, firefang, frustration, hiddenpower, protect, rest, return, roar, rockpolish, rockslide, rocktomb, round, sleeptalk, snarl, stoneedge, substitute, suckerpunch, swagger, swordsdance, taunt, thrash, thunderfang, toxic"
         },
         "evolutionMoves": "counter"
+      }
+    },
+    {
+      "name": "Lycanroc Dusk",
+      "number": 745,
+      "stats": {
+        "stats": {
+          "values": {
+            "spdef": "65",
+            "spatk": "55",
+            "def": "65",
+            "spd": "110",
+            "hp": "75",
+            "atk": "117"
+          }
+        },
+        "evs": {
+          "values": {
+            "atk": "2"
+          }
+        },
+        "sizes": {
+          "values": {
+            "width": "0.8",
+            "length": "0.8",
+            "height": "0.8"
+          }
+        },
+        "types": {
+          "values": {
+            "type1": "Rock"
+          }
+        },
+        "abilities": {
+          "values": {
+            "normal": "Tough Claws"
+          }
+        },
+        "mass": 25.0,
+        "captureRate": 90,
+        "expMode": "Medium Fast",
+        "genderRatio": 127,
+        "logics": {},
+        "formeItems": {}
+      },
+      "moves": {
+        "lvlupMoves": {
+          "values": {
+            "12": "howl",
+            "23": "rocktomb",
+            "34": "rockslide",
+            "45": "rockclimb",
+            "15": "rockthrow",
+            "26": "roar",
+            "37": "scaryface",
+            "48": "stoneedge",
+            "18": "odorsleuth",
+            "29": "stealthrock",
+            "1": "counter,thrash,accelerock,tackle,leer,sandattack,bite",
+            "4": "sandattack",
+            "7": "bite",
+            "40": "crunch"
+          }
+        },
+        "misc": {
+          "moves": "attract, brickbreak, bulkup, confide, crushclaw, doubleteam, echoedvoice, facade, firefang, frustration, hiddenpower, protect, rest, return, roar, rockpolish, rockslide, rocktomb, round, sleeptalk, snarl, stoneedge, substitute, suckerpunch, swagger, swordsdance, taunt, thrash, thunderfang, toxic"
+        },
+        "evolutionMoves": "thrash"
       }
     },
     {
