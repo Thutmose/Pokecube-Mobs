@@ -47,6 +47,7 @@ public class CommandGenStuff extends CommandBase
         {
             registerAchievements(e);
         }
+        sender.sendMessage(new TextComponentString("Advancements Done"));
         File dir = new File("./mods/pokecube/assets/pokecube_mobs/");
         if (!dir.exists()) dir.mkdirs();
         File file = new File(dir, "sounds.json");
@@ -61,6 +62,7 @@ public class CommandGenStuff extends CommandBase
         {
             e.printStackTrace();
         }
+        sender.sendMessage(new TextComponentString("Sounds Done"));
         generatePokecubesJsons();
 
         sender.sendMessage(new TextComponentString("Finished File Output"));
@@ -184,6 +186,7 @@ public class CommandGenStuff extends CommandBase
             });
             for (PokedexEntry entry : baseFormes)
             {
+                String soundName = entry.getSoundEvent().getSoundName().getResourcePath().replaceFirst("mobs.", "");
                 JsonObject soundEntry = new JsonObject();
                 soundEntry.addProperty("category", "hostile");
                 soundEntry.addProperty("subtitle", entry.getUnlocalizedName());
@@ -191,7 +194,7 @@ public class CommandGenStuff extends CommandBase
                 for (int i = 0; i < 3; i++)
                 {
                     JsonObject sound = new JsonObject();
-                    sound.addProperty("name", "pokecube_mobs:mobs/" + entry.getTrimmedName());
+                    sound.addProperty("name", "pokecube_mobs:mobs/" + soundName);
                     sound.addProperty("volume", (i == 0 ? 0.8 : i == 1 ? 0.9 : 1));
                     sound.addProperty("pitch", (i == 0 ? 0.9 : i == 1 ? 0.95 : 1));
                     sounds.add(sound);
