@@ -4,10 +4,11 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
@@ -175,18 +176,15 @@ public class CommandGenStuff extends CommandBase
         public static String generateSoundJson()
         {
             JsonObject soundJson = new JsonObject();
-            List<PokedexEntry> baseFormes = Lists.newArrayList(Database.baseFormes.values());
-            Collections.sort(baseFormes, new Comparator<PokedexEntry>()
+            List<PokedexEntry> pokedexEntries = Lists.newArrayList(Database.allFormes);
+            Collections.sort(pokedexEntries, Database.COMPARATOR);
+            Set<ResourceLocation> added = Sets.newHashSet();
+            for (PokedexEntry entry : pokedexEntries)
             {
-                @Override
-                public int compare(PokedexEntry o1, PokedexEntry o2)
-                {
-                    return o1.getPokedexNb() - o2.getPokedexNb();
-                }
-            });
-            for (PokedexEntry entry : baseFormes)
-            {
-                String soundName = entry.getSoundEvent().getSoundName().getResourcePath().replaceFirst("mobs.", "");
+                ResourceLocation event = entry.getSoundEvent().getSoundName();
+                if (added.contains(event)) continue;
+                added.add(event);
+                String soundName = event.getResourcePath().replaceFirst("mobs.", "");
                 JsonObject soundEntry = new JsonObject();
                 soundEntry.addProperty("category", "hostile");
                 soundEntry.addProperty("subtitle", entry.getUnlocalizedName());
