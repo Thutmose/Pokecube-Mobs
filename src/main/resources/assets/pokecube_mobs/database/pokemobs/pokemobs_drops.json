@@ -3839,25 +3839,46 @@
       "name": "Volcarona"
     },
     {
-      "name": "Cobalion"
+      "name": "Cobalion",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Terrakion"
+      "name": "Terrakion",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Virizion"
+      "name": "Virizion",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Tornadus Incarnate"
+      "name": "Tornadus Incarnate",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Tornadus Therian"
+      "name": "Tornadus Therian",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Thundurus Incarnate"
+      "name": "Thundurus Incarnate",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Thundurus Therian"
+      "name": "Thundurus Therian",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
       "name": "Reshiram",
@@ -3872,10 +3893,16 @@
       }
     },
     {
-      "name": "Landorus Incarnate"
+      "name": "Landorus Incarnate",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
-      "name": "Landorus Therian"
+      "name": "Landorus Therian",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
     },
     {
       "name": "Kyurem",
@@ -4364,7 +4391,19 @@
       }
     },
     {
-      "name": "Zygarde",
+      "name": "Zygarde 50%",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Zygarde 10%",
+      "stats": {
+        "lootTable": "pokecube:entities/generic_legend"
+      }
+    },
+    {
+      "name": "Zygarde 100%",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
