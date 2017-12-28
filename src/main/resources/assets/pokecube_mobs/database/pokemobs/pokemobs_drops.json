@@ -361,25 +361,25 @@
     {
       "name": "Diglett",
       "stats": {
-        "lootTable": "pokecube:entities/dirt"
+        "lootTable": "pokecube:entities/dirt_1"
       }
     },
     {
       "name": "Diglett Alola",
       "stats": {
-        "lootTable": "pokecube:entities/dirt"
+        "lootTable": "pokecube:entities/dirt_1"
       }
     },
     {
       "name": "Dugtrio",
       "stats": {
-        "lootTable": "pokecube:entities/dirt"
+        "lootTable": "pokecube:entities/dirt_1"
       }
     },
     {
       "name": "Dugtrio Alola",
       "stats": {
-        "lootTable": "pokecube:entities/dirt"
+        "lootTable": "pokecube:entities/dirt_1"
       }
     },
     {
@@ -4018,19 +4018,19 @@
     {
       "name": "Scatterbug",
       "stats": {
-        "lootTable": "pokecube:entities/spider"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Spewpa",
       "stats": {
-        "lootTable": "pokecube:entities/spider"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
       "name": "Vivillon",
       "stats": {
-        "lootTable": "pokecube:entities/spider"
+        "lootTable": "minecraft:entities/spider"
       }
     },
     {
@@ -4364,19 +4364,7 @@
       }
     },
     {
-      "name": "Zygarde 50%",
-      "stats": {
-        "lootTable": "pokecube:entities/generic_legend"
-      }
-    },
-    {
-      "name": "Zygarde 10%",
-      "stats": {
-        "lootTable": "pokecube:entities/generic_legend"
-      }
-    },
-    {
-      "name": "Zygarde 100%",
+      "name": "Zygarde",
       "stats": {
         "lootTable": "pokecube:entities/generic_legend"
       }
