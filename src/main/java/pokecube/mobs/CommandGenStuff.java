@@ -3,11 +3,9 @@ package pokecube.mobs;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -44,7 +42,7 @@ public class CommandGenStuff extends CommandBase
     public void execute(MinecraftServer server, ICommandSender sender, String[] args) throws CommandException
     {
         sender.sendMessage(new TextComponentString("Starting File Output"));
-        for (PokedexEntry e : Database.allFormes)
+        for (PokedexEntry e : Database.getSortedFormes())
         {
             registerAchievements(e);
         }
@@ -176,8 +174,7 @@ public class CommandGenStuff extends CommandBase
         public static String generateSoundJson()
         {
             JsonObject soundJson = new JsonObject();
-            List<PokedexEntry> pokedexEntries = Lists.newArrayList(Database.allFormes);
-            Collections.sort(pokedexEntries, Database.COMPARATOR);
+            List<PokedexEntry> pokedexEntries = Database.getSortedFormes();
             Set<ResourceLocation> added = Sets.newHashSet();
             for (PokedexEntry entry : pokedexEntries)
             {
