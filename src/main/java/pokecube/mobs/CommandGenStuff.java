@@ -78,20 +78,93 @@ public class CommandGenStuff extends CommandBase
 
     protected static void make(PokedexEntry entry, String id, String parent, String path)
     {
-        ResourceLocation key = new ResourceLocation(entry.getModId(), id + "_" + entry.getName());
+        ResourceLocation key = new ResourceLocation(entry.getModId(), id + "_" + entry.getTrimmedName());
         String json = AdvancementGenerator.makeJson(entry, id, parent);
         File dir = new File("./mods/pokecube/assets/pokecube_mobs/advancements/" + path + "/");
         if (!dir.exists()) dir.mkdirs();
         File file = new File(dir, key.getResourcePath() + ".json");
+        FileWriter write;
         try
         {
-            FileWriter write = new FileWriter(file);
+            write = new FileWriter(file);
             write.write(json);
             write.close();
         }
         catch (IOException e)
         {
             e.printStackTrace();
+        }
+        if (id.equals("catch"))
+        {
+            File first = new File(dir, "get_first_pokemob.json");
+            if (!first.exists())
+            {
+                JsonObject rootObj = new JsonObject();
+                JsonObject displayJson = new JsonObject();
+                JsonObject icon = new JsonObject();
+                icon.addProperty("item", "pokecube:pokecube");
+                JsonObject title = new JsonObject();
+                title.addProperty("translate", "achievement.pokecube.get1st");
+                JsonObject description = new JsonObject();
+                description.addProperty("translate", "achievement.pokecube.get1st.desc");
+                displayJson.add("icon", icon);
+                displayJson.add("title", title);
+                displayJson.add("description", description);
+                JsonObject critmap = new JsonObject();
+                JsonObject sub = new JsonObject();
+                sub.addProperty("trigger", "pokecube:get_first_pokemob");
+                critmap.add("get_first_pokemob", sub);
+                rootObj.add("display", displayJson);
+                rootObj.addProperty("parent", parent);
+                rootObj.add("criteria", critmap);
+                json = AdvancementGenerator.GSON.toJson(rootObj);
+                try
+                {
+                    write = new FileWriter(first);
+                    write.write(json);
+                    write.close();
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        File root = new File(dir, "root.json");
+        if (!root.exists())
+        {
+            JsonObject rootObj = new JsonObject();
+            JsonObject displayJson = new JsonObject();
+            JsonObject icon = new JsonObject();
+            icon.addProperty("item", "pokecube:pokecube");
+            JsonObject title = new JsonObject();
+            title.addProperty("translate", "achievement.pokecube." + id + ".root");
+            JsonObject description = new JsonObject();
+            description.addProperty("translate", "achievement.pokecube." + id + ".root.desc");
+            displayJson.add("icon", icon);
+            displayJson.add("title", title);
+            displayJson.add("description", description);
+            displayJson.addProperty("background", "minecraft:textures/gui/advancements/backgrounds/adventure.png");
+            displayJson.addProperty("show_toast", false);
+            displayJson.addProperty("announce_to_chat", false);
+            JsonObject critmap = new JsonObject();
+            JsonObject sub = new JsonObject();
+            sub.addProperty("trigger", "pokecube:get_first_pokemob");
+            critmap.add("get_first_pokemob", sub);
+            rootObj.add("display", displayJson);
+            rootObj.add("criteria", critmap);
+            json = AdvancementGenerator.GSON.toJson(rootObj);
+            try
+            {
+                write = new FileWriter(root);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -229,7 +302,7 @@ public class CommandGenStuff extends CommandBase
 
         public static String[][] makeRequirements(PokedexEntry entry)
         {
-            return new String[][] { { entry.getName() } };
+            return new String[][] { { entry.getTrimmedName() } };
         }
 
         public static JsonObject fromCriteria(PokedexEntry entry, String id)
@@ -239,9 +312,9 @@ public class CommandGenStuff extends CommandBase
             sub.addProperty("trigger", "pokecube:" + id);
             JsonObject conditions = new JsonObject();
             if (id.equals("catch") || id.equals("kill")) conditions.addProperty("lenient", true);
-            conditions.addProperty("entry", entry.getName());
+            conditions.addProperty("entry", entry.getTrimmedName());
             sub.add("conditions", conditions);
-            critmap.add(id + "_" + entry.getName(), sub);
+            critmap.add(id + "_" + entry.getTrimmedName(), sub);
             return critmap;
         }
 
