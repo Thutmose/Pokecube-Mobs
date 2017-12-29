@@ -57149,9 +57149,9 @@
         },
         "sizes": {
           "values": {
-            "width": "6.5",
-            "length": "6.5",
-            "height": "6.5"
+            "width": "0.5",
+            "length": "0.5",
+            "height": "0.5"
           }
         },
         "types": {
@@ -57210,6 +57210,8 @@
         },
         "sizes": {
           "values": {
+            "width": "6.5",
+            "length": "6.5",
             "height": "6.5"
           }
         },
