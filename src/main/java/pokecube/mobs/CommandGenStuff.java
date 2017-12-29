@@ -112,7 +112,7 @@ public class CommandGenStuff extends CommandBase
                 displayJson.add("description", description);
                 JsonObject critmap = new JsonObject();
                 JsonObject sub = new JsonObject();
-                sub.addProperty("trigger", "pokecube:get_first_pokemob");
+                sub.addProperty("trigger", "pokecube_mobs:capture/root");
                 critmap.add("get_first_pokemob", sub);
                 rootObj.add("display", displayJson);
                 rootObj.addProperty("parent", parent);
