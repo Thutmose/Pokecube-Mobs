@@ -7,7 +7,9 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.ModMetadata;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -26,7 +28,7 @@ import thut.core.common.config.Configure;
 @Mod(modid = PokecubeOrigin.MODID, name = "Pokecube Origin", version = Reference.VERSION, acceptableRemoteVersions = "*", acceptedMinecraftVersions = "*")
 public class PokecubeOrigin
 {
-    public static final String MODID   = "pokecube_origin";
+    public static final String MODID = "pokecube_origin";
     private Config             config;
 
     @EventHandler
@@ -37,6 +39,18 @@ public class PokecubeOrigin
         doMetastuff();
     }
 
+    @EventHandler
+    public void init(FMLInitializationEvent e)
+    {
+        if (!config.active) return;
+        PokedexEntry pichu = Database.getEntry("pichu");
+        PokedexEntry pikachu = Database.getEntry("pikachu");
+
+        if (pichu == null || pikachu == null) return;
+        pichu.setModId(MODID);
+        pikachu.setModId(MODID);
+    }
+
     private void doMetastuff()
     {
         ModMetadata meta = FMLCommonHandler.instance().findContainerFor(this).getMetadata();
@@ -44,25 +58,20 @@ public class PokecubeOrigin
     }
 
     @SideOnly(Side.CLIENT)
-    @SubscribeEvent
+    @SubscribeEvent(priority = EventPriority.LOWEST)
     public void postInit(PostPostInit evt)
     {
         MinecraftForge.EVENT_BUS.unregister(this);
         if (!config.active) return;
         PokedexEntry pichu = Database.getEntry("pichu");
         PokedexEntry pikachu = Database.getEntry("pikachu");
-        // PokedexEntry raichu = Database.getEntry("raichu");
+
         if (pichu == null || pikachu == null) return;
-        pichu.setModId(MODID);
-        pikachu.setModId(MODID);
-        // raichu.setModId(MODID);
+
         pichu.texturePath = "textures/entity/";
         pikachu.texturePath = "textures/entity/";
-        // raichu.texturePath = "textures/entity/";
         RenderPokemobs.addModel(pichu.getName() + "" + pichu.getModId(), new ModelPichu());
         RenderPokemobs.addModel(pikachu.getName() + "" + pikachu.getModId(), new ModelPikachu());
-        // RenderPokemobs.addModel(raichu.getName() + "" + raichu.getModId(),
-        // new ModelRaichu());
     }
 
     public static class Config extends ConfigBase
