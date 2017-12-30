@@ -25,7 +25,7 @@ public class MegaWearablesHelper
     {
         // Tiara like worn by Lisia, but rotated to be centered on head instead
         // of at angle.
-        ItemMegawearable.wearables.put("megatiara", "HAT");
+        ItemMegawearable.registerWearable("megatiara", "HAT");
         WearablesCompat.renderers.put("megatiara", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
@@ -78,7 +78,7 @@ public class MegaWearablesHelper
         });
 
         // Mega Anklet like one worn by Zinnia
-        ItemMegawearable.wearables.put("megaankletzinnia", "ANKLE");
+        ItemMegawearable.registerWearable("megaankletzinnia", "ANKLE");
         WearablesCompat.renderers.put("megaankletzinnia", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
@@ -135,7 +135,7 @@ public class MegaWearablesHelper
             }
         });
         // a Pendant
-        ItemMegawearable.wearables.put("megapendant", "NECK");
+        ItemMegawearable.registerWearable("megapendant", "NECK");
         WearablesCompat.renderers.put("megapendant", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
@@ -188,7 +188,7 @@ public class MegaWearablesHelper
             }
         });
         // Earrings
-        ItemMegawearable.wearables.put("megaearring", "EAR");
+        ItemMegawearable.registerWearable("megaearring", "EAR");
         WearablesCompat.renderers.put("megaearring", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
@@ -240,7 +240,7 @@ public class MegaWearablesHelper
             }
         });
         // Glasses
-        ItemMegawearable.wearables.put("megaglasses", "EYE");
+        ItemMegawearable.registerWearable("megaglasses", "EYE");
         WearablesCompat.renderers.put("megaglasses", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
