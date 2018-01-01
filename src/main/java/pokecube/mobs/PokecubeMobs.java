@@ -132,13 +132,14 @@ public class PokecubeMobs implements IMobProvider
         HeldItemHandler.megaVariants.add("shiny_charm");
         HeldItemHandler.megaVariants.add("omegaorb");
         HeldItemHandler.megaVariants.add("alphaorb");
+        HeldItemHandler.megaVariants.add("aerodactylmega");
         HeldItemHandler.megaVariants.add("abomasnowmega");
         HeldItemHandler.megaVariants.add("absolmega");
-        HeldItemHandler.megaVariants.add("aerodactylmega");
         HeldItemHandler.megaVariants.add("aggronmega");
         HeldItemHandler.megaVariants.add("alakazammega");
         HeldItemHandler.megaVariants.add("altariamega");
         HeldItemHandler.megaVariants.add("ampharosmega");
+        HeldItemHandler.megaVariants.add("audinomega");
         HeldItemHandler.megaVariants.add("banettemega");
         HeldItemHandler.megaVariants.add("beedrillmega");
         HeldItemHandler.megaVariants.add("blastoisemega");
@@ -162,9 +163,10 @@ public class PokecubeMobs implements IMobProvider
         HeldItemHandler.megaVariants.add("lucariomega");
         HeldItemHandler.megaVariants.add("manectricmega");
         HeldItemHandler.megaVariants.add("mawilemega");
+        HeldItemHandler.megaVariants.add("medichammega");
+        HeldItemHandler.megaVariants.add("metagrossmega");
         HeldItemHandler.megaVariants.add("mewtwomega-y");
         HeldItemHandler.megaVariants.add("mewtwomega-x");
-        HeldItemHandler.megaVariants.add("metagrossmega");
         HeldItemHandler.megaVariants.add("pidgeotmega");
         HeldItemHandler.megaVariants.add("pinsirmega");
         HeldItemHandler.megaVariants.add("sableyemega");
