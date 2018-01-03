@@ -15,9 +15,7 @@
   },
   "criteria": {
     "get_first_pokemob": {
-      "trigger": "pokecube:get_first_pokemob",
-        "conditions": {
-        }
+      "trigger": "pokecube:get_first_pokemob"
     }
   }
 }

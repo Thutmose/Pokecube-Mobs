@@ -112,10 +112,10 @@ public class CommandGenStuff extends CommandBase
                 displayJson.add("description", description);
                 JsonObject critmap = new JsonObject();
                 JsonObject sub = new JsonObject();
-                sub.addProperty("trigger", "pokecube_mobs:capture/root");
+                sub.addProperty("trigger", "pokecube:get_first_pokemob");
                 critmap.add("get_first_pokemob", sub);
                 rootObj.add("display", displayJson);
-                rootObj.addProperty("parent", parent);
+                rootObj.addProperty("parent", "pokecube_mobs:capture/root");
                 rootObj.add("criteria", critmap);
                 json = AdvancementGenerator.GSON.toJson(rootObj);
                 try
@@ -325,6 +325,13 @@ public class CommandGenStuff extends CommandBase
             json.add("criteria", fromCriteria(entry, id));
             if (parent != null)
             {
+                if (entry.evolvesFrom != null)
+                {
+                    String newParent = id + "_" + entry.evolvesFrom.getTrimmedName();
+                    parent = parent.replace("root", newParent);
+                    parent = parent.replace("get_first_pokemob", newParent);
+                    
+                }
                 json.addProperty("parent", parent);
             }
             return GSON.toJson(json);

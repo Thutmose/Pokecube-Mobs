@@ -30,5 +30,5 @@
       }
     }
   },
-  "parent": "pokecube_mobs:kill/root"
+  "parent": "pokecube_mobs:kill/kill_cosmoem"
 }
