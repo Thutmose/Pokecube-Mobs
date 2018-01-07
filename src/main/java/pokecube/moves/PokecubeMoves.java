@@ -13,17 +13,16 @@ import pokecube.core.blocks.healtable.ContainerHealTable;
 import pokecube.core.blocks.healtable.TileHealTable;
 import pokecube.core.items.pokecubes.EntityPokecubeBase;
 import pokecube.mobs.PokecubeMobs;
+import pokecube.mobs.Reference;
 
-@Mod(modid = PokecubeMoves.MODID, name = "Pokecube Movess", version = PokecubeMoves.VERSION, dependencies = "required-after:pokecube", acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMoves.MCVERSIONS)
+@Mod(modid = PokecubeMoves.MODID, name = "Pokecube Movess", version = Reference.VERSION, dependencies = "required-after:pokecube", acceptableRemoteVersions = "*", acceptedMinecraftVersions = PokecubeMoves.MCVERSIONS)
 public class PokecubeMoves
 {
     public static final String MODID      = "pokecube_moves";
-    public static final String VERSION    = "@VERSION@";
     public final static String MCVERSIONS = "*";
 
     public PokecubeMoves()
     {
-        // TODO Auto-generated constructor stub
     }
 
     private void doMetastuff()

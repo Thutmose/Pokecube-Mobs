@@ -219,7 +219,6 @@ public class PokecubeMobs implements IMobProvider
         DBLoader.trainerDatabases.add("trainers.xml");
         DBLoader.tradeDatabases.add("trades.xml");
         MiscItemHelper.init();
-        checkConfigFiles();
     }
 
     @EventHandler
@@ -727,16 +726,16 @@ public class PokecubeMobs implements IMobProvider
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public void registerDatabases(InitDatabase.Pre evt)
     {
+        writeDefaultConfig();
+
         Database.addDatabase("pokemobs_pokedex.json", EnumDatabase.POKEMON);
         Database.addDatabase("pokemobs_spawns.json", EnumDatabase.POKEMON);
         Database.addDatabase("pokemobs_drops.json", EnumDatabase.POKEMON);
         Database.addDatabase("pokemobs_interacts.json", EnumDatabase.POKEMON);
-    }
 
-    public static void checkConfigFiles()
-    {
-        writeDefaultConfig();
-        return;
+        Database.addDatabase("moves.json", EnumDatabase.MOVES);
+
+        Database.addDatabase("spawns.json", EnumDatabase.BERRIES);
     }
 
     static String CONFIGLOC  = Database.CONFIGLOC;
@@ -752,8 +751,8 @@ public class PokecubeMobs implements IMobProvider
                 temp.mkdirs();
             }
             DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_mobs");
-            copyDatabaseFile("moves.json");
-            copyDatabaseFile("animations.json");
+            copyDatabaseFile("moves.json", Database.FORCECOPY);
+            copyDatabaseFile("animations.json", Database.FORCECOPY);
 
             CONFIGLOC = CONFIGLOC + "pokemobs" + File.separator;
             temp = new File(Database.CONFIGLOC);
@@ -762,15 +761,19 @@ public class PokecubeMobs implements IMobProvider
                 temp.mkdirs();
             }
             DBLOCATION = DBLOCATION + "pokemobs/";
-            copyDatabaseFile("pokemobs_pokedex.json");
-            copyDatabaseFile("pokemobs_spawns.json");
-            copyDatabaseFile("pokemobs_drops.json");
-            copyDatabaseFile("pokemobs_interacts.json");
+            copyDatabaseFile("pokemobs_pokedex.json", Database.FORCECOPY);
+            copyDatabaseFile("pokemobs_spawns.json", Database.FORCECOPY);
+            copyDatabaseFile("pokemobs_drops.json", Database.FORCECOPY);
+            copyDatabaseFile("pokemobs_interacts.json", Database.FORCECOPY);
+
+            CONFIGLOC = CONFIGLOC.replace("pokemobs", "berries");
+            DBLOCATION = DBLOCATION.replace("pokemobs", "berries");
+            copyDatabaseFile("spawns.json", PokecubeMod.core.getConfig().forceBerries);
 
             DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_mobs");
             CONFIGLOC = Database.CONFIGLOC;
-            copyDatabaseFile("pokecubes_recipes.xml");
-            copyDatabaseFile("pokemob_item_recipes.xml");
+            copyDatabaseFile("pokecubes_recipes.xml", Database.FORCECOPYRECIPES);
+            copyDatabaseFile("pokemob_item_recipes.xml", Database.FORCECOPYRECIPES);
             XMLRecipeHandler.recipeFiles.add("pokecubes_recipes");
             XMLRecipeHandler.recipeFiles.add("pokemob_item_recipes");
             DBLOCATION = Database.DBLOCATION.replace("pokecube", "pokecube_adventures");
@@ -780,8 +783,8 @@ public class PokecubeMobs implements IMobProvider
             {
                 temp.mkdirs();
             }
-            copyDatabaseFile("trainers.xml");
-            copyDatabaseFile("trades.xml");
+            copyDatabaseFile("trainers.xml", DBLoader.FORCECOPY);
+            copyDatabaseFile("trades.xml", DBLoader.FORCECOPY);
         }
         catch (Exception e)
         {
@@ -789,10 +792,10 @@ public class PokecubeMobs implements IMobProvider
         }
     }
 
-    static void copyDatabaseFile(String name)
+    static void copyDatabaseFile(String name, boolean force)
     {
         File temp1 = new File(CONFIGLOC + name);
-        if (temp1.exists() && !Database.FORCECOPY)
+        if (temp1.exists() && !force)
         {
             PokecubeMod.log("Not Overwriting old database: " + temp1);
             return;
