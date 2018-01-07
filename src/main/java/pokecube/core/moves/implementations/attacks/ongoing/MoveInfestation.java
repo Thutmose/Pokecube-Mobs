@@ -17,6 +17,6 @@ public class MoveInfestation extends Move_Ongoing
     {
         float thisMaxHP = mob.getEntity().getMaxHealth();
         int damage = Math.max(1, (int) (0.125 * thisMaxHP));
-        mob.getEntity().attackEntityFrom(getOngoingDamage(mob.getEntity()), damage);
+        damageTarget(mob.getEntity(), null, damage);
     }
 }

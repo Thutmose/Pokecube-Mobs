@@ -17,7 +17,9 @@ public class MovePerishsong extends Move_Ongoing
     {
         if (effect.getDuration() == 0)
         {
-            mob.getEntity().attackEntityFrom(getOngoingDamage(mob.getEntity()), mob.getEntity().getMaxHealth());
+            damageTarget(mob.getEntity(),
+                    getOngoingDamage(mob.getEntity()).setDamageIsAbsolute().setDamageBypassesArmor(),
+                    Integer.MAX_VALUE);
         }
         else
         {

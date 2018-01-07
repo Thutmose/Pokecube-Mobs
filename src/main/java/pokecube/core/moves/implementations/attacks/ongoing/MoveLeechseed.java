@@ -26,8 +26,7 @@ public class MoveLeechseed extends Move_Ongoing
             factor *= (pokemob.getMoveStats().TOXIC_COUNTER + 1);
         }
         float thisMaxHP = living.getMaxHealth();
-        int damage = Math.max(1, (int) (factor * thisMaxHP));
-        living.attackEntityFrom(getOngoingDamage(mob.getEntity()), damage);
+        float damage = damageTarget(living, null, Math.max(1, (int) (factor * thisMaxHP)));
         EntityLivingBase target = living.getAttackingEntity();
         if (target == null) target = living.getRevengeTarget();
         if (target == null) target = living.getLastAttackedEntity();
