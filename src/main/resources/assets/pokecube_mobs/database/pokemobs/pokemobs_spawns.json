@@ -6722,7 +6722,7 @@
       }
     },
     {
-      "name": "Oricorio",
+      "name": "Oricorio Baile",
       "stats": {
         "spawnRules": [
           {
@@ -6736,7 +6736,70 @@
             "values": {
               "typesBlacklist": "cold",
               "types": "plains",
-              "rate": "0.3"
+              "rate": "0.05"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oricorio Pom-Pom",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "flower",
+              "rate": "0.7"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "plains",
+              "rate": "0.05"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oricorio Sensu",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "flower",
+              "rate": "0.7"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "plains",
+              "rate": "0.05"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oricorio Pa'u",
+      "stats": {
+        "spawnRules": [
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "flower",
+              "rate": "0.7"
+            }
+          },
+          {
+            "values": {
+              "typesBlacklist": "cold",
+              "types": "plains",
+              "rate": "0.05"
             }
           }
         ]
