@@ -5206,12 +5206,7 @@
         "megaRules": [
           {
             "name": "Kyogre Primal",
-            "item": {
-              "values": {
-                "tag": "{pokemon:\"alphaorb\"}",
-                "id": "pokecube:megastone"
-              }
-            }
+            "item_preset": "alphaorb"
           }
         ]
       }
@@ -5229,12 +5224,7 @@
         "megaRules": [
           {
             "name": "Groudon Primal",
-            "item": {
-              "values": {
-                "tag": "{pokemon:\"omegaorb\"}",
-                "id": "pokecube:megastone"
-              }
-            }
+            "item_preset": "omegaorb"
           }
         ],
         "hatedMaterials": "water"
