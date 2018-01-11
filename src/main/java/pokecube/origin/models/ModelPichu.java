@@ -41,10 +41,11 @@ public class ModelPichu extends APokemobModel
     }
 
     @Override
-    public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
+    public void render(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+            float headPitch, float scale)
     {
-        super.render(entity, f, f1, f2, f3, f4, f5);
-        setRotationAngles(f, f1, f2, f3, f4, f5, entity);
+        super.render(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale);
+        setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale, entity);
         GL11.glPushMatrix();
         if (entity instanceof IMobColourable)
         {
@@ -55,26 +56,28 @@ public class ModelPichu extends APokemobModel
         IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
         GL11.glTranslated(0, 0.9 + (1 - mob.getSize()) * 0.5, 0);
         GL11.glScaled(0.4 * mob.getSize(), 0.4 * mob.getSize(), 0.4 * mob.getSize());
-        headMain.render(f5);
-        body.render(f5);
-        footRight.render(f5);
-        footLeft.render(f5);
-        handRight.render(f5);
-        handLeft.render(f5);
-        rightEar.render(f5);
-        leftEar.render(f5);
-        tail.renderWithRotation(f5);
+        headMain.render(scale);
+        body.render(scale);
+        footRight.render(scale);
+        footLeft.render(scale);
+        handRight.render(scale);
+        handLeft.render(scale);
+        rightEar.render(scale);
+        leftEar.render(scale);
+        tail.renderWithRotation(scale);
         GL11.glColor4f(1, 1, 1, 1);
         GL11.glPopMatrix();
     }
 
     @Override
-    public void setLivingAnimations(EntityLivingBase entityliving, float f, float f1, float f2)
+    public void setLivingAnimations(EntityLivingBase entityliving, float limbSwing, float limbSwingAmount,
+            float partialTick)
     {
         EntityPokemob entity = (EntityPokemob) entityliving;
         IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
 
-        if (mob.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || f1 < 0.001 || entity.isRiding())
+        if (mob.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || limbSwingAmount < 1e-2
+                || entity.isRiding())
         {
             float bodyAngle = 0.1F;
             float xOffset = 0;
@@ -113,8 +116,9 @@ public class ModelPichu extends APokemobModel
             footLeft.setRotationPoint(1F, 20F, -0.5F);
             handRight.setRotationPoint(-3F, 15F, -2F);
             handLeft.setRotationPoint(1F, 15F, -2F);
-            footRight.rotateAngleX = MathHelper.cos(f * 0.6662F) * 1.4F * f1 - 0.3F;
-            footLeft.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * 1.4F * f1 - 0.3F;
+            footRight.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount - 0.3F;
+            footLeft.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float) Math.PI) * 1.4F * limbSwingAmount
+                    - 0.3F;
             handRight.rotateAngleX = 5.811947F;
             handLeft.rotateAngleX = 5.811947F;
             headMain.setRotationPoint(-1F, 11F, -2.5F);
@@ -122,26 +126,27 @@ public class ModelPichu extends APokemobModel
             leftEar.setRotationPoint(-1F, 9.5F, -2.5F);
         }
 
-        float f3 = entity.getInterestedAngle(f2) + entity.getShakeAngle(f2, 0.0F);
+        float f3 = entity.getInterestedAngle(partialTick) + entity.getShakeAngle(partialTick, 0.0F);
         headMain.rotateAngleZ = f3;
         rightEar.rotateAngleZ = f3;
         leftEar.rotateAngleZ = f3;
-        body.rotateAngleZ = entity.getShakeAngle(f2, -0.16F);
-        tail.rotateAngleZ = entity.getShakeAngle(f2, -0.2F);
+        body.rotateAngleZ = entity.getShakeAngle(partialTick, -0.16F);
+        tail.rotateAngleZ = entity.getShakeAngle(partialTick, -0.2F);
     }
 
     @Override
-    public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity entity)
+    public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+            float headPitch, float scale, Entity entity)
     {
-        super.setRotationAngles(f, f1, f2, f3, f4, f5, entity);
-        headMain.rotateAngleX = f4 / (180F / (float) Math.PI);
-        headMain.rotateAngleY = f3 / (180F / (float) Math.PI);
+        super.setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scale, entity);
+        headMain.rotateAngleX = headPitch / (180F / (float) Math.PI);
+        headMain.rotateAngleY = netHeadYaw / (180F / (float) Math.PI);
         rightEar.rotateAngleY = headMain.rotateAngleY;
         rightEar.rotateAngleX = headMain.rotateAngleX;
         leftEar.rotateAngleY = headMain.rotateAngleY;
         leftEar.rotateAngleX = headMain.rotateAngleX;
-        rightEar.rotateAngleZ -= 0.1 * MathHelper.sin(f3 / 8) + 0.2;
-        leftEar.rotateAngleZ += 0.1 * MathHelper.sin(f3 / 8) + 0.2;
+        rightEar.rotateAngleZ -= 0.1 * MathHelper.sin(netHeadYaw / 8) + 0.2;
+        leftEar.rotateAngleZ += 0.1 * MathHelper.sin(netHeadYaw / 8) + 0.2;
         tail.rotateAngleX = 2.8F;
     }
 
