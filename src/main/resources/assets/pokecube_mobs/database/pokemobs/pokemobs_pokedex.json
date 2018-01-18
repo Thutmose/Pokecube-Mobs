@@ -14526,7 +14526,7 @@
         "genderRatio": 127,
         "logics": {
           "values": {
-            "dye": "TRUE#11",
+            "dye": "TRUE#yellow#pink",
             "shoulder": "FALSE"
           }
         }
@@ -14600,7 +14600,7 @@
         "genderRatio": 127,
         "logics": {
           "values": {
-            "dye": "TRUE#15",
+            "dye": "TRUE#white#white",
             "shoulder": "FALSE"
           }
         }
@@ -18930,7 +18930,7 @@
         "genderRatio": 127,
         "logics": {
           "values": {
-            "dye": "TRUE#2",
+            "dye": "TRUE#green#red",
             "shoulder": "FALSE"
           }
         }
@@ -53099,6 +53099,7 @@
         "genderRatio": 254,
         "logics": {
           "values": {
+            "dye": "TRUE#red#red#red,yellow,orange,blue,white",
             "shoulder": "FALSE"
           }
         },
@@ -53172,6 +53173,7 @@
         "genderRatio": 254,
         "logics": {
           "values": {
+            "dye": "TRUE#red#red#red,yellow,orange,blue,white",
             "shoulder": "FALSE"
           }
         },
@@ -53198,6 +53200,18 @@
         },
         "misc": {
           "moves": "afteryou, allyswitch, aromatherapy, attract, calmmind, confide, covet, dazzlinggleam, doubleteam, echoedvoice, endeavor, energyball, facade, fairywind, flash, frustration, gigadrain, grassknot, grassyterrain, healbell, helpinghand, hiddenpower, luckychant, magicalleaf, magiccoat, mistyterrain, moonblast, naturepower, petalblizzard, petaldance, protect, psychic, raindance, razorleaf, rest, return, round, safeguard, secretpower, seedbomb, sleeptalk, snore, solarbeam, substitute, sunnyday, swagger, synthesis, tackle, toxic, vinewhip, wish, worryseed"
+        }
+      }
+    },
+    {
+      "name": "Floette Eternal",
+      "number": 670,
+      "stats": {
+        "logics": {
+          "values": {
+            "dye": "FALSE",
+            "shoulder": "FALSE"
+          }
         }
       }
     },
@@ -53246,6 +53260,7 @@
         "genderRatio": 254,
         "logics": {
           "values": {
+            "dye": "TRUE#red#red#red,yellow,orange,blue,white",
             "shoulder": "FALSE"
           }
         },
