@@ -150,7 +150,8 @@ public class MiscItemHelper
     public void registerCapabilities(AttachCapabilitiesEvent<ItemStack> event)
     {
         if (event.getCapabilities().containsKey(USABLE) || theStack == null || theStack == event.getObject()) return;
-        if (Tools.isSameStack(theStack, event.getObject()))
+        if (theStack.getItem() == event.getObject().getItem()
+                && theStack.getItemDamage() == event.getObject().getItemDamage())
         {
             event.addCapability(USABLE, new CharcoalEffect());
         }
