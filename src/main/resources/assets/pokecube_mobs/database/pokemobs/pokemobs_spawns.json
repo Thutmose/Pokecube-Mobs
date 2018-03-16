@@ -1057,6 +1057,12 @@
               "types": "mountain,cave",
               "rate": "0.15"
             }
+          },
+          {
+            "values": {
+              "types": "savanna",
+              "rate": "0.15"
+            }
           }
         ]
       }
