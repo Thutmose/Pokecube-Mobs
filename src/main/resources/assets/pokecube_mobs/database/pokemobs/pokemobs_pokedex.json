@@ -63148,8 +63148,7 @@
         },
         "types": {
           "values": {
-            "type1": "Psychic",
-            "type2": "Steel"
+            "type1": "Psychic"
           }
         },
         "abilities": {
