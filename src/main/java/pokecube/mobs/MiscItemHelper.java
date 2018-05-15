@@ -4,6 +4,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -39,7 +41,7 @@ public class MiscItemHelper
         VitaminEffect value = new VitaminEffect()
         {
             @Override
-            public boolean onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
+            public ActionResult<ItemStack> onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
             {
                 return feedToPokemob(stack, pokemob.getEntity());
             }
@@ -53,7 +55,7 @@ public class MiscItemHelper
         UsableItemEffects.VitaminUsable.effects.put("iron", value);
     }
 
-    public static boolean feedToPokemob(ItemStack stack, Entity entity)
+    public static ActionResult<ItemStack> feedToPokemob(ItemStack stack, Entity entity)
     {
         IPokemob pokemob = CapabilityPokemob.getPokemobFor(entity);
         if (pokemob != null)
@@ -61,35 +63,35 @@ public class MiscItemHelper
             if (Tools.isSameStack(stack, PokecubeItems.getStack("hpup")))
             {
                 pokemob.addEVs(new byte[] { 10, 0, 0, 0, 0, 0 });
-                return true;
+                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
             if (Tools.isSameStack(stack, PokecubeItems.getStack("protein")))
             {
                 pokemob.addEVs(new byte[] { 0, 10, 0, 0, 0, 0 });
-                return true;
+                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
             if (Tools.isSameStack(stack, PokecubeItems.getStack("iron")))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 10, 0, 0, 0 });
-                return true;
+                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
             if (Tools.isSameStack(stack, PokecubeItems.getStack("calcium")))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 10, 0, 0 });
-                return true;
+                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
             if (Tools.isSameStack(stack, PokecubeItems.getStack("zinc")))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 0, 10, 0 });
-                return true;
+                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
             if (Tools.isSameStack(stack, PokecubeItems.getStack("carbos")))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 0, 0, 10 });
-                return true;
+                return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
         }
-        return false;
+        return new ActionResult<ItemStack>(EnumActionResult.FAIL, stack);
     }
 
     public static class CharcoalEffect implements IPokemobUseable, ICapabilityProvider
@@ -108,17 +110,17 @@ public class MiscItemHelper
          * @param stack
          * @return */
         @Override
-        public boolean onMoveTick(IPokemob pokemob, ItemStack stack, MovePacket moveuse)
+        public ActionResult<ItemStack> onMoveTick(IPokemob pokemob, ItemStack stack, MovePacket moveuse)
         {
             if (pokemob == moveuse.attacker && moveuse.pre)
             {
                 if (moveuse.getMove().getType(pokemob) == FIRE)
                 {
                     moveuse.PWR *= 1.2;
-                    return true;
+                    return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
                 }
             }
-            return false;
+            return new ActionResult<ItemStack>(EnumActionResult.FAIL, stack);
         }
 
         @Override

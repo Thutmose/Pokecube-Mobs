@@ -3,6 +3,8 @@ package pokecube.mobs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.HappinessType;
@@ -20,7 +22,7 @@ public class BerryHelper implements IMoveConstants
          * @param stack
          * @return something happened */
         @Override
-        public boolean onTick(IPokemob pokemob, ItemStack stack)
+        public ActionResult<ItemStack> onTick(IPokemob pokemob, ItemStack stack)
         {
             return onUse(pokemob, stack, pokemob.getEntity());
         }
@@ -34,7 +36,7 @@ public class BerryHelper implements IMoveConstants
          * @param stack
          * @return something happened */
         @Override
-        public boolean onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
+        public ActionResult<ItemStack> onUse(IPokemob pokemob, ItemStack stack, EntityLivingBase user)
         {
             return applyEffect(pokemob, user, stack);
         }
@@ -210,7 +212,7 @@ public class BerryHelper implements IMoveConstants
         return false;
     }
 
-    public static boolean applyEffect(IPokemob pokemob, EntityLivingBase user, ItemStack stack)
+    public static ActionResult<ItemStack> applyEffect(IPokemob pokemob, EntityLivingBase user, ItemStack stack)
     {
         boolean applied = berryEffect(pokemob, user, stack);
         int[] flavours = BerryManager.berryFlavours.get(stack.getItemDamage());
@@ -225,6 +227,6 @@ public class BerryHelper implements IMoveConstants
         if (useStack && user instanceof EntityPlayer && ((EntityPlayer) user).capabilities.isCreativeMode)
             useStack = false;
         if (useStack) stack.splitStack(1);
-        return applied;
+        return new ActionResult<ItemStack>(applied ? EnumActionResult.SUCCESS : EnumActionResult.FAIL, stack);
     }
 }
