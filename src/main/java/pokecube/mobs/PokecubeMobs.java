@@ -77,6 +77,7 @@ import pokecube.core.items.berries.BerryManager;
 import pokecube.core.items.pokecubes.EntityPokecube;
 import pokecube.core.items.pokecubes.PokecubeManager;
 import pokecube.core.utils.Tools;
+import pokecube.mobs.client.smd.SMDModel;
 import pokecube.modelloader.CommonProxy;
 import pokecube.modelloader.IMobProvider;
 import pokecube.modelloader.ModPokecubeML;
@@ -84,6 +85,7 @@ import pokecube.modelloader.client.render.ModelWrapperEvent;
 import pokecube.origin.render.ModelWrapperSpinda;
 import thut.api.maths.Vector3;
 import thut.core.client.ClientProxy;
+import thut.core.client.render.model.ModelFactory;
 import thut.lib.CompatWrapper;
 
 @Mod(modid = PokecubeMobs.MODID, name = "Pokecube Mobs", version = Reference.VERSION, dependencies = "required-after:pokecube;required-after:pokecube_adventures", updateJSON = PokecubeMobs.UPDATEURL, acceptableRemoteVersions = Reference.MINVERSION, acceptedMinecraftVersions = Reference.MCVERSIONS)
@@ -219,6 +221,10 @@ public class PokecubeMobs implements IMobProvider
         DBLoader.trainerDatabases.add("trainers.xml");
         DBLoader.tradeDatabases.add("trades.xml");
         MiscItemHelper.init();
+
+        // Register smd format for models
+        ModelFactory.registerIModel("smd", SMDModel.class);
+        ModelFactory.registerIModel("SMD", SMDModel.class);
     }
 
     @EventHandler
