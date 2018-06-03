@@ -209,6 +209,10 @@ public class Body implements IRetexturableModel
             if (lineCount == -1) { throw new Exception("there was a problem opening the model file : " + resloc, e); }
             throw new Exception("an error occurred reading the SMD file \"" + resloc + "\" on line #" + lineCount, e);
         }
+        finally
+        {
+            reader.close();
+        }
     }
 
     private void parseBone(String line, int lineCount, Body body)
