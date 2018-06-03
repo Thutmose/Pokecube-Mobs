@@ -134,13 +134,6 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
                 Bone bone = wrapped.body.getBone(s);
                 if (bone != null)
                 {
-                    // Set backup matricies
-                    if (bone.custom == null)
-                    {
-                        bone.custom = new Matrix4f(bone.rest);
-                        bone.customInv = new Matrix4f(bone.restInv);
-                    }
-
                     // Cap and convert pitch and yaw to radians.
                     float yaw = Math.max(Math.min(info.headYaw, info.yawCapMax), info.yawCapMin);
                     yaw = (float) Math.toRadians(yaw) * info.yawDirection;
@@ -151,7 +144,6 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
 
                     float cosT = (float) Math.cos(pitch);
                     float sinT = (float) Math.sin(pitch);
-
                     float cosA = (float) Math.cos(yaw);
                     float sinA = (float) Math.sin(yaw);
 
@@ -205,11 +197,8 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
                     }
                     // Multiply the two to get total rotation matrix
                     headRot = Matrix4f.mul(rotT, rotA, headRot);
-                    // Apply the rotation matricies.
-                    bone.rest = Matrix4f.mul(bone.custom, headRot, bone.rest);
-                    // Apply inversion and reform
-                    bone.restInv = Matrix4f.invert(bone.rest, bone.restInv);
-                    bone.applyChildrenToRest();
+                    // Apply the rotation.
+                    bone.applyTransform(headRot);
                 }
             }
             if (wrapped.body.currentAnim != null) wrapped.animate();

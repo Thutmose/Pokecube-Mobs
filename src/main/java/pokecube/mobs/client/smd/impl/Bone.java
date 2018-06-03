@@ -81,9 +81,9 @@ public class Bone
     /** modifies the rest matrix by the given matrix.
      * 
      * @param parentMatrix */
-    private void applyToRest(Matrix4f parentMatrix)
+    public void applyToRest(Matrix4f parentMatrix)
     {
-        this.rest = Matrix4f.mul(parentMatrix, this.rest, null);
+        this.rest = Matrix4f.mul(parentMatrix, this.rest, this.rest);
         applyChildrenToRest();
     }
 
@@ -106,6 +106,66 @@ public class Bone
         reset();
     }
 
+    /** Applies a custom transform to this bone and all children. This is to be
+     * used for things like at-runtime animations, such as head rotations.
+     * 
+     * @param transform */
+    public void applyTransform(Matrix4f transform)
+    {
+        // Set backup matricies
+        if (this.custom == null)
+        {
+            this.custom = new Matrix4f(this.rest);
+            this.customInv = new Matrix4f(this.restInv);
+        }
+
+        // Apply the rotation matricies.
+        this.rest = Matrix4f.mul(this.custom, transform, this.rest);
+        // Apply inversion and apply transforms
+        this.invertRestMatrix();
+        // Update children about the transform
+        applyTransformToChildren(true);
+    }
+
+    private void applyTransformToChildren(boolean first)
+    {
+        if (parent.custom == null)
+        {
+            parent.custom = new Matrix4f(parent.rest);
+            parent.customInv = new Matrix4f(parent.restInv);
+        }
+
+        for (Bone child : this.children)
+        {
+            if (child.custom == null)
+            {
+                child.custom = new Matrix4f(child.rest);
+                child.customInv = new Matrix4f(child.restInv);
+            }
+            if (first)
+            {
+                Matrix4f left = null;
+                Matrix4f right = null;
+                // This works for the first order.
+                left = Matrix4f.mul(parent.customInv, custom, null);
+                right = Matrix4f.mul(restInv, parent.rest, null);
+
+                // Apply the adjusted transformation matricies.
+                Matrix4f transform = Matrix4f.mul(left, right, null);
+                Matrix4f.mul(child.custom, transform, child.rest);
+            }
+            else
+            {
+                Matrix4f transform = Matrix4f.mul(customInv, rest, null);
+                Matrix4f.mul(child.custom, transform, child.rest);
+            }
+
+            // Apply inversion and apply transforms
+            child.invertRestMatrix();
+            child.applyTransformToChildren(false);
+        }
+    }
+
     protected Matrix4f getTransform()
     {
         return this.transform == null ? (this.transform = new Matrix4f()) : this.transform;
@@ -113,7 +173,7 @@ public class Bone
 
     public void invertRestMatrix()
     {
-        this.restInv = Matrix4f.invert(this.rest, null);
+        this.restInv = Matrix4f.invert(this.rest, this.restInv);
     }
 
     /** Pre-calculates the needed transform for the given frame.
