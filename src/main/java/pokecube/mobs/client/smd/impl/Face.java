@@ -2,6 +2,8 @@ package pokecube.mobs.client.smd.impl;
 
 import java.util.ArrayList;
 
+import javax.vecmath.Vector3f;
+
 import org.lwjgl.opengl.GL11;
 
 import thut.core.client.render.model.TextureCoordinate;
@@ -64,7 +66,13 @@ public class Face
 
     public Vertex calculateNormal()
     {
-        // TODO calculate the real normal for the face.
-        return new Vertex(0, 0, 0);
+        Vector3f a = new Vector3f();
+        a.set(verts[1].x - verts[0].x, verts[1].y - verts[0].y, verts[1].z - verts[0].z);
+        Vector3f b = new Vector3f();
+        b.set(verts[2].x - verts[0].x, verts[2].y - verts[0].y, verts[2].z - verts[0].z);
+        Vector3f c = new Vector3f();
+        c.cross(a, b);
+        c.normalize();
+        return new Vertex(c.x, c.y, c.z);
     }
 }

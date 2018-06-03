@@ -309,7 +309,7 @@ public class Body implements IRetexturableModel
     public void render()
     {
         GL11.glPushMatrix();
-        boolean smooth = true;
+        boolean smooth = texturer == null ? false : !texturer.isFlat(null);
         if (!this.parent.usesMaterials)
         {
             GL11.glBegin(GL11.GL_TRIANGLES);
