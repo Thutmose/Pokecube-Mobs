@@ -20,11 +20,13 @@ public class Bone
     public Matrix4f                             restInv;
     /** Transformation matrix for the new position of this bone. */
     public Matrix4f                             transform          = new Matrix4f();
+    /** Transformation matrix set by dynamic animations, such as head
+     * rotations. */
+    public Matrix4f                             dynamicTransform   = new Matrix4f();
     /** Placeholder to prevent re-newing temporary matrices */
     private final Matrix4f                      dummy1             = new Matrix4f();
-    /** Used for any custom animations to store backup data in. */
-    public Matrix4f                             custom;
-    public Matrix4f                             customInv;
+    private final Matrix4f                      dummy2             = new Matrix4f();
+
     public ArrayList<Bone>                      children           = new ArrayList<Bone>(0);
     public HashMap<MutableVertex, Float>        verts              = new HashMap<MutableVertex, Float>();
     public HashMap<String, ArrayList<Matrix4f>> animatedTransforms = new HashMap<String, ArrayList<Matrix4f>>();
@@ -112,58 +114,7 @@ public class Bone
      * @param transform */
     public void applyTransform(Matrix4f transform)
     {
-        // Set backup matricies
-        if (this.custom == null)
-        {
-            this.custom = new Matrix4f(this.rest);
-            this.customInv = new Matrix4f(this.restInv);
-        }
-
-        // Apply the rotation matricies.
-        this.rest = Matrix4f.mul(this.custom, transform, this.rest);
-        // Apply inversion and apply transforms
-        this.invertRestMatrix();
-        // Update children about the transform
-        applyTransformToChildren(true);
-    }
-
-    private void applyTransformToChildren(boolean first)
-    {
-        if (parent.custom == null)
-        {
-            parent.custom = new Matrix4f(parent.rest);
-            parent.customInv = new Matrix4f(parent.restInv);
-        }
-
-        for (Bone child : this.children)
-        {
-            if (child.custom == null)
-            {
-                child.custom = new Matrix4f(child.rest);
-                child.customInv = new Matrix4f(child.restInv);
-            }
-            if (first)
-            {
-                Matrix4f left = null;
-                Matrix4f right = null;
-                // This works for the first order.
-                left = Matrix4f.mul(parent.customInv, custom, null);
-                right = Matrix4f.mul(restInv, parent.rest, null);
-
-                // Apply the adjusted transformation matricies.
-                Matrix4f transform = Matrix4f.mul(left, right, null);
-                Matrix4f.mul(child.custom, transform, child.rest);
-            }
-            else
-            {
-                Matrix4f transform = Matrix4f.mul(customInv, rest, null);
-                Matrix4f.mul(child.custom, transform, child.rest);
-            }
-
-            // Apply inversion and apply transforms
-            child.invertRestMatrix();
-            child.applyTransformToChildren(false);
-        }
+        Matrix4f.mul(dynamicTransform, transform, dynamicTransform);
     }
 
     protected Matrix4f getTransform()
@@ -200,24 +151,28 @@ public class Bone
      * pose. */
     public void prepareTransform()
     {
-        dummy1.setIdentity();
-        Matrix4f edit = dummy1;
-        Matrix4f real;
-        Matrix4f realInverted;
+        Matrix4f inverted = dummy1;
+        Matrix4f delta = dummy2;
+        // Apply either transformation based on the animation, or based on the
+        // rest matrices
         if ((this.owner.parent.hasAnimations()) && (this.owner.currentAnim != null))
         {
+            // We have an animation, so our delta matrix will be based on this.
             Frame currentFrame = this.owner.currentAnim.frames.get(this.owner.currentAnim.index);
-            realInverted = new Matrix4f(currentFrame.transforms.get(this.ID));
-            real = new Matrix4f(currentFrame.invertTransforms.get(this.ID));
+            Matrix4f.load(currentFrame.transforms.get(this.ID), delta);
+            Matrix4f.load(currentFrame.invertTransforms.get(this.ID), inverted);
         }
         else
         {
-            realInverted = this.rest;
-            real = this.restInv;
+            // No animation, so use rest matrix for the delta.
+            Matrix4f.load(this.rest, delta);
+            Matrix4f.load(this.restInv, inverted);
         }
-        Matrix4f delta = Matrix4f.mul(realInverted, edit, this.dummy1);
-        Matrix4f.mul(delta, real, delta);
-        this.transform = (this.parent != null ? Matrix4f.mul(this.parent.transform, delta, getTransform()) : delta);
+        // Apply the dynamic transformation.
+        Matrix4f.mul(delta, dynamicTransform, delta);
+        Matrix4f.mul(delta, inverted, delta);
+        this.transform = this.parent != null ? Matrix4f.mul(this.parent.transform, delta, getTransform())
+                : getTransform();
         for (Bone child : this.children)
         {
             child.prepareTransform();
@@ -227,6 +182,7 @@ public class Bone
     public void reset()
     {
         this.transform.setIdentity();
+        this.dynamicTransform.setIdentity();
     }
 
     public void setChildren(Bone b, ArrayList<Bone> bones)

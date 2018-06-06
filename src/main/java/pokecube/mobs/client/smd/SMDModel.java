@@ -14,6 +14,7 @@ import com.google.common.collect.Sets;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import pokecube.mobs.client.smd.impl.Bone;
+import pokecube.mobs.client.smd.impl.Helpers;
 import pokecube.mobs.client.smd.impl.Model;
 import thut.core.client.render.animation.CapabilityAnimation.IAnimationHolder;
 import thut.core.client.render.model.IAnimationChanger;
@@ -139,69 +140,50 @@ public class SMDModel implements IModelCustom, IModel, IRetexturableModel, IFake
                     yaw = (float) Math.toRadians(yaw) * info.yawDirection;
                     float pitch = Math.max(Math.min(info.headPitch, info.pitchCapMax), info.pitchCapMin);
                     pitch = (float) Math.toRadians(pitch) * info.pitchDirection;
-                    // Rotate Yaw
+
+                    // Head rotation matrix
                     Matrix4f headRot = new Matrix4f();
 
-                    float cosT = (float) Math.cos(pitch);
-                    float sinT = (float) Math.sin(pitch);
-                    float cosA = (float) Math.cos(yaw);
-                    float sinA = (float) Math.sin(yaw);
+                    float xr = 0, yr = 0, zr = 0;
 
-                    // This matrix is for pitch.
-                    Matrix4f rotT = new Matrix4f();
-                    // This matrix is for yaw.
-                    Matrix4f rotA = new Matrix4f();
-
-                    // Set yaw matrix based on headInfo
                     switch (info.yawAxis)
                     {
-                    case 0:
-                        rotA.m00 = cosA;
-                        rotA.m01 = sinA;
-                        rotA.m10 = -sinA;
-                        rotA.m11 = cosA;
+                    case 2:
+                        zr = yaw;
                         break;
                     case 1:
-                        rotA.m00 = cosA;
-                        rotA.m02 = sinA;
-                        rotA.m20 = -sinA;
-                        rotA.m22 = cosA;
+                        yr = yaw;
                         break;
-                    default:
-                        rotA.m11 = cosA;
-                        rotA.m12 = sinA;
-                        rotA.m21 = -sinA;
-                        rotA.m22 = cosA;
+                    case 0:
+                        xr = yaw;
+                        break;
                     }
+                    headRot = Helpers.makeMatrix(0, 0, 0, xr, yr, zr);
+                    // Apply the rotation.
+                    bone.applyTransform(headRot);
 
-                    // Set pitch matrix based on headInfo
+                    xr = 0;
+                    yr = 0;
+                    zr = 0;
+
                     switch (info.pitchAxis)
                     {
                     case 2:
-                        rotT.m11 = cosT;
-                        rotT.m12 = sinT;
-                        rotT.m21 = -sinT;
-                        rotT.m22 = cosT;
+                        zr = pitch;
+                        break;
+                    case 1:
+                        yr = pitch;
                         break;
                     case 0:
-                        rotT.m00 = cosT;
-                        rotT.m01 = sinT;
-                        rotT.m10 = -sinT;
-                        rotT.m11 = cosT;
+                        xr = pitch;
                         break;
-                    default:
-                        rotT.m00 = cosT;
-                        rotT.m02 = sinT;
-                        rotT.m20 = -sinT;
-                        rotT.m22 = cosT;
                     }
-                    // Multiply the two to get total rotation matrix
-                    headRot = Matrix4f.mul(rotT, rotA, headRot);
+                    headRot = Helpers.makeMatrix(0, 0, 0, xr, yr, zr);
                     // Apply the rotation.
                     bone.applyTransform(headRot);
                 }
             }
-            if (wrapped.body.currentAnim != null) wrapped.animate();
+            wrapped.animate();
             wrapped.renderAll();
         }
     }
