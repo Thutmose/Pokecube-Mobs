@@ -45,7 +45,7 @@ public class Face
      *            normal. */
     public void addForRender(boolean smoothShading)
     {
-        if (!smoothShading && this.normal == null)
+        if (!smoothShading)
         {
             this.normal = calculateNormal();
         }
@@ -64,15 +64,23 @@ public class Face
         }
     }
 
+    Vector3f a = new Vector3f();
+    Vector3f b = new Vector3f();
+    Vector3f c = new Vector3f();
+
     public Vertex calculateNormal()
     {
-        Vector3f a = new Vector3f();
         a.set(verts[1].x - verts[0].x, verts[1].y - verts[0].y, verts[1].z - verts[0].z);
-        Vector3f b = new Vector3f();
         b.set(verts[2].x - verts[0].x, verts[2].y - verts[0].y, verts[2].z - verts[0].z);
-        Vector3f c = new Vector3f();
         c.cross(a, b);
         c.normalize();
-        return new Vertex(c.x, c.y, c.z);
+        if (normal == null) normal = new Vertex(c.x, c.y, c.z);
+        else
+        {
+            normal.x = c.x;
+            normal.y = c.y;
+            normal.z = c.z;
+        }
+        return normal;
     }
 }
