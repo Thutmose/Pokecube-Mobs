@@ -13,9 +13,11 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.logging.Level;
 
 import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -62,6 +64,7 @@ import pokecube.core.events.EvolveEvent;
 import pokecube.core.events.handlers.EventsHandler;
 import pokecube.core.events.onload.InitDatabase;
 import pokecube.core.events.onload.RegisterPokecubes;
+import pokecube.core.events.onload.RegisterPokemobsEvent;
 import pokecube.core.handlers.HeldItemHandler;
 import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokecube;
@@ -116,9 +119,10 @@ public class PokecubeMobs implements IMobProvider
         }
     }
 
-    Map<PokedexEntry, Integer> genMap    = Maps.newHashMap();
-    public static final String MODID     = "pokecube_mobs";
-    public static final String UPDATEURL = "https://gist.githubusercontent.com/Thutmose/4d7320c36696cd39b336/raw/mobs.json";
+    Map<PokedexEntry, Integer> genMap     = Maps.newHashMap();
+    Set<PokedexEntry>          missingnos = Sets.newHashSet();
+    public static final String MODID      = "pokecube_mobs";
+    public static final String UPDATEURL  = "https://gist.githubusercontent.com/Thutmose/4d7320c36696cd39b336/raw/mobs.json";
 
     public PokecubeMobs()
     {
@@ -245,6 +249,21 @@ public class PokecubeMobs implements IMobProvider
         }
     }
 
+    @SubscribeEvent
+    public void RegisterPokemobsEvent(RegisterPokemobsEvent.Register event)
+    {
+        for (PokedexEntry entry : Database.getSortedFormes())
+        {
+            // Came from a resourcepack
+            if (entry.getModId() == null) continue;
+            if (entry.getModId().equals(PokecubeMissingno.MODID))
+            {
+                entry.setModId(MODID);
+                missingnos.add(entry);
+            }
+        }
+    }
+
     @EventHandler
     public void serverStarting(FMLServerStartingEvent event)
     {
@@ -288,6 +307,7 @@ public class PokecubeMobs implements IMobProvider
     private int getGen(PokedexEntry entry)
     {
         int gen;
+        if (missingnos.contains(entry)) return 0;
         if (genMap.containsKey(entry))
         {
             gen = genMap.get(entry);
