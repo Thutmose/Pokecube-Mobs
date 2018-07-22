@@ -876,7 +876,7 @@
     {
       "name": "Magmar",
       "stats": {
-        "lootTable": "pokecube:entities/redstone_1"
+        "lootTable": "pokecube:entities/blaze_rabbit_2"
       }
     },
     {
