@@ -10,6 +10,7 @@ import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.HappinessType;
 import pokecube.core.items.UsableItemEffects.BerryUsable.BerryEffect;
 import pokecube.core.items.berries.BerryManager;
+import pokecube.core.items.berries.ItemBerry;
 
 public class BerryHelper implements IMoveConstants
 {
@@ -45,64 +46,64 @@ public class BerryHelper implements IMoveConstants
     public static void initBerries()
     {
         DefaultBerryEffect effect = new DefaultBerryEffect();
-        BerryManager.addBerry("cheri", 1, 10, 0, 0, 0, 0, effect);// Cures
-                                                                  // Paralysis
-        BerryManager.addBerry("chesto", 2, 0, 10, 0, 0, 0, effect);// Cures
-                                                                   // sleep
-        BerryManager.addBerry("pecha", 3, 0, 0, 10, 0, 0, effect);// Cures
-                                                                  // poison
-        BerryManager.addBerry("rawst", 4, 0, 0, 0, 10, 0, effect);// Cures burn
-        BerryManager.addBerry("aspear", 5, 0, 0, 0, 0, 10, effect);// Cures
-                                                                   // freeze
-        BerryManager.addBerry("leppa", 6, 10, 0, 10, 10, 10, effect);// Restores
-                                                                     // 10PP
-        BerryManager.addBerry("oran", 7, 10, 10, 10, 10, 10, effect);// Restores
-                                                                     // 10HP
-        BerryManager.addBerry("persim", 8, 10, 10, 10, 0, 10, effect);// Cures
-                                                                      // confusion
-        BerryManager.addBerry("lum", 9, 10, 10, 10, 10, 0, effect);// Cures any
-                                                                   // status
-                                                                   // ailment
-        BerryManager.addBerry("sitrus", 10, 0, 10, 10, 10, 10, effect);// Restores
-                                                                       // 1/4 HP
-        BerryManager.addBerry("nanab", 18, 0, 0, 10, 10, 0, effect);// Pokeblock
-                                                                    // ingredient
-        BerryManager.addBerry("pinap", 20, 10, 0, 0, 0, 10, effect);// Pokeblock
-                                                                    // ingredient
-        BerryManager.addBerry("pomeg", 21, 10, 0, 10, 10, 0, effect);// EV Berry
-        BerryManager.addBerry("kelpsy", 22, 0, 10, 0, 10, 10, effect);// EV
-                                                                      // Berry
-        BerryManager.addBerry("qualot", 23, 10, 0, 10, 0, 10, effect);// EV
-                                                                      // Berry
-        BerryManager.addBerry("hondew", 24, 10, 10, 0, 10, 0, effect);// EV
-                                                                      // Berry
-        BerryManager.addBerry("grepa", 25, 0, 10, 10, 0, 10, effect);// EV Berry
-        BerryManager.addBerry("tamato", 26, 20, 10, 0, 0, 0, effect);// EV Berry
-        BerryManager.addBerry("cornn", 27, 0, 20, 10, 0, 0, effect);// Pokeblock
-                                                                    // ingredient
-        BerryManager.addBerry("enigma", 60, 40, 10, 0, 0, 0, effect);// Restores
-                                                                     // 1/4 of
-                                                                     // HP
-        BerryManager.addBerry("jaboca", 63, 0, 0, 0, 40, 10, effect);// 4th gen.
-                                                                     // Causes
-                                                                     // recoil
-                                                                     // damage
-                                                                     // on foe
-                                                                     // if
-                                                                     // holder
-                                                                     // is hit
-                                                                     // by a
-                                                                     // physical
-                                                                     // move
-        BerryManager.addBerry("rowap", 64, 10, 0, 0, 0, 40, effect);// 4th gen.
-                                                                    // Causes
-                                                                    // recoil
-                                                                    // damage on
-                                                                    // foe if
-                                                                    // holder is
-                                                                    // hit by a
-                                                                    // special
-                                                                    // move
+        new ItemBerry("cheri", 1, 10, 0, 0, 0, 0, effect);// Cures
+                                                          // Paralysis
+        new ItemBerry("chesto", 2, 0, 10, 0, 0, 0, effect);// Cures
+                                                           // sleep
+        new ItemBerry("pecha", 3, 0, 0, 10, 0, 0, effect);// Cures
+                                                          // poison
+        new ItemBerry("rawst", 4, 0, 0, 0, 10, 0, effect);// Cures burn
+        new ItemBerry("aspear", 5, 0, 0, 0, 0, 10, effect);// Cures
+                                                           // freeze
+        new ItemBerry("leppa", 6, 10, 0, 10, 10, 10, effect);// Restores
+                                                             // 10PP
+        new ItemBerry("oran", 7, 10, 10, 10, 10, 10, effect);// Restores
+                                                             // 10HP
+        new ItemBerry("persim", 8, 10, 10, 10, 0, 10, effect);// Cures
+                                                              // confusion
+        new ItemBerry("lum", 9, 10, 10, 10, 10, 0, effect);// Cures any
+                                                           // status
+                                                           // ailment
+        new ItemBerry("sitrus", 10, 0, 10, 10, 10, 10, effect);// Restores
+                                                               // 1/4 HP
+        new ItemBerry("nanab", 18, 0, 0, 10, 10, 0, effect);// Pokeblock
+                                                            // ingredient
+        new ItemBerry("pinap", 20, 10, 0, 0, 0, 10, effect);// Pokeblock
+                                                            // ingredient
+        new ItemBerry("pomeg", 21, 10, 0, 10, 10, 0, effect);// EV Berry
+        new ItemBerry("kelpsy", 22, 0, 10, 0, 10, 10, effect);// EV
+                                                              // Berry
+        new ItemBerry("qualot", 23, 10, 0, 10, 0, 10, effect);// EV
+                                                              // Berry
+        new ItemBerry("hondew", 24, 10, 10, 0, 10, 0, effect);// EV
+                                                              // Berry
+        new ItemBerry("grepa", 25, 0, 10, 10, 0, 10, effect);// EV Berry
+        new ItemBerry("tamato", 26, 20, 10, 0, 0, 0, effect);// EV Berry
+        new ItemBerry("cornn", 27, 0, 20, 10, 0, 0, effect);// Pokeblock
+                                                            // ingredient
+        new ItemBerry("enigma", 60, 40, 10, 0, 0, 0, effect);// Restores
+                                                             // 1/4 of
+                                                             // HP
+        new ItemBerry("jaboca", 63, 0, 0, 0, 40, 10, effect);// 4th gen.
+                                                             // Causes
+                                                             // recoil
+                                                             // damage
+                                                             // on foe
+                                                             // if
+                                                             // holder
+                                                             // is hit
+                                                             // by a
+                                                             // physical
+                                                             // move
+        new ItemBerry("rowap", 64, 10, 0, 0, 0, 40, effect);// 4th gen.
+                                                            // Causes
+                                                            // recoil
+                                                            // damage on
+                                                            // foe if
+                                                            // holder is
+                                                            // hit by a
+                                                            // special
+                                                            // move
     }
 
     public static boolean berryEffect(IPokemob pokemob, EntityLivingBase user, ItemStack berry)

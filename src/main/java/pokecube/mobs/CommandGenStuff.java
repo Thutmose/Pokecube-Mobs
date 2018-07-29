@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -13,6 +15,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommandSender;
@@ -21,7 +24,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextComponentString;
 import pokecube.core.database.Database;
 import pokecube.core.database.PokedexEntry;
-import pokecube.core.interfaces.IPokecube;;
+import pokecube.core.handlers.ItemGenerator;
+import pokecube.core.interfaces.IPokecube;
+import pokecube.core.items.berries.BerryManager;
+import pokecube.core.items.megastuff.ItemMegawearable;
+import pokecube.core.items.vitamins.ItemVitamin;
+import pokecube.core.utils.PokeType;;
 
 public class CommandGenStuff extends CommandBase
 {
@@ -62,8 +70,159 @@ public class CommandGenStuff extends CommandBase
             e.printStackTrace();
         }
         sender.sendMessage(new TextComponentString("Sounds Done"));
-        generatePokecubesJsons();
+        generateBlockAndItemJsons();
 
+        for (String s : ItemGenerator.barks.keySet())
+        {
+            // BlockStates
+            // Bark
+            dir = new File("./mods/pokecube_mobs/assets/pokecube/blockstates/");
+            dir.mkdirs();
+            file = new File(dir, "bark_" + s + ".json");
+            json = "{\n" + "    \"variants\": {\n" + "        \"normal\": { \"model\": \"pokecube:bark_" + s + "\" }\n"
+                    + "    }\n" + "}";
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+            // Bark
+            file = new File(dir, "plank_" + s + ".json");
+            json = "{\n" + "    \"variants\": {\n" + "        \"normal\": { \"model\": \"pokecube:plank_" + s + "\" }\n"
+                    + "    }\n" + "}";
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+            // Log
+            json = "{\n" + "    \"variants\": {\n" + "        \"axis=y\": { \"model\": \"pokecube:log_" + s + "\" },\n"
+                    + "        \"axis=z\":  { \"model\": \"pokecube:log_" + s + "\",\"x\": 90 },\n"
+                    + "        \"axis=x\": { \"model\": \"pokecube:log_" + s + "\", \"x\": 90, \"y\": 90 },\n"
+                    + "        \"axis=none\": { \"model\": \"pokecube:bark_" + s + "\"}\n" + "    }\n" + "}";
+            file = new File(dir, "log_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            // Block models
+
+            dir = new File("./mods/pokecube_mobs/assets/pokecube/models/block/");
+            dir.mkdirs();
+
+            json = "{\n" + "   \"parent\": \"block/cube_all\",\n" + "   \"textures\": {\n"
+                    + "       \"all\": \"pokecube:blocks/bark_" + s + "\"\n" + "   }\n" + "}\n";
+            file = new File(dir, "bark_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            json = "{\n" + "   \"parent\": \"block/cube_all\",\n" + "   \"textures\": {\n"
+                    + "       \"all\": \"pokecube:blocks/plank_" + s + "\"\n" + "   }\n" + "}";
+            file = new File(dir, "plank_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            json = "{\n" + "   \"parent\": \"block/cube_column\",\n" + "   \"textures\": {\n"
+                    + "       \"end\": \"pokecube:blocks/log_" + s + "\",\n"
+                    + "       \"side\": \"pokecube:blocks/bark_" + s + "\"\n" + "   }\n" + "}";
+            file = new File(dir, "log_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            // Item Jsons
+            dir = new File("./mods/pokecube_mobs/assets/pokecube/models/item/");
+            dir.mkdirs();
+
+            json = "{\n" + "   \"parent\": \"pokecube:block/plank_" + s + "\",\n" + "   \"display\": {\n"
+                    + "       \"thirdperson\": {\n" + "           \"rotation\": [ 10, -45, 170 ],\n"
+                    + "           \"translation\": [ 0, 1.5, -2.75 ],\n"
+                    + "           \"scale\": [ 0.375, 0.375, 0.375 ]\n" + "       }\n" + "   }\n" + "}";
+            file = new File(dir, "plank_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            json = "{\n" + "   \"parent\": \"pokecube:block/bark_" + s + "\",\n" + "   \"display\": {\n"
+                    + "       \"thirdperson\": {\n" + "           \"rotation\": [ 10, -45, 170 ],\n"
+                    + "           \"translation\": [ 0, 1.5, -2.75 ],\n"
+                    + "           \"scale\": [ 0.375, 0.375, 0.375 ]\n" + "       }\n" + "   }\n" + "}";
+            file = new File(dir, "bark_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+            json = "{\n" + "   \"parent\": \"pokecube:block/log_" + s + "\",\n" + "   \"display\": {\n"
+                    + "       \"thirdperson\": {\n" + "           \"rotation\": [ 10, -45, 170 ],\n"
+                    + "           \"translation\": [ 0, 1.5, -2.75 ],\n"
+                    + "           \"scale\": [ 0.375, 0.375, 0.375 ]\n" + "       }\n" + "   }\n" + "}";
+            file = new File(dir, "log_" + s + ".json");
+            try
+            {
+                FileWriter write = new FileWriter(file);
+                write.write(json);
+                write.close();
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+        }
         sender.sendMessage(new TextComponentString("Finished File Output"));
     }
 
@@ -168,9 +327,123 @@ public class CommandGenStuff extends CommandBase
         }
     }
 
-    public static void generatePokecubesJsons()
+    private static void generateItemJson(String name, String prefix, String outerdir, String innerdir)
     {
-        for (ResourceLocation l : IPokecube.BEHAVIORS.getKeys())
+        if (name.equals("???")) name = "unknown";
+        JsonObject blockJson = new JsonObject();
+        blockJson.addProperty("parent", "item/generated");
+        JsonObject textures = new JsonObject();
+
+        Map<String, String> meganames = Maps.newHashMap();
+        meganames.put("aerodactylmega", "pokecube:items/aerodactylite");
+        meganames.put("abomasnowmega", "pokecube:items/abomasite");
+        meganames.put("absolmega", "pokecube:items/absolite");
+        meganames.put("aggronmega", "pokecube:items/aggronite");
+        meganames.put("alakazammega", "pokecube:items/alakazite");
+        meganames.put("altariamega", "pokecube:items/altarianite");
+        meganames.put("ampharosmega", "pokecube:items/ampharosite");
+        meganames.put("audinomega", "pokecube:items/audinite");
+        meganames.put("banettemega", "pokecube:items/banettite");
+        meganames.put("beedrillmega", "pokecube:items/beedrillite");
+        meganames.put("blastoisemega", "pokecube:items/blastoisinite");
+        meganames.put("blazikenmega", "pokecube:items/blazikenite");
+        meganames.put("cameruptmega", "pokecube:items/cameruptite");
+        meganames.put("charizardmega-x", "pokecube:items/charizardite_x");
+        meganames.put("charizardmega-y", "pokecube:items/charizardite_y");
+        meganames.put("dianciemega", "pokecube:items/diancite");
+        meganames.put("gallademega", "pokecube:items/galladite");
+        meganames.put("garchompmega", "pokecube:items/garchompite");
+        meganames.put("gardevoirmega", "pokecube:items/gardevoirite");
+        meganames.put("gengarmega", "pokecube:items/gengarite");
+        meganames.put("glaliemega", "pokecube:items/glalitite");
+        meganames.put("gyaradosmega", "pokecube:items/gyaradosite");
+        meganames.put("heracrossmega", "pokecube:items/heracronite");
+        meganames.put("houndoommega", "pokecube:items/houndoominite");
+        meganames.put("kangaskhanmega", "pokecube:items/kangaskhanite");
+        meganames.put("latiasmega", "pokecube:items/latiasite");
+        meganames.put("latiosmega", "pokecube:items/latiosite");
+        meganames.put("lopunnymega", "pokecube:items/lopunnite");
+        meganames.put("lucariomega", "pokecube:items/lucarionite");
+        meganames.put("manectricmega", "pokecube:items/manectite");
+        meganames.put("mawilemega", "pokecube:items/mawilite");
+        meganames.put("medichammega", "pokecube:items/medichamite");
+        meganames.put("metagrossmega", "pokecube:items/metagrossite");
+        meganames.put("mewtwomega-x", "pokecube:items/mewtwonite_x");
+        meganames.put("mewtwomega-y", "pokecube:items/mewtwonite_y");
+        meganames.put("pidgeotmega", "pokecube:items/pidgeotite");
+        meganames.put("pinsirmega", "pokecube:items/pinsirite");
+        meganames.put("sableyemega", "pokecube:items/sablenite");
+        meganames.put("salamencemega", "pokecube:items/salamencite");
+        meganames.put("sceptilemega", "pokecube:items/sceptilite");
+        meganames.put("scizormega", "pokecube:items/scizorite");
+        meganames.put("sharpedomega", "pokecube:items/sharpedonite");
+        meganames.put("slowbromega", "pokecube:items/slowbronite");
+        meganames.put("steelixmega", "pokecube:items/steelixite");
+        meganames.put("swampertmega", "pokecube:items/swampertite");
+        meganames.put("tyranitarmega", "pokecube:items/tyranitarite");
+        meganames.put("venusaurmega", "pokecube:items/venusaurite");
+
+        String tex = innerdir + ":items/" + prefix + name;
+        if (meganames.containsKey(name)) tex = meganames.get(name);
+
+        textures.addProperty("layer0", tex);
+        blockJson.add("textures", textures);
+        File dir = new File("./mods/" + outerdir + "/assets/" + innerdir + "/models/item/");
+        dir.mkdirs();
+        File file = new File(dir, prefix + name + ".json");
+        String json = AdvancementGenerator.GSON.toJson(blockJson);
+        try
+        {
+            FileWriter write = new FileWriter(file);
+            write.write(json);
+            write.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public static void generateBlockAndItemJsons()
+    {
+        boolean berries = true;
+        boolean cubes = false;
+        boolean vitamins = true;
+        boolean badges = true;
+        boolean megastones = true;
+        boolean megawearables = true;
+        boolean fossils = true;
+
+        if (badges) for (PokeType type : PokeType.values())
+        {
+            generateItemJson(type.name, "badge_", "pokecube_adventures", "pokecube_adventures");
+        }
+        if (fossils) for (String type : ItemGenerator.fossilVariants)
+        {
+            generateItemJson(type, "fossil_", "pokecube_mobs", "pokecube");
+        }
+        if (megastones) for (String type : ItemGenerator.variants)
+        {
+            generateItemJson(type, "", "pokecube_mobs", "pokecube");
+        }
+        if (vitamins) for (String type : ItemVitamin.vitamins)
+        {
+            generateItemJson(type, "vitamin_", "pokecube_mobs", "pokecube");
+        }
+        if (megawearables) for (String type : ItemMegawearable.getWearables())
+        {
+            String dir = type.equals("ring") || type.equals("hat") || type.equals("belt") ? "pokecube"
+                    : "pokecube_mobs";
+            generateItemJson(type, "mega_", dir, "pokecube");
+        }
+
+        if (berries) for (String name : BerryManager.berryNames.values())
+        {
+            String dir = name.equals("null") ? "pokecube" : "pokecube_mobs";
+            generateItemJson(name, "berry_", dir, "pokecube");
+        }
+
+        if (cubes) for (ResourceLocation l : IPokecube.BEHAVIORS.getKeys())
         {
             String cube = l.getResourcePath();
             JsonObject blockJson = new JsonObject();
@@ -254,6 +527,18 @@ public class CommandGenStuff extends CommandBase
                 ResourceLocation event = entry.getSoundEvent().getSoundName();
                 if (added.contains(event)) continue;
                 added.add(event);
+
+                String backup = "rattata";
+
+                try
+                {
+                    Minecraft.getMinecraft().getResourceManager().getResource(event);
+                }
+                catch (Exception e)
+                {
+                    event = new ResourceLocation(backup);
+                }
+
                 String soundName = event.getResourcePath().replaceFirst("mobs.", "");
                 JsonObject soundEntry = new JsonObject();
                 soundEntry.addProperty("category", "hostile");
@@ -330,7 +615,7 @@ public class CommandGenStuff extends CommandBase
                     String newParent = id + "_" + entry.evolvesFrom.getTrimmedName();
                     parent = parent.replace("root", newParent);
                     parent = parent.replace("get_first_pokemob", newParent);
-                    
+
                 }
                 json.addProperty("parent", parent);
             }

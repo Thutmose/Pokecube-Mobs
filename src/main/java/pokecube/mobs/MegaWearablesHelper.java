@@ -25,8 +25,8 @@ public class MegaWearablesHelper
     {
         // Tiara like worn by Lisia, but rotated to be centered on head instead
         // of at angle.
-        ItemMegawearable.registerWearable("megatiara", "HAT");
-        WearablesCompat.renderers.put("megatiara", new WearablesRenderer()
+        ItemMegawearable.registerWearable("tiara", "HAT");
+        WearablesCompat.renderers.put("tiara", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
             @SideOnly(Side.CLIENT)
@@ -78,8 +78,8 @@ public class MegaWearablesHelper
         });
 
         // Mega Anklet like one worn by Zinnia
-        ItemMegawearable.registerWearable("megaankletzinnia", "ANKLE");
-        WearablesCompat.renderers.put("megaankletzinnia", new WearablesRenderer()
+        ItemMegawearable.registerWearable("ankletzinnia", "ANKLE");
+        WearablesCompat.renderers.put("ankletzinnia", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
             @SideOnly(Side.CLIENT)
@@ -135,8 +135,8 @@ public class MegaWearablesHelper
             }
         });
         // a Pendant
-        ItemMegawearable.registerWearable("megapendant", "NECK");
-        WearablesCompat.renderers.put("megapendant", new WearablesRenderer()
+        ItemMegawearable.registerWearable("pendant", "NECK");
+        WearablesCompat.renderers.put("pendant", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
             @SideOnly(Side.CLIENT)
@@ -188,8 +188,8 @@ public class MegaWearablesHelper
             }
         });
         // Earrings
-        ItemMegawearable.registerWearable("megaearring", "EAR");
-        WearablesCompat.renderers.put("megaearring", new WearablesRenderer()
+        ItemMegawearable.registerWearable("earring", "EAR");
+        WearablesCompat.renderers.put("earring", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
             @SideOnly(Side.CLIENT)
@@ -240,8 +240,8 @@ public class MegaWearablesHelper
             }
         });
         // Glasses
-        ItemMegawearable.registerWearable("megaglasses", "EYE");
-        WearablesCompat.renderers.put("megaglasses", new WearablesRenderer()
+        ItemMegawearable.registerWearable("glasses", "EYE");
+        WearablesCompat.renderers.put("glasses", new WearablesRenderer()
         {
             // 2 layers of hat rendering for the different colours.
             @SideOnly(Side.CLIENT)

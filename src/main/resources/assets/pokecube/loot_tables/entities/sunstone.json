@@ -12,13 +12,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "pokecube:held",
-                    "functions": [
-                        {
-                            "function": "pokecube_held",
-                            "type": "sunstone"
-                        }
-                    ]
+                    "name": "pokecube:sunstone"
                 }
             ]
         }
