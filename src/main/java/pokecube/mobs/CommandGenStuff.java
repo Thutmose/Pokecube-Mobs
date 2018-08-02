@@ -530,13 +530,16 @@ public class CommandGenStuff extends CommandBase
 
                 String backup = "rattata";
 
+                ResourceLocation test = new ResourceLocation(event.getResourceDomain() + ":"
+                        + event.getResourcePath().replaceFirst("mobs.", "sounds/mobs/") + ".ogg");
                 try
                 {
-                    Minecraft.getMinecraft().getResourceManager().getResource(event);
+                    Minecraft.getMinecraft().getResourceManager().getResource(test);
                 }
                 catch (Exception e)
                 {
                     event = new ResourceLocation(backup);
+                    System.out.println(entry + "->" + backup + " " + test);
                 }
 
                 String soundName = event.getResourcePath().replaceFirst("mobs.", "");

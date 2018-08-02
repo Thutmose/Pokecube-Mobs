@@ -15,6 +15,7 @@ import net.minecraft.world.storage.loot.LootTable;
 import pokecube.core.PokecubeItems;
 import pokecube.core.database.abilities.Ability;
 import pokecube.core.interfaces.IPokemob;
+import pokecube.core.items.ItemTM;
 import thut.lib.CompatWrapper;
 
 public class Pickup extends Ability
@@ -53,7 +54,9 @@ public class Pickup extends Ability
                     List<?> items = new ArrayList<Object>(PokecubeItems.heldItems);
                     Collections.shuffle(items);
                     ItemStack item = (ItemStack) items.get(0);
-                    if (CompatWrapper.isValid(item)) mob.setHeldItem(item.copy());
+                    //No TMs in pickup, as they are unmapped
+                    if (CompatWrapper.isValid(item) && !(item.getItem() instanceof ItemTM))
+                        mob.setHeldItem(item.copy());
                 }
             }
         }

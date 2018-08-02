@@ -2134,8 +2134,7 @@
             "name": "Sylveon",
             "item": {
               "values": {
-                "d": "60",
-                "id": "pokecube:berry"
+                "id": "pokecube_mobs:berry_enigma"
               }
             }
           }
