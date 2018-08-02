@@ -60,32 +60,32 @@ public class MiscItemHelper
         IPokemob pokemob = CapabilityPokemob.getPokemobFor(entity);
         if (pokemob != null)
         {
-            if (Tools.isSameStack(stack, PokecubeItems.getStack("hpup")))
+            if (Tools.isStack(stack, "hpup"))
             {
                 pokemob.addEVs(new byte[] { 10, 0, 0, 0, 0, 0 });
                 return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
-            if (Tools.isSameStack(stack, PokecubeItems.getStack("protein")))
+            if (Tools.isStack(stack, "protein"))
             {
                 pokemob.addEVs(new byte[] { 0, 10, 0, 0, 0, 0 });
                 return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
-            if (Tools.isSameStack(stack, PokecubeItems.getStack("iron")))
+            if (Tools.isStack(stack, "iron"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 10, 0, 0, 0 });
                 return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
-            if (Tools.isSameStack(stack, PokecubeItems.getStack("calcium")))
+            if (Tools.isStack(stack, "calcium"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 10, 0, 0 });
                 return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
-            if (Tools.isSameStack(stack, PokecubeItems.getStack("zinc")))
+            if (Tools.isStack(stack, "zinc"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 0, 10, 0 });
                 return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
             }
-            if (Tools.isSameStack(stack, PokecubeItems.getStack("carbos")))
+            if (Tools.isStack(stack, "carbos"))
             {
                 pokemob.addEVs(new byte[] { 0, 0, 0, 0, 0, 10 });
                 return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, stack);
