@@ -217,12 +217,16 @@ public class BerryHelper implements IMoveConstants
     public static ActionResult<ItemStack> applyEffect(IPokemob pokemob, EntityLivingBase user, ItemStack stack)
     {
         boolean applied = berryEffect(pokemob, user, stack);
-        int[] flavours = BerryManager.berryFlavours.get(stack.getItemDamage());
-        if (applied && flavours != null)
+        if (stack.getItem() instanceof ItemBerry)
         {
-            for (int i = 0; i < 5; i++)
+            int berryId = ((ItemBerry) stack.getItem()).index;
+            int[] flavours = BerryManager.berryFlavours.get(berryId);
+            if (applied && flavours != null)
             {
-                pokemob.setFlavourAmount(i, pokemob.getFlavourAmount(i) + flavours[i]);
+                for (int i = 0; i < 5; i++)
+                {
+                    pokemob.setFlavourAmount(i, pokemob.getFlavourAmount(i) + flavours[i]);
+                }
             }
         }
         boolean useStack = applied;

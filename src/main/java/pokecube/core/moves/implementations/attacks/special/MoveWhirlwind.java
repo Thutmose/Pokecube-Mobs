@@ -34,12 +34,14 @@ public class MoveWhirlwind extends Move_Basic
                 return;
             }
             if (attacked.getPokemonAIState(IMoveConstants.TAMED)) attacked.returnToPokecube();
+            attacked.setPokemonAIState(IPokemob.ANGRY, false);
         }
         // ends the battle
         if (packet.attacked instanceof EntityLiving)
         {
             ((EntityLiving) packet.attacked).setAttackTarget(null);
         }
+        packet.attacker.setPokemonAIState(IPokemob.ANGRY, false);
         packet.attacker.getEntity().setAttackTarget(null);
     }
 }
