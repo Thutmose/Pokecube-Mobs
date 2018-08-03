@@ -109,9 +109,10 @@ public class BerryHelper implements IMoveConstants
     public static boolean berryEffect(IPokemob pokemob, EntityLivingBase user, ItemStack berry)
     {
 
+        if (!(berry.getItem() instanceof ItemBerry)) return false;
+
         byte status = pokemob.getStatus();
-        int berryId = berry.getItemDamage();
-        if (!BerryManager.berryNames.containsKey(berryId)) return false;
+        int berryId = ((ItemBerry) berry.getItem()).index;
         if (berryId == 21)
         {
             HappinessType.applyHappiness(pokemob, HappinessType.EVBERRY);
