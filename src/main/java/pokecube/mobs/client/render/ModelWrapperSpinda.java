@@ -1,4 +1,4 @@
-package pokecube.origin.render;
+package pokecube.mobs.client.render;
 
 import java.util.Random;
 
