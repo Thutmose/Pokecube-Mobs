@@ -12,6 +12,7 @@ import net.minecraft.util.math.MathHelper;
 import pokecube.core.entity.pokemobs.EntityPokemob;
 import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.ai.LogicStates;
 import thut.api.entity.IMobColourable;
 
 /** @author Manchou */
@@ -76,7 +77,7 @@ public class ModelPichu extends APokemobModel
         EntityPokemob entity = (EntityPokemob) entityliving;
         IPokemob mob = CapabilityPokemob.getPokemobFor(entity);
 
-        if (mob.getPokemonAIState(pokecube.core.interfaces.IPokemob.SITTING) || limbSwingAmount < 1e-2
+        if (mob.getLogicState(LogicStates.SITTING) || limbSwingAmount < 1e-2
                 || entity.isRiding())
         {
             float bodyAngle = 0.1F;

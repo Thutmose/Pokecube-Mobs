@@ -66,7 +66,6 @@ import pokecube.core.events.onload.InitDatabase;
 import pokecube.core.events.onload.RegisterPokecubes;
 import pokecube.core.events.onload.RegisterPokemobsEvent;
 import pokecube.core.handlers.ItemGenerator;
-import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokecube;
 import pokecube.core.interfaces.IPokecube.DefaultPokecubeBehavior;
 import pokecube.core.interfaces.IPokecube.NormalPokecubeBehavoir;
@@ -75,6 +74,7 @@ import pokecube.core.interfaces.IPokemob;
 import pokecube.core.interfaces.IPokemob.Stats;
 import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.ai.GeneralStates;
 import pokecube.core.items.berries.BerryManager;
 import pokecube.core.items.pokecubes.EntityPokecube;
 import pokecube.core.items.pokecubes.PokecubeManager;
@@ -556,7 +556,7 @@ public class PokecubeMobs implements IMobProvider
             @Override
             public void onPreCapture(Pre evt)
             {
-                boolean tameSnag = !evt.caught.isPlayerOwned() && evt.caught.getPokemonAIState(IMoveConstants.TAMED);
+                boolean tameSnag = !evt.caught.isPlayerOwned() && evt.caught.getGeneralState(GeneralStates.TAMED);
 
                 if (evt.caught.isShadow())
                 {
@@ -709,12 +709,12 @@ public class PokecubeMobs implements IMobProvider
             InventoryPlayer inv = player.inventory;
             boolean hasCube = false;
             boolean hasSpace = false;
-            ItemStack cube = CompatWrapper.nullStack;
+            ItemStack cube = ItemStack.EMPTY;
             int m = -1;
             for (int n = 0; n < inv.getSizeInventory(); n++)
             {
                 ItemStack item = inv.getStackInSlot(n);
-                if (item == CompatWrapper.nullStack) hasSpace = true;
+                if (item == ItemStack.EMPTY) hasSpace = true;
                 ResourceLocation key = PokecubeItems.getCubeId(item);
                 if (!hasCube && key != null && IPokecube.BEHAVIORS.containsKey(key) && !PokecubeManager.isFilled(item))
                 {
@@ -731,7 +731,7 @@ public class PokecubeMobs implements IMobProvider
                 if (pokemon != null)
                 {
                     ItemStack mobCube = cube.copy();
-                    CompatWrapper.setStackSize(mobCube, 1);
+                    mobCube.setCount(1);
                     IPokemob poke = CapabilityPokemob.getPokemobFor(pokemon);
                     poke.setPokecube(mobCube);
                     poke.setPokemonOwner(player);
@@ -739,8 +739,8 @@ public class PokecubeMobs implements IMobProvider
                     poke.getEntity().setHealth(poke.getEntity().getMaxHealth());
                     ItemStack shedinja = PokecubeManager.pokemobToItem(poke);
                     StatsCollector.addCapture(poke);
-                    CompatWrapper.increment(cube, -1);
-                    if (!CompatWrapper.isValid(cube)) inv.setInventorySlotContents(m, CompatWrapper.nullStack);
+                    cube.shrink(1);
+                    if (cube.isEmpty()) inv.setInventorySlotContents(m, ItemStack.EMPTY);
                     inv.addItemStackToInventory(shedinja);
                 }
             }

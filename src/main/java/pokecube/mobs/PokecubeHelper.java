@@ -12,14 +12,15 @@ import net.minecraft.entity.projectile.EntityFishHook;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.AxisAlignedBB;
 import pokecube.core.PokecubeItems;
+import pokecube.core.database.PokedexEntryLoader.SpawnRule;
 import pokecube.core.database.SpawnBiomeMatcher;
 import pokecube.core.database.SpawnBiomeMatcher.SpawnCheck;
-import pokecube.core.database.PokedexEntryLoader.SpawnRule;
-import pokecube.core.interfaces.IMoveConstants;
 import pokecube.core.interfaces.IPokemob;
-import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.IPokemob.HappinessType;
+import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.interfaces.capabilities.CapabilityPokemob;
+import pokecube.core.interfaces.pokemob.ai.CombatStates;
+import pokecube.core.interfaces.pokemob.ai.GeneralStates;
 import pokecube.core.utils.PokeType;
 import thut.api.maths.Vector3;
 
@@ -100,7 +101,7 @@ public class PokecubeHelper
         double x = 1;
         Entity entity = mob.getEntity();
         double alive = entity.ticksExisted;
-        if (!mob.getPokemonAIState(IMoveConstants.ANGRY) && alive < 601)
+        if (!mob.getCombatState(CombatStates.ANGRY) && alive < 601)
         {
             x = 4;
         }
@@ -110,7 +111,7 @@ public class PokecubeHelper
     public double premier(IPokemob mob)
     {
         double x = 0.25;
-        if (!mob.getPokemonAIState(IMoveConstants.ANGRY))
+        if (!mob.getCombatState(CombatStates.ANGRY))
         {
             x = 1;
         }
@@ -206,7 +207,7 @@ public class PokecubeHelper
     public void luxury(IPokemob mob)
     {
         // Randomly increase happiness for being outside of pokecube.
-        if (Math.random() > 0.999 && mob.getPokemonAIState(IMoveConstants.TAMED))
+        if (Math.random() > 0.999 && mob.getGeneralState(GeneralStates.TAMED))
         {
             HappinessType.applyHappiness(mob, HappinessType.TIME);
             HappinessType.applyHappiness(mob, HappinessType.TIME);
