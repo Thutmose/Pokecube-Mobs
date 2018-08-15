@@ -35,8 +35,8 @@ public class MoveCurse extends Move_Basic
             }
             if (apply)
             {
-                MovePacket move = new MovePacket(packet.attacker, packet.attacked, getName(), ghost, 0, 0, (byte) 0,
-                        CHANGE_CURSE, true);
+                MovePacket move = new MovePacket(packet.attacker, packet.attacked, getName(), PokeType.getType("ghost"),
+                        0, 0, (byte) 0, CHANGE_CURSE, true);
                 if (target != null) target.onMoveUse(move);
                 if (!move.canceled)
                 {

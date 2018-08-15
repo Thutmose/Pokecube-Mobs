@@ -7,8 +7,7 @@ import pokecube.core.utils.PokeType;
 
 public class MoveHiddenPower extends Move_Basic
 {
-    private static PokeType[] types = { fighting, flying, poison, ground, rock, bug, ghost, steel, fire, water, grass,
-            electric, psychic, ice, dragon, dark };
+    private static PokeType[] types;
 
     public MoveHiddenPower()
     {
@@ -22,6 +21,16 @@ public class MoveHiddenPower extends Move_Basic
     public PokeType getType(IPokemob user)
     {
         if (user == null) return move.type;
+
+        if (types == null)
+        {
+            types = new PokeType[] { PokeType.getType("fighting"), PokeType.getType("flying"),
+                    PokeType.getType("poison"), PokeType.getType("ground"), PokeType.getType("rock"),
+                    PokeType.getType("bug"), PokeType.getType("ghost"), PokeType.getType("steel"),
+                    PokeType.getType("fire"), PokeType.getType("water"), PokeType.getType("grass"),
+                    PokeType.getType("electric"), PokeType.getType("psychic"), PokeType.getType("ice"),
+                    PokeType.getType("dragon"), PokeType.getType("dark") };
+        }
         int index = 0;
         byte[] ivs = user.getIVs();
         int a = (ivs[0] & 1);
