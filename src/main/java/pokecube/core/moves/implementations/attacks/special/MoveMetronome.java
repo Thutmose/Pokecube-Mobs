@@ -7,7 +7,6 @@ import java.util.logging.Level;
 
 import net.minecraft.entity.Entity;
 import pokecube.core.database.moves.MoveEntry;
-import pokecube.core.interfaces.IMoveNames;
 import pokecube.core.interfaces.Move_Base;
 import pokecube.core.interfaces.PokecubeMod;
 import pokecube.core.moves.MovesUtils;
@@ -18,7 +17,7 @@ public class MoveMetronome extends Move_Basic
 {
     public MoveMetronome()
     {
-        super(IMoveNames.MOVE_METRONOME);
+        super("metronome");
     }
 
     @Override
